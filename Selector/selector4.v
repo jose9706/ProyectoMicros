@@ -2,7 +2,7 @@
 //`include "selector4.v"
 
 
-module selector4(output wire [4*4-1:0] temp,
+module selector4(output wire [4*4-1:0] NIBBLE_OUT,
                  input [31:0] DATA_A,
                  input [31:0] DATA_B,
                  input [11:0] sel_A,
@@ -11,12 +11,12 @@ module selector4(output wire [4*4-1:0] temp,
                  input RESET_L,
                  input CLK);
                  
-    wire [3:0] NIBBLE_OUT [3:0];
+    wire [3:0] temp_nibble [3:0];
 
     generate
         genvar k;
         for(k = 0; k<4; k = k +1) begin: outs
-            assign temp[4*k+3:4*k] = NIBBLE_OUT[k];
+            assign NIBBLE_OUT[4*k+3:4*k] = temp_nibble[k];
         end
     endgenerate
 
@@ -32,7 +32,7 @@ module selector4(output wire [4*4-1:0] temp,
                      SEL[i],
                      RESET_L,
                      CLK,
-                     NIBBLE_OUT[i][3:0]);
+                     temp_nibble[i][3:0]);
 
         end
     endgenerate
