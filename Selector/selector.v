@@ -43,7 +43,7 @@ assign tempOut=sel?nibbleA:nibbleB;
 always @(*) begin 
     tempA = dataA[selA[2:0]*4 +: 4];
     tempB = dataB[selB[2:0]*4 +: 4];
-    tempOut=sel?tempA:tempB;
+    tempOut=sel?tempB:tempA; //0 agarra tempA y en 1 agarra tempB 
 end
 
 

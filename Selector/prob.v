@@ -23,9 +23,13 @@ module prob(output reg CLK,
         sel_B[1][2:0] <= 1;
         sel_B[2][2:0] <= 2;
         sel_B[3][2:0] <= 3;
-        SEL <=0;
+        SEL [0]<=1;
+        SEL [1] <=1;
         @(posedge CLK);
         @(posedge CLK);
+	@(posedge CLK);
+	@(posedge CLK);
+	@(posedge CLK);
         $finish;
 
     end

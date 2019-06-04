@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Jun  4 03:27:47 2019
+[*]
+[dumpfile] "/home/redkaiser/Microelectronica/ProyectoMicros/Selector/test.vcd"
+[dumpfile_mtime] "Tue Jun  4 03:27:16 2019"
+[dumpfile_size] 3965
+[savefile] "/home/redkaiser/Microelectronica/ProyectoMicros/Selector/grafica.gtkw"
+[timestart] 0
+[size] 1299 713
+[pos] -1 -1
+*-2.210897 11 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[treeopen] testbench.pog.
+[treeopen] testbench.pog.selectores[0].
+[treeopen] testbench.pog.selectores[1].
+[treeopen] testbench.pog.selectores[2].
+[sst_width] 223
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 192
+@28
+testbench.CLK
+@22
+testbench.DATA_A[31:0]
+testbench.DATA_B[31:0]
+@200
+-seli0
+@22
+testbench.pog.selectores[0].seli.nibbleA[3:0]
+testbench.pog.selectores[0].seli.nibbleB[3:0]
+testbench.pog.selectores[0].seli.nibbleOut[3:0]
+@28
+testbench.pog.selectores[0].seli.sel
+@200
+-Seli1
+@22
+testbench.pog.selectores[1].seli.nibbleA[3:0]
+testbench.pog.selectores[1].seli.nibbleB[3:0]
+testbench.pog.selectores[1].seli.nibbleOut[3:0]
+@28
+testbench.pog.selectores[1].seli.sel
+@200
+-Seli2
+@22
+testbench.pog.selectores[2].seli.nibbleA[3:0]
+testbench.pog.selectores[2].seli.nibbleB[3:0]
+testbench.pog.selectores[2].seli.nibbleOut[3:0]
+@28
+testbench.pog.selectores[2].seli.sel
+[pattern_trace] 1
+[pattern_trace] 0
