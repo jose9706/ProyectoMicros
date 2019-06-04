@@ -10,13 +10,13 @@ module selector(
 ); 
 
 //salida de cada una de las entradas
-output reg [3:0] nibbleA;
-output reg [3:0] nibbleB; 
+reg [3:0] nibbleA;
+reg [3:0] nibbleB; 
 
 //señales temporales 
-output reg [3:0] tempA;
-output reg [3:0] tempB;
-output reg [3:0] tempOut; 
+reg [3:0] tempA;
+reg [3:0] tempB;
+reg [3:0] tempOut; 
 
 
 always @(posedge clk)begin
