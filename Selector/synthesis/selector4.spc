@@ -1,0 +1,725 @@
+*SPICE netlist created from BLIF module selector4 by blif2BSpice
+.include /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp
+.subckt selector4 vdd gnd DATA_A[0] DATA_A[1] DATA_A[2] DATA_A[3] DATA_A[4] DATA_A[5] DATA_A[6] DATA_A[7] DATA_A[8] DATA_A[9] DATA_A[10] DATA_A[11] DATA_A[12] DATA_A[13] DATA_A[14] DATA_A[15] DATA_A[16] DATA_A[17] DATA_A[18] DATA_A[19] DATA_A[20] DATA_A[21] DATA_A[22] DATA_A[23] DATA_A[24] DATA_A[25] DATA_A[26] DATA_A[27] DATA_A[28] DATA_A[29] DATA_A[30] DATA_A[31] DATA_B[0] DATA_B[1] DATA_B[2] DATA_B[3] DATA_B[4] DATA_B[5] DATA_B[6] DATA_B[7] DATA_B[8] DATA_B[9] DATA_B[10] DATA_B[11] DATA_B[12] DATA_B[13] DATA_B[14] DATA_B[15] DATA_B[16] DATA_B[17] DATA_B[18] DATA_B[19] DATA_B[20] DATA_B[21] DATA_B[22] DATA_B[23] DATA_B[24] DATA_B[25] DATA_B[26] DATA_B[27] DATA_B[28] DATA_B[29] DATA_B[30] DATA_B[31] sel_A[0] sel_A[1] sel_A[2] sel_A[3] sel_A[4] sel_A[5] sel_A[6] sel_A[7] sel_A[8] sel_A[9] sel_A[10] sel_A[11] sel_B[0] sel_B[1] sel_B[2] sel_B[3] sel_B[4] sel_B[5] sel_B[6] sel_B[7] sel_B[8] sel_B[9] sel_B[10] sel_B[11] SEL[0] SEL[1] SEL[2] SEL[3] RESET_L CLK temp[0] temp[1] temp[2] temp[3] temp[4] temp[5] temp[6] temp[7] temp[8] temp[9] temp[10] temp[11] temp[12] temp[13] temp[14] temp[15] 
+XBUFX4_1 vdd gnd sel_A[11] sel_A[11_bF$buf4] BUFX4
+XBUFX4_2 vdd gnd sel_A[11] sel_A[11_bF$buf3] BUFX4
+XBUFX4_3 vdd gnd sel_A[11] sel_A[11_bF$buf2] BUFX4
+XBUFX4_4 vdd gnd sel_A[11] sel_A[11_bF$buf1] BUFX4
+XBUFX4_5 vdd gnd sel_A[11] sel_A[11_bF$buf0] BUFX4
+XBUFX4_6 vdd gnd sel_B[8] sel_B[8_bF$buf4] BUFX4
+XBUFX4_7 vdd gnd sel_B[8] sel_B[8_bF$buf3] BUFX4
+XBUFX4_8 vdd gnd sel_B[8] sel_B[8_bF$buf2] BUFX4
+XBUFX4_9 vdd gnd sel_B[8] sel_B[8_bF$buf1] BUFX4
+XBUFX4_10 vdd gnd sel_B[8] sel_B[8_bF$buf0] BUFX4
+XBUFX4_11 vdd gnd sel_B[5] sel_B[5_bF$buf4] BUFX4
+XBUFX4_12 vdd gnd sel_B[5] sel_B[5_bF$buf3] BUFX4
+XBUFX4_13 vdd gnd sel_B[5] sel_B[5_bF$buf2] BUFX4
+XBUFX4_14 vdd gnd sel_B[5] sel_B[5_bF$buf1] BUFX4
+XBUFX4_15 vdd gnd sel_B[5] sel_B[5_bF$buf0] BUFX4
+XBUFX4_16 vdd gnd sel_A[8] sel_A[8_bF$buf4] BUFX4
+XBUFX4_17 vdd gnd sel_A[8] sel_A[8_bF$buf3] BUFX4
+XBUFX4_18 vdd gnd sel_A[8] sel_A[8_bF$buf2] BUFX4
+XBUFX4_19 vdd gnd sel_A[8] sel_A[8_bF$buf1] BUFX4
+XBUFX4_20 vdd gnd sel_A[8] sel_A[8_bF$buf0] BUFX4
+XBUFX4_21 vdd gnd sel_B[2] sel_B[2_bF$buf4] BUFX4
+XBUFX4_22 vdd gnd sel_B[2] sel_B[2_bF$buf3] BUFX4
+XBUFX4_23 vdd gnd sel_B[2] sel_B[2_bF$buf2] BUFX4
+XBUFX4_24 vdd gnd sel_B[2] sel_B[2_bF$buf1] BUFX4
+XBUFX4_25 vdd gnd sel_B[2] sel_B[2_bF$buf0] BUFX4
+XBUFX4_26 vdd gnd sel_A[5] sel_A[5_bF$buf4] BUFX4
+XBUFX4_27 vdd gnd sel_A[5] sel_A[5_bF$buf3] BUFX4
+XBUFX4_28 vdd gnd sel_A[5] sel_A[5_bF$buf2] BUFX4
+XBUFX4_29 vdd gnd sel_A[5] sel_A[5_bF$buf1] BUFX4
+XBUFX4_30 vdd gnd sel_A[5] sel_A[5_bF$buf0] BUFX4
+XBUFX4_31 vdd gnd sel_A[2] sel_A[2_bF$buf4] BUFX4
+XBUFX4_32 vdd gnd sel_A[2] sel_A[2_bF$buf3] BUFX4
+XBUFX4_33 vdd gnd sel_A[2] sel_A[2_bF$buf2] BUFX4
+XBUFX4_34 vdd gnd sel_A[2] sel_A[2_bF$buf1] BUFX4
+XBUFX4_35 vdd gnd sel_A[2] sel_A[2_bF$buf0] BUFX4
+XBUFX4_36 vdd gnd sel_B[11] sel_B[11_bF$buf4] BUFX4
+XBUFX4_37 vdd gnd sel_B[11] sel_B[11_bF$buf3] BUFX4
+XBUFX4_38 vdd gnd sel_B[11] sel_B[11_bF$buf2] BUFX4
+XBUFX4_39 vdd gnd sel_B[11] sel_B[11_bF$buf1] BUFX4
+XBUFX4_40 vdd gnd sel_B[11] sel_B[11_bF$buf0] BUFX4
+XNAND2X1_1 vdd _470_ gnd sel_B[8_bF$buf4] _469_ NAND2X1
+XNAND3X1_1 _468_ vdd gnd _458_ _470_ _471_ NAND3X1
+XINVX1_1 DATA_B[12] _472_ vdd gnd INVX1
+XNAND2X1_2 vdd _473_ gnd sel_B[8_bF$buf3] DATA_B[28] NAND2X1
+XOAI21X1_1 gnd vdd _472_ sel_B[8_bF$buf2] _474_ _473_ OAI21X1
+XNAND2X1_3 vdd _475_ gnd sel_B[7] _474_ NAND2X1
+XNAND3X1_2 _471_ vdd gnd sel_B[6] _475_ _476_ NAND3X1
+XNAND3X1_3 _467_ vdd gnd _456_ _476_ _477_ NAND3X1
+XINVX2_1 vdd gnd _320_ sel_A[6] INVX2
+XINVX4_1 vdd gnd _321_ sel_A[7] INVX4
+XOR2X2_1 _322_ sel_A[8_bF$buf4] vdd gnd DATA_A[0] OR2X2
+XINVX1_2 DATA_A[16] _323_ vdd gnd INVX1
+XNAND2X1_4 vdd _324_ gnd sel_A[8_bF$buf3] _323_ NAND2X1
+XNAND3X1_4 _322_ vdd gnd _321_ _324_ _325_ NAND3X1
+XINVX1_3 DATA_A[24] _326_ vdd gnd INVX1
+XNAND2X1_5 vdd _327_ gnd sel_A[8_bF$buf2] _326_ NAND2X1
+XOR2X2_2 _328_ DATA_A[8] vdd gnd sel_A[8_bF$buf1] OR2X2
+XNAND3X1_5 _328_ vdd gnd sel_A[7] _327_ _329_ NAND3X1
+XNAND3X1_6 _325_ vdd gnd _320_ _329_ _330_ NAND3X1
+XOR2X2_3 _331_ DATA_A[4] vdd gnd sel_A[8_bF$buf0] OR2X2
+XINVX1_4 DATA_A[20] _332_ vdd gnd INVX1
+XNAND2X1_6 vdd _333_ gnd sel_A[8_bF$buf4] _332_ NAND2X1
+XNAND3X1_7 _331_ vdd gnd _321_ _333_ _334_ NAND3X1
+XINVX1_5 DATA_A[12] _335_ vdd gnd INVX1
+XNAND2X1_7 vdd _336_ gnd sel_A[8_bF$buf3] DATA_A[28] NAND2X1
+XOAI21X1_2 gnd vdd _335_ sel_A[8_bF$buf2] _337_ _336_ OAI21X1
+XNAND2X1_8 vdd _338_ gnd sel_A[7] _337_ NAND2X1
+XNAND3X1_8 _334_ vdd gnd sel_A[6] _338_ _339_ NAND3X1
+XNAND3X1_9 _330_ vdd gnd SEL[2] _339_ _340_ NAND3X1
+XAOI21X1_1 gnd vdd _477_ _340_ _319_[0] _455_ AOI21X1
+XOR2X2_4 _341_ DATA_B[1] vdd gnd sel_B[8_bF$buf1] OR2X2
+XINVX1_6 DATA_B[17] _342_ vdd gnd INVX1
+XNAND2X1_9 vdd _343_ gnd sel_B[8_bF$buf0] _342_ NAND2X1
+XNAND3X1_10 _341_ vdd gnd _458_ _343_ _344_ NAND3X1
+XINVX1_7 DATA_B[25] _345_ vdd gnd INVX1
+XNAND2X1_10 vdd _346_ gnd sel_B[8_bF$buf4] _345_ NAND2X1
+XOR2X2_5 _347_ DATA_B[9] vdd gnd sel_B[8_bF$buf3] OR2X2
+XNAND3X1_11 _347_ vdd gnd sel_B[7] _346_ _348_ NAND3X1
+XNAND3X1_12 _344_ vdd gnd _457_ _348_ _349_ NAND3X1
+XOR2X2_6 _350_ DATA_B[5] vdd gnd sel_B[8_bF$buf2] OR2X2
+XINVX1_8 DATA_B[21] _351_ vdd gnd INVX1
+XNAND2X1_11 vdd _352_ gnd sel_B[8_bF$buf1] _351_ NAND2X1
+XNAND3X1_13 _350_ vdd gnd _458_ _352_ _353_ NAND3X1
+XINVX1_9 DATA_B[13] _354_ vdd gnd INVX1
+XNAND2X1_12 vdd _355_ gnd sel_B[8_bF$buf0] DATA_B[29] NAND2X1
+XOAI21X1_3 gnd vdd _354_ sel_B[8_bF$buf4] _356_ _355_ OAI21X1
+XNAND2X1_13 vdd _357_ gnd sel_B[7] _356_ NAND2X1
+XNAND3X1_14 _353_ vdd gnd sel_B[6] _357_ _358_ NAND3X1
+XNAND3X1_15 _349_ vdd gnd _456_ _358_ _359_ NAND3X1
+XOR2X2_7 _360_ DATA_A[1] vdd gnd sel_A[8_bF$buf1] OR2X2
+XINVX1_10 DATA_A[17] _361_ vdd gnd INVX1
+XNAND2X1_14 vdd _362_ gnd sel_A[8_bF$buf0] _361_ NAND2X1
+XNAND3X1_16 _360_ vdd gnd _321_ _362_ _363_ NAND3X1
+XINVX1_11 DATA_A[25] _364_ vdd gnd INVX1
+XNAND2X1_15 vdd _365_ gnd sel_A[8_bF$buf4] _364_ NAND2X1
+XOR2X2_8 _366_ DATA_A[9] vdd gnd sel_A[8_bF$buf3] OR2X2
+XNAND3X1_17 _366_ vdd gnd sel_A[7] _365_ _367_ NAND3X1
+XNAND3X1_18 _363_ vdd gnd _320_ _367_ _368_ NAND3X1
+XOR2X2_9 _369_ DATA_A[5] vdd gnd sel_A[8_bF$buf2] OR2X2
+XINVX1_12 DATA_A[21] _370_ vdd gnd INVX1
+XNAND2X1_16 vdd _371_ gnd sel_A[8_bF$buf1] _370_ NAND2X1
+XNAND3X1_19 _369_ vdd gnd _321_ _371_ _372_ NAND3X1
+XINVX1_13 DATA_A[13] _373_ vdd gnd INVX1
+XNAND2X1_17 vdd _374_ gnd sel_A[8_bF$buf0] DATA_A[29] NAND2X1
+XOAI21X1_4 gnd vdd _373_ sel_A[8_bF$buf4] _375_ _374_ OAI21X1
+XNAND2X1_18 vdd _376_ gnd sel_A[7] _375_ NAND2X1
+XNAND3X1_20 _372_ vdd gnd sel_A[6] _376_ _377_ NAND3X1
+XNAND3X1_21 _368_ vdd gnd SEL[2] _377_ _378_ NAND3X1
+XAOI21X1_2 gnd vdd _359_ _378_ _319_[1] _455_ AOI21X1
+XOR2X2_10 _379_ DATA_B[2] vdd gnd sel_B[8_bF$buf3] OR2X2
+XINVX1_14 DATA_B[18] _380_ vdd gnd INVX1
+XNAND2X1_19 vdd _381_ gnd sel_B[8_bF$buf2] _380_ NAND2X1
+XNAND3X1_22 _379_ vdd gnd _458_ _381_ _382_ NAND3X1
+XINVX1_15 DATA_B[26] _383_ vdd gnd INVX1
+XNAND2X1_20 vdd _384_ gnd sel_B[8_bF$buf1] _383_ NAND2X1
+XOR2X2_11 _385_ DATA_B[10] vdd gnd sel_B[8_bF$buf0] OR2X2
+XNAND3X1_23 _385_ vdd gnd sel_B[7] _384_ _386_ NAND3X1
+XNAND3X1_24 _382_ vdd gnd _457_ _386_ _387_ NAND3X1
+XOR2X2_12 _388_ DATA_B[6] vdd gnd sel_B[8_bF$buf4] OR2X2
+XINVX1_16 DATA_B[22] _389_ vdd gnd INVX1
+XNAND2X1_21 vdd _390_ gnd sel_B[8_bF$buf3] _389_ NAND2X1
+XNAND3X1_25 _388_ vdd gnd _458_ _390_ _391_ NAND3X1
+XINVX1_17 DATA_B[14] _392_ vdd gnd INVX1
+XNAND2X1_22 vdd _393_ gnd sel_B[8_bF$buf2] DATA_B[30] NAND2X1
+XOAI21X1_5 gnd vdd _392_ sel_B[8_bF$buf1] _394_ _393_ OAI21X1
+XNAND2X1_23 vdd _395_ gnd sel_B[7] _394_ NAND2X1
+XNAND3X1_26 _391_ vdd gnd sel_B[6] _395_ _396_ NAND3X1
+XNAND3X1_27 _387_ vdd gnd _456_ _396_ _397_ NAND3X1
+XOR2X2_13 _398_ DATA_A[6] vdd gnd sel_A[8_bF$buf3] OR2X2
+XINVX1_18 DATA_A[22] _399_ vdd gnd INVX1
+XNAND2X1_24 vdd _400_ gnd sel_A[8_bF$buf2] _399_ NAND2X1
+XNAND3X1_28 _398_ vdd gnd _321_ _400_ _401_ NAND3X1
+XINVX1_19 DATA_A[30] _402_ vdd gnd INVX1
+XNAND2X1_25 vdd _403_ gnd sel_A[8_bF$buf1] _402_ NAND2X1
+XOR2X2_14 _404_ DATA_A[14] vdd gnd sel_A[8_bF$buf0] OR2X2
+XNAND3X1_29 _404_ vdd gnd sel_A[7] _403_ _405_ NAND3X1
+XNAND3X1_30 _401_ vdd gnd sel_A[6] _405_ _406_ NAND3X1
+XOR2X2_15 _407_ DATA_A[2] vdd gnd sel_A[8_bF$buf4] OR2X2
+XINVX1_20 DATA_A[18] _408_ vdd gnd INVX1
+XNAND2X1_26 vdd _409_ gnd sel_A[8_bF$buf3] _408_ NAND2X1
+XNAND3X1_31 _407_ vdd gnd _321_ _409_ _410_ NAND3X1
+XINVX1_21 DATA_A[10] _411_ vdd gnd INVX1
+XNAND2X1_27 vdd _412_ gnd sel_A[8_bF$buf2] DATA_A[26] NAND2X1
+XOAI21X1_6 gnd vdd _411_ sel_A[8_bF$buf1] _413_ _412_ OAI21X1
+XNAND2X1_28 vdd _414_ gnd sel_A[7] _413_ NAND2X1
+XNAND3X1_32 _410_ vdd gnd _320_ _414_ _415_ NAND3X1
+XNAND3X1_33 _406_ vdd gnd SEL[2] _415_ _416_ NAND3X1
+XAOI21X1_3 gnd vdd _397_ _416_ _319_[2] _455_ AOI21X1
+XOR2X2_16 _417_ DATA_B[3] vdd gnd sel_B[8_bF$buf0] OR2X2
+XINVX1_22 DATA_B[19] _418_ vdd gnd INVX1
+XNAND2X1_29 vdd _419_ gnd sel_B[8_bF$buf4] _418_ NAND2X1
+XNAND3X1_34 _417_ vdd gnd _458_ _419_ _420_ NAND3X1
+XINVX1_23 DATA_B[27] _421_ vdd gnd INVX1
+XNAND2X1_30 vdd _422_ gnd sel_B[8_bF$buf3] _421_ NAND2X1
+XOR2X2_17 _423_ DATA_B[11] vdd gnd sel_B[8_bF$buf2] OR2X2
+XNAND3X1_35 _423_ vdd gnd sel_B[7] _422_ _424_ NAND3X1
+XNAND3X1_36 _420_ vdd gnd _457_ _424_ _425_ NAND3X1
+XOR2X2_18 _426_ DATA_B[7] vdd gnd sel_B[8_bF$buf1] OR2X2
+XINVX1_24 DATA_B[23] _427_ vdd gnd INVX1
+XNAND2X1_31 vdd _428_ gnd sel_B[8_bF$buf0] _427_ NAND2X1
+XNAND3X1_37 _426_ vdd gnd _458_ _428_ _429_ NAND3X1
+XINVX1_25 DATA_B[15] _430_ vdd gnd INVX1
+XNAND2X1_32 vdd _431_ gnd sel_B[8_bF$buf4] DATA_B[31] NAND2X1
+XOAI21X1_7 gnd vdd _430_ sel_B[8_bF$buf3] _432_ _431_ OAI21X1
+XNAND2X1_33 vdd _433_ gnd sel_B[7] _432_ NAND2X1
+XNAND3X1_38 _429_ vdd gnd sel_B[6] _433_ _434_ NAND3X1
+XNAND3X1_39 _425_ vdd gnd _456_ _434_ _435_ NAND3X1
+XOR2X2_19 _436_ DATA_A[3] vdd gnd sel_A[8_bF$buf0] OR2X2
+XINVX1_26 DATA_A[19] _437_ vdd gnd INVX1
+XNAND2X1_34 vdd _438_ gnd sel_A[8_bF$buf4] _437_ NAND2X1
+XNAND3X1_40 _436_ vdd gnd _321_ _438_ _439_ NAND3X1
+XINVX1_27 DATA_A[27] _440_ vdd gnd INVX1
+XNAND2X1_35 vdd _441_ gnd sel_A[8_bF$buf3] _440_ NAND2X1
+XOR2X2_20 _442_ DATA_A[11] vdd gnd sel_A[8_bF$buf2] OR2X2
+XNAND3X1_41 _442_ vdd gnd sel_A[7] _441_ _443_ NAND3X1
+XNAND3X1_42 _439_ vdd gnd _320_ _443_ _444_ NAND3X1
+XOR2X2_21 _445_ DATA_A[7] vdd gnd sel_A[8_bF$buf1] OR2X2
+XINVX1_28 DATA_A[23] _446_ vdd gnd INVX1
+XNAND2X1_36 vdd _447_ gnd sel_A[8_bF$buf0] _446_ NAND2X1
+XNAND3X1_43 _445_ vdd gnd _321_ _447_ _448_ NAND3X1
+XINVX1_29 DATA_A[15] _449_ vdd gnd INVX1
+XNAND2X1_37 vdd _450_ gnd sel_A[8_bF$buf4] DATA_A[31] NAND2X1
+XOAI21X1_8 gnd vdd _449_ sel_A[8_bF$buf3] _451_ _450_ OAI21X1
+XNAND2X1_38 vdd _452_ gnd sel_A[7] _451_ NAND2X1
+XNAND3X1_44 _448_ vdd gnd sel_A[6] _452_ _453_ NAND3X1
+XNAND3X1_45 _444_ vdd gnd SEL[2] _453_ _454_ NAND3X1
+XAOI21X1_4 gnd vdd _435_ _454_ _319_[3] _455_ AOI21X1
+XDFFPOSX1_1 vdd _319_[0] gnd _0_[8] CLK DFFPOSX1
+XDFFPOSX1_2 vdd _319_[1] gnd _0_[9] CLK DFFPOSX1
+XDFFPOSX1_3 vdd _319_[2] gnd _0_[10] CLK DFFPOSX1
+XDFFPOSX1_4 vdd _319_[3] gnd _0_[11] CLK DFFPOSX1
+XINVX2_2 vdd gnd _614_ RESET_L INVX2
+XINVX2_3 vdd gnd _615_ SEL[3] INVX2
+XINVX2_4 vdd gnd _616_ sel_B[9] INVX2
+XINVX4_2 vdd gnd _617_ sel_B[10] INVX4
+XOR2X2_22 _618_ sel_B[11_bF$buf4] vdd gnd DATA_B[0] OR2X2
+XINVX1_30 DATA_B[16] _619_ vdd gnd INVX1
+XNAND2X1_39 vdd _620_ gnd sel_B[11_bF$buf3] _619_ NAND2X1
+XNAND3X1_46 _618_ vdd gnd _617_ _620_ _621_ NAND3X1
+XINVX1_31 DATA_B[24] _622_ vdd gnd INVX1
+XNAND2X1_40 vdd _623_ gnd sel_B[11_bF$buf2] _622_ NAND2X1
+XOR2X2_23 _624_ DATA_B[8] vdd gnd sel_B[11_bF$buf1] OR2X2
+XNAND3X1_47 _624_ vdd gnd sel_B[10] _623_ _625_ NAND3X1
+XNAND3X1_48 _621_ vdd gnd _616_ _625_ _626_ NAND3X1
+XOR2X2_24 _627_ DATA_B[4] vdd gnd sel_B[11_bF$buf0] OR2X2
+XINVX1_32 DATA_B[20] _628_ vdd gnd INVX1
+XNAND2X1_41 vdd _629_ gnd sel_B[11_bF$buf4] _628_ NAND2X1
+XNAND3X1_49 _627_ vdd gnd _617_ _629_ _630_ NAND3X1
+XINVX1_33 DATA_B[12] _631_ vdd gnd INVX1
+XNAND2X1_42 vdd _632_ gnd sel_B[11_bF$buf3] DATA_B[28] NAND2X1
+XOAI21X1_9 gnd vdd _631_ sel_B[11_bF$buf2] _633_ _632_ OAI21X1
+XNAND2X1_43 vdd _634_ gnd sel_B[10] _633_ NAND2X1
+XNAND3X1_50 _630_ vdd gnd sel_B[9] _634_ _635_ NAND3X1
+XNAND3X1_51 _626_ vdd gnd _615_ _635_ _636_ NAND3X1
+XINVX2_5 vdd gnd _479_ sel_A[9] INVX2
+XINVX4_3 vdd gnd _480_ sel_A[10] INVX4
+XOR2X2_25 _481_ sel_A[11_bF$buf4] vdd gnd DATA_A[0] OR2X2
+XINVX1_34 DATA_A[16] _482_ vdd gnd INVX1
+XNAND2X1_44 vdd _483_ gnd sel_A[11_bF$buf3] _482_ NAND2X1
+XNAND3X1_52 _481_ vdd gnd _480_ _483_ _484_ NAND3X1
+XINVX1_35 DATA_A[24] _485_ vdd gnd INVX1
+XNAND2X1_45 vdd _486_ gnd sel_A[11_bF$buf2] _485_ NAND2X1
+XOR2X2_26 _487_ DATA_A[8] vdd gnd sel_A[11_bF$buf1] OR2X2
+XNAND3X1_53 _487_ vdd gnd sel_A[10] _486_ _488_ NAND3X1
+XNAND3X1_54 _484_ vdd gnd _479_ _488_ _489_ NAND3X1
+XOR2X2_27 _490_ DATA_A[4] vdd gnd sel_A[11_bF$buf0] OR2X2
+XINVX1_36 DATA_A[20] _491_ vdd gnd INVX1
+XNAND2X1_46 vdd _492_ gnd sel_A[11_bF$buf4] _491_ NAND2X1
+XNAND3X1_55 _490_ vdd gnd _480_ _492_ _493_ NAND3X1
+XINVX1_37 DATA_A[12] _494_ vdd gnd INVX1
+XNAND2X1_47 vdd _495_ gnd sel_A[11_bF$buf3] DATA_A[28] NAND2X1
+XOAI21X1_10 gnd vdd _494_ sel_A[11_bF$buf2] _496_ _495_ OAI21X1
+XNAND2X1_48 vdd _497_ gnd sel_A[10] _496_ NAND2X1
+XNAND3X1_56 _493_ vdd gnd sel_A[9] _497_ _498_ NAND3X1
+XNAND3X1_57 _489_ vdd gnd SEL[3] _498_ _499_ NAND3X1
+XAOI21X1_5 gnd vdd _636_ _499_ _478_[0] _614_ AOI21X1
+XOR2X2_28 _500_ DATA_B[1] vdd gnd sel_B[11_bF$buf1] OR2X2
+XINVX1_38 DATA_B[17] _501_ vdd gnd INVX1
+XNAND2X1_49 vdd _502_ gnd sel_B[11_bF$buf0] _501_ NAND2X1
+XNAND3X1_58 _500_ vdd gnd _617_ _502_ _503_ NAND3X1
+XINVX1_39 DATA_B[25] _504_ vdd gnd INVX1
+XNAND2X1_50 vdd _505_ gnd sel_B[11_bF$buf4] _504_ NAND2X1
+XOR2X2_29 _506_ DATA_B[9] vdd gnd sel_B[11_bF$buf3] OR2X2
+XNAND3X1_59 _506_ vdd gnd sel_B[10] _505_ _507_ NAND3X1
+XNAND3X1_60 _503_ vdd gnd _616_ _507_ _508_ NAND3X1
+XOR2X2_30 _509_ DATA_B[5] vdd gnd sel_B[11_bF$buf2] OR2X2
+XINVX1_40 DATA_B[21] _510_ vdd gnd INVX1
+XNAND2X1_51 vdd _511_ gnd sel_B[11_bF$buf1] _510_ NAND2X1
+XNAND3X1_61 _509_ vdd gnd _617_ _511_ _512_ NAND3X1
+XINVX1_41 DATA_B[13] _513_ vdd gnd INVX1
+XNAND2X1_52 vdd _514_ gnd sel_B[11_bF$buf0] DATA_B[29] NAND2X1
+XOAI21X1_11 gnd vdd _513_ sel_B[11_bF$buf4] _515_ _514_ OAI21X1
+XNAND2X1_53 vdd _516_ gnd sel_B[10] _515_ NAND2X1
+XNAND3X1_62 _512_ vdd gnd sel_B[9] _516_ _517_ NAND3X1
+XNAND3X1_63 _508_ vdd gnd _615_ _517_ _518_ NAND3X1
+XOR2X2_31 _519_ DATA_A[1] vdd gnd sel_A[11_bF$buf1] OR2X2
+XINVX1_42 DATA_A[17] _520_ vdd gnd INVX1
+XNAND2X1_54 vdd _521_ gnd sel_A[11_bF$buf0] _520_ NAND2X1
+XNAND3X1_64 _519_ vdd gnd _480_ _521_ _522_ NAND3X1
+XINVX1_43 DATA_A[25] _523_ vdd gnd INVX1
+XNAND2X1_55 vdd _524_ gnd sel_A[11_bF$buf4] _523_ NAND2X1
+XOR2X2_32 _525_ DATA_A[9] vdd gnd sel_A[11_bF$buf3] OR2X2
+XNAND3X1_65 _525_ vdd gnd sel_A[10] _524_ _526_ NAND3X1
+XNAND3X1_66 _522_ vdd gnd _479_ _526_ _527_ NAND3X1
+XOR2X2_33 _528_ DATA_A[5] vdd gnd sel_A[11_bF$buf2] OR2X2
+XINVX1_44 DATA_A[21] _529_ vdd gnd INVX1
+XNAND2X1_56 vdd _530_ gnd sel_A[11_bF$buf1] _529_ NAND2X1
+XNAND3X1_67 _528_ vdd gnd _480_ _530_ _531_ NAND3X1
+XINVX1_45 DATA_A[13] _532_ vdd gnd INVX1
+XNAND2X1_57 vdd _533_ gnd sel_A[11_bF$buf0] DATA_A[29] NAND2X1
+XOAI21X1_12 gnd vdd _532_ sel_A[11_bF$buf4] _534_ _533_ OAI21X1
+XNAND2X1_58 vdd _535_ gnd sel_A[10] _534_ NAND2X1
+XNAND3X1_68 _531_ vdd gnd sel_A[9] _535_ _536_ NAND3X1
+XNAND3X1_69 _527_ vdd gnd SEL[3] _536_ _537_ NAND3X1
+XAOI21X1_6 gnd vdd _518_ _537_ _478_[1] _614_ AOI21X1
+XOR2X2_34 _538_ DATA_B[2] vdd gnd sel_B[11_bF$buf3] OR2X2
+XINVX1_46 DATA_B[18] _539_ vdd gnd INVX1
+XNAND2X1_59 vdd _540_ gnd sel_B[11_bF$buf2] _539_ NAND2X1
+XNAND3X1_70 _538_ vdd gnd _617_ _540_ _541_ NAND3X1
+XINVX1_47 DATA_B[26] _542_ vdd gnd INVX1
+XNAND2X1_60 vdd _543_ gnd sel_B[11_bF$buf1] _542_ NAND2X1
+XOR2X2_35 _544_ DATA_B[10] vdd gnd sel_B[11_bF$buf0] OR2X2
+XNAND3X1_71 _544_ vdd gnd sel_B[10] _543_ _545_ NAND3X1
+XNAND3X1_72 _541_ vdd gnd _616_ _545_ _546_ NAND3X1
+XOR2X2_36 _547_ DATA_B[6] vdd gnd sel_B[11_bF$buf4] OR2X2
+XINVX1_48 DATA_B[22] _548_ vdd gnd INVX1
+XNAND2X1_61 vdd _549_ gnd sel_B[11_bF$buf3] _548_ NAND2X1
+XNAND3X1_73 _547_ vdd gnd _617_ _549_ _550_ NAND3X1
+XINVX1_49 DATA_B[14] _551_ vdd gnd INVX1
+XNAND2X1_62 vdd _552_ gnd sel_B[11_bF$buf2] DATA_B[30] NAND2X1
+XOAI21X1_13 gnd vdd _551_ sel_B[11_bF$buf1] _553_ _552_ OAI21X1
+XNAND2X1_63 vdd _554_ gnd sel_B[10] _553_ NAND2X1
+XNAND3X1_74 _550_ vdd gnd sel_B[9] _554_ _555_ NAND3X1
+XNAND3X1_75 _546_ vdd gnd _615_ _555_ _556_ NAND3X1
+XOR2X2_37 _557_ DATA_A[6] vdd gnd sel_A[11_bF$buf3] OR2X2
+XINVX1_50 DATA_A[22] _558_ vdd gnd INVX1
+XNAND2X1_64 vdd _559_ gnd sel_A[11_bF$buf2] _558_ NAND2X1
+XNAND3X1_76 _557_ vdd gnd _480_ _559_ _560_ NAND3X1
+XINVX1_51 DATA_A[30] _561_ vdd gnd INVX1
+XNAND2X1_65 vdd _562_ gnd sel_A[11_bF$buf1] _561_ NAND2X1
+XOR2X2_38 _563_ DATA_A[14] vdd gnd sel_A[11_bF$buf0] OR2X2
+XNAND3X1_77 _563_ vdd gnd sel_A[10] _562_ _564_ NAND3X1
+XNAND3X1_78 _560_ vdd gnd sel_A[9] _564_ _565_ NAND3X1
+XOR2X2_39 _566_ DATA_A[2] vdd gnd sel_A[11_bF$buf4] OR2X2
+XINVX1_52 DATA_A[18] _567_ vdd gnd INVX1
+XNAND2X1_66 vdd _568_ gnd sel_A[11_bF$buf3] _567_ NAND2X1
+XNAND3X1_79 _566_ vdd gnd _480_ _568_ _569_ NAND3X1
+XINVX1_53 DATA_A[10] _570_ vdd gnd INVX1
+XNAND2X1_67 vdd _571_ gnd sel_A[11_bF$buf2] DATA_A[26] NAND2X1
+XOAI21X1_14 gnd vdd _570_ sel_A[11_bF$buf1] _572_ _571_ OAI21X1
+XNAND2X1_68 vdd _573_ gnd sel_A[10] _572_ NAND2X1
+XNAND3X1_80 _569_ vdd gnd _479_ _573_ _574_ NAND3X1
+XNAND3X1_81 _565_ vdd gnd SEL[3] _574_ _575_ NAND3X1
+XAOI21X1_7 gnd vdd _556_ _575_ _478_[2] _614_ AOI21X1
+XOR2X2_40 _576_ DATA_B[3] vdd gnd sel_B[11_bF$buf0] OR2X2
+XINVX1_54 DATA_B[19] _577_ vdd gnd INVX1
+XNAND2X1_69 vdd _578_ gnd sel_B[11_bF$buf4] _577_ NAND2X1
+XNAND3X1_82 _576_ vdd gnd _617_ _578_ _579_ NAND3X1
+XINVX1_55 DATA_B[27] _580_ vdd gnd INVX1
+XNAND2X1_70 vdd _581_ gnd sel_B[11_bF$buf3] _580_ NAND2X1
+XOR2X2_41 _582_ DATA_B[11] vdd gnd sel_B[11_bF$buf2] OR2X2
+XNAND3X1_83 _582_ vdd gnd sel_B[10] _581_ _583_ NAND3X1
+XNAND3X1_84 _579_ vdd gnd _616_ _583_ _584_ NAND3X1
+XOR2X2_42 _585_ DATA_B[7] vdd gnd sel_B[11_bF$buf1] OR2X2
+XINVX1_56 DATA_B[23] _586_ vdd gnd INVX1
+XNAND2X1_71 vdd _587_ gnd sel_B[11_bF$buf0] _586_ NAND2X1
+XNAND3X1_85 _585_ vdd gnd _617_ _587_ _588_ NAND3X1
+XINVX1_57 DATA_B[15] _589_ vdd gnd INVX1
+XNAND2X1_72 vdd _590_ gnd sel_B[11_bF$buf4] DATA_B[31] NAND2X1
+XOAI21X1_15 gnd vdd _589_ sel_B[11_bF$buf3] _591_ _590_ OAI21X1
+XNAND2X1_73 vdd _592_ gnd sel_B[10] _591_ NAND2X1
+XNAND3X1_86 _588_ vdd gnd sel_B[9] _592_ _593_ NAND3X1
+XNAND3X1_87 _584_ vdd gnd _615_ _593_ _594_ NAND3X1
+XOR2X2_43 _595_ DATA_A[3] vdd gnd sel_A[11_bF$buf0] OR2X2
+XINVX1_58 DATA_A[19] _596_ vdd gnd INVX1
+XNAND2X1_74 vdd _597_ gnd sel_A[11_bF$buf4] _596_ NAND2X1
+XNAND3X1_88 _595_ vdd gnd _480_ _597_ _598_ NAND3X1
+XINVX1_59 DATA_A[27] _599_ vdd gnd INVX1
+XNAND2X1_75 vdd _600_ gnd sel_A[11_bF$buf3] _599_ NAND2X1
+XOR2X2_44 _601_ DATA_A[11] vdd gnd sel_A[11_bF$buf2] OR2X2
+XNAND3X1_89 _601_ vdd gnd sel_A[10] _600_ _602_ NAND3X1
+XNAND3X1_90 _598_ vdd gnd _479_ _602_ _603_ NAND3X1
+XOR2X2_45 _604_ DATA_A[7] vdd gnd sel_A[11_bF$buf1] OR2X2
+XINVX1_60 DATA_A[23] _605_ vdd gnd INVX1
+XNAND2X1_76 vdd _606_ gnd sel_A[11_bF$buf0] _605_ NAND2X1
+XNAND3X1_91 _604_ vdd gnd _480_ _606_ _607_ NAND3X1
+XINVX1_61 DATA_A[15] _608_ vdd gnd INVX1
+XNAND2X1_77 vdd _609_ gnd sel_A[11_bF$buf4] DATA_A[31] NAND2X1
+XOAI21X1_16 gnd vdd _608_ sel_A[11_bF$buf3] _610_ _609_ OAI21X1
+XNAND2X1_78 vdd _611_ gnd sel_A[10] _610_ NAND2X1
+XNAND3X1_92 _607_ vdd gnd sel_A[9] _611_ _612_ NAND3X1
+XNAND3X1_93 _603_ vdd gnd SEL[3] _612_ _613_ NAND3X1
+XAOI21X1_8 gnd vdd _594_ _613_ _478_[3] _614_ AOI21X1
+XDFFPOSX1_5 vdd _478_[0] gnd _0_[12] CLK DFFPOSX1
+XDFFPOSX1_6 vdd _478_[1] gnd _0_[13] CLK DFFPOSX1
+XDFFPOSX1_7 vdd _478_[2] gnd _0_[14] CLK DFFPOSX1
+XDFFPOSX1_8 vdd _478_[3] gnd _0_[15] CLK DFFPOSX1
+XBUFX2_1 vdd gnd _0_[0] temp[0] BUFX2
+XBUFX2_2 vdd gnd _0_[1] temp[1] BUFX2
+XBUFX2_3 vdd gnd _0_[2] temp[2] BUFX2
+XBUFX2_4 vdd gnd _0_[3] temp[3] BUFX2
+XBUFX2_5 vdd gnd _0_[4] temp[4] BUFX2
+XBUFX2_6 vdd gnd _0_[5] temp[5] BUFX2
+XBUFX2_7 vdd gnd _0_[6] temp[6] BUFX2
+XBUFX2_8 vdd gnd _0_[7] temp[7] BUFX2
+XBUFX2_9 vdd gnd _0_[8] temp[8] BUFX2
+XBUFX2_10 vdd gnd _0_[9] temp[9] BUFX2
+XBUFX2_11 vdd gnd _0_[10] temp[10] BUFX2
+XBUFX2_12 vdd gnd _0_[11] temp[11] BUFX2
+XBUFX2_13 vdd gnd _0_[12] temp[12] BUFX2
+XBUFX2_14 vdd gnd _0_[13] temp[13] BUFX2
+XBUFX2_15 vdd gnd _0_[14] temp[14] BUFX2
+XBUFX2_16 vdd gnd _0_[15] temp[15] BUFX2
+XINVX2_6 vdd gnd _137_ RESET_L INVX2
+XINVX2_7 vdd gnd _138_ SEL[0] INVX2
+XINVX2_8 vdd gnd _139_ sel_B[0] INVX2
+XINVX4_4 vdd gnd _140_ sel_B[1] INVX4
+XOR2X2_46 _141_ sel_B[2_bF$buf4] vdd gnd DATA_B[0] OR2X2
+XINVX1_62 DATA_B[16] _142_ vdd gnd INVX1
+XNAND2X1_79 vdd _143_ gnd sel_B[2_bF$buf3] _142_ NAND2X1
+XNAND3X1_94 _141_ vdd gnd _140_ _143_ _144_ NAND3X1
+XINVX1_63 DATA_B[24] _145_ vdd gnd INVX1
+XNAND2X1_80 vdd _146_ gnd sel_B[2_bF$buf2] _145_ NAND2X1
+XOR2X2_47 _147_ DATA_B[8] vdd gnd sel_B[2_bF$buf1] OR2X2
+XNAND3X1_95 _147_ vdd gnd sel_B[1] _146_ _148_ NAND3X1
+XNAND3X1_96 _144_ vdd gnd _139_ _148_ _149_ NAND3X1
+XOR2X2_48 _150_ DATA_B[4] vdd gnd sel_B[2_bF$buf0] OR2X2
+XINVX1_64 DATA_B[20] _151_ vdd gnd INVX1
+XNAND2X1_81 vdd _152_ gnd sel_B[2_bF$buf4] _151_ NAND2X1
+XNAND3X1_97 _150_ vdd gnd _140_ _152_ _153_ NAND3X1
+XINVX1_65 DATA_B[12] _154_ vdd gnd INVX1
+XNAND2X1_82 vdd _155_ gnd sel_B[2_bF$buf3] DATA_B[28] NAND2X1
+XOAI21X1_17 gnd vdd _154_ sel_B[2_bF$buf2] _156_ _155_ OAI21X1
+XNAND2X1_83 vdd _157_ gnd sel_B[1] _156_ NAND2X1
+XNAND3X1_98 _153_ vdd gnd sel_B[0] _157_ _158_ NAND3X1
+XNAND3X1_99 _149_ vdd gnd _138_ _158_ _159_ NAND3X1
+XINVX2_9 vdd gnd _2_ sel_A[0] INVX2
+XINVX4_5 vdd gnd _3_ sel_A[1] INVX4
+XOR2X2_49 _4_ sel_A[2_bF$buf4] vdd gnd DATA_A[0] OR2X2
+XINVX1_66 DATA_A[16] _5_ vdd gnd INVX1
+XNAND2X1_84 vdd _6_ gnd sel_A[2_bF$buf3] _5_ NAND2X1
+XNAND3X1_100 _4_ vdd gnd _3_ _6_ _7_ NAND3X1
+XINVX1_67 DATA_A[24] _8_ vdd gnd INVX1
+XNAND2X1_85 vdd _9_ gnd sel_A[2_bF$buf2] _8_ NAND2X1
+XOR2X2_50 _10_ DATA_A[8] vdd gnd sel_A[2_bF$buf1] OR2X2
+XNAND3X1_101 _10_ vdd gnd sel_A[1] _9_ _11_ NAND3X1
+XNAND3X1_102 _7_ vdd gnd _2_ _11_ _12_ NAND3X1
+XOR2X2_51 _13_ DATA_A[4] vdd gnd sel_A[2_bF$buf0] OR2X2
+XINVX1_68 DATA_A[20] _14_ vdd gnd INVX1
+XNAND2X1_86 vdd _15_ gnd sel_A[2_bF$buf4] _14_ NAND2X1
+XNAND3X1_103 _13_ vdd gnd _3_ _15_ _16_ NAND3X1
+XINVX1_69 DATA_A[12] _17_ vdd gnd INVX1
+XNAND2X1_87 vdd _18_ gnd sel_A[2_bF$buf3] DATA_A[28] NAND2X1
+XOAI21X1_18 gnd vdd _17_ sel_A[2_bF$buf2] _19_ _18_ OAI21X1
+XNAND2X1_88 vdd _20_ gnd sel_A[1] _19_ NAND2X1
+XNAND3X1_104 _16_ vdd gnd sel_A[0] _20_ _21_ NAND3X1
+XNAND3X1_105 _12_ vdd gnd SEL[0] _21_ _22_ NAND3X1
+XAOI21X1_9 gnd vdd _159_ _22_ _1_[0] _137_ AOI21X1
+XOR2X2_52 _23_ DATA_B[1] vdd gnd sel_B[2_bF$buf1] OR2X2
+XINVX1_70 DATA_B[17] _24_ vdd gnd INVX1
+XNAND2X1_89 vdd _25_ gnd sel_B[2_bF$buf0] _24_ NAND2X1
+XNAND3X1_106 _23_ vdd gnd _140_ _25_ _26_ NAND3X1
+XINVX1_71 DATA_B[25] _27_ vdd gnd INVX1
+XNAND2X1_90 vdd _28_ gnd sel_B[2_bF$buf4] _27_ NAND2X1
+XOR2X2_53 _29_ DATA_B[9] vdd gnd sel_B[2_bF$buf3] OR2X2
+XNAND3X1_107 _29_ vdd gnd sel_B[1] _28_ _30_ NAND3X1
+XNAND3X1_108 _26_ vdd gnd _139_ _30_ _31_ NAND3X1
+XOR2X2_54 _32_ DATA_B[5] vdd gnd sel_B[2_bF$buf2] OR2X2
+XINVX1_72 DATA_B[21] _33_ vdd gnd INVX1
+XNAND2X1_91 vdd _34_ gnd sel_B[2_bF$buf1] _33_ NAND2X1
+XNAND3X1_109 _32_ vdd gnd _140_ _34_ _35_ NAND3X1
+XINVX1_73 DATA_B[13] _36_ vdd gnd INVX1
+XNAND2X1_92 vdd _37_ gnd sel_B[2_bF$buf0] DATA_B[29] NAND2X1
+XOAI21X1_19 gnd vdd _36_ sel_B[2_bF$buf4] _38_ _37_ OAI21X1
+XNAND2X1_93 vdd _39_ gnd sel_B[1] _38_ NAND2X1
+XNAND3X1_110 _35_ vdd gnd sel_B[0] _39_ _40_ NAND3X1
+XNAND3X1_111 _31_ vdd gnd _138_ _40_ _41_ NAND3X1
+XOR2X2_55 _42_ DATA_A[1] vdd gnd sel_A[2_bF$buf1] OR2X2
+XINVX1_74 DATA_A[17] _43_ vdd gnd INVX1
+XNAND2X1_94 vdd _44_ gnd sel_A[2_bF$buf0] _43_ NAND2X1
+XNAND3X1_112 _42_ vdd gnd _3_ _44_ _45_ NAND3X1
+XINVX1_75 DATA_A[25] _46_ vdd gnd INVX1
+XNAND2X1_95 vdd _47_ gnd sel_A[2_bF$buf4] _46_ NAND2X1
+XOR2X2_56 _48_ DATA_A[9] vdd gnd sel_A[2_bF$buf3] OR2X2
+XNAND3X1_113 _48_ vdd gnd sel_A[1] _47_ _49_ NAND3X1
+XNAND3X1_114 _45_ vdd gnd _2_ _49_ _50_ NAND3X1
+XOR2X2_57 _51_ DATA_A[5] vdd gnd sel_A[2_bF$buf2] OR2X2
+XINVX1_76 DATA_A[21] _52_ vdd gnd INVX1
+XNAND2X1_96 vdd _53_ gnd sel_A[2_bF$buf1] _52_ NAND2X1
+XNAND3X1_115 _51_ vdd gnd _3_ _53_ _54_ NAND3X1
+XINVX1_77 DATA_A[13] _55_ vdd gnd INVX1
+XNAND2X1_97 vdd _56_ gnd sel_A[2_bF$buf0] DATA_A[29] NAND2X1
+XOAI21X1_20 gnd vdd _55_ sel_A[2_bF$buf4] _57_ _56_ OAI21X1
+XNAND2X1_98 vdd _58_ gnd sel_A[1] _57_ NAND2X1
+XNAND3X1_116 _54_ vdd gnd sel_A[0] _58_ _59_ NAND3X1
+XNAND3X1_117 _50_ vdd gnd SEL[0] _59_ _60_ NAND3X1
+XAOI21X1_10 gnd vdd _41_ _60_ _1_[1] _137_ AOI21X1
+XOR2X2_58 _61_ DATA_B[2] vdd gnd sel_B[2_bF$buf3] OR2X2
+XINVX1_78 DATA_B[18] _62_ vdd gnd INVX1
+XNAND2X1_99 vdd _63_ gnd sel_B[2_bF$buf2] _62_ NAND2X1
+XNAND3X1_118 _61_ vdd gnd _140_ _63_ _64_ NAND3X1
+XINVX1_79 DATA_B[26] _65_ vdd gnd INVX1
+XNAND2X1_100 vdd _66_ gnd sel_B[2_bF$buf1] _65_ NAND2X1
+XOR2X2_59 _67_ DATA_B[10] vdd gnd sel_B[2_bF$buf0] OR2X2
+XNAND3X1_119 _67_ vdd gnd sel_B[1] _66_ _68_ NAND3X1
+XNAND3X1_120 _64_ vdd gnd _139_ _68_ _69_ NAND3X1
+XOR2X2_60 _70_ DATA_B[6] vdd gnd sel_B[2_bF$buf4] OR2X2
+XINVX1_80 DATA_B[22] _71_ vdd gnd INVX1
+XNAND2X1_101 vdd _72_ gnd sel_B[2_bF$buf3] _71_ NAND2X1
+XNAND3X1_121 _70_ vdd gnd _140_ _72_ _73_ NAND3X1
+XINVX1_81 DATA_B[14] _74_ vdd gnd INVX1
+XNAND2X1_102 vdd _75_ gnd sel_B[2_bF$buf2] DATA_B[30] NAND2X1
+XOAI21X1_21 gnd vdd _74_ sel_B[2_bF$buf1] _76_ _75_ OAI21X1
+XNAND2X1_103 vdd _77_ gnd sel_B[1] _76_ NAND2X1
+XNAND3X1_122 _73_ vdd gnd sel_B[0] _77_ _78_ NAND3X1
+XNAND3X1_123 _69_ vdd gnd _138_ _78_ _79_ NAND3X1
+XOR2X2_61 _80_ DATA_A[6] vdd gnd sel_A[2_bF$buf3] OR2X2
+XINVX1_82 DATA_A[22] _81_ vdd gnd INVX1
+XNAND2X1_104 vdd _82_ gnd sel_A[2_bF$buf2] _81_ NAND2X1
+XNAND3X1_124 _80_ vdd gnd _3_ _82_ _83_ NAND3X1
+XINVX1_83 DATA_A[30] _84_ vdd gnd INVX1
+XNAND2X1_105 vdd _85_ gnd sel_A[2_bF$buf1] _84_ NAND2X1
+XOR2X2_62 _86_ DATA_A[14] vdd gnd sel_A[2_bF$buf0] OR2X2
+XNAND3X1_125 _86_ vdd gnd sel_A[1] _85_ _87_ NAND3X1
+XNAND3X1_126 _83_ vdd gnd sel_A[0] _87_ _88_ NAND3X1
+XOR2X2_63 _89_ DATA_A[2] vdd gnd sel_A[2_bF$buf4] OR2X2
+XINVX1_84 DATA_A[18] _90_ vdd gnd INVX1
+XNAND2X1_106 vdd _91_ gnd sel_A[2_bF$buf3] _90_ NAND2X1
+XNAND3X1_127 _89_ vdd gnd _3_ _91_ _92_ NAND3X1
+XINVX1_85 DATA_A[10] _93_ vdd gnd INVX1
+XNAND2X1_107 vdd _94_ gnd sel_A[2_bF$buf2] DATA_A[26] NAND2X1
+XOAI21X1_22 gnd vdd _93_ sel_A[2_bF$buf1] _95_ _94_ OAI21X1
+XNAND2X1_108 vdd _96_ gnd sel_A[1] _95_ NAND2X1
+XNAND3X1_128 _92_ vdd gnd _2_ _96_ _97_ NAND3X1
+XNAND3X1_129 _88_ vdd gnd SEL[0] _97_ _98_ NAND3X1
+XAOI21X1_11 gnd vdd _79_ _98_ _1_[2] _137_ AOI21X1
+XOR2X2_64 _99_ DATA_B[3] vdd gnd sel_B[2_bF$buf0] OR2X2
+XINVX1_86 DATA_B[19] _100_ vdd gnd INVX1
+XNAND2X1_109 vdd _101_ gnd sel_B[2_bF$buf4] _100_ NAND2X1
+XNAND3X1_130 _99_ vdd gnd _140_ _101_ _102_ NAND3X1
+XINVX1_87 DATA_B[27] _103_ vdd gnd INVX1
+XNAND2X1_110 vdd _104_ gnd sel_B[2_bF$buf3] _103_ NAND2X1
+XOR2X2_65 _105_ DATA_B[11] vdd gnd sel_B[2_bF$buf2] OR2X2
+XNAND3X1_131 _105_ vdd gnd sel_B[1] _104_ _106_ NAND3X1
+XNAND3X1_132 _102_ vdd gnd _139_ _106_ _107_ NAND3X1
+XOR2X2_66 _108_ DATA_B[7] vdd gnd sel_B[2_bF$buf1] OR2X2
+XINVX1_88 DATA_B[23] _109_ vdd gnd INVX1
+XNAND2X1_111 vdd _110_ gnd sel_B[2_bF$buf0] _109_ NAND2X1
+XNAND3X1_133 _108_ vdd gnd _140_ _110_ _111_ NAND3X1
+XINVX1_89 DATA_B[15] _112_ vdd gnd INVX1
+XNAND2X1_112 vdd _113_ gnd sel_B[2_bF$buf4] DATA_B[31] NAND2X1
+XOAI21X1_23 gnd vdd _112_ sel_B[2_bF$buf3] _114_ _113_ OAI21X1
+XNAND2X1_113 vdd _115_ gnd sel_B[1] _114_ NAND2X1
+XNAND3X1_134 _111_ vdd gnd sel_B[0] _115_ _116_ NAND3X1
+XNAND3X1_135 _107_ vdd gnd _138_ _116_ _117_ NAND3X1
+XOR2X2_67 _118_ DATA_A[3] vdd gnd sel_A[2_bF$buf0] OR2X2
+XINVX1_90 DATA_A[19] _119_ vdd gnd INVX1
+XNAND2X1_114 vdd _120_ gnd sel_A[2_bF$buf4] _119_ NAND2X1
+XNAND3X1_136 _118_ vdd gnd _3_ _120_ _121_ NAND3X1
+XINVX1_91 DATA_A[27] _122_ vdd gnd INVX1
+XNAND2X1_115 vdd _123_ gnd sel_A[2_bF$buf3] _122_ NAND2X1
+XOR2X2_68 _124_ DATA_A[11] vdd gnd sel_A[2_bF$buf2] OR2X2
+XNAND3X1_137 _124_ vdd gnd sel_A[1] _123_ _125_ NAND3X1
+XNAND3X1_138 _121_ vdd gnd _2_ _125_ _126_ NAND3X1
+XOR2X2_69 _127_ DATA_A[7] vdd gnd sel_A[2_bF$buf1] OR2X2
+XINVX1_92 DATA_A[23] _128_ vdd gnd INVX1
+XNAND2X1_116 vdd _129_ gnd sel_A[2_bF$buf0] _128_ NAND2X1
+XNAND3X1_139 _127_ vdd gnd _3_ _129_ _130_ NAND3X1
+XINVX1_93 DATA_A[15] _131_ vdd gnd INVX1
+XNAND2X1_117 vdd _132_ gnd sel_A[2_bF$buf4] DATA_A[31] NAND2X1
+XOAI21X1_24 gnd vdd _131_ sel_A[2_bF$buf3] _133_ _132_ OAI21X1
+XNAND2X1_118 vdd _134_ gnd sel_A[1] _133_ NAND2X1
+XNAND3X1_140 _130_ vdd gnd sel_A[0] _134_ _135_ NAND3X1
+XNAND3X1_141 _126_ vdd gnd SEL[0] _135_ _136_ NAND3X1
+XAOI21X1_12 gnd vdd _117_ _136_ _1_[3] _137_ AOI21X1
+XDFFPOSX1_9 vdd _1_[0] gnd _0_[0] CLK DFFPOSX1
+XDFFPOSX1_10 vdd _1_[1] gnd _0_[1] CLK DFFPOSX1
+XDFFPOSX1_11 vdd _1_[2] gnd _0_[2] CLK DFFPOSX1
+XDFFPOSX1_12 vdd _1_[3] gnd _0_[3] CLK DFFPOSX1
+XINVX2_10 vdd gnd _296_ RESET_L INVX2
+XINVX2_11 vdd gnd _297_ SEL[1] INVX2
+XINVX2_12 vdd gnd _298_ sel_B[3] INVX2
+XINVX4_6 vdd gnd _299_ sel_B[4] INVX4
+XOR2X2_70 _300_ sel_B[5_bF$buf4] vdd gnd DATA_B[0] OR2X2
+XINVX1_94 DATA_B[16] _301_ vdd gnd INVX1
+XNAND2X1_119 vdd _302_ gnd sel_B[5_bF$buf3] _301_ NAND2X1
+XNAND3X1_142 _300_ vdd gnd _299_ _302_ _303_ NAND3X1
+XINVX1_95 DATA_B[24] _304_ vdd gnd INVX1
+XNAND2X1_120 vdd _305_ gnd sel_B[5_bF$buf2] _304_ NAND2X1
+XOR2X2_71 _306_ DATA_B[8] vdd gnd sel_B[5_bF$buf1] OR2X2
+XNAND3X1_143 _306_ vdd gnd sel_B[4] _305_ _307_ NAND3X1
+XNAND3X1_144 _303_ vdd gnd _298_ _307_ _308_ NAND3X1
+XOR2X2_72 _309_ DATA_B[4] vdd gnd sel_B[5_bF$buf0] OR2X2
+XINVX1_96 DATA_B[20] _310_ vdd gnd INVX1
+XNAND2X1_121 vdd _311_ gnd sel_B[5_bF$buf4] _310_ NAND2X1
+XNAND3X1_145 _309_ vdd gnd _299_ _311_ _312_ NAND3X1
+XINVX1_97 DATA_B[12] _313_ vdd gnd INVX1
+XNAND2X1_122 vdd _314_ gnd sel_B[5_bF$buf3] DATA_B[28] NAND2X1
+XOAI21X1_25 gnd vdd _313_ sel_B[5_bF$buf2] _315_ _314_ OAI21X1
+XNAND2X1_123 vdd _316_ gnd sel_B[4] _315_ NAND2X1
+XNAND3X1_146 _312_ vdd gnd sel_B[3] _316_ _317_ NAND3X1
+XNAND3X1_147 _308_ vdd gnd _297_ _317_ _318_ NAND3X1
+XINVX2_13 vdd gnd _161_ sel_A[3] INVX2
+XINVX4_7 vdd gnd _162_ sel_A[4] INVX4
+XOR2X2_73 _163_ sel_A[5_bF$buf4] vdd gnd DATA_A[0] OR2X2
+XINVX1_98 DATA_A[16] _164_ vdd gnd INVX1
+XNAND2X1_124 vdd _165_ gnd sel_A[5_bF$buf3] _164_ NAND2X1
+XNAND3X1_148 _163_ vdd gnd _162_ _165_ _166_ NAND3X1
+XINVX1_99 DATA_A[24] _167_ vdd gnd INVX1
+XNAND2X1_125 vdd _168_ gnd sel_A[5_bF$buf2] _167_ NAND2X1
+XOR2X2_74 _169_ DATA_A[8] vdd gnd sel_A[5_bF$buf1] OR2X2
+XNAND3X1_149 _169_ vdd gnd sel_A[4] _168_ _170_ NAND3X1
+XNAND3X1_150 _166_ vdd gnd _161_ _170_ _171_ NAND3X1
+XOR2X2_75 _172_ DATA_A[4] vdd gnd sel_A[5_bF$buf0] OR2X2
+XINVX1_100 DATA_A[20] _173_ vdd gnd INVX1
+XNAND2X1_126 vdd _174_ gnd sel_A[5_bF$buf4] _173_ NAND2X1
+XNAND3X1_151 _172_ vdd gnd _162_ _174_ _175_ NAND3X1
+XINVX1_101 DATA_A[12] _176_ vdd gnd INVX1
+XNAND2X1_127 vdd _177_ gnd sel_A[5_bF$buf3] DATA_A[28] NAND2X1
+XOAI21X1_26 gnd vdd _176_ sel_A[5_bF$buf2] _178_ _177_ OAI21X1
+XNAND2X1_128 vdd _179_ gnd sel_A[4] _178_ NAND2X1
+XNAND3X1_152 _175_ vdd gnd sel_A[3] _179_ _180_ NAND3X1
+XNAND3X1_153 _171_ vdd gnd SEL[1] _180_ _181_ NAND3X1
+XAOI21X1_13 gnd vdd _318_ _181_ _160_[0] _296_ AOI21X1
+XOR2X2_76 _182_ DATA_B[1] vdd gnd sel_B[5_bF$buf1] OR2X2
+XINVX1_102 DATA_B[17] _183_ vdd gnd INVX1
+XNAND2X1_129 vdd _184_ gnd sel_B[5_bF$buf0] _183_ NAND2X1
+XNAND3X1_154 _182_ vdd gnd _299_ _184_ _185_ NAND3X1
+XINVX1_103 DATA_B[25] _186_ vdd gnd INVX1
+XNAND2X1_130 vdd _187_ gnd sel_B[5_bF$buf4] _186_ NAND2X1
+XOR2X2_77 _188_ DATA_B[9] vdd gnd sel_B[5_bF$buf3] OR2X2
+XNAND3X1_155 _188_ vdd gnd sel_B[4] _187_ _189_ NAND3X1
+XNAND3X1_156 _185_ vdd gnd _298_ _189_ _190_ NAND3X1
+XOR2X2_78 _191_ DATA_B[5] vdd gnd sel_B[5_bF$buf2] OR2X2
+XINVX1_104 DATA_B[21] _192_ vdd gnd INVX1
+XNAND2X1_131 vdd _193_ gnd sel_B[5_bF$buf1] _192_ NAND2X1
+XNAND3X1_157 _191_ vdd gnd _299_ _193_ _194_ NAND3X1
+XINVX1_105 DATA_B[13] _195_ vdd gnd INVX1
+XNAND2X1_132 vdd _196_ gnd sel_B[5_bF$buf0] DATA_B[29] NAND2X1
+XOAI21X1_27 gnd vdd _195_ sel_B[5_bF$buf4] _197_ _196_ OAI21X1
+XNAND2X1_133 vdd _198_ gnd sel_B[4] _197_ NAND2X1
+XNAND3X1_158 _194_ vdd gnd sel_B[3] _198_ _199_ NAND3X1
+XNAND3X1_159 _190_ vdd gnd _297_ _199_ _200_ NAND3X1
+XOR2X2_79 _201_ DATA_A[1] vdd gnd sel_A[5_bF$buf1] OR2X2
+XINVX1_106 DATA_A[17] _202_ vdd gnd INVX1
+XNAND2X1_134 vdd _203_ gnd sel_A[5_bF$buf0] _202_ NAND2X1
+XNAND3X1_160 _201_ vdd gnd _162_ _203_ _204_ NAND3X1
+XINVX1_107 DATA_A[25] _205_ vdd gnd INVX1
+XNAND2X1_135 vdd _206_ gnd sel_A[5_bF$buf4] _205_ NAND2X1
+XOR2X2_80 _207_ DATA_A[9] vdd gnd sel_A[5_bF$buf3] OR2X2
+XNAND3X1_161 _207_ vdd gnd sel_A[4] _206_ _208_ NAND3X1
+XNAND3X1_162 _204_ vdd gnd _161_ _208_ _209_ NAND3X1
+XOR2X2_81 _210_ DATA_A[5] vdd gnd sel_A[5_bF$buf2] OR2X2
+XINVX1_108 DATA_A[21] _211_ vdd gnd INVX1
+XNAND2X1_136 vdd _212_ gnd sel_A[5_bF$buf1] _211_ NAND2X1
+XNAND3X1_163 _210_ vdd gnd _162_ _212_ _213_ NAND3X1
+XINVX1_109 DATA_A[13] _214_ vdd gnd INVX1
+XNAND2X1_137 vdd _215_ gnd sel_A[5_bF$buf0] DATA_A[29] NAND2X1
+XOAI21X1_28 gnd vdd _214_ sel_A[5_bF$buf4] _216_ _215_ OAI21X1
+XNAND2X1_138 vdd _217_ gnd sel_A[4] _216_ NAND2X1
+XNAND3X1_164 _213_ vdd gnd sel_A[3] _217_ _218_ NAND3X1
+XNAND3X1_165 _209_ vdd gnd SEL[1] _218_ _219_ NAND3X1
+XAOI21X1_14 gnd vdd _200_ _219_ _160_[1] _296_ AOI21X1
+XOR2X2_82 _220_ DATA_B[2] vdd gnd sel_B[5_bF$buf3] OR2X2
+XINVX1_110 DATA_B[18] _221_ vdd gnd INVX1
+XNAND2X1_139 vdd _222_ gnd sel_B[5_bF$buf2] _221_ NAND2X1
+XNAND3X1_166 _220_ vdd gnd _299_ _222_ _223_ NAND3X1
+XINVX1_111 DATA_B[26] _224_ vdd gnd INVX1
+XNAND2X1_140 vdd _225_ gnd sel_B[5_bF$buf1] _224_ NAND2X1
+XOR2X2_83 _226_ DATA_B[10] vdd gnd sel_B[5_bF$buf0] OR2X2
+XNAND3X1_167 _226_ vdd gnd sel_B[4] _225_ _227_ NAND3X1
+XNAND3X1_168 _223_ vdd gnd _298_ _227_ _228_ NAND3X1
+XOR2X2_84 _229_ DATA_B[6] vdd gnd sel_B[5_bF$buf4] OR2X2
+XINVX1_112 DATA_B[22] _230_ vdd gnd INVX1
+XNAND2X1_141 vdd _231_ gnd sel_B[5_bF$buf3] _230_ NAND2X1
+XNAND3X1_169 _229_ vdd gnd _299_ _231_ _232_ NAND3X1
+XINVX1_113 DATA_B[14] _233_ vdd gnd INVX1
+XNAND2X1_142 vdd _234_ gnd sel_B[5_bF$buf2] DATA_B[30] NAND2X1
+XOAI21X1_29 gnd vdd _233_ sel_B[5_bF$buf1] _235_ _234_ OAI21X1
+XNAND2X1_143 vdd _236_ gnd sel_B[4] _235_ NAND2X1
+XNAND3X1_170 _232_ vdd gnd sel_B[3] _236_ _237_ NAND3X1
+XNAND3X1_171 _228_ vdd gnd _297_ _237_ _238_ NAND3X1
+XOR2X2_85 _239_ DATA_A[6] vdd gnd sel_A[5_bF$buf3] OR2X2
+XINVX1_114 DATA_A[22] _240_ vdd gnd INVX1
+XNAND2X1_144 vdd _241_ gnd sel_A[5_bF$buf2] _240_ NAND2X1
+XNAND3X1_172 _239_ vdd gnd _162_ _241_ _242_ NAND3X1
+XINVX1_115 DATA_A[30] _243_ vdd gnd INVX1
+XNAND2X1_145 vdd _244_ gnd sel_A[5_bF$buf1] _243_ NAND2X1
+XOR2X2_86 _245_ DATA_A[14] vdd gnd sel_A[5_bF$buf0] OR2X2
+XNAND3X1_173 _245_ vdd gnd sel_A[4] _244_ _246_ NAND3X1
+XNAND3X1_174 _242_ vdd gnd sel_A[3] _246_ _247_ NAND3X1
+XOR2X2_87 _248_ DATA_A[2] vdd gnd sel_A[5_bF$buf4] OR2X2
+XINVX1_116 DATA_A[18] _249_ vdd gnd INVX1
+XNAND2X1_146 vdd _250_ gnd sel_A[5_bF$buf3] _249_ NAND2X1
+XNAND3X1_175 _248_ vdd gnd _162_ _250_ _251_ NAND3X1
+XINVX1_117 DATA_A[10] _252_ vdd gnd INVX1
+XNAND2X1_147 vdd _253_ gnd sel_A[5_bF$buf2] DATA_A[26] NAND2X1
+XOAI21X1_30 gnd vdd _252_ sel_A[5_bF$buf1] _254_ _253_ OAI21X1
+XNAND2X1_148 vdd _255_ gnd sel_A[4] _254_ NAND2X1
+XNAND3X1_176 _251_ vdd gnd _161_ _255_ _256_ NAND3X1
+XNAND3X1_177 _247_ vdd gnd SEL[1] _256_ _257_ NAND3X1
+XAOI21X1_15 gnd vdd _238_ _257_ _160_[2] _296_ AOI21X1
+XOR2X2_88 _258_ DATA_B[3] vdd gnd sel_B[5_bF$buf0] OR2X2
+XINVX1_118 DATA_B[19] _259_ vdd gnd INVX1
+XNAND2X1_149 vdd _260_ gnd sel_B[5_bF$buf4] _259_ NAND2X1
+XNAND3X1_178 _258_ vdd gnd _299_ _260_ _261_ NAND3X1
+XINVX1_119 DATA_B[27] _262_ vdd gnd INVX1
+XNAND2X1_150 vdd _263_ gnd sel_B[5_bF$buf3] _262_ NAND2X1
+XOR2X2_89 _264_ DATA_B[11] vdd gnd sel_B[5_bF$buf2] OR2X2
+XNAND3X1_179 _264_ vdd gnd sel_B[4] _263_ _265_ NAND3X1
+XNAND3X1_180 _261_ vdd gnd _298_ _265_ _266_ NAND3X1
+XOR2X2_90 _267_ DATA_B[7] vdd gnd sel_B[5_bF$buf1] OR2X2
+XINVX1_120 DATA_B[23] _268_ vdd gnd INVX1
+XNAND2X1_151 vdd _269_ gnd sel_B[5_bF$buf0] _268_ NAND2X1
+XNAND3X1_181 _267_ vdd gnd _299_ _269_ _270_ NAND3X1
+XINVX1_121 DATA_B[15] _271_ vdd gnd INVX1
+XNAND2X1_152 vdd _272_ gnd sel_B[5_bF$buf4] DATA_B[31] NAND2X1
+XOAI21X1_31 gnd vdd _271_ sel_B[5_bF$buf3] _273_ _272_ OAI21X1
+XNAND2X1_153 vdd _274_ gnd sel_B[4] _273_ NAND2X1
+XNAND3X1_182 _270_ vdd gnd sel_B[3] _274_ _275_ NAND3X1
+XNAND3X1_183 _266_ vdd gnd _297_ _275_ _276_ NAND3X1
+XOR2X2_91 _277_ DATA_A[3] vdd gnd sel_A[5_bF$buf0] OR2X2
+XINVX1_122 DATA_A[19] _278_ vdd gnd INVX1
+XNAND2X1_154 vdd _279_ gnd sel_A[5_bF$buf4] _278_ NAND2X1
+XNAND3X1_184 _277_ vdd gnd _162_ _279_ _280_ NAND3X1
+XINVX1_123 DATA_A[27] _281_ vdd gnd INVX1
+XNAND2X1_155 vdd _282_ gnd sel_A[5_bF$buf3] _281_ NAND2X1
+XOR2X2_92 _283_ DATA_A[11] vdd gnd sel_A[5_bF$buf2] OR2X2
+XNAND3X1_185 _283_ vdd gnd sel_A[4] _282_ _284_ NAND3X1
+XNAND3X1_186 _280_ vdd gnd _161_ _284_ _285_ NAND3X1
+XOR2X2_93 _286_ DATA_A[7] vdd gnd sel_A[5_bF$buf1] OR2X2
+XINVX1_124 DATA_A[23] _287_ vdd gnd INVX1
+XNAND2X1_156 vdd _288_ gnd sel_A[5_bF$buf0] _287_ NAND2X1
+XNAND3X1_187 _286_ vdd gnd _162_ _288_ _289_ NAND3X1
+XINVX1_125 DATA_A[15] _290_ vdd gnd INVX1
+XNAND2X1_157 vdd _291_ gnd sel_A[5_bF$buf4] DATA_A[31] NAND2X1
+XOAI21X1_32 gnd vdd _290_ sel_A[5_bF$buf3] _292_ _291_ OAI21X1
+XNAND2X1_158 vdd _293_ gnd sel_A[4] _292_ NAND2X1
+XNAND3X1_188 _289_ vdd gnd sel_A[3] _293_ _294_ NAND3X1
+XNAND3X1_189 _285_ vdd gnd SEL[1] _294_ _295_ NAND3X1
+XAOI21X1_16 gnd vdd _276_ _295_ _160_[3] _296_ AOI21X1
+XDFFPOSX1_13 vdd _160_[0] gnd _0_[4] CLK DFFPOSX1
+XDFFPOSX1_14 vdd _160_[1] gnd _0_[5] CLK DFFPOSX1
+XDFFPOSX1_15 vdd _160_[2] gnd _0_[6] CLK DFFPOSX1
+XDFFPOSX1_16 vdd _160_[3] gnd _0_[7] CLK DFFPOSX1
+XINVX2_14 vdd gnd _455_ RESET_L INVX2
+XINVX2_15 vdd gnd _456_ SEL[2] INVX2
+XINVX2_16 vdd gnd _457_ sel_B[6] INVX2
+XINVX4_8 vdd gnd _458_ sel_B[7] INVX4
+XOR2X2_94 _459_ sel_B[8_bF$buf2] vdd gnd DATA_B[0] OR2X2
+XINVX1_126 DATA_B[16] _460_ vdd gnd INVX1
+XNAND2X1_159 vdd _461_ gnd sel_B[8_bF$buf1] _460_ NAND2X1
+XNAND3X1_190 _459_ vdd gnd _458_ _461_ _462_ NAND3X1
+XINVX1_127 DATA_B[24] _463_ vdd gnd INVX1
+XNAND2X1_160 vdd _464_ gnd sel_B[8_bF$buf0] _463_ NAND2X1
+XOR2X2_95 _465_ DATA_B[8] vdd gnd sel_B[8_bF$buf4] OR2X2
+XNAND3X1_191 _465_ vdd gnd sel_B[7] _464_ _466_ NAND3X1
+XNAND3X1_192 _462_ vdd gnd _457_ _466_ _467_ NAND3X1
+XOR2X2_96 _468_ DATA_B[4] vdd gnd sel_B[8_bF$buf3] OR2X2
+XINVX1_128 DATA_B[20] _469_ vdd gnd INVX1
+.ends selector4
+ 

@@ -11,18 +11,18 @@ module testbench;
     wire		CLK;			// From prob of prob.v
     wire [31:0]		DATA_A;			// From prob of prob.v
     wire [31:0]		DATA_B;			// From prob of prob.v
+    wire [3:0] [3:0]	NIBBLE_OUT;		// From pog of selector4.v
     wire		RESET_L;		// From prob of prob.v
     wire [3:0]		SEL;			// From prob of prob.v
     wire [3:0] [2:0]	sel_A;			// From prob of prob.v
     wire [3:0] [2:0]	sel_B;			// From prob of prob.v
-    wire [15:0]		temp;			// From pog of selector4.v
     // End of automatics
 
 
 
     selector4 pog(/*AUTOINST*/
 		  // Outputs
-		  .temp			(temp[4*4-1:0]),
+		  .NIBBLE_OUT		(NIBBLE_OUT/*[3:0][3:0]*/),
 		  // Inputs
 		  .DATA_A		(DATA_A[31:0]),
 		  .DATA_B		(DATA_B[31:0]),
@@ -43,6 +43,6 @@ module testbench;
 	      .SEL			(SEL[3:0]),
 	      .RESET_L			(RESET_L),
 	      // Inputs
-	      .temp			(temp[4*4-1:0]));
+	      .NIBBLE_OUT		(NIBBLE_OUT/*[3:0][3:0]*/));
 
 endmodule

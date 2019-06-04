@@ -1,5 +1,5 @@
 $date
-	Mon Jun  3 21:27:16 2019
+	Tue Jun  4 16:16:05 2019
 $end
 $version
 	Icarus Verilog
@@ -8,29 +8,37 @@ $timescale
 	1s
 $end
 $scope module testbench $end
-$var wire 12 ! sel_B [11:0] $end
-$var wire 12 " sel_A [11:0] $end
-$var wire 4 # SEL [3:0] $end
-$var wire 1 $ RESET_L $end
-$var wire 16 % NIBBLE_OUT [15:0] $end
+$var wire 16 ! temp [15:0] $end
+$var wire 12 " sel_B [11:0] $end
+$var wire 12 # sel_A [11:0] $end
+$var wire 4 $ SEL [3:0] $end
+$var wire 1 % RESET_L $end
 $var wire 32 & DATA_B [31:0] $end
 $var wire 32 ' DATA_A [31:0] $end
 $var wire 1 ( CLK $end
 $scope module pog $end
-$var wire 12 ) sel_B [11:0] $end
-$var wire 12 * sel_A [11:0] $end
-$var wire 4 + SEL [3:0] $end
-$var wire 1 $ RESET_L $end
-$var wire 16 , NIBBLE_OUT [15:0] $end
+$var wire 16 ) temp [15:0] $end
+$var wire 12 * sel_B [11:0] $end
+$var wire 12 + sel_A [11:0] $end
+$var wire 4 , SEL [3:0] $end
+$var wire 1 % RESET_L $end
 $var wire 32 - DATA_B [31:0] $end
 $var wire 32 . DATA_A [31:0] $end
 $var wire 1 ( CLK $end
+$scope begin outs[0] $end
+$upscope $end
+$scope begin outs[1] $end
+$upscope $end
+$scope begin outs[2] $end
+$upscope $end
+$scope begin outs[3] $end
+$upscope $end
 $scope begin selectores[0] $end
 $scope module seli $end
 $var wire 1 / sel $end
 $var wire 3 0 selA [2:0] $end
 $var wire 3 1 selB [2:0] $end
-$var wire 1 $ reset_L $end
+$var wire 1 % reset_L $end
 $var wire 32 2 dataB [31:0] $end
 $var wire 32 3 dataA [31:0] $end
 $var wire 1 ( clk $end
@@ -47,7 +55,7 @@ $scope module seli $end
 $var wire 1 : sel $end
 $var wire 3 ; selA [2:0] $end
 $var wire 3 < selB [2:0] $end
-$var wire 1 $ reset_L $end
+$var wire 1 % reset_L $end
 $var wire 32 = dataB [31:0] $end
 $var wire 32 > dataA [31:0] $end
 $var wire 1 ( clk $end
@@ -64,7 +72,7 @@ $scope module seli $end
 $var wire 1 E sel $end
 $var wire 3 F selA [2:0] $end
 $var wire 3 G selB [2:0] $end
-$var wire 1 $ reset_L $end
+$var wire 1 % reset_L $end
 $var wire 32 H dataB [31:0] $end
 $var wire 32 I dataA [31:0] $end
 $var wire 1 ( clk $end
@@ -81,7 +89,7 @@ $scope module seli $end
 $var wire 1 P sel $end
 $var wire 3 Q selA [2:0] $end
 $var wire 3 R selB [2:0] $end
-$var wire 1 $ reset_L $end
+$var wire 1 % reset_L $end
 $var wire 32 S dataB [31:0] $end
 $var wire 32 T dataA [31:0] $end
 $var wire 1 ( clk $end
@@ -95,11 +103,11 @@ $upscope $end
 $upscope $end
 $upscope $end
 $scope module prob $end
-$var wire 16 [ NIBBLE_OUT [15:0] $end
+$var wire 16 [ temp [15:0] $end
 $var reg 1 ( CLK $end
 $var reg 32 \ DATA_A [31:0] $end
 $var reg 32 ] DATA_B [31:0] $end
-$var reg 1 $ RESET_L $end
+$var reg 1 % RESET_L $end
 $var reg 4 ^ SEL [3:0] $end
 $var reg 12 _ sel_A [11:0] $end
 $var reg 12 ` sel_B [11:0] $end
@@ -160,18 +168,18 @@ b0 0
 0/
 b0 .
 b0 -
-bx ,
+b0 ,
 b0 +
 b0 *
-b0 )
+bx )
 0(
 b0 '
 b0 &
-bx %
-0$
+0%
+b0 $
 b0 #
 b0 "
-b0 !
+bx !
 $end
 #2
 b0 5
@@ -185,11 +193,11 @@ b0 J
 b0 L
 b0 V
 b0 U
-b0 %
-b0 ,
+b0 !
+b0 )
 b0 [
 b0 W
-1$
+1%
 1(
 #4
 0(
@@ -212,14 +220,14 @@ b1111 M
 b1111 Z
 b1010 Y
 b1111 X
-b11 #
-b11 +
+b11 $
+b11 ,
 b11 ^
-b11010001000 !
-b11010001000 )
+b11010001000 "
+b11010001000 *
 b11010001000 `
-b1 "
-b1 *
+b1 #
+b1 +
 b1 _
 b1010101111001101 &
 b1010101111001101 -
@@ -248,8 +256,8 @@ b1111 ?
 b1111 L
 b1011 K
 b1111 J
-b1111111111001101 %
-b1111111111001101 ,
+b1111111111001101 !
+b1111111111001101 )
 b1111111111001101 [
 b1111 W
 b1010 V

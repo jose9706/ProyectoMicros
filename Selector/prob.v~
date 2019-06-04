@@ -5,7 +5,7 @@ module prob(output reg CLK,
             output reg [3:0] [2:0] sel_B,
             output reg [3:0] SEL,
             output reg RESET_L,
-            input  [4*4-1:0] temp);
+            input [3:0] [3:0] NIBBLE_OUT);
 
 
     initial begin
