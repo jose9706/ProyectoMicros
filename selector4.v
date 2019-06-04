@@ -2,8 +2,8 @@
 
 
 module selector4(output reg [3:0] [31:0] NIBBLE_OUT,
-                 input [3:0] [31:0] DATA_A,
-                 input [3:0] [31:0] DATA_B,
+                 input [31:0] DATA_A,
+                 input [31:0] DATA_B,
                  input [3:0] [2:0] selA,
                  input [3:0] [2:0] selB,
                  input [3:0] sel,
@@ -14,8 +14,8 @@ module selector4(output reg [3:0] [31:0] NIBBLE_OUT,
         genvar i;
         for(i = 0; i <= 3; i = i + 1)
         begin: selectores
-            selector(DATA_A[i][31:0],
-                     DATA_B[i][31:0], 
+            selector(DATA_A[31:0],
+                     DATA_B[[31:0], 
                      selA[i][3:0],
                      selB[i][3:0],
                      sel[i],
