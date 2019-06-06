@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on mar 4 jun 16:26:00 CST 2019
+Qflow synthesis logfile created on mié 5 jun 20:18:03 CST 2019
 Running yosys for verilog parsing and synthesis
 yosys  -s selector4.ys
 
@@ -31,7 +31,7 @@ yosys  -s selector4.ys
 Imported 32 cell types from liberty file.
 
 2. Executing Verilog-2005 frontend.
-Parsing Verilog input from `/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v' to AST representation.
+Parsing Verilog input from `/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v' to AST representation.
 Generating RTLIL representation for module `\selector4'.
 Generating RTLIL representation for module `\selector'.
 Successfully finished Verilog frontend.
@@ -66,50 +66,50 @@ Removed a total of 0 dead cases.
 3.2.4. Executing PROC_ARST pass (detect async resets in processes).
 
 3.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\selector.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:52$13'.
+Creating decoders for process `\selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
      1/1: $0\nibbleOut[3:0]
-Creating decoders for process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$11'.
-     1/1: $0$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$4[3:0]$12
-Creating decoders for process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$9'.
-     1/1: $0$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$3[3:0]$10
-Creating decoders for process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$7'.
-     1/1: $0$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$2[3:0]$8
-Creating decoders for process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$5'.
-     1/1: $0$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$1[3:0]$6
+Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$11'.
+     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$4[3:0]$12
+Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$9'.
+     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$3[3:0]$10
+Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$7'.
+     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$2[3:0]$8
+Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$5'.
+     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$1[3:0]$6
 
 3.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\selector4.$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$4' from process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$11'.
-No latch inferred for signal `\selector4.$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$3' from process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$9'.
-No latch inferred for signal `\selector4.$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$2' from process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$7'.
-No latch inferred for signal `\selector4.$mem2bits$\NIBBLE_OUT$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$1' from process `\selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$5'.
+No latch inferred for signal `\selector4.$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$4' from process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$11'.
+No latch inferred for signal `\selector4.$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$3' from process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$9'.
+No latch inferred for signal `\selector4.$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$2' from process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$7'.
+No latch inferred for signal `\selector4.$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$1' from process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$5'.
 
 3.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\selector.\nibbleOut' using process `\selector.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:52$13'.
+Creating register for signal `\selector.\nibbleOut' using process `\selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
   created $dff cell `$procdff$25' with positive edge clock.
 
 3.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\selector.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:52$13'.
-Removing empty process `selector.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:52$13'.
-Removing empty process `selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$11'.
-Removing empty process `selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$9'.
-Removing empty process `selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$7'.
-Removing empty process `selector4.$proc$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:33$5'.
+Found and cleaned up 1 empty switch in `\selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
+Removing empty process `selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
+Removing empty process `selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$11'.
+Removing empty process `selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$9'.
+Removing empty process `selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$7'.
+Removing empty process `selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$5'.
 Cleaned up 1 empty switch.
 
 3.3. Executing OPT_EXPR pass (perform const folding).
-Replacing multiply-by-4 cell `$mul$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$15' in module `\selector' with shift-by-2.
-Replacing $add cell `$add$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$16' in module `\selector' with identity for port A.
-Replacing multiply-by-4 cell `$mul$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$18' in module `\selector' with shift-by-2.
-Replacing $add cell `$add$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$19' in module `\selector' with identity for port A.
+Replacing multiply-by-4 cell `$mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$15' in module `\selector' with shift-by-2.
+Replacing $add cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16' in module `\selector' with identity for port A.
+Replacing multiply-by-4 cell `$mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$18' in module `\selector' with shift-by-2.
+Replacing $add cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19' in module `\selector' with identity for port A.
 Optimizing away select inverter for $mux cell `$procmux$23' in module `selector'.
-Replacing $shl cell `$mul$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$15' (B=2'10, SHR=-2) in module `selector' with fixed wiring: { 27'000000000000000000000000000 \selA 2'00 }
-Replacing $shl cell `$mul$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$18' (B=2'10, SHR=-2) in module `selector' with fixed wiring: { 27'000000000000000000000000000 \selB 2'00 }
+Replacing $shl cell `$mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$15' (B=2'10, SHR=-2) in module `selector' with fixed wiring: { 27'000000000000000000000000000 \selA 2'00 }
+Replacing $shl cell `$mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$18' (B=2'10, SHR=-2) in module `selector' with fixed wiring: { 27'000000000000000000000000000 \selB 2'00 }
 
 3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \selector..
-  removing buffer cell `$add$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$19': $add$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$19_Y = $mul$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$18_Y
-  removing buffer cell `$add$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$16': $add$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$16_Y = $mul$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$15_Y
-  removing unused `$not' cell `$not$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:53$14'.
+  removing buffer cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19': $add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19_Y = $mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$18_Y
+  removing buffer cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16': $add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16_Y = $mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$15_Y
+  removing unused `$not' cell `$not$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:57$14'.
 Finding unused cells or wires in module \selector4..
 
 3.5. Executing CHECK pass (checking for obvious problems).
@@ -158,8 +158,8 @@ Finding unused cells or wires in module \selector4..
 3.6.9. Finished OPT passes. (There is nothing left to do.)
 
 3.7. Executing WREDUCE pass (reducing word size of cells).
-Removed top 26 bits (of 32) from port B of cell selector.$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17 ($shiftx).
-Removed top 26 bits (of 32) from port B of cell selector.$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20 ($shiftx).
+Removed top 26 bits (of 32) from port B of cell selector.$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17 ($shiftx).
+Removed top 26 bits (of 32) from port B of cell selector.$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20 ($shiftx).
 
 3.8. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module selector:
@@ -451,212 +451,212 @@ Removed 19 multiplexer ports.
 Removed 0 unused cells and 15 unused wires.
 
 3.18.6. Continuing TECHMAP pass.
-Mapping selector.$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17 using $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.
-Mapping selector.$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20 using $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.
-Mapping selector.$ternary$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$21 ($mux) with simplemap.
-Mapping selector.$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$procmux$128 ($mux) with simplemap.
-Mapping selector.$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$procmux$110 ($mux) with simplemap.
-Mapping selector.$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$procmux$119 ($mux) with simplemap.
-Mapping selector.$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$procmux$128 ($mux) with simplemap.
-Mapping selector.$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$procmux$110 ($mux) with simplemap.
-Mapping selector.$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$procmux$119 ($mux) with simplemap.
+Mapping selector.$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17 using $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.
+Mapping selector.$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20 using $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.
+Mapping selector.$ternary$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$21 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$procmux$128 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$procmux$110 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$procmux$119 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$procmux$128 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$procmux$110 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$procmux$119 ($mux) with simplemap.
 No more expansions possible.
 
 3.19. Executing OPT pass (performing simple optimizations).
 
 3.19.1. Executing OPT_EXPR pass (perform const folding).
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$174' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [32] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$175' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [33] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$176' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [34] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$177' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [35] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$178' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [36] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$179' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [37] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$180' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [38] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$181' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [39] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$182' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [40] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$183' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [41] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$184' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [42] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$185' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [43] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$186' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [44] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$187' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [45] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$188' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [46] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$189' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [47] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$190' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [48] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$191' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [49] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$192' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [50] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$193' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [51] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$194' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [52] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$195' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [53] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$196' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [54] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$197' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [55] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$198' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [56] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$199' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [57] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$200' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [58] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$201' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [59] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$202' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [60] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$203' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [61] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$204' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [62] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$205' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$3\buffer[63:0] [63] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$302' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [28] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$303' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [29] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$304' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [30] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$305' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [31] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$306' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [32] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$238' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [32] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$307' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [33] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$239' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [33] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$308' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [34] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$240' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [34] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$309' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [35] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$241' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [35] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$310' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [36] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$242' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [36] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$311' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [37] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$243' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [37] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$312' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [38] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$244' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [38] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$313' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [39] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$245' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [39] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$314' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [40] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$246' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [40] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$315' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [41] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$247' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [41] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$316' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [42] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$248' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [42] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$317' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [43] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$249' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [43] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$318' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [44] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$250' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [44] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$319' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [45] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$251' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [45] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$320' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [46] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$252' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [46] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$321' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [47] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$253' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [47] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$322' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [48] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$254' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [48] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$323' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [49] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$255' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [49] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$324' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [50] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$256' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [50] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$325' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [51] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$257' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [51] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$326' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [52] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$258' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [52] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$327' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [53] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$259' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [53] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$328' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [54] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$260' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [54] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$329' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [55] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$261' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [55] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$330' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [56] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$262' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [56] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$331' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [57] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$263' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [57] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$332' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [58] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$264' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [58] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$333' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.$10\buffer[63:0] [59] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$265' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [59] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$266' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [60] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$267' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [61] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$268' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [62] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$269' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$20.buffer [63] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$366' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [32] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$367' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [33] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$368' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [34] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$369' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [35] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$370' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [36] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$371' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [37] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$372' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [38] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$373' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [39] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$374' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [40] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$375' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [41] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$376' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [42] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$377' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [43] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$378' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [44] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$379' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [45] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$380' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [46] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$381' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [47] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$382' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [48] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$383' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [49] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$384' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [50] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$385' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [51] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$386' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [52] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$387' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [53] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$388' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [54] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$389' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [55] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$390' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [56] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$391' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [57] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$392' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [58] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$393' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [59] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$394' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [60] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$395' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [61] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$396' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [62] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$397' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$3\buffer[63:0] [63] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$494' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [28] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$495' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [29] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$496' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [30] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$497' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [31] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$498' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [32] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$430' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [32] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$499' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [33] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$431' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [33] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$500' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [34] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$432' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [34] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$501' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [35] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$433' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [35] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$502' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [36] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$434' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [36] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$503' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [37] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$435' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [37] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$504' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [38] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$436' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [38] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$505' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [39] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$437' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [39] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$506' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [40] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$438' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [40] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$507' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [41] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$439' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [41] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$508' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [42] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$440' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [42] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$509' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [43] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$441' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [43] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$510' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [44] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$442' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [44] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$511' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [45] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$443' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [45] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$512' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [46] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$444' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [46] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$513' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [47] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$445' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [47] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$514' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [48] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$446' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [48] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$515' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [49] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$447' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [49] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$516' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [50] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$448' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [50] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$517' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [51] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$449' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [51] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$518' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [52] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$450' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [52] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$519' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [53] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$451' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [53] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$520' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [54] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$452' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [54] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$521' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [55] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$453' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [55] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$522' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [56] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$454' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [56] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$523' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [57] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$455' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [57] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$524' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [58] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$456' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [58] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$525' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.$10\buffer[63:0] [59] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$457' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [59] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$458' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [60] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$459' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [61] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$460' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [62] = 1'x'.
-Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$461' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v:56$17.buffer [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$174' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$175' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$176' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$177' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$178' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$179' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$180' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$181' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$182' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$183' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$184' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$185' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$186' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$187' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$188' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$189' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$190' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$191' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$192' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$193' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$194' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$195' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$196' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$197' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$198' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$199' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$200' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$201' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$202' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$203' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$204' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$205' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$3\buffer[63:0] [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$302' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [28] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$303' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [29] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$304' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [30] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$305' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [31] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$306' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$238' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$307' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$239' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$308' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$240' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$309' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$241' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$310' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$242' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$311' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$243' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$312' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$244' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$313' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$245' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$314' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$246' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$315' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$247' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$316' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$248' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$317' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$249' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$318' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$250' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$319' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$251' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$320' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$252' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$321' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$253' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$322' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$254' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$323' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$255' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$324' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$256' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$325' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$257' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$326' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$258' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$327' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$259' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$328' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$260' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$329' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$261' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$330' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$262' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$331' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$263' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$332' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$264' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$333' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.$10\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$265' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$266' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$267' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$268' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$269' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$20.buffer [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$366' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$367' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$368' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$369' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$370' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$371' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$372' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$373' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$374' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$375' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$376' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$377' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$378' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$379' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$380' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$381' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$382' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$383' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$384' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$385' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$386' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$387' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$388' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$389' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$390' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$391' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$392' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$393' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$394' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$395' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$396' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$397' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$3\buffer[63:0] [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$494' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [28] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$495' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [29] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$496' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [30] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$497' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [31] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$498' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$430' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$499' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$431' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$500' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$432' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$501' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$433' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$502' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$434' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$503' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$435' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$504' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$436' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$505' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$437' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$506' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$438' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$507' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$439' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$508' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$440' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$509' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$441' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$510' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$442' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$511' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$443' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$512' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$444' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$513' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$445' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$514' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$446' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$515' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$447' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$516' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$448' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$517' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$449' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$518' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$450' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$519' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$451' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$520' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$452' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$521' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$453' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$522' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$454' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$523' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$455' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$524' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$456' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$525' (xx?) in module `\selector' with constant driver `$techmap$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.$10\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$457' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$458' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$459' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$460' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$461' (xx?) in module `\selector' with constant driver `$shiftx$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$17.buffer [63] = 1'x'.
 
 3.19.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\selector'.
@@ -1040,15 +1040,15 @@ ABC: ABC command line: "source <abc-temp-dir>/abc.script".
 ABC: 
 ABC: + read_blif <abc-temp-dir>/input.blif 
 ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.01 sec
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
-ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.01 sec
-ABC: Memory =    0.36 MB. Time =     0.01 sec
+ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.00 sec
+ABC: Memory =    0.36 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
 ABC: + strash 
 ABC: + scorr 
@@ -1090,11 +1090,11 @@ Removed 0 unused cells and 580 unused wires.
 Don't map input port selector4.CLK: Missing option -inpad.
 Don't map input port selector4.DATA_A: Missing option -inpad.
 Don't map input port selector4.DATA_B: Missing option -inpad.
+Mapping port selector4.NIBBLE_OUT using BUFX2.
 Don't map input port selector4.RESET_L: Missing option -inpad.
 Don't map input port selector4.SEL: Missing option -inpad.
 Don't map input port selector4.sel_A: Missing option -inpad.
 Don't map input port selector4.sel_B: Missing option -inpad.
-Mapping port selector4.temp using BUFX2.
 
 9. Executing OPT pass (performing simple optimizations).
 
@@ -1127,7 +1127,8 @@ Finding unused cells or wires in module \selector4..
 
 9.9. Finished OPT passes. (There is nothing left to do.)
 
-10. Executing BLIF backend.
+10. Executing Verilog backend.
+Dumping module `\selector4'.
 
 11. Printing statistics.
 
@@ -1150,20 +1151,16 @@ Finding unused cells or wires in module \selector4..
      OAI21X1                        32
      OR2X2                          96
 
-End of script. Logfile hash: 15d5d9b621
-CPU: user 0.66s system 0.01s, MEM: 38.44 MB total, 11.06 MB resident
+End of script. Logfile hash: cfa0ab6bfa
+CPU: user 0.13s system 0.01s, MEM: 38.45 MB total, 10.86 MB resident
 Yosys 0.7 (git sha1 61f6811, gcc 6.2.0-11ubuntu1 -O2 -fdebug-prefix-map=/build/yosys-OIL3SR/yosys-0.7=. -fstack-protector-strong -fPIC -Os)
-Time spent: 13% 16x opt_expr (0 sec), 11% 14x opt_clean (0 sec), ...
+Time spent: 13% 16x opt_expr (0 sec), 12% 14x opt_clean (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
-Cleaning up output syntax
-ypostproc.tcl selector4_mapped.blif selector4 /usr/local/share/qflow/tech/osu018/osu018.sh vdd gnd 
-Cleaning up blif file syntax
-Running blifFanout (iterative)
-Each iteration calls:
-blifFanout -l 100 -c 20 -I selector4_nofanout -s nullstring -p /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y tmp.blif selector4.blif
+Running vlogFanout
+vlogFanout -l 100 -c 20 -I selector4_nofanout -s nullstring -p /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y selector4_mapped.v selector4_sized.v
 
-blifFanout for qflow 1.3.14
+vlogFanout for qflow 1.4.35
 Parsing library "osu018_stdcells"
 End of library at line 6141
 Lib Read:  Processed 6142 lines.
@@ -1171,80 +1168,52 @@ Top internal fanout is 8 (load 144.112) from node _480_,
 driven by INVX1 with strength 58.615 (fF driven at latency 100)
 Top fanout load-to-strength ratio is 2.45862 (latency = 245.862 ps)
 Top input node fanout is 32 (load 452.894) from node sel_B[11].
+0 gates exceed specified minimum load.
+40 buffers were added.
 Warning 1: load of 127.439 is 1.14652 times greater than strongest gate OR2X2
 This warning will only be repeated for larger overload ratios.  Warning count reflects
 the total number of overloaded nets.
-96 gates exceed specified minimum load.
-40 buffers were added.
 24 gates were changed.
 
 Gate counts by drive strength:
 
 	"1" gates	In: 568    	Out: 544    	-24
-	"2" gates	In: 112    	Out: 128    	+16
+	"2" gates	In: 152    	Out: 168    	+16
 
-Number of gates changed: 64
-gates resized: 64
-blifFanout for qflow 1.3.14
-Parsing library "osu018_stdcells"
-End of library at line 6141
-Lib Read:  Processed 6142 lines.
-Top internal fanout is 8 (load 193.831) from node _480_,
-driven by INVX4 with strength 228.066 (fF driven at latency 100)
-Top fanout load-to-strength ratio is 1.60517 (latency = 160.517 ps)
-Top input node fanout is 16 (load 446.776) from node CLK.
-Warning 1: load of 127.439 is 1.14652 times greater than strongest gate OR2X2
-This warning will only be repeated for larger overload ratios.  Warning count reflects
-the total number of overloaded nets.
 96 gates exceed specified minimum load.
-0 buffers were added.
-40 gates were changed.
-
-Gate counts by drive strength:
-
-	"1" gates	In: 544    	Out: 544    	+0
-	"2" gates	In: 168    	Out: 128    	-40
-	"4" gates	In: 8    	Out: 48    	+40
-
-Number of gates changed: 40
-gates resized: 40
-blifFanout for qflow 1.3.14
-Parsing library "osu018_stdcells"
-End of library at line 6141
-Lib Read:  Processed 6142 lines.
-Top internal fanout is 8 (load 293.461) from node _480_,
-driven by INVX4 with strength 228.066 (fF driven at latency 100)
-Top fanout load-to-strength ratio is 1.30434 (latency = 130.434 ps)
-Top input node fanout is 16 (load 446.776) from node CLK.
-Warning 1: load of 300.195 is 1.33427 times greater than strongest gate BUFX4
-This warning will only be repeated for larger overload ratios.  Warning count reflects
-the total number of overloaded nets.
-Warning 2: load of 300.896 is 1.33738 times greater than strongest gate BUFX4
-Warning 7: load of 303.461 is 1.34879 times greater than strongest gate BUFX4
-136 gates exceed specified minimum load.
 0 buffers were added.
 0 gates were changed.
 
 Gate counts by drive strength:
 
-	"1" gates	In: 544    	Out: 544    	+0
-	"2" gates	In: 128    	Out: 128    	+0
-	"4" gates	In: 48    	Out: 48    	+0
+	"1" gates	In: 568    	Out: 544    	-24
+	"2" gates	In: 152    	Out: 168    	+16
 
 Number of gates changed: 0
-gates resized: 0
+Running vlog2Verilog for antenna cell mapping.
+vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
+   -o selector4.v selector4_sized.v
 
 Generating RTL verilog and SPICE netlist file in directory
-	 /home/alberto/Documents/UCR_2019/Digitales_II/Selector/synthesis
+	 /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis
 Files:
-   Verilog: /home/alberto/Documents/UCR_2019/Digitales_II/Selector/synthesis/selector4.rtl.v
-   Verilog: /home/alberto/Documents/UCR_2019/Digitales_II/Selector/synthesis/selector4.rtlnopwr.v
-   Verilog: /home/alberto/Documents/UCR_2019/Digitales_II/Selector/synthesis/selector4.rtlbb.v
-   Spice:   /home/alberto/Documents/UCR_2019/Digitales_II/Selector/synthesis/selector4.spc
+   Verilog: /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtl.v
+   Verilog: /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtlnopwr.v
+   Verilog: /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtlbb.v
+   Spice:   /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.spc
 
-Running blif2Verilog.
-Running blif2BSpice.
+Running vlog2Verilog.
+vlog2Verilog -c -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
+	-o selector4.rtl.v
+   selector4.v
+vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
+	-o selector4.rtlnopwr.v
+   selector4.v
+/usr/local/share/qflow/bin/vlog2Verilog -c -p -b -n -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
+   -o selector4.rtlbb.v
+Running vlog2Spice.
+vlog2Spice -i -l  /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp -o selector4.spc selector4.rtl.v
 Running spi2xspice.py
 spi2xspice.py "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" -io_time=1n -time=100p -idelay=10p -odelay=100p -cload=500f selector4.spc selector4.xspice
 
-Synthesis script ended on mar 4 jun 16:26:02 CST 2019
+Synthesis script ended on mié 5 jun 20:18:04 CST 2019

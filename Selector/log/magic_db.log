@@ -1,0 +1,87 @@
+Qflow migration logfile created on mié 5 jun 20:18:17 CST 2019
+magic -dnull -noconsole  migrate_selector4.tcl
+
+Magic 8.2 revision 112 - Compiled on dom 12 may 08:26:38 CST 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "migrate_selector4.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:    0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+lambda:        0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+This action cannot be undone.
+LEF Read, Line 16: Unknown keyword "OBS" in LEF file; ignoring.
+LEF Read, Line 17: Unknown keyword "PIN" in LEF file; ignoring.
+LEF file:  Defines site core (ignored)
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "A" from metal1 to m2contact in cell XNOR2X1.
+LEF read: Processed 2941 lines.
+LEF Read: encountered 2 errors total.
+Reading DEF data from file selector4.def.
+This action cannot be undone.
+  Processed 5 vias total.
+  Processed 800 subcell instances total.
+  Processed 112 pins total.
+  Processed 814 nets total.
+  Processed 110 special nets total.
+DEF read: Processed 9885 lines.
+Generating LEF output selector4.lef for cell selector4:
+Diagnostic:  Write LEF header for cell selector4
+Diagnostic:  Writing LEF output for cell selector4
+Diagnostic:  Scale value is 0.100000
+Extracting AOI21X1 into AOI21X1.ext:
+Completed 100%
+Extracting DFFPOSX1 into DFFPOSX1.ext:
+Completed 100%
+Extracting INVX2 into INVX2.ext:
+Completed 100%
+Extracting INVX4 into INVX4.ext:
+Completed 100%
+Extracting NAND3X1 into NAND3X1.ext:
+Completed 100%
+Extracting OR2X2 into OR2X2.ext:
+Completed 100%
+Extracting FILL into FILL.ext:
+Completed 100%
+Extracting BUFX2 into BUFX2.ext:
+Completed 100%
+Extracting NAND2X1 into NAND2X1.ext:
+Completed 100%
+Extracting OAI21X1 into OAI21X1.ext:
+Completed 100%
+Extracting INVX1 into INVX1.ext:
+Completed 100%
+Extracting selector4 into selector4.ext:
+Completed 5%
+Completed 11%
+Completed 16%
+Completed 22%
+Completed 27%
+Completed 32%
+Completed 38%
+Completed 43%
+Completed 48%
+Completed 53%
+Completed 59%
+Completed 64%
+Completed 69%
+Completed 75%
+Completed 80%
+Completed 85%
+Completed 91%
+Completed 96%
+Completed 100%
+exttospice finished.
+Migration script ended on mié 5 jun 20:18:18 CST 2019

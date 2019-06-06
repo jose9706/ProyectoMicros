@@ -1,7 +1,19 @@
 #!/bin/tcsh -f
 #------------------------------------------------------------
-# project variables for project /home/alberto/Documents/UCR_2019/Digitales_II/Selector
+# project variables for project /home/alberto/gir_repo/ProyectoMicros/Selector
 #------------------------------------------------------------
+
+# Flow options:
+# -------------------------------------------
+set synthesis_tool = yosys
+set placement_tool = graywolf
+set sta_tool = opensta
+set router_tool = qrouter
+set migrate_tool = magic_db
+set lvs_tool = netgen_lvs
+set drc_tool = magic_drc
+set gds_tool = magic_gds
+set display_tool = magic_view
 
 # Synthesis command options:
 # -------------------------------------------
@@ -24,11 +36,11 @@
 # -------------------------------------------
 # set initial_density =
 # set graywolf_options =
-# set addspacers_options = "-stripe 2.0 50.0 PG"
+set addspacers_options = "-stripe 2.0 50.0 PG"
 
 # Router command options:
 # -------------------------------------------
-# set route_show =
+set route_show = 1
 # set route_layers =
 # set via_use =
 # set via_stacks = "1"
@@ -38,8 +50,8 @@
 # -------------------------------------------
 
 # Minimum period of the clock use "--period value" (value in ps)
-# set vesta_options = "--summary reports --long"
-# set run_vesta = 0
+# set opensta_options =
+set vesta_options = "--long"
 
 # Other options:
 # -------------------------------------------

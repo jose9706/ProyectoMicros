@@ -1,0 +1,59 @@
+Qflow static timing analysis logfile created on mié 5 jun 20:18:16 CST 2019
+Converting qrouter output to vesta delay format
+Running rc2dly -r selector4.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -V /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtl.v
+-d selector4.dly
+Converting qrouter output to SDF delay format
+Running rc2dly -r selector4.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -V /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtl.v
+-d selector4.sdf
+Creating OpenSTA input file selector4.conf
+Running OpenSTA static timing analysis with back-annotated extracted wire delays
+sta  -f selector4.conf
+OpenSTA Copyright (c) 2018, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+read_liberty -min /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+1
+read_liberty -max /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+Warning: /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib, line 8 library osu018_stdcells already exists.
+1
+read_verilog selector4.rtlnopwr.v
+1
+link_design selector4
+Warning: selector4.rtlnopwr.v, line 737 module FILL not found.  Creating black box for FILL_7_1.
+1
+read_sdf selector4.sdf
+1
+read_sdc selector4.sdc
+Warning: selector4.sdc, 1 port 'clock' not found.
+0
+check_setup
+Warning: There are 94 input ports missing set_input_delay.
+Warning: There are 16 output ports missing set_output_delay.
+Warning: There are 16 unclocked register/latch pins.
+Warning: There are 32 unconstrained endpoints.
+0
+report_annotated_check
+                                                          Not   
+Check type                        Total    Annotated   Annotated
+----------------------------------------------------------------
+cell setup arcs                      16           0          16
+cell hold arcs                       16           0          16
+cell width arcs                      32           0          32
+----------------------------------------------------------------
+                                     64           0          64
+report_annotated_delay
+                                                          Not   
+Delay type                        Total    Annotated   Annotated
+----------------------------------------------------------------
+cell arcs                          1456           0        1456
+internal net arcs                  1024        1024           0
+net arcs from primary inputs        448         448           0
+net arcs to primary outputs          16          16           0
+----------------------------------------------------------------
+                                   2944        1488        1456
+report_checks -path_delay min_max -group_count 1000
+No paths found.
+exit

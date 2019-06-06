@@ -1,6 +1,6 @@
 # Synthesis script for yosys created by qflow
 read_liberty -lib -ignore_miss_dir -setattr blackbox /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
-read_verilog  /home/alberto/Documents/UCR_2019/Digitales_II/Selector/source/selector42.v
+read_verilog  /home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v
 
 # High-level synthesis
 synth -top selector4
@@ -20,5 +20,5 @@ iopadmap -outpad BUFX2 A:Y -bits
 opt
 clean
 rename -enumerate
-write_blif  -buf BUFX2 A Y selector4_mapped.blif
+write_verilog  selector4_mapped.v
 stat

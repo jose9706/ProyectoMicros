@@ -1,0 +1,29 @@
+Qflow DRC logfile created on mié 5 jun 20:18:18 CST 2019
+magic -dnull -noconsole  /home/alberto/gir_repo/ProyectoMicros/Selector/layout/run_drc_selector4.tcl
+
+Magic 8.2 revision 112 - Compiled on dom 12 may 08:26:38 CST 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "/home/alberto/gir_repo/ProyectoMicros/Selector/layout/run_drc_selector4.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+This action cannot be undone.
+LEF Read, Line 16: Unknown keyword "OBS" in LEF file; ignoring.
+LEF Read, Line 17: Unknown keyword "PIN" in LEF file; ignoring.
+LEF file:  Defines site core (ignored)
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "A" from metal1 to m2contact in cell XNOR2X1.
+LEF read: Processed 2941 lines.
+LEF Read: encountered 2 errors total.
+Processing timestamp mismatches: FILL, OR2X2, NAND3X1, INVX1, NAND2X1, BUFX2, OAI21X1, INVX2, DFFPOSX1, INVX4, AOI21X1.
+drc = 0
+DRC checking script ended on mié 5 jun 20:18:19 CST 2019

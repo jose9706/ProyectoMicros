@@ -1,12 +1,11 @@
-Qflow project preparation output log Tue Jun  4 16:25:59 2019
+Qflow project preparation output log Wed Jun  5 20:17:27 2019
 
 --------------------------------
 Qflow project setup
 --------------------------------
 
 Technology set to osu018
-Regenerating files for existing project selector4
 
 No actions specified on command line;
-creating qflow script file /home/alberto/Documents/UCR_2019/Digitales_II/Selector/qflow_exec.sh only.
+creating qflow script file /home/alberto/gir_repo/ProyectoMicros/Selector/qflow_exec.sh only.
 Uncomment lines in this file and source the file to run the flow.

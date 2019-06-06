@@ -1,0 +1,863 @@
+* NGSPICE file created from selector4.ext - technology: scmos
+
+* Black-box entry subcircuit for NAND3X1 abstract view
+.subckt NAND3X1 A B C gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for NAND2X1 abstract view
+.subckt NAND2X1 A B gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for FILL abstract view
+.subckt FILL gnd vdd
+.ends
+
+* Black-box entry subcircuit for INVX1 abstract view
+.subckt INVX1 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for OR2X2 abstract view
+.subckt OR2X2 A B gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for BUFX2 abstract view
+.subckt BUFX2 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for OAI21X1 abstract view
+.subckt OAI21X1 A B C gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for DFFPOSX1 abstract view
+.subckt DFFPOSX1 Q CLK D gnd vdd
+.ends
+
+* Black-box entry subcircuit for AOI21X1 abstract view
+.subckt AOI21X1 A B C gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for INVX2 abstract view
+.subckt INVX2 A gnd Y vdd
+.ends
+
+* Black-box entry subcircuit for INVX4 abstract view
+.subckt INVX4 A gnd Y vdd
+.ends
+
+.subckt selector4 vdd gnd CLK DATA_A[31] DATA_A[30] DATA_A[29] DATA_A[28] DATA_A[27]
++ DATA_A[26] DATA_A[25] DATA_A[24] DATA_A[23] DATA_A[22] DATA_A[21] DATA_A[20] DATA_A[19]
++ DATA_A[18] DATA_A[17] DATA_A[16] DATA_A[15] DATA_A[14] DATA_A[13] DATA_A[12] DATA_A[11]
++ DATA_A[10] DATA_A[9] DATA_A[8] DATA_A[7] DATA_A[6] DATA_A[5] DATA_A[4] DATA_A[3]
++ DATA_A[2] DATA_A[1] DATA_A[0] DATA_B[31] DATA_B[30] DATA_B[29] DATA_B[28] DATA_B[27]
++ DATA_B[26] DATA_B[25] DATA_B[24] DATA_B[23] DATA_B[22] DATA_B[21] DATA_B[20] DATA_B[19]
++ DATA_B[18] DATA_B[17] DATA_B[16] DATA_B[15] DATA_B[14] DATA_B[13] DATA_B[12] DATA_B[11]
++ DATA_B[10] DATA_B[9] DATA_B[8] DATA_B[7] DATA_B[6] DATA_B[5] DATA_B[4] DATA_B[3]
++ DATA_B[2] DATA_B[1] DATA_B[0] NIBBLE_OUT[15] NIBBLE_OUT[14] NIBBLE_OUT[13] NIBBLE_OUT[12]
++ NIBBLE_OUT[11] NIBBLE_OUT[10] NIBBLE_OUT[9] NIBBLE_OUT[8] NIBBLE_OUT[7] NIBBLE_OUT[6]
++ NIBBLE_OUT[5] NIBBLE_OUT[4] NIBBLE_OUT[3] NIBBLE_OUT[2] NIBBLE_OUT[1] NIBBLE_OUT[0]
++ RESET_L SEL[3] SEL[2] SEL[1] SEL[0] sel_A[11] sel_A[10] sel_A[9] sel_A[8] sel_A[7]
++ sel_A[6] sel_A[5] sel_A[4] sel_A[3] sel_A[2] sel_A[1] sel_A[0] sel_B[11] sel_B[10]
++ sel_B[9] sel_B[8] sel_B[7] sel_B[6] sel_B[5] sel_B[4] sel_B[3] sel_B[2] sel_B[1]
++ sel_B[0]
+X_1017_ sel_A[7] _1016_/Y _1015_/Y gnd _1017_/Y vdd NAND3X1
+X_668_ _782_/A _668_/B gnd _669_/C vdd NAND2X1
+X_888_ _885_/A _887_/Y gnd _890_/C vdd NAND2X1
+XFILL_5_4 gnd vdd FILL
+X_1237_ _1235_/A _1237_/B gnd _1238_/C vdd NAND2X1
+X_1118_ DATA_B[23] gnd _1118_/Y vdd INVX1
+X_769_ DATA_A[10] gnd _769_/Y vdd INVX1
+X_989_ DATA_B[0] _998_/A gnd _992_/B vdd OR2X2
+X_650_ _650_/A gnd NIBBLE_OUT[13] vdd BUFX2
+XFILL_1_1_0 gnd vdd FILL
+X_1219_ DATA_A[25] gnd _1219_/Y vdd INVX1
+X_870_ _828_/A DATA_B[9] gnd _870_/Y vdd OR2X2
+XFILL_9_1 gnd vdd FILL
+X_751_ _672_/B DATA_B[30] gnd _752_/C vdd NAND2X1
+X_1100_ _1061_/A _1097_/Y _1100_/C gnd _1105_/B vdd NAND3X1
+XFILL_8_1_0 gnd vdd FILL
+X_971_ DATA_A[23] gnd _971_/Y vdd INVX1
+X_852_ _939_/A _852_/B _851_/Y gnd _862_/B vdd NAND3X1
+X_1201_ _1205_/A _1201_/B gnd _1203_/C vdd NAND2X1
+X_733_ sel_A[1] _732_/Y gnd _734_/C vdd NAND2X1
+X_1082_ DATA_B[14] gnd _1082_/Y vdd INVX1
+XBUFX2_insert9 sel_B[8] gnd _998_/A vdd BUFX2
+X_953_ _905_/A _953_/B gnd _954_/C vdd NAND2X1
+X_1302_ _1217_/A DATA_A[7] gnd _1305_/B vdd OR2X2
+X_1183_ sel_A[10] _1183_/B _1183_/C gnd _1183_/Y vdd NAND3X1
+X_834_ _947_/A _834_/B gnd _835_/C vdd NAND2X1
+X_715_ sel_B[0] _710_/Y _715_/C gnd _716_/C vdd NAND3X1
+X_1064_ _1062_/Y _1064_/B _1063_/Y gnd _1064_/Y vdd OAI21X1
+X_935_ DATA_A[10] gnd _937_/A vdd INVX1
+X_1284_ DATA_B[23] gnd _1285_/B vdd INVX1
+XFILL_1_1_1 gnd vdd FILL
+X_816_ _638_/A CLK _816_/D gnd vdd DFFPOSX1
+X_1165_ DATA_B[20] gnd _1166_/B vdd INVX1
+XFILL_9_2 gnd vdd FILL
+X_1046_ sel_B[7] _1045_/Y gnd _1047_/C vdd NAND2X1
+X_697_ _697_/A _696_/Y _775_/C gnd _815_/D vdd AOI21X1
+X_917_ _914_/A DATA_B[30] gnd _918_/C vdd NAND2X1
+XFILL_8_1_1 gnd vdd FILL
+X_1266_ _1188_/A _1266_/B _1266_/C gnd _1271_/B vdd NAND3X1
+XBUFX2_insert10 sel_B[5] gnd _905_/A vdd BUFX2
+X_1147_ _645_/A CLK _1147_/D gnd vdd DFFPOSX1
+X_798_ _807_/A _798_/B _798_/C gnd _798_/Y vdd NAND3X1
+X_679_ DATA_A[16] gnd _680_/B vdd INVX1
+X_1028_ SEL[2] _1028_/B _1028_/C gnd _1028_/Y vdd NAND3X1
+X_899_ sel_A[4] _899_/B gnd _900_/C vdd NAND2X1
+X_1248_ DATA_B[14] gnd _1250_/A vdd INVX1
+X_780_ DATA_B[27] gnd _781_/B vdd INVX1
+X_1129_ _1049_/A _1129_/B gnd _1129_/Y vdd NAND2X1
+X_1010_ DATA_A[0] _1010_/B gnd _1010_/Y vdd OR2X2
+X_661_ DATA_B[24] gnd _662_/B vdd INVX1
+X_1230_ _1230_/A _1226_/A _1230_/C gnd _1231_/B vdd OAI21X1
+X_881_ sel_B[3] _881_/B _881_/C gnd _882_/C vdd NAND3X1
+X_762_ _758_/A DATA_A[14] gnd _762_/Y vdd OR2X2
+X_643_ _643_/A gnd NIBBLE_OUT[6] vdd BUFX2
+X_1111_ _988_/Y _1108_/Y _1110_/Y gnd _1111_/Y vdd NAND3X1
+XFILL_9_3 gnd vdd FILL
+X_982_ _642_/A CLK _982_/D gnd vdd DFFPOSX1
+X_863_ _841_/Y _862_/Y _902_/C gnd _863_/Y vdd AOI21X1
+XBUFX2_insert11 sel_B[5] gnd _914_/A vdd BUFX2
+X_1212_ sel_B[10] _1212_/B gnd _1213_/C vdd NAND2X1
+X_1093_ _1102_/A _1092_/Y gnd _1093_/Y vdd NAND2X1
+XFILL_13_1 gnd vdd FILL
+X_744_ sel_B[1] _744_/B _744_/C gnd _745_/C vdd NAND3X1
+X_964_ _973_/A _964_/B _964_/C gnd _969_/B vdd NAND3X1
+X_1313_ _649_/A CLK _1313_/D gnd vdd DFFPOSX1
+X_845_ DATA_A[16] gnd _846_/B vdd INVX1
+X_1194_ SEL[3] _1194_/B _1193_/Y gnd _1194_/Y vdd NAND3X1
+X_726_ _809_/A DATA_A[5] gnd _726_/Y vdd OR2X2
+X_1075_ _995_/A DATA_B[10] gnd _1076_/B vdd OR2X2
+X_1295_ _1298_/A _1295_/B gnd _1296_/C vdd NAND2X1
+X_946_ DATA_B[27] gnd _946_/Y vdd INVX1
+X_827_ DATA_B[24] gnd _828_/B vdd INVX1
+X_1176_ DATA_A[0] _1181_/A gnd _1179_/B vdd OR2X2
+X_1057_ _1105_/A _1057_/B _1056_/Y gnd _1057_/Y vdd NAND3X1
+X_708_ DATA_B[21] gnd _708_/Y vdd INVX1
+X_928_ _894_/A DATA_A[14] gnd _929_/B vdd OR2X2
+XFILL_4_0_0 gnd vdd FILL
+X_1277_ _1238_/A _1274_/Y _1277_/C gnd _1282_/B vdd NAND3X1
+X_809_ _809_/A DATA_A[31] gnd _810_/C vdd NAND2X1
+X_1158_ _1238_/A _1158_/B _1158_/C gnd _1163_/B vdd NAND3X1
+X_690_ _807_/A _690_/B _689_/Y gnd _695_/B vdd NAND3X1
+XBUFX2_insert12 sel_B[5] gnd _875_/A vdd BUFX2
+X_1039_ _1080_/A DATA_B[5] gnd _1039_/Y vdd OR2X2
+XFILL_13_2 gnd vdd FILL
+X_1259_ _1226_/A _1259_/B gnd _1259_/Y vdd NAND2X1
+X_910_ sel_B[4] _910_/B _910_/C gnd _911_/C vdd NAND3X1
+X_791_ _789_/Y _709_/A _791_/C gnd _792_/B vdd OAI21X1
+X_1140_ DATA_A[15] gnd _1140_/Y vdd INVX1
+X_1021_ _1024_/A _1020_/Y gnd _1022_/C vdd NAND2X1
+X_672_ _670_/Y _672_/B _672_/C gnd _672_/Y vdd OAI21X1
+X_892_ _936_/A DATA_A[5] gnd _892_/Y vdd OR2X2
+X_1241_ _1241_/A DATA_B[10] gnd _1242_/B vdd OR2X2
+X_773_ _676_/Y _773_/B _772_/Y gnd _773_/Y vdd NAND3X1
+X_1122_ _1080_/A DATA_B[31] gnd _1122_/Y vdd NAND2X1
+X_993_ DATA_B[24] gnd _993_/Y vdd INVX1
+X_654_ SEL[0] gnd _675_/A vdd INVX2
+X_1003_ _1123_/B DATA_B[28] gnd _1003_/Y vdd NAND2X1
+X_1223_ _1223_/A _1218_/Y _1222_/Y gnd _1233_/B vdd NAND3X1
+X_874_ DATA_B[21] gnd _875_/B vdd INVX1
+XFILL_4_0_1 gnd vdd FILL
+X_755_ _675_/A _755_/B _755_/C gnd _775_/A vdd NAND3X1
+X_1104_ sel_A[7] _1103_/Y gnd _1104_/Y vdd NAND2X1
+X_975_ _936_/A DATA_A[31] gnd _976_/C vdd NAND2X1
+X_856_ _973_/A _853_/Y _856_/C gnd _861_/B vdd NAND3X1
+XBUFX2_insert13 sel_B[5] gnd _947_/A vdd BUFX2
+X_1205_ _1205_/A DATA_B[5] gnd _1208_/B vdd OR2X2
+X_1086_ sel_B[6] _1081_/Y _1086_/C gnd _1087_/C vdd NAND3X1
+X_737_ _662_/A DATA_B[2] gnd _740_/B vdd OR2X2
+X_957_ _955_/Y _914_/A _957_/C gnd _957_/Y vdd OAI21X1
+X_1306_ DATA_A[15] gnd _1308_/A vdd INVX1
+X_1187_ _1298_/A _1186_/Y gnd _1187_/Y vdd NAND2X1
+X_838_ _838_/A _875_/A _838_/C gnd _839_/B vdd OAI21X1
+X_719_ _810_/B _719_/B gnd _719_/Y vdd NAND2X1
+X_1068_ _1068_/A _1067_/Y _985_/Y gnd _1068_/Y vdd AOI21X1
+XFILL_11_0_0 gnd vdd FILL
+X_939_ _939_/A _934_/Y _938_/Y gnd _939_/Y vdd NAND3X1
+X_1288_ _1274_/A DATA_B[31] gnd _1289_/C vdd NAND2X1
+XFILL_4_1 gnd vdd FILL
+X_820_ SEL[1] gnd _820_/Y vdd INVX2
+X_1169_ _1211_/B DATA_B[28] gnd _1170_/C vdd NAND2X1
+X_1050_ DATA_A[17] gnd _1050_/Y vdd INVX1
+X_701_ _660_/A _701_/B _700_/Y gnd _706_/B vdd NAND3X1
+X_921_ _820_/Y _921_/B _921_/C gnd _941_/A vdd NAND3X1
+X_1270_ sel_A[10] _1270_/B gnd _1271_/C vdd NAND2X1
+XFILL_5_1_0 gnd vdd FILL
+X_802_ sel_A[1] _802_/B _802_/C gnd _803_/C vdd NAND3X1
+X_1151_ RESET_L gnd _1273_/C vdd INVX2
+XBUFX2_insert14 sel_B[5] gnd _828_/A vdd BUFX2
+X_683_ _810_/B _682_/Y gnd _683_/Y vdd NAND2X1
+X_1032_ _1074_/A _1031_/Y gnd _1032_/Y vdd NAND2X1
+X_1252_ sel_B[9] _1252_/B _1252_/C gnd _1253_/C vdd NAND3X1
+X_903_ _905_/A DATA_B[2] gnd _906_/B vdd OR2X2
+X_784_ _784_/A _784_/B _784_/C gnd _794_/B vdd NAND3X1
+X_1133_ _1024_/A DATA_A[11] gnd _1133_/Y vdd OR2X2
+X_1014_ DATA_A[24] gnd _1014_/Y vdd INVX1
+X_665_ _784_/A _665_/B _665_/C gnd _675_/B vdd NAND3X1
+X_885_ _885_/A _884_/Y gnd _886_/C vdd NAND2X1
+XFILL_11_0_1 gnd vdd FILL
+X_1234_ _1234_/A _1233_/Y _1273_/C gnd _1314_/D vdd AOI21X1
+X_766_ DATA_A[18] gnd _767_/B vdd INVX1
+X_1115_ sel_B[7] _1115_/B _1115_/C gnd _1116_/C vdd NAND3X1
+X_647_ _647_/A gnd NIBBLE_OUT[10] vdd BUFX2
+X_986_ SEL[2] gnd _986_/Y vdd INVX2
+X_1216_ DATA_A[17] gnd _1216_/Y vdd INVX1
+X_867_ _826_/A _867_/B _867_/C gnd _872_/B vdd NAND3X1
+X_748_ _672_/B _747_/Y gnd _749_/C vdd NAND2X1
+XBUFX2_insert15 sel_A[8] gnd _1102_/A vdd BUFX2
+X_1097_ _1064_/B DATA_A[2] gnd _1097_/Y vdd OR2X2
+XFILL_5_1_1 gnd vdd FILL
+X_968_ sel_A[4] _968_/B _968_/C gnd _969_/C vdd NAND3X1
+X_849_ _849_/A _848_/Y gnd _849_/Y vdd NAND2X1
+X_1198_ _1241_/A _1198_/B gnd _1199_/C vdd NAND2X1
+X_730_ DATA_A[13] gnd _730_/Y vdd INVX1
+X_1079_ DATA_B[22] gnd _1079_/Y vdd INVX1
+X_950_ _831_/A _950_/B _950_/C gnd _960_/B vdd NAND3X1
+X_1299_ _1298_/A DATA_A[11] gnd _1299_/Y vdd OR2X2
+X_1180_ DATA_A[24] gnd _1180_/Y vdd INVX1
+X_831_ _831_/A _831_/B _830_/Y gnd _831_/Y vdd NAND3X1
+X_712_ _672_/B DATA_B[29] gnd _713_/C vdd NAND2X1
+X_1061_ _1061_/A _1061_/B _1060_/Y gnd _1066_/B vdd NAND3X1
+X_932_ DATA_A[18] gnd _933_/B vdd INVX1
+XFILL_12_1_0 gnd vdd FILL
+X_1281_ sel_B[10] _1281_/B _1281_/C gnd _1282_/C vdd NAND3X1
+X_813_ SEL[0] _803_/Y _812_/Y gnd _813_/Y vdd NAND3X1
+X_1162_ sel_B[10] _1162_/B _1162_/C gnd _1163_/C vdd NAND3X1
+X_694_ sel_A[1] _694_/B gnd _694_/Y vdd NAND2X1
+XBUFX2_insert16 sel_A[8] gnd _1010_/B vdd BUFX2
+X_1043_ DATA_B[13] gnd _1043_/Y vdd INVX1
+X_1263_ _1217_/A DATA_A[2] gnd _1266_/B vdd OR2X2
+X_914_ _914_/A _913_/Y gnd _914_/Y vdd NAND2X1
+X_795_ _765_/A DATA_A[3] gnd _798_/B vdd OR2X2
+X_1144_ sel_A[6] _1144_/B _1143_/Y gnd _1144_/Y vdd NAND3X1
+X_1025_ _1023_/Y _1024_/A _1024_/Y gnd _1025_/Y vdd OAI21X1
+X_676_ sel_A[0] gnd _676_/Y vdd INVX2
+X_896_ DATA_A[13] gnd _898_/A vdd INVX1
+X_1245_ DATA_B[22] gnd _1246_/B vdd INVX1
+X_777_ DATA_B[19] gnd _777_/Y vdd INVX1
+X_1126_ _986_/Y _1126_/B _1126_/C gnd _1146_/A vdd NAND3X1
+X_658_ DATA_B[16] gnd _659_/B vdd INVX1
+X_997_ _997_/A _997_/B _997_/C gnd _997_/Y vdd NAND3X1
+X_1007_ _986_/Y _997_/Y _1007_/C gnd _1029_/A vdd NAND3X1
+X_1227_ _1188_/A _1227_/B _1226_/Y gnd _1232_/B vdd NAND3X1
+X_878_ _875_/A DATA_B[29] gnd _879_/C vdd NAND2X1
+XFILL_12_1_1 gnd vdd FILL
+X_759_ _807_/A _756_/Y _758_/Y gnd _759_/Y vdd NAND3X1
+X_1108_ _1074_/A DATA_B[3] gnd _1108_/Y vdd OR2X2
+XFILL_1_0_0 gnd vdd FILL
+X_979_ SEL[1] _979_/B _978_/Y gnd _979_/Y vdd NAND3X1
+X_640_ _818_/Q gnd NIBBLE_OUT[3] vdd BUFX2
+X_860_ sel_A[4] _859_/Y gnd _860_/Y vdd NAND2X1
+XFILL_8_1 gnd vdd FILL
+XBUFX2_insert17 sel_A[8] gnd _1024_/A vdd BUFX2
+X_1209_ DATA_B[13] gnd _1211_/A vdd INVX1
+X_1090_ _1064_/B _1089_/Y gnd _1090_/Y vdd NAND2X1
+X_741_ DATA_B[26] gnd _741_/Y vdd INVX1
+XFILL_8_0_0 gnd vdd FILL
+X_961_ _850_/A DATA_A[3] gnd _964_/B vdd OR2X2
+X_1310_ sel_A[9] _1310_/B _1309_/Y gnd _1310_/Y vdd NAND3X1
+X_842_ sel_A[3] gnd _939_/A vdd INVX2
+X_1191_ _1189_/Y _1181_/A _1191_/C gnd _1191_/Y vdd OAI21X1
+X_723_ _758_/A DATA_A[9] gnd _724_/B vdd OR2X2
+X_1072_ _988_/Y _1069_/Y _1072_/C gnd _1077_/B vdd NAND3X1
+X_943_ DATA_B[19] gnd _943_/Y vdd INVX1
+X_1292_ _1152_/Y _1292_/B _1292_/C gnd _1312_/A vdd NAND3X1
+X_824_ DATA_B[16] gnd _825_/B vdd INVX1
+X_1173_ _1152_/Y _1173_/B _1173_/C gnd _1195_/A vdd NAND3X1
+X_1054_ _1010_/B _1053_/Y gnd _1056_/C vdd NAND2X1
+X_705_ sel_B[1] _705_/B _703_/Y gnd _706_/C vdd NAND3X1
+X_925_ _973_/A _925_/B _925_/C gnd _930_/B vdd NAND3X1
+XFILL_1_0_1 gnd vdd FILL
+X_1274_ _1274_/A DATA_B[3] gnd _1274_/Y vdd OR2X2
+X_806_ _810_/B _806_/B gnd _807_/C vdd NAND2X1
+X_1155_ DATA_B[0] _1241_/A gnd _1158_/B vdd OR2X2
+XBUFX2_insert18 sel_A[8] gnd _1064_/B vdd BUFX2
+X_687_ _692_/A DATA_A[4] gnd _690_/B vdd OR2X2
+X_1036_ _995_/A DATA_B[9] gnd _1037_/B vdd OR2X2
+XFILL_8_0_1 gnd vdd FILL
+X_1256_ _1220_/A _1256_/B gnd _1257_/C vdd NAND2X1
+X_907_ DATA_B[26] gnd _908_/B vdd INVX1
+X_788_ _660_/A _788_/B _788_/C gnd _793_/B vdd NAND3X1
+X_1137_ DATA_A[23] gnd _1137_/Y vdd INVX1
+X_1018_ _1105_/A _1018_/B _1017_/Y gnd _1028_/B vdd NAND3X1
+X_669_ _660_/A _669_/B _669_/C gnd _674_/B vdd NAND3X1
+X_889_ _885_/A DATA_A[9] gnd _890_/B vdd OR2X2
+X_1238_ _1238_/A _1238_/B _1238_/C gnd _1243_/B vdd NAND3X1
+X_770_ _809_/A DATA_A[26] gnd _770_/Y vdd NAND2X1
+X_1119_ _1123_/B _1118_/Y gnd _1120_/C vdd NAND2X1
+X_990_ DATA_B[16] gnd _990_/Y vdd INVX1
+X_651_ _651_/A gnd NIBBLE_OUT[14] vdd BUFX2
+X_1000_ _998_/A _999_/Y gnd _1001_/C vdd NAND2X1
+X_1220_ _1220_/A _1219_/Y gnd _1222_/C vdd NAND2X1
+X_871_ sel_B[4] _870_/Y _869_/Y gnd _871_/Y vdd NAND3X1
+X_752_ _750_/Y _672_/B _752_/C gnd _753_/B vdd OAI21X1
+X_1101_ DATA_A[10] gnd _1101_/Y vdd INVX1
+X_972_ _936_/A _971_/Y gnd _973_/C vdd NAND2X1
+XFILL_2_1_0 gnd vdd FILL
+XBUFX2_insert19 sel_A[8] gnd _1049_/A vdd BUFX2
+X_853_ _850_/A DATA_A[4] gnd _853_/Y vdd OR2X2
+X_1202_ _1241_/A DATA_B[9] gnd _1203_/B vdd OR2X2
+X_734_ sel_A[0] _729_/Y _734_/C gnd _735_/C vdd NAND3X1
+X_1083_ _1080_/A DATA_B[30] gnd _1083_/Y vdd NAND2X1
+X_954_ _826_/A _951_/Y _954_/C gnd _959_/B vdd NAND3X1
+XFILL_9_1_0 gnd vdd FILL
+X_1303_ DATA_A[23] gnd _1304_/B vdd INVX1
+X_1184_ _1223_/A _1184_/B _1183_/Y gnd _1194_/B vdd NAND3X1
+X_835_ _826_/A _832_/Y _835_/C gnd _840_/B vdd NAND3X1
+X_716_ _675_/A _716_/B _716_/C gnd _736_/A vdd NAND3X1
+X_1065_ sel_A[7] _1064_/Y gnd _1066_/C vdd NAND2X1
+X_936_ _936_/A DATA_A[26] gnd _936_/Y vdd NAND2X1
+X_1285_ _1241_/A _1285_/B gnd _1286_/C vdd NAND2X1
+X_817_ _817_/Q CLK _775_/Y gnd vdd DFFPOSX1
+X_1166_ _1205_/A _1166_/B gnd _1167_/C vdd NAND2X1
+X_1047_ sel_B[6] _1042_/Y _1047_/C gnd _1048_/C vdd NAND3X1
+X_698_ _700_/A DATA_B[1] gnd _701_/B vdd OR2X2
+X_918_ _916_/Y _914_/A _918_/C gnd _919_/B vdd OAI21X1
+X_1267_ DATA_A[10] gnd _1269_/A vdd INVX1
+XBUFX2_insert20 sel_B[2] gnd _672_/B vdd BUFX2
+XFILL_2_1_1 gnd vdd FILL
+X_799_ DATA_A[27] gnd _800_/B vdd INVX1
+X_1148_ _646_/A CLK _1068_/Y gnd vdd DFFPOSX1
+X_680_ _692_/A _680_/B gnd _681_/C vdd NAND2X1
+X_1029_ _1029_/A _1028_/Y _985_/Y gnd _1147_/D vdd AOI21X1
+X_900_ sel_A[3] _895_/Y _900_/C gnd _901_/C vdd NAND3X1
+X_1249_ _1211_/B DATA_B[30] gnd _1250_/C vdd NAND2X1
+XFILL_9_1_1 gnd vdd FILL
+X_781_ _782_/A _781_/B gnd _783_/C vdd NAND2X1
+X_1130_ _1061_/A _1127_/Y _1129_/Y gnd _1130_/Y vdd NAND3X1
+X_1011_ DATA_A[16] gnd _1012_/B vdd INVX1
+X_662_ _662_/A _662_/B gnd _664_/C vdd NAND2X1
+X_882_ _820_/Y _882_/B _882_/C gnd _902_/A vdd NAND3X1
+X_1231_ sel_A[10] _1231_/B gnd _1232_/C vdd NAND2X1
+X_1112_ DATA_B[27] gnd _1112_/Y vdd INVX1
+X_763_ sel_A[1] _762_/Y _763_/C gnd _763_/Y vdd NAND3X1
+X_644_ _644_/A gnd NIBBLE_OUT[7] vdd BUFX2
+X_983_ _643_/A CLK _941_/Y gnd vdd DFFPOSX1
+X_864_ _905_/A DATA_B[1] gnd _867_/B vdd OR2X2
+X_1213_ sel_B[9] _1213_/B _1213_/C gnd _1214_/C vdd NAND3X1
+XBUFX2_insert21 sel_B[2] gnd _662_/A vdd BUFX2
+X_745_ _784_/A _745_/B _745_/C gnd _755_/B vdd NAND3X1
+X_1094_ _1010_/B DATA_A[14] gnd _1094_/Y vdd OR2X2
+X_965_ DATA_A[27] gnd _966_/B vdd INVX1
+X_1314_ _650_/A CLK _1314_/D gnd vdd DFFPOSX1
+X_846_ _885_/A _846_/B gnd _847_/C vdd NAND2X1
+X_1195_ _1195_/A _1194_/Y _1273_/C gnd _1313_/D vdd AOI21X1
+X_727_ DATA_A[21] gnd _728_/B vdd INVX1
+X_1076_ sel_B[7] _1076_/B _1074_/Y gnd _1076_/Y vdd NAND3X1
+X_1296_ _1188_/A _1293_/Y _1296_/C gnd _1301_/B vdd NAND3X1
+X_947_ _947_/A _946_/Y gnd _947_/Y vdd NAND2X1
+X_828_ _828_/A _828_/B gnd _828_/Y vdd NAND2X1
+X_1177_ DATA_A[16] gnd _1178_/B vdd INVX1
+X_1058_ _1064_/B DATA_A[5] gnd _1061_/B vdd OR2X2
+X_709_ _709_/A _708_/Y gnd _710_/C vdd NAND2X1
+X_929_ sel_A[4] _929_/B _929_/C gnd _930_/C vdd NAND3X1
+X_1278_ DATA_B[27] gnd _1279_/B vdd INVX1
+X_810_ _810_/A _810_/B _810_/C gnd _810_/Y vdd OAI21X1
+XFILL_3_1 gnd vdd FILL
+X_1159_ DATA_B[24] gnd _1160_/B vdd INVX1
+X_691_ DATA_A[12] gnd _691_/Y vdd INVX1
+XBUFX2_insert22 sel_B[2] gnd _709_/A vdd BUFX2
+X_1040_ DATA_B[21] gnd _1040_/Y vdd INVX1
+X_1260_ _1217_/A DATA_A[14] gnd _1261_/B vdd OR2X2
+X_911_ _831_/A _911_/B _911_/C gnd _921_/B vdd NAND3X1
+XFILL_5_0_0 gnd vdd FILL
+X_792_ sel_B[1] _792_/B gnd _793_/C vdd NAND2X1
+X_1141_ _1102_/A DATA_A[31] gnd _1142_/C vdd NAND2X1
+X_1022_ _1061_/A _1019_/Y _1022_/C gnd _1022_/Y vdd NAND3X1
+X_673_ sel_B[1] _672_/Y gnd _674_/C vdd NAND2X1
+X_893_ DATA_A[21] gnd _893_/Y vdd INVX1
+X_1242_ sel_B[10] _1242_/B _1242_/C gnd _1243_/C vdd NAND3X1
+X_774_ SEL[0] _774_/B _773_/Y gnd _774_/Y vdd NAND3X1
+X_1123_ _1121_/Y _1123_/B _1122_/Y gnd _1123_/Y vdd OAI21X1
+X_994_ _995_/A _993_/Y gnd _996_/C vdd NAND2X1
+X_655_ sel_B[0] gnd _784_/A vdd INVX2
+X_1004_ _1002_/Y _1123_/B _1003_/Y gnd _1004_/Y vdd OAI21X1
+X_1224_ _1226_/A DATA_A[5] gnd _1227_/B vdd OR2X2
+X_875_ _875_/A _875_/B gnd _876_/C vdd NAND2X1
+X_756_ _809_/A DATA_A[6] gnd _756_/Y vdd OR2X2
+XFILL_3_2 gnd vdd FILL
+X_1105_ _1105_/A _1105_/B _1104_/Y gnd _1106_/C vdd NAND3X1
+X_976_ _974_/Y _936_/A _976_/C gnd _976_/Y vdd OAI21X1
+X_637_ _637_/A gnd NIBBLE_OUT[0] vdd BUFX2
+X_857_ DATA_A[12] gnd _859_/A vdd INVX1
+XBUFX2_insert23 sel_B[2] gnd _782_/A vdd BUFX2
+X_1206_ DATA_B[21] gnd _1207_/B vdd INVX1
+XFILL_5_0_1 gnd vdd FILL
+X_1087_ _986_/Y _1087_/B _1087_/C gnd _1107_/A vdd NAND3X1
+X_738_ DATA_B[18] gnd _739_/B vdd INVX1
+X_958_ sel_B[4] _957_/Y gnd _959_/C vdd NAND2X1
+X_1307_ _1220_/A DATA_A[31] gnd _1308_/C vdd NAND2X1
+X_1188_ _1188_/A _1185_/Y _1187_/Y gnd _1193_/B vdd NAND3X1
+X_839_ sel_B[4] _839_/B gnd _840_/C vdd NAND2X1
+X_720_ _807_/A _720_/B _719_/Y gnd _720_/Y vdd NAND3X1
+X_1069_ _995_/A DATA_B[2] gnd _1069_/Y vdd OR2X2
+X_940_ SEL[1] _940_/B _939_/Y gnd _940_/Y vdd NAND3X1
+X_1289_ _1287_/Y _1274_/A _1289_/C gnd _1290_/B vdd OAI21X1
+X_821_ sel_B[3] gnd _831_/A vdd INVX2
+X_1170_ _1170_/A _1211_/B _1170_/C gnd _1171_/B vdd OAI21X1
+X_1051_ _1102_/A _1050_/Y gnd _1051_/Y vdd NAND2X1
+X_702_ DATA_B[25] gnd _702_/Y vdd INVX1
+X_922_ _885_/A DATA_A[6] gnd _925_/B vdd OR2X2
+XFILL_3_3 gnd vdd FILL
+XFILL_12_0_0 gnd vdd FILL
+X_1271_ _1223_/A _1271_/B _1271_/C gnd _1272_/C vdd NAND3X1
+X_803_ _676_/Y _798_/Y _803_/C gnd _803_/Y vdd NAND3X1
+X_1152_ SEL[3] gnd _1152_/Y vdd INVX2
+XBUFX2_insert24 sel_B[2] gnd _700_/A vdd BUFX2
+X_684_ _692_/A DATA_A[8] gnd _684_/Y vdd OR2X2
+X_1033_ _988_/Y _1033_/B _1032_/Y gnd _1038_/B vdd NAND3X1
+X_1253_ _1152_/Y _1253_/B _1253_/C gnd _1273_/A vdd NAND3X1
+X_904_ DATA_B[18] gnd _904_/Y vdd INVX1
+XFILL_6_1_0 gnd vdd FILL
+X_785_ _782_/A DATA_B[7] gnd _788_/B vdd OR2X2
+X_1134_ sel_A[7] _1133_/Y _1132_/Y gnd _1134_/Y vdd NAND3X1
+X_1015_ _1049_/A _1014_/Y gnd _1015_/Y vdd NAND2X1
+X_666_ _709_/A DATA_B[4] gnd _669_/B vdd OR2X2
+X_886_ _973_/A _883_/Y _886_/C gnd _891_/B vdd NAND3X1
+X_1235_ _1235_/A DATA_B[2] gnd _1238_/B vdd OR2X2
+X_767_ _765_/A _767_/B gnd _768_/C vdd NAND2X1
+X_1116_ _997_/A _1111_/Y _1116_/C gnd _1126_/B vdd NAND3X1
+X_648_ _648_/A gnd NIBBLE_OUT[11] vdd BUFX2
+X_987_ sel_B[6] gnd _997_/A vdd INVX2
+X_1217_ _1217_/A _1216_/Y gnd _1217_/Y vdd NAND2X1
+XFILL_12_0_1 gnd vdd FILL
+X_868_ DATA_B[25] gnd _869_/B vdd INVX1
+X_749_ _660_/A _746_/Y _749_/C gnd _754_/B vdd NAND3X1
+X_1098_ DATA_A[18] gnd _1099_/B vdd INVX1
+XBUFX2_insert25 sel_A[5] gnd _850_/A vdd BUFX2
+X_969_ _939_/A _969_/B _969_/C gnd _979_/B vdd NAND3X1
+X_850_ _850_/A DATA_A[8] gnd _850_/Y vdd OR2X2
+XFILL_7_1 gnd vdd FILL
+X_1199_ _1238_/A _1199_/B _1199_/C gnd _1204_/B vdd NAND3X1
+X_731_ _809_/A DATA_A[29] gnd _732_/C vdd NAND2X1
+X_1080_ _1080_/A _1079_/Y gnd _1080_/Y vdd NAND2X1
+XFILL_6_1_1 gnd vdd FILL
+X_951_ _947_/A DATA_B[7] gnd _951_/Y vdd OR2X2
+X_1300_ sel_A[10] _1299_/Y _1298_/Y gnd _1300_/Y vdd NAND3X1
+X_1181_ _1181_/A _1180_/Y gnd _1183_/C vdd NAND2X1
+X_832_ _914_/A DATA_B[4] gnd _832_/Y vdd OR2X2
+X_713_ _711_/Y _709_/A _713_/C gnd _714_/B vdd OAI21X1
+X_1062_ DATA_A[13] gnd _1062_/Y vdd INVX1
+X_933_ _849_/A _933_/B gnd _933_/Y vdd NAND2X1
+X_814_ _814_/A _813_/Y _775_/C gnd _814_/Y vdd AOI21X1
+X_1282_ _1243_/A _1282_/B _1282_/C gnd _1292_/B vdd NAND3X1
+X_1163_ _1243_/A _1163_/B _1163_/C gnd _1173_/B vdd NAND3X1
+X_695_ sel_A[0] _695_/B _694_/Y gnd _695_/Y vdd NAND3X1
+X_1044_ _1123_/B DATA_B[29] gnd _1044_/Y vdd NAND2X1
+XBUFX2_insert26 sel_A[5] gnd _936_/A vdd BUFX2
+XFILL_13_1_0 gnd vdd FILL
+X_1264_ DATA_A[18] gnd _1265_/B vdd INVX1
+X_915_ _826_/A _912_/Y _914_/Y gnd _920_/B vdd NAND3X1
+X_796_ DATA_A[19] gnd _796_/Y vdd INVX1
+X_1145_ SEL[2] _1135_/Y _1144_/Y gnd _1146_/B vdd NAND3X1
+X_677_ sel_A[1] gnd _807_/A vdd INVX4
+X_1026_ sel_A[7] _1025_/Y gnd _1026_/Y vdd NAND2X1
+X_897_ _894_/A DATA_A[29] gnd _898_/C vdd NAND2X1
+X_1246_ _1205_/A _1246_/B gnd _1247_/C vdd NAND2X1
+X_1127_ _1024_/A DATA_A[3] gnd _1127_/Y vdd OR2X2
+X_778_ _782_/A _777_/Y gnd _779_/C vdd NAND2X1
+X_998_ _998_/A DATA_B[4] gnd _998_/Y vdd OR2X2
+X_659_ _700_/A _659_/B gnd _660_/C vdd NAND2X1
+X_1008_ sel_A[6] gnd _1105_/A vdd INVX2
+X_1228_ DATA_A[13] gnd _1230_/A vdd INVX1
+X_879_ _879_/A _875_/A _879_/C gnd _880_/B vdd OAI21X1
+X_760_ DATA_A[30] gnd _761_/B vdd INVX1
+X_1109_ DATA_B[19] gnd _1109_/Y vdd INVX1
+X_980_ _980_/A _979_/Y _902_/C gnd _984_/D vdd AOI21X1
+X_641_ _981_/Q gnd NIBBLE_OUT[4] vdd BUFX2
+XBUFX2_insert27 sel_A[5] gnd _894_/A vdd BUFX2
+X_861_ sel_A[3] _861_/B _860_/Y gnd _861_/Y vdd NAND3X1
+XFILL_13_1_1 gnd vdd FILL
+X_1210_ _1211_/B DATA_B[29] gnd _1211_/C vdd NAND2X1
+X_1091_ _1061_/A _1088_/Y _1090_/Y gnd _1091_/Y vdd NAND3X1
+X_742_ _662_/A _741_/Y gnd _744_/C vdd NAND2X1
+X_962_ DATA_A[19] gnd _963_/B vdd INVX1
+XFILL_2_0_0 gnd vdd FILL
+X_1311_ SEL[3] _1311_/B _1310_/Y gnd _1311_/Y vdd NAND3X1
+X_843_ sel_A[4] gnd _973_/A vdd INVX4
+X_1192_ sel_A[10] _1191_/Y gnd _1193_/C vdd NAND2X1
+X_724_ sel_A[1] _724_/B _724_/C gnd _725_/C vdd NAND3X1
+XFILL_9_0_0 gnd vdd FILL
+X_1073_ DATA_B[26] gnd _1073_/Y vdd INVX1
+X_1293_ _1298_/A DATA_A[3] gnd _1293_/Y vdd OR2X2
+X_944_ _947_/A _943_/Y gnd _945_/C vdd NAND2X1
+X_825_ _828_/A _825_/B gnd _826_/C vdd NAND2X1
+X_1174_ sel_A[9] gnd _1223_/A vdd INVX2
+X_1055_ _1049_/A DATA_A[9] gnd _1055_/Y vdd OR2X2
+X_706_ _784_/A _706_/B _706_/C gnd _716_/B vdd NAND3X1
+X_926_ DATA_A[30] gnd _927_/B vdd INVX1
+X_1275_ DATA_B[19] gnd _1276_/B vdd INVX1
+X_807_ _807_/A _807_/B _807_/C gnd _807_/Y vdd NAND3X1
+X_1156_ DATA_B[16] gnd _1157_/B vdd INVX1
+XBUFX2_insert28 sel_A[5] gnd _885_/A vdd BUFX2
+X_688_ DATA_A[20] gnd _688_/Y vdd INVX1
+X_1037_ sel_B[7] _1037_/B _1035_/Y gnd _1038_/C vdd NAND3X1
+X_1257_ _1188_/A _1257_/B _1257_/C gnd _1262_/B vdd NAND3X1
+X_908_ _905_/A _908_/B gnd _910_/C vdd NAND2X1
+XFILL_2_0_1 gnd vdd FILL
+X_789_ DATA_B[15] gnd _789_/Y vdd INVX1
+X_1138_ _1010_/B _1137_/Y gnd _1138_/Y vdd NAND2X1
+X_1019_ _1049_/A DATA_A[4] gnd _1019_/Y vdd OR2X2
+X_670_ DATA_B[12] gnd _670_/Y vdd INVX1
+X_890_ sel_A[4] _890_/B _890_/C gnd _891_/C vdd NAND3X1
+XFILL_9_0_1 gnd vdd FILL
+X_1239_ DATA_B[26] gnd _1240_/B vdd INVX1
+X_771_ _769_/Y _810_/B _770_/Y gnd _771_/Y vdd OAI21X1
+X_1120_ _988_/Y _1120_/B _1120_/C gnd _1125_/B vdd NAND3X1
+X_652_ _652_/A gnd NIBBLE_OUT[15] vdd BUFX2
+X_991_ _995_/A _990_/Y gnd _992_/C vdd NAND2X1
+X_1001_ _988_/Y _998_/Y _1001_/C gnd _1006_/B vdd NAND3X1
+X_1221_ _1220_/A DATA_A[9] gnd _1221_/Y vdd OR2X2
+X_872_ _831_/A _872_/B _871_/Y gnd _882_/B vdd NAND3X1
+X_753_ sel_B[1] _753_/B gnd _754_/C vdd NAND2X1
+X_1102_ _1102_/A DATA_A[26] gnd _1102_/Y vdd NAND2X1
+X_973_ _973_/A _970_/Y _973_/C gnd _973_/Y vdd NAND3X1
+XBUFX2_insert29 sel_A[5] gnd _849_/A vdd BUFX2
+X_854_ DATA_A[20] gnd _854_/Y vdd INVX1
+X_1203_ sel_B[10] _1203_/B _1203_/C gnd _1204_/C vdd NAND3X1
+X_735_ SEL[0] _735_/B _735_/C gnd _736_/B vdd NAND3X1
+X_1084_ _1082_/Y _1080_/A _1083_/Y gnd _1084_/Y vdd OAI21X1
+X_955_ DATA_B[15] gnd _955_/Y vdd INVX1
+XFILL_3_1_0 gnd vdd FILL
+X_1304_ _1181_/A _1304_/B gnd _1305_/C vdd NAND2X1
+X_1185_ _1298_/A DATA_A[4] gnd _1185_/Y vdd OR2X2
+X_836_ DATA_B[12] gnd _838_/A vdd INVX1
+X_717_ _758_/A DATA_A[1] gnd _720_/B vdd OR2X2
+X_1066_ sel_A[6] _1066_/B _1066_/C gnd _1066_/Y vdd NAND3X1
+X_937_ _937_/A _936_/A _936_/Y gnd _937_/Y vdd OAI21X1
+X_1286_ _1238_/A _1286_/B _1286_/C gnd _1291_/B vdd NAND3X1
+X_818_ _818_/Q CLK _814_/Y gnd vdd DFFPOSX1
+X_1167_ _1238_/A _1167_/B _1167_/C gnd _1172_/B vdd NAND3X1
+X_1048_ _986_/Y _1048_/B _1048_/C gnd _1068_/A vdd NAND3X1
+X_699_ DATA_B[17] gnd _699_/Y vdd INVX1
+X_919_ sel_B[4] _919_/B gnd _920_/C vdd NAND2X1
+X_1268_ _1226_/A DATA_A[26] gnd _1269_/C vdd NAND2X1
+XBUFX2_insert30 sel_A[2] gnd _692_/A vdd BUFX2
+XFILL_2_1 gnd vdd FILL
+X_1149_ _647_/A CLK _1107_/Y gnd vdd DFFPOSX1
+X_800_ _765_/A _800_/B gnd _802_/C vdd NAND2X1
+X_681_ _807_/A _678_/Y _681_/C gnd _686_/B vdd NAND3X1
+X_1030_ _1074_/A DATA_B[1] gnd _1033_/B vdd OR2X2
+X_901_ SEL[1] _901_/B _901_/C gnd _901_/Y vdd NAND3X1
+X_1250_ _1250_/A _1211_/B _1250_/C gnd _1251_/B vdd OAI21X1
+XFILL_3_1_1 gnd vdd FILL
+X_782_ _782_/A DATA_B[11] gnd _783_/B vdd OR2X2
+X_1131_ DATA_A[27] gnd _1131_/Y vdd INVX1
+X_1012_ _1010_/B _1012_/B gnd _1013_/C vdd NAND2X1
+X_663_ _662_/A DATA_B[8] gnd _664_/B vdd OR2X2
+X_883_ _849_/A DATA_A[1] gnd _883_/Y vdd OR2X2
+X_1232_ sel_A[9] _1232_/B _1232_/C gnd _1232_/Y vdd NAND3X1
+X_764_ sel_A[0] _759_/Y _763_/Y gnd _774_/B vdd NAND3X1
+X_1113_ _998_/A _1112_/Y gnd _1115_/C vdd NAND2X1
+X_645_ _645_/A gnd NIBBLE_OUT[8] vdd BUFX2
+X_984_ _644_/A CLK _984_/D gnd vdd DFFPOSX1
+X_865_ DATA_B[17] gnd _865_/Y vdd INVX1
+XBUFX2_insert31 sel_A[2] gnd _810_/B vdd BUFX2
+X_746_ _709_/A DATA_B[6] gnd _746_/Y vdd OR2X2
+X_1214_ _1152_/Y _1214_/B _1214_/C gnd _1234_/A vdd NAND3X1
+XFILL_2_2 gnd vdd FILL
+X_1095_ sel_A[7] _1094_/Y _1093_/Y gnd _1096_/C vdd NAND3X1
+XFILL_10_1_0 gnd vdd FILL
+X_966_ _850_/A _966_/B gnd _968_/C vdd NAND2X1
+X_1315_ _651_/A CLK _1315_/D gnd vdd DFFPOSX1
+X_847_ _973_/A _847_/B _847_/C gnd _852_/B vdd NAND3X1
+X_1196_ _1241_/A DATA_B[1] gnd _1199_/B vdd OR2X2
+X_728_ _810_/B _728_/B gnd _729_/C vdd NAND2X1
+X_1077_ _997_/A _1077_/B _1076_/Y gnd _1087_/B vdd NAND3X1
+X_1297_ DATA_A[27] gnd _1297_/Y vdd INVX1
+X_948_ _947_/A DATA_B[11] gnd _949_/B vdd OR2X2
+X_829_ _828_/A DATA_B[8] gnd _829_/Y vdd OR2X2
+X_1178_ _1181_/A _1178_/B gnd _1179_/C vdd NAND2X1
+X_1059_ DATA_A[21] gnd _1059_/Y vdd INVX1
+X_710_ _660_/A _710_/B _710_/C gnd _710_/Y vdd NAND3X1
+X_930_ sel_A[3] _930_/B _930_/C gnd _940_/B vdd NAND3X1
+X_1279_ _1235_/A _1279_/B gnd _1281_/C vdd NAND2X1
+X_811_ sel_A[1] _810_/Y gnd _811_/Y vdd NAND2X1
+X_1160_ _1235_/A _1160_/B gnd _1162_/C vdd NAND2X1
+XBUFX2_insert32 sel_A[2] gnd _765_/A vdd BUFX2
+X_692_ _692_/A DATA_A[28] gnd _693_/C vdd NAND2X1
+XFILL_2_3 gnd vdd FILL
+X_1041_ _1123_/B _1040_/Y gnd _1042_/C vdd NAND2X1
+XFILL_10_1_1 gnd vdd FILL
+X_1261_ sel_A[10] _1261_/B _1259_/Y gnd _1262_/C vdd NAND3X1
+X_912_ _914_/A DATA_B[6] gnd _912_/Y vdd OR2X2
+X_793_ sel_B[0] _793_/B _793_/C gnd _794_/C vdd NAND3X1
+X_1142_ _1140_/Y _1102_/A _1142_/C gnd _1142_/Y vdd OAI21X1
+X_1023_ DATA_A[12] gnd _1023_/Y vdd INVX1
+X_674_ sel_B[0] _674_/B _674_/C gnd _675_/C vdd NAND3X1
+X_894_ _894_/A _893_/Y gnd _895_/C vdd NAND2X1
+X_1243_ _1243_/A _1243_/B _1243_/C gnd _1253_/B vdd NAND3X1
+X_775_ _775_/A _774_/Y _775_/C gnd _775_/Y vdd AOI21X1
+XFILL_6_0_0 gnd vdd FILL
+X_1124_ sel_B[7] _1123_/Y gnd _1125_/C vdd NAND2X1
+X_995_ _995_/A DATA_B[8] gnd _996_/B vdd OR2X2
+X_656_ sel_B[1] gnd _660_/A vdd INVX4
+X_1005_ sel_B[7] _1004_/Y gnd _1006_/C vdd NAND2X1
+X_1225_ DATA_A[21] gnd _1226_/B vdd INVX1
+X_876_ _826_/A _873_/Y _876_/C gnd _881_/B vdd NAND3X1
+X_757_ DATA_A[22] gnd _758_/B vdd INVX1
+X_1106_ SEL[2] _1096_/Y _1106_/C gnd _1106_/Y vdd NAND3X1
+X_977_ sel_A[4] _976_/Y gnd _978_/C vdd NAND2X1
+X_638_ _638_/A gnd NIBBLE_OUT[1] vdd BUFX2
+XBUFX2_insert33 sel_A[2] gnd _758_/A vdd BUFX2
+X_858_ _849_/A DATA_A[28] gnd _859_/C vdd NAND2X1
+XFILL_2_4 gnd vdd FILL
+X_1207_ _1274_/A _1207_/B gnd _1208_/C vdd NAND2X1
+X_1088_ _1064_/B DATA_A[6] gnd _1088_/Y vdd OR2X2
+X_739_ _662_/A _739_/B gnd _740_/C vdd NAND2X1
+X_959_ sel_B[3] _959_/B _959_/C gnd _960_/C vdd NAND3X1
+X_1308_ _1308_/A _1220_/A _1308_/C gnd _1309_/B vdd OAI21X1
+X_1189_ DATA_A[12] gnd _1189_/Y vdd INVX1
+X_840_ sel_B[3] _840_/B _840_/C gnd _841_/C vdd NAND3X1
+X_721_ DATA_A[25] gnd _722_/B vdd INVX1
+XFILL_6_0_1 gnd vdd FILL
+X_1070_ DATA_B[18] gnd _1070_/Y vdd INVX1
+X_941_ _941_/A _940_/Y _902_/C gnd _941_/Y vdd AOI21X1
+X_1290_ sel_B[10] _1290_/B gnd _1291_/C vdd NAND2X1
+X_822_ sel_B[4] gnd _826_/A vdd INVX4
+X_1171_ sel_B[10] _1171_/B gnd _1172_/C vdd NAND2X1
+X_1052_ _1061_/A _1049_/Y _1051_/Y gnd _1057_/B vdd NAND3X1
+X_703_ _700_/A _702_/Y gnd _703_/Y vdd NAND2X1
+X_923_ DATA_A[22] gnd _924_/B vdd INVX1
+X_1272_ SEL[3] _1272_/B _1272_/C gnd _1272_/Y vdd NAND3X1
+XBUFX2_insert34 sel_A[2] gnd _809_/A vdd BUFX2
+X_804_ _810_/B DATA_A[7] gnd _807_/B vdd OR2X2
+X_1153_ sel_B[9] gnd _1243_/A vdd INVX2
+X_685_ sel_A[1] _684_/Y _683_/Y gnd _685_/Y vdd NAND3X1
+X_1034_ DATA_B[25] gnd _1034_/Y vdd INVX1
+X_1254_ _1220_/A DATA_A[6] gnd _1257_/B vdd OR2X2
+XFILL_13_0_0 gnd vdd FILL
+X_905_ _905_/A _904_/Y gnd _905_/Y vdd NAND2X1
+X_786_ DATA_B[23] gnd _787_/B vdd INVX1
+X_1135_ _1105_/A _1130_/Y _1134_/Y gnd _1135_/Y vdd NAND3X1
+XFILL_0_1_0 gnd vdd FILL
+X_1016_ _1024_/A DATA_A[8] gnd _1016_/Y vdd OR2X2
+X_667_ DATA_B[20] gnd _668_/B vdd INVX1
+X_887_ DATA_A[25] gnd _887_/Y vdd INVX1
+X_1236_ DATA_B[18] gnd _1237_/B vdd INVX1
+X_768_ _807_/A _768_/B _768_/C gnd _773_/B vdd NAND3X1
+X_1117_ _998_/A DATA_B[7] gnd _1120_/B vdd OR2X2
+XFILL_7_1_0 gnd vdd FILL
+X_649_ _649_/A gnd NIBBLE_OUT[12] vdd BUFX2
+X_988_ sel_B[7] gnd _988_/Y vdd INVX4
+X_1218_ _1188_/A _1215_/Y _1217_/Y gnd _1218_/Y vdd NAND3X1
+X_869_ _828_/A _869_/B gnd _869_/Y vdd NAND2X1
+X_750_ DATA_B[14] gnd _750_/Y vdd INVX1
+X_1099_ _1010_/B _1099_/B gnd _1100_/C vdd NAND2X1
+XBUFX2_insert35 sel_B[11] gnd _1241_/A vdd BUFX2
+X_970_ _936_/A DATA_A[7] gnd _970_/Y vdd OR2X2
+X_851_ sel_A[4] _850_/Y _849_/Y gnd _851_/Y vdd NAND3X1
+XFILL_13_0_1 gnd vdd FILL
+X_1200_ DATA_B[25] gnd _1201_/B vdd INVX1
+X_732_ _730_/Y _809_/A _732_/C gnd _732_/Y vdd OAI21X1
+X_1081_ _988_/Y _1078_/Y _1080_/Y gnd _1081_/Y vdd NAND3X1
+X_952_ DATA_B[23] gnd _953_/B vdd INVX1
+XFILL_0_1_1 gnd vdd FILL
+X_1301_ _1223_/A _1301_/B _1300_/Y gnd _1311_/B vdd NAND3X1
+X_1182_ _1181_/A DATA_A[8] gnd _1183_/B vdd OR2X2
+X_833_ DATA_B[20] gnd _834_/B vdd INVX1
+X_714_ sel_B[1] _714_/B gnd _715_/C vdd NAND2X1
+X_1063_ _1102_/A DATA_A[29] gnd _1063_/Y vdd NAND2X1
+XFILL_10_1 gnd vdd FILL
+XFILL_7_1_1 gnd vdd FILL
+X_934_ _973_/A _931_/Y _933_/Y gnd _934_/Y vdd NAND3X1
+X_1283_ _1205_/A DATA_B[7] gnd _1286_/B vdd OR2X2
+X_815_ _637_/A CLK _815_/D gnd vdd DFFPOSX1
+X_1164_ _1205_/A DATA_B[4] gnd _1167_/B vdd OR2X2
+X_696_ SEL[0] _696_/B _695_/Y gnd _696_/Y vdd NAND3X1
+X_1045_ _1043_/Y _1123_/B _1044_/Y gnd _1045_/Y vdd OAI21X1
+X_916_ DATA_B[14] gnd _916_/Y vdd INVX1
+XBUFX2_insert36 sel_B[11] gnd _1235_/A vdd BUFX2
+X_1265_ _1217_/A _1265_/B gnd _1266_/C vdd NAND2X1
+X_1146_ _1146_/A _1146_/B _985_/Y gnd _1150_/D vdd AOI21X1
+X_797_ _765_/A _796_/Y gnd _798_/C vdd NAND2X1
+X_678_ DATA_A[0] _692_/A gnd _678_/Y vdd OR2X2
+X_1027_ sel_A[6] _1022_/Y _1026_/Y gnd _1028_/C vdd NAND3X1
+X_898_ _898_/A _894_/A _898_/C gnd _899_/B vdd OAI21X1
+XBUFX2_insert0 sel_A[11] gnd _1226_/A vdd BUFX2
+X_1247_ _1238_/A _1244_/Y _1247_/C gnd _1252_/B vdd NAND3X1
+X_779_ _660_/A _776_/Y _779_/C gnd _784_/B vdd NAND3X1
+X_1128_ DATA_A[19] gnd _1129_/B vdd INVX1
+X_1009_ sel_A[7] gnd _1061_/A vdd INVX4
+X_999_ DATA_B[20] gnd _999_/Y vdd INVX1
+X_660_ _660_/A _660_/B _660_/C gnd _665_/B vdd NAND3X1
+X_1229_ _1226_/A DATA_A[29] gnd _1230_/C vdd NAND2X1
+X_880_ sel_B[4] _880_/B gnd _881_/C vdd NAND2X1
+X_761_ _758_/A _761_/B gnd _763_/C vdd NAND2X1
+X_1110_ _1074_/A _1109_/Y gnd _1110_/Y vdd NAND2X1
+X_642_ _642_/A gnd NIBBLE_OUT[5] vdd BUFX2
+X_981_ _981_/Q CLK _863_/Y gnd vdd DFFPOSX1
+X_862_ SEL[1] _862_/B _861_/Y gnd _862_/Y vdd NAND3X1
+XBUFX2_insert37 sel_B[11] gnd _1211_/B vdd BUFX2
+X_1211_ _1211_/A _1211_/B _1211_/C gnd _1212_/B vdd OAI21X1
+X_1092_ DATA_A[30] gnd _1092_/Y vdd INVX1
+X_743_ _662_/A DATA_B[10] gnd _744_/B vdd OR2X2
+X_963_ _850_/A _963_/B gnd _964_/C vdd NAND2X1
+X_1312_ _1312_/A _1311_/Y _1273_/C gnd _1316_/D vdd AOI21X1
+X_844_ DATA_A[0] _885_/A gnd _847_/B vdd OR2X2
+XBUFX2_insert1 sel_A[11] gnd _1181_/A vdd BUFX2
+X_1193_ sel_A[9] _1193_/B _1193_/C gnd _1193_/Y vdd NAND3X1
+X_725_ _676_/Y _720_/Y _725_/C gnd _735_/B vdd NAND3X1
+X_1074_ _1074_/A _1073_/Y gnd _1074_/Y vdd NAND2X1
+XFILL_3_0_0 gnd vdd FILL
+X_1294_ DATA_A[19] gnd _1295_/B vdd INVX1
+X_945_ _826_/A _942_/Y _945_/C gnd _950_/B vdd NAND3X1
+X_826_ _826_/A _823_/Y _826_/C gnd _831_/B vdd NAND3X1
+X_1175_ sel_A[10] gnd _1188_/A vdd INVX4
+X_1056_ sel_A[7] _1055_/Y _1056_/C gnd _1056_/Y vdd NAND3X1
+X_707_ _709_/A DATA_B[5] gnd _710_/B vdd OR2X2
+X_927_ _894_/A _927_/B gnd _929_/C vdd NAND2X1
+X_1276_ _1274_/A _1276_/B gnd _1277_/C vdd NAND2X1
+X_808_ DATA_A[15] gnd _810_/A vdd INVX1
+X_1157_ _1241_/A _1157_/B gnd _1158_/C vdd NAND2X1
+X_689_ _692_/A _688_/Y gnd _689_/Y vdd NAND2X1
+XBUFX2_insert38 sel_B[11] gnd _1274_/A vdd BUFX2
+X_1038_ _997_/A _1038_/B _1038_/C gnd _1048_/B vdd NAND3X1
+X_1258_ DATA_A[30] gnd _1259_/B vdd INVX1
+X_909_ _905_/A DATA_B[10] gnd _910_/B vdd OR2X2
+XFILL_1_1 gnd vdd FILL
+X_790_ _672_/B DATA_B[31] gnd _791_/C vdd NAND2X1
+X_1139_ _1061_/A _1136_/Y _1138_/Y gnd _1144_/B vdd NAND3X1
+XBUFX2_insert2 sel_A[11] gnd _1298_/A vdd BUFX2
+X_1020_ DATA_A[20] gnd _1020_/Y vdd INVX1
+X_671_ _672_/B DATA_B[28] gnd _672_/C vdd NAND2X1
+X_891_ _939_/A _891_/B _891_/C gnd _901_/B vdd NAND3X1
+X_1240_ _1235_/A _1240_/B gnd _1242_/C vdd NAND2X1
+XFILL_3_0_1 gnd vdd FILL
+X_772_ sel_A[1] _771_/Y gnd _772_/Y vdd NAND2X1
+X_1121_ DATA_B[15] gnd _1121_/Y vdd INVX1
+X_992_ _988_/Y _992_/B _992_/C gnd _997_/B vdd NAND3X1
+X_653_ RESET_L gnd _775_/C vdd INVX2
+X_1002_ DATA_B[12] gnd _1002_/Y vdd INVX1
+X_1222_ sel_A[10] _1221_/Y _1222_/C gnd _1222_/Y vdd NAND3X1
+X_873_ _914_/A DATA_B[5] gnd _873_/Y vdd OR2X2
+XFILL_14_1 gnd vdd FILL
+X_754_ sel_B[0] _754_/B _754_/C gnd _755_/C vdd NAND3X1
+X_1103_ _1101_/Y _1102_/A _1102_/Y gnd _1103_/Y vdd OAI21X1
+X_974_ DATA_A[15] gnd _974_/Y vdd INVX1
+XBUFX2_insert39 sel_B[11] gnd _1205_/A vdd BUFX2
+X_855_ _850_/A _854_/Y gnd _856_/C vdd NAND2X1
+X_1204_ _1243_/A _1204_/B _1204_/C gnd _1214_/B vdd NAND3X1
+X_1085_ sel_B[7] _1084_/Y gnd _1086_/C vdd NAND2X1
+XFILL_10_0_0 gnd vdd FILL
+X_736_ _736_/A _736_/B _775_/C gnd _816_/D vdd AOI21X1
+XFILL_1_2 gnd vdd FILL
+X_956_ _875_/A DATA_B[31] gnd _957_/C vdd NAND2X1
+XBUFX2_insert3 sel_A[11] gnd _1220_/A vdd BUFX2
+X_1305_ _1188_/A _1305_/B _1305_/C gnd _1310_/B vdd NAND3X1
+X_1186_ DATA_A[20] gnd _1186_/Y vdd INVX1
+X_837_ _875_/A DATA_B[28] gnd _838_/C vdd NAND2X1
+X_718_ DATA_A[17] gnd _719_/B vdd INVX1
+X_1067_ SEL[2] _1057_/Y _1066_/Y gnd _1067_/Y vdd NAND3X1
+X_938_ sel_A[4] _937_/Y gnd _938_/Y vdd NAND2X1
+X_1287_ DATA_B[15] gnd _1287_/Y vdd INVX1
+XFILL_4_1_0 gnd vdd FILL
+X_819_ RESET_L gnd _902_/C vdd INVX2
+X_1168_ DATA_B[12] gnd _1170_/A vdd INVX1
+X_1049_ _1049_/A DATA_A[1] gnd _1049_/Y vdd OR2X2
+X_700_ _700_/A _699_/Y gnd _700_/Y vdd NAND2X1
+XFILL_14_2 gnd vdd FILL
+X_920_ sel_B[3] _920_/B _920_/C gnd _921_/C vdd NAND3X1
+X_1269_ _1269_/A _1226_/A _1269_/C gnd _1270_/B vdd OAI21X1
+X_801_ _765_/A DATA_A[11] gnd _802_/B vdd OR2X2
+X_1150_ _648_/A CLK _1150_/D gnd vdd DFFPOSX1
+X_682_ DATA_A[24] gnd _682_/Y vdd INVX1
+X_1031_ DATA_B[17] gnd _1031_/Y vdd INVX1
+X_902_ _902_/A _901_/Y _902_/C gnd _982_/D vdd AOI21X1
+X_1251_ sel_B[10] _1251_/B gnd _1252_/C vdd NAND2X1
+XFILL_10_0_1 gnd vdd FILL
+XBUFX2_insert4 sel_A[11] gnd _1217_/A vdd BUFX2
+X_783_ sel_B[1] _783_/B _783_/C gnd _784_/C vdd NAND3X1
+X_1132_ _1049_/A _1131_/Y gnd _1132_/Y vdd NAND2X1
+X_1013_ _1061_/A _1010_/Y _1013_/C gnd _1018_/B vdd NAND3X1
+X_664_ sel_B[1] _664_/B _664_/C gnd _665_/C vdd NAND3X1
+X_884_ DATA_A[17] gnd _884_/Y vdd INVX1
+X_1233_ SEL[3] _1233_/B _1232_/Y gnd _1233_/Y vdd NAND3X1
+XFILL_4_1_1 gnd vdd FILL
+X_765_ _765_/A DATA_A[2] gnd _768_/B vdd OR2X2
+X_1114_ _998_/A DATA_B[11] gnd _1115_/B vdd OR2X2
+X_646_ _646_/A gnd NIBBLE_OUT[9] vdd BUFX2
+X_985_ RESET_L gnd _985_/Y vdd INVX2
+X_1215_ _1217_/A DATA_A[1] gnd _1215_/Y vdd OR2X2
+X_866_ _905_/A _865_/Y gnd _867_/C vdd NAND2X1
+X_747_ DATA_B[22] gnd _747_/Y vdd INVX1
+X_1096_ sel_A[6] _1091_/Y _1096_/C gnd _1096_/Y vdd NAND3X1
+X_967_ _850_/A DATA_A[11] gnd _968_/B vdd OR2X2
+X_848_ DATA_A[24] gnd _848_/Y vdd INVX1
+X_1316_ _652_/A CLK _1316_/D gnd vdd DFFPOSX1
+X_1197_ DATA_B[17] gnd _1198_/B vdd INVX1
+X_729_ _807_/A _726_/Y _729_/C gnd _729_/Y vdd NAND3X1
+X_1078_ _1080_/A DATA_B[6] gnd _1078_/Y vdd OR2X2
+XBUFX2_insert5 sel_B[8] gnd _1074_/A vdd BUFX2
+XFILL_11_1_0 gnd vdd FILL
+X_1298_ _1298_/A _1297_/Y gnd _1298_/Y vdd NAND2X1
+X_949_ sel_B[4] _949_/B _947_/Y gnd _950_/C vdd NAND3X1
+XFILL_5_1 gnd vdd FILL
+X_830_ sel_B[4] _829_/Y _828_/Y gnd _830_/Y vdd NAND3X1
+X_1179_ _1188_/A _1179_/B _1179_/C gnd _1184_/B vdd NAND3X1
+X_711_ DATA_B[13] gnd _711_/Y vdd INVX1
+X_1060_ _1064_/B _1059_/Y gnd _1060_/Y vdd NAND2X1
+X_931_ _849_/A DATA_A[2] gnd _931_/Y vdd OR2X2
+X_1280_ _1235_/A DATA_B[11] gnd _1281_/B vdd OR2X2
+X_812_ sel_A[0] _807_/Y _811_/Y gnd _812_/Y vdd NAND3X1
+X_1161_ _1235_/A DATA_B[8] gnd _1162_/B vdd OR2X2
+X_693_ _691_/Y _692_/A _693_/C gnd _694_/B vdd OAI21X1
+X_1042_ _988_/Y _1039_/Y _1042_/C gnd _1042_/Y vdd NAND3X1
+X_1262_ sel_A[9] _1262_/B _1262_/C gnd _1272_/B vdd NAND3X1
+X_913_ DATA_B[22] gnd _913_/Y vdd INVX1
+X_794_ _675_/A _794_/B _794_/C gnd _814_/A vdd NAND3X1
+X_1143_ sel_A[7] _1142_/Y gnd _1143_/Y vdd NAND2X1
+XBUFX2_insert6 sel_B[8] gnd _1123_/B vdd BUFX2
+X_1024_ _1024_/A DATA_A[28] gnd _1024_/Y vdd NAND2X1
+X_675_ _675_/A _675_/B _675_/C gnd _697_/A vdd NAND3X1
+X_895_ _973_/A _892_/Y _895_/C gnd _895_/Y vdd NAND3X1
+XFILL_11_1_1 gnd vdd FILL
+X_1244_ _1274_/A DATA_B[6] gnd _1244_/Y vdd OR2X2
+XFILL_5_2 gnd vdd FILL
+X_1125_ sel_B[6] _1125_/B _1125_/C gnd _1126_/C vdd NAND3X1
+X_776_ _700_/A DATA_B[3] gnd _776_/Y vdd OR2X2
+XFILL_0_0_0 gnd vdd FILL
+X_996_ sel_B[7] _996_/B _996_/C gnd _997_/C vdd NAND3X1
+X_657_ DATA_B[0] _662_/A gnd _660_/B vdd OR2X2
+X_1006_ sel_B[6] _1006_/B _1006_/C gnd _1007_/C vdd NAND3X1
+X_1226_ _1226_/A _1226_/B gnd _1226_/Y vdd NAND2X1
+X_877_ DATA_B[13] gnd _879_/A vdd INVX1
+X_758_ _758_/A _758_/B gnd _758_/Y vdd NAND2X1
+XFILL_7_0_0 gnd vdd FILL
+X_1107_ _1107_/A _1106_/Y _985_/Y gnd _1107_/Y vdd AOI21X1
+X_978_ sel_A[3] _973_/Y _978_/C gnd _978_/Y vdd NAND3X1
+X_639_ _817_/Q gnd NIBBLE_OUT[2] vdd BUFX2
+X_859_ _859_/A _849_/A _859_/C gnd _859_/Y vdd OAI21X1
+X_1208_ _1238_/A _1208_/B _1208_/C gnd _1213_/B vdd NAND3X1
+X_1089_ DATA_A[22] gnd _1089_/Y vdd INVX1
+X_740_ _660_/A _740_/B _740_/C gnd _745_/B vdd NAND3X1
+X_960_ _820_/Y _960_/B _960_/C gnd _980_/A vdd NAND3X1
+X_1309_ sel_A[10] _1309_/B gnd _1309_/Y vdd NAND2X1
+X_1190_ _1181_/A DATA_A[28] gnd _1191_/C vdd NAND2X1
+XBUFX2_insert7 sel_B[8] gnd _1080_/A vdd BUFX2
+X_841_ _820_/Y _831_/Y _841_/C gnd _841_/Y vdd NAND3X1
+X_722_ _758_/A _722_/B gnd _724_/C vdd NAND2X1
+X_1071_ _1074_/A _1070_/Y gnd _1072_/C vdd NAND2X1
+XFILL_0_0_1 gnd vdd FILL
+XFILL_5_3 gnd vdd FILL
+X_1291_ sel_B[9] _1291_/B _1291_/C gnd _1292_/C vdd NAND3X1
+X_942_ _947_/A DATA_B[3] gnd _942_/Y vdd OR2X2
+X_823_ DATA_B[0] _828_/A gnd _823_/Y vdd OR2X2
+X_1172_ sel_B[9] _1172_/B _1172_/C gnd _1173_/C vdd NAND3X1
+X_1053_ DATA_A[25] gnd _1053_/Y vdd INVX1
+X_704_ _700_/A DATA_B[9] gnd _705_/B vdd OR2X2
+X_924_ _894_/A _924_/B gnd _925_/C vdd NAND2X1
+XFILL_7_0_1 gnd vdd FILL
+X_1273_ _1273_/A _1272_/Y _1273_/C gnd _1315_/D vdd AOI21X1
+X_805_ DATA_A[23] gnd _806_/B vdd INVX1
+X_1154_ sel_B[10] gnd _1238_/A vdd INVX4
+X_686_ _676_/Y _686_/B _685_/Y gnd _696_/B vdd NAND3X1
+X_1035_ _1074_/A _1034_/Y gnd _1035_/Y vdd NAND2X1
+X_1255_ DATA_A[22] gnd _1256_/B vdd INVX1
+X_906_ _826_/A _906_/B _905_/Y gnd _911_/B vdd NAND3X1
+X_787_ _782_/A _787_/B gnd _788_/C vdd NAND2X1
+X_1136_ _1010_/B DATA_A[7] gnd _1136_/Y vdd OR2X2
+XBUFX2_insert8 sel_B[8] gnd _995_/A vdd BUFX2
+.ends
+

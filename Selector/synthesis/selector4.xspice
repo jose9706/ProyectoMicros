@@ -1,726 +1,728 @@
 * XSpice netlist created from SPICE and liberty sources by spi2xspice.py
-*SPICE netlist created from BLIF module selector4 by blif2BSpice
-.subckt selector4 a_vdd a_gnd a_DATA_A_0_ a_DATA_A_1_ a_DATA_A_2_ a_DATA_A_3_ a_DATA_A_4_ a_DATA_A_5_ a_DATA_A_6_ a_DATA_A_7_ a_DATA_A_8_ a_DATA_A_9_ a_DATA_A_10_ a_DATA_A_11_ a_DATA_A_12_ a_DATA_A_13_ a_DATA_A_14_ a_DATA_A_15_ a_DATA_A_16_ a_DATA_A_17_ a_DATA_A_18_ a_DATA_A_19_ a_DATA_A_20_ a_DATA_A_21_ a_DATA_A_22_ a_DATA_A_23_ a_DATA_A_24_ a_DATA_A_25_ a_DATA_A_26_ a_DATA_A_27_ a_DATA_A_28_ a_DATA_A_29_ a_DATA_A_30_ a_DATA_A_31_ a_DATA_B_0_ a_DATA_B_1_ a_DATA_B_2_ a_DATA_B_3_ a_DATA_B_4_ a_DATA_B_5_ a_DATA_B_6_ a_DATA_B_7_ a_DATA_B_8_ a_DATA_B_9_ a_DATA_B_10_ a_DATA_B_11_ a_DATA_B_12_ a_DATA_B_13_ a_DATA_B_14_ a_DATA_B_15_ a_DATA_B_16_ a_DATA_B_17_ a_DATA_B_18_ a_DATA_B_19_ a_DATA_B_20_ a_DATA_B_21_ a_DATA_B_22_ a_DATA_B_23_ a_DATA_B_24_ a_DATA_B_25_ a_DATA_B_26_ a_DATA_B_27_ a_DATA_B_28_ a_DATA_B_29_ a_DATA_B_30_ a_DATA_B_31_ a_sel_A_0_ a_sel_A_1_ a_sel_A_2_ a_sel_A_3_ a_sel_A_4_ a_sel_A_5_ a_sel_A_6_ a_sel_A_7_ a_sel_A_8_ a_sel_A_9_ a_sel_A_10_ a_sel_A_11_ a_sel_B_0_ a_sel_B_1_ a_sel_B_2_ a_sel_B_3_ a_sel_B_4_ a_sel_B_5_ a_sel_B_6_ a_sel_B_7_ a_sel_B_8_ a_sel_B_9_ a_sel_B_10_ a_sel_B_11_ a_SEL_0_ a_SEL_1_ a_SEL_2_ a_SEL_3_ a_RESET_L a_CLK a_temp_0_ a_temp_1_ a_temp_2_ a_temp_3_ a_temp_4_ a_temp_5_ a_temp_6_ a_temp_7_ a_temp_8_ a_temp_9_ a_temp_10_ a_temp_11_ a_temp_12_ a_temp_13_ a_temp_14_ a_temp_15_
-ABUFX4_1 [sel_A_11_] sel_A_11_bF$buf4_ d_lut_BUFX4
-ABUFX4_2 [sel_A_11_] sel_A_11_bF$buf3_ d_lut_BUFX4
-ABUFX4_3 [sel_A_11_] sel_A_11_bF$buf2_ d_lut_BUFX4
-ABUFX4_4 [sel_A_11_] sel_A_11_bF$buf1_ d_lut_BUFX4
-ABUFX4_5 [sel_A_11_] sel_A_11_bF$buf0_ d_lut_BUFX4
-ABUFX4_6 [sel_B_8_] sel_B_8_bF$buf4_ d_lut_BUFX4
-ABUFX4_7 [sel_B_8_] sel_B_8_bF$buf3_ d_lut_BUFX4
-ABUFX4_8 [sel_B_8_] sel_B_8_bF$buf2_ d_lut_BUFX4
-ABUFX4_9 [sel_B_8_] sel_B_8_bF$buf1_ d_lut_BUFX4
-ABUFX4_10 [sel_B_8_] sel_B_8_bF$buf0_ d_lut_BUFX4
-ABUFX4_11 [sel_B_5_] sel_B_5_bF$buf4_ d_lut_BUFX4
-ABUFX4_12 [sel_B_5_] sel_B_5_bF$buf3_ d_lut_BUFX4
-ABUFX4_13 [sel_B_5_] sel_B_5_bF$buf2_ d_lut_BUFX4
-ABUFX4_14 [sel_B_5_] sel_B_5_bF$buf1_ d_lut_BUFX4
-ABUFX4_15 [sel_B_5_] sel_B_5_bF$buf0_ d_lut_BUFX4
-ABUFX4_16 [sel_A_8_] sel_A_8_bF$buf4_ d_lut_BUFX4
-ABUFX4_17 [sel_A_8_] sel_A_8_bF$buf3_ d_lut_BUFX4
-ABUFX4_18 [sel_A_8_] sel_A_8_bF$buf2_ d_lut_BUFX4
-ABUFX4_19 [sel_A_8_] sel_A_8_bF$buf1_ d_lut_BUFX4
-ABUFX4_20 [sel_A_8_] sel_A_8_bF$buf0_ d_lut_BUFX4
-ABUFX4_21 [sel_B_2_] sel_B_2_bF$buf4_ d_lut_BUFX4
-ABUFX4_22 [sel_B_2_] sel_B_2_bF$buf3_ d_lut_BUFX4
-ABUFX4_23 [sel_B_2_] sel_B_2_bF$buf2_ d_lut_BUFX4
-ABUFX4_24 [sel_B_2_] sel_B_2_bF$buf1_ d_lut_BUFX4
-ABUFX4_25 [sel_B_2_] sel_B_2_bF$buf0_ d_lut_BUFX4
-ABUFX4_26 [sel_A_5_] sel_A_5_bF$buf4_ d_lut_BUFX4
-ABUFX4_27 [sel_A_5_] sel_A_5_bF$buf3_ d_lut_BUFX4
-ABUFX4_28 [sel_A_5_] sel_A_5_bF$buf2_ d_lut_BUFX4
-ABUFX4_29 [sel_A_5_] sel_A_5_bF$buf1_ d_lut_BUFX4
-ABUFX4_30 [sel_A_5_] sel_A_5_bF$buf0_ d_lut_BUFX4
-ABUFX4_31 [sel_A_2_] sel_A_2_bF$buf4_ d_lut_BUFX4
-ABUFX4_32 [sel_A_2_] sel_A_2_bF$buf3_ d_lut_BUFX4
-ABUFX4_33 [sel_A_2_] sel_A_2_bF$buf2_ d_lut_BUFX4
-ABUFX4_34 [sel_A_2_] sel_A_2_bF$buf1_ d_lut_BUFX4
-ABUFX4_35 [sel_A_2_] sel_A_2_bF$buf0_ d_lut_BUFX4
-ABUFX4_36 [sel_B_11_] sel_B_11_bF$buf4_ d_lut_BUFX4
-ABUFX4_37 [sel_B_11_] sel_B_11_bF$buf3_ d_lut_BUFX4
-ABUFX4_38 [sel_B_11_] sel_B_11_bF$buf2_ d_lut_BUFX4
-ABUFX4_39 [sel_B_11_] sel_B_11_bF$buf1_ d_lut_BUFX4
-ABUFX4_40 [sel_B_11_] sel_B_11_bF$buf0_ d_lut_BUFX4
-ANAND2X1_1 [sel_B_8_bF$buf4_ _469_] _470_ d_lut_NAND2X1
-ANAND3X1_1 [_458_ _468_ _470_] _471_ d_lut_NAND3X1
-AINVX1_1 [DATA_B_12_] _472_ d_lut_INVX1
-ANAND2X1_2 [sel_B_8_bF$buf3_ DATA_B_28_] _473_ d_lut_NAND2X1
-AOAI21X1_1 [_472_ sel_B_8_bF$buf2_ _473_] _474_ d_lut_OAI21X1
-ANAND2X1_3 [sel_B_7_ _474_] _475_ d_lut_NAND2X1
-ANAND3X1_2 [sel_B_6_ _471_ _475_] _476_ d_lut_NAND3X1
-ANAND3X1_3 [_456_ _467_ _476_] _477_ d_lut_NAND3X1
-AINVX2_1 [sel_A_6_] _320_ d_lut_INVX2
-AINVX4_1 [sel_A_7_] _321_ d_lut_INVX4
-AOR2X2_1 [DATA_A_0_ sel_A_8_bF$buf4_] _322_ d_lut_OR2X2
-AINVX1_2 [DATA_A_16_] _323_ d_lut_INVX1
-ANAND2X1_4 [sel_A_8_bF$buf3_ _323_] _324_ d_lut_NAND2X1
-ANAND3X1_4 [_321_ _322_ _324_] _325_ d_lut_NAND3X1
-AINVX1_3 [DATA_A_24_] _326_ d_lut_INVX1
-ANAND2X1_5 [sel_A_8_bF$buf2_ _326_] _327_ d_lut_NAND2X1
-AOR2X2_2 [sel_A_8_bF$buf1_ DATA_A_8_] _328_ d_lut_OR2X2
-ANAND3X1_5 [sel_A_7_ _328_ _327_] _329_ d_lut_NAND3X1
-ANAND3X1_6 [_320_ _325_ _329_] _330_ d_lut_NAND3X1
-AOR2X2_3 [sel_A_8_bF$buf0_ DATA_A_4_] _331_ d_lut_OR2X2
-AINVX1_4 [DATA_A_20_] _332_ d_lut_INVX1
-ANAND2X1_6 [sel_A_8_bF$buf4_ _332_] _333_ d_lut_NAND2X1
-ANAND3X1_7 [_321_ _331_ _333_] _334_ d_lut_NAND3X1
-AINVX1_5 [DATA_A_12_] _335_ d_lut_INVX1
-ANAND2X1_7 [sel_A_8_bF$buf3_ DATA_A_28_] _336_ d_lut_NAND2X1
-AOAI21X1_2 [_335_ sel_A_8_bF$buf2_ _336_] _337_ d_lut_OAI21X1
-ANAND2X1_8 [sel_A_7_ _337_] _338_ d_lut_NAND2X1
-ANAND3X1_8 [sel_A_6_ _334_ _338_] _339_ d_lut_NAND3X1
-ANAND3X1_9 [SEL_2_ _330_ _339_] _340_ d_lut_NAND3X1
-AAOI21X1_1 [_477_ _340_ _455_] _319__0_ d_lut_AOI21X1
-AOR2X2_4 [sel_B_8_bF$buf1_ DATA_B_1_] _341_ d_lut_OR2X2
-AINVX1_6 [DATA_B_17_] _342_ d_lut_INVX1
-ANAND2X1_9 [sel_B_8_bF$buf0_ _342_] _343_ d_lut_NAND2X1
-ANAND3X1_10 [_458_ _341_ _343_] _344_ d_lut_NAND3X1
-AINVX1_7 [DATA_B_25_] _345_ d_lut_INVX1
-ANAND2X1_10 [sel_B_8_bF$buf4_ _345_] _346_ d_lut_NAND2X1
-AOR2X2_5 [sel_B_8_bF$buf3_ DATA_B_9_] _347_ d_lut_OR2X2
-ANAND3X1_11 [sel_B_7_ _347_ _346_] _348_ d_lut_NAND3X1
-ANAND3X1_12 [_457_ _344_ _348_] _349_ d_lut_NAND3X1
-AOR2X2_6 [sel_B_8_bF$buf2_ DATA_B_5_] _350_ d_lut_OR2X2
-AINVX1_8 [DATA_B_21_] _351_ d_lut_INVX1
-ANAND2X1_11 [sel_B_8_bF$buf1_ _351_] _352_ d_lut_NAND2X1
-ANAND3X1_13 [_458_ _350_ _352_] _353_ d_lut_NAND3X1
-AINVX1_9 [DATA_B_13_] _354_ d_lut_INVX1
-ANAND2X1_12 [sel_B_8_bF$buf0_ DATA_B_29_] _355_ d_lut_NAND2X1
-AOAI21X1_3 [_354_ sel_B_8_bF$buf4_ _355_] _356_ d_lut_OAI21X1
-ANAND2X1_13 [sel_B_7_ _356_] _357_ d_lut_NAND2X1
-ANAND3X1_14 [sel_B_6_ _353_ _357_] _358_ d_lut_NAND3X1
-ANAND3X1_15 [_456_ _349_ _358_] _359_ d_lut_NAND3X1
-AOR2X2_7 [sel_A_8_bF$buf1_ DATA_A_1_] _360_ d_lut_OR2X2
-AINVX1_10 [DATA_A_17_] _361_ d_lut_INVX1
-ANAND2X1_14 [sel_A_8_bF$buf0_ _361_] _362_ d_lut_NAND2X1
-ANAND3X1_16 [_321_ _360_ _362_] _363_ d_lut_NAND3X1
-AINVX1_11 [DATA_A_25_] _364_ d_lut_INVX1
-ANAND2X1_15 [sel_A_8_bF$buf4_ _364_] _365_ d_lut_NAND2X1
-AOR2X2_8 [sel_A_8_bF$buf3_ DATA_A_9_] _366_ d_lut_OR2X2
-ANAND3X1_17 [sel_A_7_ _366_ _365_] _367_ d_lut_NAND3X1
-ANAND3X1_18 [_320_ _363_ _367_] _368_ d_lut_NAND3X1
-AOR2X2_9 [sel_A_8_bF$buf2_ DATA_A_5_] _369_ d_lut_OR2X2
-AINVX1_12 [DATA_A_21_] _370_ d_lut_INVX1
-ANAND2X1_16 [sel_A_8_bF$buf1_ _370_] _371_ d_lut_NAND2X1
-ANAND3X1_19 [_321_ _369_ _371_] _372_ d_lut_NAND3X1
-AINVX1_13 [DATA_A_13_] _373_ d_lut_INVX1
-ANAND2X1_17 [sel_A_8_bF$buf0_ DATA_A_29_] _374_ d_lut_NAND2X1
-AOAI21X1_4 [_373_ sel_A_8_bF$buf4_ _374_] _375_ d_lut_OAI21X1
-ANAND2X1_18 [sel_A_7_ _375_] _376_ d_lut_NAND2X1
-ANAND3X1_20 [sel_A_6_ _372_ _376_] _377_ d_lut_NAND3X1
-ANAND3X1_21 [SEL_2_ _368_ _377_] _378_ d_lut_NAND3X1
-AAOI21X1_2 [_359_ _378_ _455_] _319__1_ d_lut_AOI21X1
-AOR2X2_10 [sel_B_8_bF$buf3_ DATA_B_2_] _379_ d_lut_OR2X2
-AINVX1_14 [DATA_B_18_] _380_ d_lut_INVX1
-ANAND2X1_19 [sel_B_8_bF$buf2_ _380_] _381_ d_lut_NAND2X1
-ANAND3X1_22 [_458_ _379_ _381_] _382_ d_lut_NAND3X1
-AINVX1_15 [DATA_B_26_] _383_ d_lut_INVX1
-ANAND2X1_20 [sel_B_8_bF$buf1_ _383_] _384_ d_lut_NAND2X1
-AOR2X2_11 [sel_B_8_bF$buf0_ DATA_B_10_] _385_ d_lut_OR2X2
-ANAND3X1_23 [sel_B_7_ _385_ _384_] _386_ d_lut_NAND3X1
-ANAND3X1_24 [_457_ _382_ _386_] _387_ d_lut_NAND3X1
-AOR2X2_12 [sel_B_8_bF$buf4_ DATA_B_6_] _388_ d_lut_OR2X2
-AINVX1_16 [DATA_B_22_] _389_ d_lut_INVX1
-ANAND2X1_21 [sel_B_8_bF$buf3_ _389_] _390_ d_lut_NAND2X1
-ANAND3X1_25 [_458_ _388_ _390_] _391_ d_lut_NAND3X1
-AINVX1_17 [DATA_B_14_] _392_ d_lut_INVX1
-ANAND2X1_22 [sel_B_8_bF$buf2_ DATA_B_30_] _393_ d_lut_NAND2X1
-AOAI21X1_5 [_392_ sel_B_8_bF$buf1_ _393_] _394_ d_lut_OAI21X1
-ANAND2X1_23 [sel_B_7_ _394_] _395_ d_lut_NAND2X1
-ANAND3X1_26 [sel_B_6_ _391_ _395_] _396_ d_lut_NAND3X1
-ANAND3X1_27 [_456_ _387_ _396_] _397_ d_lut_NAND3X1
-AOR2X2_13 [sel_A_8_bF$buf3_ DATA_A_6_] _398_ d_lut_OR2X2
-AINVX1_18 [DATA_A_22_] _399_ d_lut_INVX1
-ANAND2X1_24 [sel_A_8_bF$buf2_ _399_] _400_ d_lut_NAND2X1
-ANAND3X1_28 [_321_ _398_ _400_] _401_ d_lut_NAND3X1
-AINVX1_19 [DATA_A_30_] _402_ d_lut_INVX1
-ANAND2X1_25 [sel_A_8_bF$buf1_ _402_] _403_ d_lut_NAND2X1
-AOR2X2_14 [sel_A_8_bF$buf0_ DATA_A_14_] _404_ d_lut_OR2X2
-ANAND3X1_29 [sel_A_7_ _404_ _403_] _405_ d_lut_NAND3X1
-ANAND3X1_30 [sel_A_6_ _401_ _405_] _406_ d_lut_NAND3X1
-AOR2X2_15 [sel_A_8_bF$buf4_ DATA_A_2_] _407_ d_lut_OR2X2
-AINVX1_20 [DATA_A_18_] _408_ d_lut_INVX1
-ANAND2X1_26 [sel_A_8_bF$buf3_ _408_] _409_ d_lut_NAND2X1
-ANAND3X1_31 [_321_ _407_ _409_] _410_ d_lut_NAND3X1
-AINVX1_21 [DATA_A_10_] _411_ d_lut_INVX1
-ANAND2X1_27 [sel_A_8_bF$buf2_ DATA_A_26_] _412_ d_lut_NAND2X1
-AOAI21X1_6 [_411_ sel_A_8_bF$buf1_ _412_] _413_ d_lut_OAI21X1
-ANAND2X1_28 [sel_A_7_ _413_] _414_ d_lut_NAND2X1
-ANAND3X1_32 [_320_ _410_ _414_] _415_ d_lut_NAND3X1
-ANAND3X1_33 [SEL_2_ _406_ _415_] _416_ d_lut_NAND3X1
-AAOI21X1_3 [_397_ _416_ _455_] _319__2_ d_lut_AOI21X1
-AOR2X2_16 [sel_B_8_bF$buf0_ DATA_B_3_] _417_ d_lut_OR2X2
-AINVX1_22 [DATA_B_19_] _418_ d_lut_INVX1
-ANAND2X1_29 [sel_B_8_bF$buf4_ _418_] _419_ d_lut_NAND2X1
-ANAND3X1_34 [_458_ _417_ _419_] _420_ d_lut_NAND3X1
-AINVX1_23 [DATA_B_27_] _421_ d_lut_INVX1
-ANAND2X1_30 [sel_B_8_bF$buf3_ _421_] _422_ d_lut_NAND2X1
-AOR2X2_17 [sel_B_8_bF$buf2_ DATA_B_11_] _423_ d_lut_OR2X2
-ANAND3X1_35 [sel_B_7_ _423_ _422_] _424_ d_lut_NAND3X1
-ANAND3X1_36 [_457_ _420_ _424_] _425_ d_lut_NAND3X1
-AOR2X2_18 [sel_B_8_bF$buf1_ DATA_B_7_] _426_ d_lut_OR2X2
-AINVX1_24 [DATA_B_23_] _427_ d_lut_INVX1
-ANAND2X1_31 [sel_B_8_bF$buf0_ _427_] _428_ d_lut_NAND2X1
-ANAND3X1_37 [_458_ _426_ _428_] _429_ d_lut_NAND3X1
-AINVX1_25 [DATA_B_15_] _430_ d_lut_INVX1
-ANAND2X1_32 [sel_B_8_bF$buf4_ DATA_B_31_] _431_ d_lut_NAND2X1
-AOAI21X1_7 [_430_ sel_B_8_bF$buf3_ _431_] _432_ d_lut_OAI21X1
-ANAND2X1_33 [sel_B_7_ _432_] _433_ d_lut_NAND2X1
-ANAND3X1_38 [sel_B_6_ _429_ _433_] _434_ d_lut_NAND3X1
-ANAND3X1_39 [_456_ _425_ _434_] _435_ d_lut_NAND3X1
-AOR2X2_19 [sel_A_8_bF$buf0_ DATA_A_3_] _436_ d_lut_OR2X2
-AINVX1_26 [DATA_A_19_] _437_ d_lut_INVX1
-ANAND2X1_34 [sel_A_8_bF$buf4_ _437_] _438_ d_lut_NAND2X1
-ANAND3X1_40 [_321_ _436_ _438_] _439_ d_lut_NAND3X1
-AINVX1_27 [DATA_A_27_] _440_ d_lut_INVX1
-ANAND2X1_35 [sel_A_8_bF$buf3_ _440_] _441_ d_lut_NAND2X1
-AOR2X2_20 [sel_A_8_bF$buf2_ DATA_A_11_] _442_ d_lut_OR2X2
-ANAND3X1_41 [sel_A_7_ _442_ _441_] _443_ d_lut_NAND3X1
-ANAND3X1_42 [_320_ _439_ _443_] _444_ d_lut_NAND3X1
-AOR2X2_21 [sel_A_8_bF$buf1_ DATA_A_7_] _445_ d_lut_OR2X2
-AINVX1_28 [DATA_A_23_] _446_ d_lut_INVX1
-ANAND2X1_36 [sel_A_8_bF$buf0_ _446_] _447_ d_lut_NAND2X1
-ANAND3X1_43 [_321_ _445_ _447_] _448_ d_lut_NAND3X1
-AINVX1_29 [DATA_A_15_] _449_ d_lut_INVX1
-ANAND2X1_37 [sel_A_8_bF$buf4_ DATA_A_31_] _450_ d_lut_NAND2X1
-AOAI21X1_8 [_449_ sel_A_8_bF$buf3_ _450_] _451_ d_lut_OAI21X1
-ANAND2X1_38 [sel_A_7_ _451_] _452_ d_lut_NAND2X1
-ANAND3X1_44 [sel_A_6_ _448_ _452_] _453_ d_lut_NAND3X1
-ANAND3X1_45 [SEL_2_ _444_ _453_] _454_ d_lut_NAND3X1
-AAOI21X1_4 [_435_ _454_ _455_] _319__3_ d_lut_AOI21X1
-ADFFPOSX1_1 _319__0_ CLK NULL NULL _0__8_ NULL ddflop
-ADFFPOSX1_2 _319__1_ CLK NULL NULL _0__9_ NULL ddflop
-ADFFPOSX1_3 _319__2_ CLK NULL NULL _0__10_ NULL ddflop
-ADFFPOSX1_4 _319__3_ CLK NULL NULL _0__11_ NULL ddflop
-AINVX2_2 [RESET_L] _614_ d_lut_INVX2
-AINVX2_3 [SEL_3_] _615_ d_lut_INVX2
-AINVX2_4 [sel_B_9_] _616_ d_lut_INVX2
-AINVX4_2 [sel_B_10_] _617_ d_lut_INVX4
-AOR2X2_22 [DATA_B_0_ sel_B_11_bF$buf4_] _618_ d_lut_OR2X2
-AINVX1_30 [DATA_B_16_] _619_ d_lut_INVX1
-ANAND2X1_39 [sel_B_11_bF$buf3_ _619_] _620_ d_lut_NAND2X1
-ANAND3X1_46 [_617_ _618_ _620_] _621_ d_lut_NAND3X1
-AINVX1_31 [DATA_B_24_] _622_ d_lut_INVX1
-ANAND2X1_40 [sel_B_11_bF$buf2_ _622_] _623_ d_lut_NAND2X1
-AOR2X2_23 [sel_B_11_bF$buf1_ DATA_B_8_] _624_ d_lut_OR2X2
-ANAND3X1_47 [sel_B_10_ _624_ _623_] _625_ d_lut_NAND3X1
-ANAND3X1_48 [_616_ _621_ _625_] _626_ d_lut_NAND3X1
-AOR2X2_24 [sel_B_11_bF$buf0_ DATA_B_4_] _627_ d_lut_OR2X2
-AINVX1_32 [DATA_B_20_] _628_ d_lut_INVX1
-ANAND2X1_41 [sel_B_11_bF$buf4_ _628_] _629_ d_lut_NAND2X1
-ANAND3X1_49 [_617_ _627_ _629_] _630_ d_lut_NAND3X1
-AINVX1_33 [DATA_B_12_] _631_ d_lut_INVX1
-ANAND2X1_42 [sel_B_11_bF$buf3_ DATA_B_28_] _632_ d_lut_NAND2X1
-AOAI21X1_9 [_631_ sel_B_11_bF$buf2_ _632_] _633_ d_lut_OAI21X1
-ANAND2X1_43 [sel_B_10_ _633_] _634_ d_lut_NAND2X1
-ANAND3X1_50 [sel_B_9_ _630_ _634_] _635_ d_lut_NAND3X1
-ANAND3X1_51 [_615_ _626_ _635_] _636_ d_lut_NAND3X1
-AINVX2_5 [sel_A_9_] _479_ d_lut_INVX2
-AINVX4_3 [sel_A_10_] _480_ d_lut_INVX4
-AOR2X2_25 [DATA_A_0_ sel_A_11_bF$buf4_] _481_ d_lut_OR2X2
-AINVX1_34 [DATA_A_16_] _482_ d_lut_INVX1
-ANAND2X1_44 [sel_A_11_bF$buf3_ _482_] _483_ d_lut_NAND2X1
-ANAND3X1_52 [_480_ _481_ _483_] _484_ d_lut_NAND3X1
-AINVX1_35 [DATA_A_24_] _485_ d_lut_INVX1
-ANAND2X1_45 [sel_A_11_bF$buf2_ _485_] _486_ d_lut_NAND2X1
-AOR2X2_26 [sel_A_11_bF$buf1_ DATA_A_8_] _487_ d_lut_OR2X2
-ANAND3X1_53 [sel_A_10_ _487_ _486_] _488_ d_lut_NAND3X1
-ANAND3X1_54 [_479_ _484_ _488_] _489_ d_lut_NAND3X1
-AOR2X2_27 [sel_A_11_bF$buf0_ DATA_A_4_] _490_ d_lut_OR2X2
-AINVX1_36 [DATA_A_20_] _491_ d_lut_INVX1
-ANAND2X1_46 [sel_A_11_bF$buf4_ _491_] _492_ d_lut_NAND2X1
-ANAND3X1_55 [_480_ _490_ _492_] _493_ d_lut_NAND3X1
-AINVX1_37 [DATA_A_12_] _494_ d_lut_INVX1
-ANAND2X1_47 [sel_A_11_bF$buf3_ DATA_A_28_] _495_ d_lut_NAND2X1
-AOAI21X1_10 [_494_ sel_A_11_bF$buf2_ _495_] _496_ d_lut_OAI21X1
-ANAND2X1_48 [sel_A_10_ _496_] _497_ d_lut_NAND2X1
-ANAND3X1_56 [sel_A_9_ _493_ _497_] _498_ d_lut_NAND3X1
-ANAND3X1_57 [SEL_3_ _489_ _498_] _499_ d_lut_NAND3X1
-AAOI21X1_5 [_636_ _499_ _614_] _478__0_ d_lut_AOI21X1
-AOR2X2_28 [sel_B_11_bF$buf1_ DATA_B_1_] _500_ d_lut_OR2X2
-AINVX1_38 [DATA_B_17_] _501_ d_lut_INVX1
-ANAND2X1_49 [sel_B_11_bF$buf0_ _501_] _502_ d_lut_NAND2X1
-ANAND3X1_58 [_617_ _500_ _502_] _503_ d_lut_NAND3X1
-AINVX1_39 [DATA_B_25_] _504_ d_lut_INVX1
-ANAND2X1_50 [sel_B_11_bF$buf4_ _504_] _505_ d_lut_NAND2X1
-AOR2X2_29 [sel_B_11_bF$buf3_ DATA_B_9_] _506_ d_lut_OR2X2
-ANAND3X1_59 [sel_B_10_ _506_ _505_] _507_ d_lut_NAND3X1
-ANAND3X1_60 [_616_ _503_ _507_] _508_ d_lut_NAND3X1
-AOR2X2_30 [sel_B_11_bF$buf2_ DATA_B_5_] _509_ d_lut_OR2X2
-AINVX1_40 [DATA_B_21_] _510_ d_lut_INVX1
-ANAND2X1_51 [sel_B_11_bF$buf1_ _510_] _511_ d_lut_NAND2X1
-ANAND3X1_61 [_617_ _509_ _511_] _512_ d_lut_NAND3X1
-AINVX1_41 [DATA_B_13_] _513_ d_lut_INVX1
-ANAND2X1_52 [sel_B_11_bF$buf0_ DATA_B_29_] _514_ d_lut_NAND2X1
-AOAI21X1_11 [_513_ sel_B_11_bF$buf4_ _514_] _515_ d_lut_OAI21X1
-ANAND2X1_53 [sel_B_10_ _515_] _516_ d_lut_NAND2X1
-ANAND3X1_62 [sel_B_9_ _512_ _516_] _517_ d_lut_NAND3X1
-ANAND3X1_63 [_615_ _508_ _517_] _518_ d_lut_NAND3X1
-AOR2X2_31 [sel_A_11_bF$buf1_ DATA_A_1_] _519_ d_lut_OR2X2
-AINVX1_42 [DATA_A_17_] _520_ d_lut_INVX1
-ANAND2X1_54 [sel_A_11_bF$buf0_ _520_] _521_ d_lut_NAND2X1
-ANAND3X1_64 [_480_ _519_ _521_] _522_ d_lut_NAND3X1
-AINVX1_43 [DATA_A_25_] _523_ d_lut_INVX1
-ANAND2X1_55 [sel_A_11_bF$buf4_ _523_] _524_ d_lut_NAND2X1
-AOR2X2_32 [sel_A_11_bF$buf3_ DATA_A_9_] _525_ d_lut_OR2X2
-ANAND3X1_65 [sel_A_10_ _525_ _524_] _526_ d_lut_NAND3X1
-ANAND3X1_66 [_479_ _522_ _526_] _527_ d_lut_NAND3X1
-AOR2X2_33 [sel_A_11_bF$buf2_ DATA_A_5_] _528_ d_lut_OR2X2
-AINVX1_44 [DATA_A_21_] _529_ d_lut_INVX1
-ANAND2X1_56 [sel_A_11_bF$buf1_ _529_] _530_ d_lut_NAND2X1
-ANAND3X1_67 [_480_ _528_ _530_] _531_ d_lut_NAND3X1
-AINVX1_45 [DATA_A_13_] _532_ d_lut_INVX1
-ANAND2X1_57 [sel_A_11_bF$buf0_ DATA_A_29_] _533_ d_lut_NAND2X1
-AOAI21X1_12 [_532_ sel_A_11_bF$buf4_ _533_] _534_ d_lut_OAI21X1
-ANAND2X1_58 [sel_A_10_ _534_] _535_ d_lut_NAND2X1
-ANAND3X1_68 [sel_A_9_ _531_ _535_] _536_ d_lut_NAND3X1
-ANAND3X1_69 [SEL_3_ _527_ _536_] _537_ d_lut_NAND3X1
-AAOI21X1_6 [_518_ _537_ _614_] _478__1_ d_lut_AOI21X1
-AOR2X2_34 [sel_B_11_bF$buf3_ DATA_B_2_] _538_ d_lut_OR2X2
-AINVX1_46 [DATA_B_18_] _539_ d_lut_INVX1
-ANAND2X1_59 [sel_B_11_bF$buf2_ _539_] _540_ d_lut_NAND2X1
-ANAND3X1_70 [_617_ _538_ _540_] _541_ d_lut_NAND3X1
-AINVX1_47 [DATA_B_26_] _542_ d_lut_INVX1
-ANAND2X1_60 [sel_B_11_bF$buf1_ _542_] _543_ d_lut_NAND2X1
-AOR2X2_35 [sel_B_11_bF$buf0_ DATA_B_10_] _544_ d_lut_OR2X2
-ANAND3X1_71 [sel_B_10_ _544_ _543_] _545_ d_lut_NAND3X1
-ANAND3X1_72 [_616_ _541_ _545_] _546_ d_lut_NAND3X1
-AOR2X2_36 [sel_B_11_bF$buf4_ DATA_B_6_] _547_ d_lut_OR2X2
-AINVX1_48 [DATA_B_22_] _548_ d_lut_INVX1
-ANAND2X1_61 [sel_B_11_bF$buf3_ _548_] _549_ d_lut_NAND2X1
-ANAND3X1_73 [_617_ _547_ _549_] _550_ d_lut_NAND3X1
-AINVX1_49 [DATA_B_14_] _551_ d_lut_INVX1
-ANAND2X1_62 [sel_B_11_bF$buf2_ DATA_B_30_] _552_ d_lut_NAND2X1
-AOAI21X1_13 [_551_ sel_B_11_bF$buf1_ _552_] _553_ d_lut_OAI21X1
-ANAND2X1_63 [sel_B_10_ _553_] _554_ d_lut_NAND2X1
-ANAND3X1_74 [sel_B_9_ _550_ _554_] _555_ d_lut_NAND3X1
-ANAND3X1_75 [_615_ _546_ _555_] _556_ d_lut_NAND3X1
-AOR2X2_37 [sel_A_11_bF$buf3_ DATA_A_6_] _557_ d_lut_OR2X2
-AINVX1_50 [DATA_A_22_] _558_ d_lut_INVX1
-ANAND2X1_64 [sel_A_11_bF$buf2_ _558_] _559_ d_lut_NAND2X1
-ANAND3X1_76 [_480_ _557_ _559_] _560_ d_lut_NAND3X1
-AINVX1_51 [DATA_A_30_] _561_ d_lut_INVX1
-ANAND2X1_65 [sel_A_11_bF$buf1_ _561_] _562_ d_lut_NAND2X1
-AOR2X2_38 [sel_A_11_bF$buf0_ DATA_A_14_] _563_ d_lut_OR2X2
-ANAND3X1_77 [sel_A_10_ _563_ _562_] _564_ d_lut_NAND3X1
-ANAND3X1_78 [sel_A_9_ _560_ _564_] _565_ d_lut_NAND3X1
-AOR2X2_39 [sel_A_11_bF$buf4_ DATA_A_2_] _566_ d_lut_OR2X2
-AINVX1_52 [DATA_A_18_] _567_ d_lut_INVX1
-ANAND2X1_66 [sel_A_11_bF$buf3_ _567_] _568_ d_lut_NAND2X1
-ANAND3X1_79 [_480_ _566_ _568_] _569_ d_lut_NAND3X1
-AINVX1_53 [DATA_A_10_] _570_ d_lut_INVX1
-ANAND2X1_67 [sel_A_11_bF$buf2_ DATA_A_26_] _571_ d_lut_NAND2X1
-AOAI21X1_14 [_570_ sel_A_11_bF$buf1_ _571_] _572_ d_lut_OAI21X1
-ANAND2X1_68 [sel_A_10_ _572_] _573_ d_lut_NAND2X1
-ANAND3X1_80 [_479_ _569_ _573_] _574_ d_lut_NAND3X1
-ANAND3X1_81 [SEL_3_ _565_ _574_] _575_ d_lut_NAND3X1
-AAOI21X1_7 [_556_ _575_ _614_] _478__2_ d_lut_AOI21X1
-AOR2X2_40 [sel_B_11_bF$buf0_ DATA_B_3_] _576_ d_lut_OR2X2
-AINVX1_54 [DATA_B_19_] _577_ d_lut_INVX1
-ANAND2X1_69 [sel_B_11_bF$buf4_ _577_] _578_ d_lut_NAND2X1
-ANAND3X1_82 [_617_ _576_ _578_] _579_ d_lut_NAND3X1
-AINVX1_55 [DATA_B_27_] _580_ d_lut_INVX1
-ANAND2X1_70 [sel_B_11_bF$buf3_ _580_] _581_ d_lut_NAND2X1
-AOR2X2_41 [sel_B_11_bF$buf2_ DATA_B_11_] _582_ d_lut_OR2X2
-ANAND3X1_83 [sel_B_10_ _582_ _581_] _583_ d_lut_NAND3X1
-ANAND3X1_84 [_616_ _579_ _583_] _584_ d_lut_NAND3X1
-AOR2X2_42 [sel_B_11_bF$buf1_ DATA_B_7_] _585_ d_lut_OR2X2
-AINVX1_56 [DATA_B_23_] _586_ d_lut_INVX1
-ANAND2X1_71 [sel_B_11_bF$buf0_ _586_] _587_ d_lut_NAND2X1
-ANAND3X1_85 [_617_ _585_ _587_] _588_ d_lut_NAND3X1
-AINVX1_57 [DATA_B_15_] _589_ d_lut_INVX1
-ANAND2X1_72 [sel_B_11_bF$buf4_ DATA_B_31_] _590_ d_lut_NAND2X1
-AOAI21X1_15 [_589_ sel_B_11_bF$buf3_ _590_] _591_ d_lut_OAI21X1
-ANAND2X1_73 [sel_B_10_ _591_] _592_ d_lut_NAND2X1
-ANAND3X1_86 [sel_B_9_ _588_ _592_] _593_ d_lut_NAND3X1
-ANAND3X1_87 [_615_ _584_ _593_] _594_ d_lut_NAND3X1
-AOR2X2_43 [sel_A_11_bF$buf0_ DATA_A_3_] _595_ d_lut_OR2X2
-AINVX1_58 [DATA_A_19_] _596_ d_lut_INVX1
-ANAND2X1_74 [sel_A_11_bF$buf4_ _596_] _597_ d_lut_NAND2X1
-ANAND3X1_88 [_480_ _595_ _597_] _598_ d_lut_NAND3X1
-AINVX1_59 [DATA_A_27_] _599_ d_lut_INVX1
-ANAND2X1_75 [sel_A_11_bF$buf3_ _599_] _600_ d_lut_NAND2X1
-AOR2X2_44 [sel_A_11_bF$buf2_ DATA_A_11_] _601_ d_lut_OR2X2
-ANAND3X1_89 [sel_A_10_ _601_ _600_] _602_ d_lut_NAND3X1
-ANAND3X1_90 [_479_ _598_ _602_] _603_ d_lut_NAND3X1
-AOR2X2_45 [sel_A_11_bF$buf1_ DATA_A_7_] _604_ d_lut_OR2X2
-AINVX1_60 [DATA_A_23_] _605_ d_lut_INVX1
-ANAND2X1_76 [sel_A_11_bF$buf0_ _605_] _606_ d_lut_NAND2X1
-ANAND3X1_91 [_480_ _604_ _606_] _607_ d_lut_NAND3X1
-AINVX1_61 [DATA_A_15_] _608_ d_lut_INVX1
-ANAND2X1_77 [sel_A_11_bF$buf4_ DATA_A_31_] _609_ d_lut_NAND2X1
-AOAI21X1_16 [_608_ sel_A_11_bF$buf3_ _609_] _610_ d_lut_OAI21X1
-ANAND2X1_78 [sel_A_10_ _610_] _611_ d_lut_NAND2X1
-ANAND3X1_92 [sel_A_9_ _607_ _611_] _612_ d_lut_NAND3X1
-ANAND3X1_93 [SEL_3_ _603_ _612_] _613_ d_lut_NAND3X1
-AAOI21X1_8 [_594_ _613_ _614_] _478__3_ d_lut_AOI21X1
-ADFFPOSX1_5 _478__0_ CLK NULL NULL _0__12_ NULL ddflop
-ADFFPOSX1_6 _478__1_ CLK NULL NULL _0__13_ NULL ddflop
-ADFFPOSX1_7 _478__2_ CLK NULL NULL _0__14_ NULL ddflop
-ADFFPOSX1_8 _478__3_ CLK NULL NULL _0__15_ NULL ddflop
-ABUFX2_1 [_0__0_] temp_0_ d_lut_BUFX2
-ABUFX2_2 [_0__1_] temp_1_ d_lut_BUFX2
-ABUFX2_3 [_0__2_] temp_2_ d_lut_BUFX2
-ABUFX2_4 [_0__3_] temp_3_ d_lut_BUFX2
-ABUFX2_5 [_0__4_] temp_4_ d_lut_BUFX2
-ABUFX2_6 [_0__5_] temp_5_ d_lut_BUFX2
-ABUFX2_7 [_0__6_] temp_6_ d_lut_BUFX2
-ABUFX2_8 [_0__7_] temp_7_ d_lut_BUFX2
-ABUFX2_9 [_0__8_] temp_8_ d_lut_BUFX2
-ABUFX2_10 [_0__9_] temp_9_ d_lut_BUFX2
-ABUFX2_11 [_0__10_] temp_10_ d_lut_BUFX2
-ABUFX2_12 [_0__11_] temp_11_ d_lut_BUFX2
-ABUFX2_13 [_0__12_] temp_12_ d_lut_BUFX2
-ABUFX2_14 [_0__13_] temp_13_ d_lut_BUFX2
-ABUFX2_15 [_0__14_] temp_14_ d_lut_BUFX2
-ABUFX2_16 [_0__15_] temp_15_ d_lut_BUFX2
-AINVX2_6 [RESET_L] _137_ d_lut_INVX2
-AINVX2_7 [SEL_0_] _138_ d_lut_INVX2
-AINVX2_8 [sel_B_0_] _139_ d_lut_INVX2
-AINVX4_4 [sel_B_1_] _140_ d_lut_INVX4
-AOR2X2_46 [DATA_B_0_ sel_B_2_bF$buf4_] _141_ d_lut_OR2X2
-AINVX1_62 [DATA_B_16_] _142_ d_lut_INVX1
-ANAND2X1_79 [sel_B_2_bF$buf3_ _142_] _143_ d_lut_NAND2X1
-ANAND3X1_94 [_140_ _141_ _143_] _144_ d_lut_NAND3X1
-AINVX1_63 [DATA_B_24_] _145_ d_lut_INVX1
-ANAND2X1_80 [sel_B_2_bF$buf2_ _145_] _146_ d_lut_NAND2X1
-AOR2X2_47 [sel_B_2_bF$buf1_ DATA_B_8_] _147_ d_lut_OR2X2
-ANAND3X1_95 [sel_B_1_ _147_ _146_] _148_ d_lut_NAND3X1
-ANAND3X1_96 [_139_ _144_ _148_] _149_ d_lut_NAND3X1
-AOR2X2_48 [sel_B_2_bF$buf0_ DATA_B_4_] _150_ d_lut_OR2X2
-AINVX1_64 [DATA_B_20_] _151_ d_lut_INVX1
-ANAND2X1_81 [sel_B_2_bF$buf4_ _151_] _152_ d_lut_NAND2X1
-ANAND3X1_97 [_140_ _150_ _152_] _153_ d_lut_NAND3X1
-AINVX1_65 [DATA_B_12_] _154_ d_lut_INVX1
-ANAND2X1_82 [sel_B_2_bF$buf3_ DATA_B_28_] _155_ d_lut_NAND2X1
-AOAI21X1_17 [_154_ sel_B_2_bF$buf2_ _155_] _156_ d_lut_OAI21X1
-ANAND2X1_83 [sel_B_1_ _156_] _157_ d_lut_NAND2X1
-ANAND3X1_98 [sel_B_0_ _153_ _157_] _158_ d_lut_NAND3X1
-ANAND3X1_99 [_138_ _149_ _158_] _159_ d_lut_NAND3X1
-AINVX2_9 [sel_A_0_] _2_ d_lut_INVX2
-AINVX4_5 [sel_A_1_] _3_ d_lut_INVX4
-AOR2X2_49 [DATA_A_0_ sel_A_2_bF$buf4_] _4_ d_lut_OR2X2
-AINVX1_66 [DATA_A_16_] _5_ d_lut_INVX1
-ANAND2X1_84 [sel_A_2_bF$buf3_ _5_] _6_ d_lut_NAND2X1
-ANAND3X1_100 [_3_ _4_ _6_] _7_ d_lut_NAND3X1
-AINVX1_67 [DATA_A_24_] _8_ d_lut_INVX1
-ANAND2X1_85 [sel_A_2_bF$buf2_ _8_] _9_ d_lut_NAND2X1
-AOR2X2_50 [sel_A_2_bF$buf1_ DATA_A_8_] _10_ d_lut_OR2X2
-ANAND3X1_101 [sel_A_1_ _10_ _9_] _11_ d_lut_NAND3X1
-ANAND3X1_102 [_2_ _7_ _11_] _12_ d_lut_NAND3X1
-AOR2X2_51 [sel_A_2_bF$buf0_ DATA_A_4_] _13_ d_lut_OR2X2
-AINVX1_68 [DATA_A_20_] _14_ d_lut_INVX1
-ANAND2X1_86 [sel_A_2_bF$buf4_ _14_] _15_ d_lut_NAND2X1
-ANAND3X1_103 [_3_ _13_ _15_] _16_ d_lut_NAND3X1
-AINVX1_69 [DATA_A_12_] _17_ d_lut_INVX1
-ANAND2X1_87 [sel_A_2_bF$buf3_ DATA_A_28_] _18_ d_lut_NAND2X1
-AOAI21X1_18 [_17_ sel_A_2_bF$buf2_ _18_] _19_ d_lut_OAI21X1
-ANAND2X1_88 [sel_A_1_ _19_] _20_ d_lut_NAND2X1
-ANAND3X1_104 [sel_A_0_ _16_ _20_] _21_ d_lut_NAND3X1
-ANAND3X1_105 [SEL_0_ _12_ _21_] _22_ d_lut_NAND3X1
-AAOI21X1_9 [_159_ _22_ _137_] _1__0_ d_lut_AOI21X1
-AOR2X2_52 [sel_B_2_bF$buf1_ DATA_B_1_] _23_ d_lut_OR2X2
-AINVX1_70 [DATA_B_17_] _24_ d_lut_INVX1
-ANAND2X1_89 [sel_B_2_bF$buf0_ _24_] _25_ d_lut_NAND2X1
-ANAND3X1_106 [_140_ _23_ _25_] _26_ d_lut_NAND3X1
-AINVX1_71 [DATA_B_25_] _27_ d_lut_INVX1
-ANAND2X1_90 [sel_B_2_bF$buf4_ _27_] _28_ d_lut_NAND2X1
-AOR2X2_53 [sel_B_2_bF$buf3_ DATA_B_9_] _29_ d_lut_OR2X2
-ANAND3X1_107 [sel_B_1_ _29_ _28_] _30_ d_lut_NAND3X1
-ANAND3X1_108 [_139_ _26_ _30_] _31_ d_lut_NAND3X1
-AOR2X2_54 [sel_B_2_bF$buf2_ DATA_B_5_] _32_ d_lut_OR2X2
-AINVX1_72 [DATA_B_21_] _33_ d_lut_INVX1
-ANAND2X1_91 [sel_B_2_bF$buf1_ _33_] _34_ d_lut_NAND2X1
-ANAND3X1_109 [_140_ _32_ _34_] _35_ d_lut_NAND3X1
-AINVX1_73 [DATA_B_13_] _36_ d_lut_INVX1
-ANAND2X1_92 [sel_B_2_bF$buf0_ DATA_B_29_] _37_ d_lut_NAND2X1
-AOAI21X1_19 [_36_ sel_B_2_bF$buf4_ _37_] _38_ d_lut_OAI21X1
-ANAND2X1_93 [sel_B_1_ _38_] _39_ d_lut_NAND2X1
-ANAND3X1_110 [sel_B_0_ _35_ _39_] _40_ d_lut_NAND3X1
-ANAND3X1_111 [_138_ _31_ _40_] _41_ d_lut_NAND3X1
-AOR2X2_55 [sel_A_2_bF$buf1_ DATA_A_1_] _42_ d_lut_OR2X2
-AINVX1_74 [DATA_A_17_] _43_ d_lut_INVX1
-ANAND2X1_94 [sel_A_2_bF$buf0_ _43_] _44_ d_lut_NAND2X1
-ANAND3X1_112 [_3_ _42_ _44_] _45_ d_lut_NAND3X1
-AINVX1_75 [DATA_A_25_] _46_ d_lut_INVX1
-ANAND2X1_95 [sel_A_2_bF$buf4_ _46_] _47_ d_lut_NAND2X1
-AOR2X2_56 [sel_A_2_bF$buf3_ DATA_A_9_] _48_ d_lut_OR2X2
-ANAND3X1_113 [sel_A_1_ _48_ _47_] _49_ d_lut_NAND3X1
-ANAND3X1_114 [_2_ _45_ _49_] _50_ d_lut_NAND3X1
-AOR2X2_57 [sel_A_2_bF$buf2_ DATA_A_5_] _51_ d_lut_OR2X2
-AINVX1_76 [DATA_A_21_] _52_ d_lut_INVX1
-ANAND2X1_96 [sel_A_2_bF$buf1_ _52_] _53_ d_lut_NAND2X1
-ANAND3X1_115 [_3_ _51_ _53_] _54_ d_lut_NAND3X1
-AINVX1_77 [DATA_A_13_] _55_ d_lut_INVX1
-ANAND2X1_97 [sel_A_2_bF$buf0_ DATA_A_29_] _56_ d_lut_NAND2X1
-AOAI21X1_20 [_55_ sel_A_2_bF$buf4_ _56_] _57_ d_lut_OAI21X1
-ANAND2X1_98 [sel_A_1_ _57_] _58_ d_lut_NAND2X1
-ANAND3X1_116 [sel_A_0_ _54_ _58_] _59_ d_lut_NAND3X1
-ANAND3X1_117 [SEL_0_ _50_ _59_] _60_ d_lut_NAND3X1
-AAOI21X1_10 [_41_ _60_ _137_] _1__1_ d_lut_AOI21X1
-AOR2X2_58 [sel_B_2_bF$buf3_ DATA_B_2_] _61_ d_lut_OR2X2
-AINVX1_78 [DATA_B_18_] _62_ d_lut_INVX1
-ANAND2X1_99 [sel_B_2_bF$buf2_ _62_] _63_ d_lut_NAND2X1
-ANAND3X1_118 [_140_ _61_ _63_] _64_ d_lut_NAND3X1
-AINVX1_79 [DATA_B_26_] _65_ d_lut_INVX1
-ANAND2X1_100 [sel_B_2_bF$buf1_ _65_] _66_ d_lut_NAND2X1
-AOR2X2_59 [sel_B_2_bF$buf0_ DATA_B_10_] _67_ d_lut_OR2X2
-ANAND3X1_119 [sel_B_1_ _67_ _66_] _68_ d_lut_NAND3X1
-ANAND3X1_120 [_139_ _64_ _68_] _69_ d_lut_NAND3X1
-AOR2X2_60 [sel_B_2_bF$buf4_ DATA_B_6_] _70_ d_lut_OR2X2
-AINVX1_80 [DATA_B_22_] _71_ d_lut_INVX1
-ANAND2X1_101 [sel_B_2_bF$buf3_ _71_] _72_ d_lut_NAND2X1
-ANAND3X1_121 [_140_ _70_ _72_] _73_ d_lut_NAND3X1
-AINVX1_81 [DATA_B_14_] _74_ d_lut_INVX1
-ANAND2X1_102 [sel_B_2_bF$buf2_ DATA_B_30_] _75_ d_lut_NAND2X1
-AOAI21X1_21 [_74_ sel_B_2_bF$buf1_ _75_] _76_ d_lut_OAI21X1
-ANAND2X1_103 [sel_B_1_ _76_] _77_ d_lut_NAND2X1
-ANAND3X1_122 [sel_B_0_ _73_ _77_] _78_ d_lut_NAND3X1
-ANAND3X1_123 [_138_ _69_ _78_] _79_ d_lut_NAND3X1
-AOR2X2_61 [sel_A_2_bF$buf3_ DATA_A_6_] _80_ d_lut_OR2X2
-AINVX1_82 [DATA_A_22_] _81_ d_lut_INVX1
-ANAND2X1_104 [sel_A_2_bF$buf2_ _81_] _82_ d_lut_NAND2X1
-ANAND3X1_124 [_3_ _80_ _82_] _83_ d_lut_NAND3X1
-AINVX1_83 [DATA_A_30_] _84_ d_lut_INVX1
-ANAND2X1_105 [sel_A_2_bF$buf1_ _84_] _85_ d_lut_NAND2X1
-AOR2X2_62 [sel_A_2_bF$buf0_ DATA_A_14_] _86_ d_lut_OR2X2
-ANAND3X1_125 [sel_A_1_ _86_ _85_] _87_ d_lut_NAND3X1
-ANAND3X1_126 [sel_A_0_ _83_ _87_] _88_ d_lut_NAND3X1
-AOR2X2_63 [sel_A_2_bF$buf4_ DATA_A_2_] _89_ d_lut_OR2X2
-AINVX1_84 [DATA_A_18_] _90_ d_lut_INVX1
-ANAND2X1_106 [sel_A_2_bF$buf3_ _90_] _91_ d_lut_NAND2X1
-ANAND3X1_127 [_3_ _89_ _91_] _92_ d_lut_NAND3X1
-AINVX1_85 [DATA_A_10_] _93_ d_lut_INVX1
-ANAND2X1_107 [sel_A_2_bF$buf2_ DATA_A_26_] _94_ d_lut_NAND2X1
-AOAI21X1_22 [_93_ sel_A_2_bF$buf1_ _94_] _95_ d_lut_OAI21X1
-ANAND2X1_108 [sel_A_1_ _95_] _96_ d_lut_NAND2X1
-ANAND3X1_128 [_2_ _92_ _96_] _97_ d_lut_NAND3X1
-ANAND3X1_129 [SEL_0_ _88_ _97_] _98_ d_lut_NAND3X1
-AAOI21X1_11 [_79_ _98_ _137_] _1__2_ d_lut_AOI21X1
-AOR2X2_64 [sel_B_2_bF$buf0_ DATA_B_3_] _99_ d_lut_OR2X2
-AINVX1_86 [DATA_B_19_] _100_ d_lut_INVX1
-ANAND2X1_109 [sel_B_2_bF$buf4_ _100_] _101_ d_lut_NAND2X1
-ANAND3X1_130 [_140_ _99_ _101_] _102_ d_lut_NAND3X1
-AINVX1_87 [DATA_B_27_] _103_ d_lut_INVX1
-ANAND2X1_110 [sel_B_2_bF$buf3_ _103_] _104_ d_lut_NAND2X1
-AOR2X2_65 [sel_B_2_bF$buf2_ DATA_B_11_] _105_ d_lut_OR2X2
-ANAND3X1_131 [sel_B_1_ _105_ _104_] _106_ d_lut_NAND3X1
-ANAND3X1_132 [_139_ _102_ _106_] _107_ d_lut_NAND3X1
-AOR2X2_66 [sel_B_2_bF$buf1_ DATA_B_7_] _108_ d_lut_OR2X2
-AINVX1_88 [DATA_B_23_] _109_ d_lut_INVX1
-ANAND2X1_111 [sel_B_2_bF$buf0_ _109_] _110_ d_lut_NAND2X1
-ANAND3X1_133 [_140_ _108_ _110_] _111_ d_lut_NAND3X1
-AINVX1_89 [DATA_B_15_] _112_ d_lut_INVX1
-ANAND2X1_112 [sel_B_2_bF$buf4_ DATA_B_31_] _113_ d_lut_NAND2X1
-AOAI21X1_23 [_112_ sel_B_2_bF$buf3_ _113_] _114_ d_lut_OAI21X1
-ANAND2X1_113 [sel_B_1_ _114_] _115_ d_lut_NAND2X1
-ANAND3X1_134 [sel_B_0_ _111_ _115_] _116_ d_lut_NAND3X1
-ANAND3X1_135 [_138_ _107_ _116_] _117_ d_lut_NAND3X1
-AOR2X2_67 [sel_A_2_bF$buf0_ DATA_A_3_] _118_ d_lut_OR2X2
-AINVX1_90 [DATA_A_19_] _119_ d_lut_INVX1
-ANAND2X1_114 [sel_A_2_bF$buf4_ _119_] _120_ d_lut_NAND2X1
-ANAND3X1_136 [_3_ _118_ _120_] _121_ d_lut_NAND3X1
-AINVX1_91 [DATA_A_27_] _122_ d_lut_INVX1
-ANAND2X1_115 [sel_A_2_bF$buf3_ _122_] _123_ d_lut_NAND2X1
-AOR2X2_68 [sel_A_2_bF$buf2_ DATA_A_11_] _124_ d_lut_OR2X2
-ANAND3X1_137 [sel_A_1_ _124_ _123_] _125_ d_lut_NAND3X1
-ANAND3X1_138 [_2_ _121_ _125_] _126_ d_lut_NAND3X1
-AOR2X2_69 [sel_A_2_bF$buf1_ DATA_A_7_] _127_ d_lut_OR2X2
-AINVX1_92 [DATA_A_23_] _128_ d_lut_INVX1
-ANAND2X1_116 [sel_A_2_bF$buf0_ _128_] _129_ d_lut_NAND2X1
-ANAND3X1_139 [_3_ _127_ _129_] _130_ d_lut_NAND3X1
-AINVX1_93 [DATA_A_15_] _131_ d_lut_INVX1
-ANAND2X1_117 [sel_A_2_bF$buf4_ DATA_A_31_] _132_ d_lut_NAND2X1
-AOAI21X1_24 [_131_ sel_A_2_bF$buf3_ _132_] _133_ d_lut_OAI21X1
-ANAND2X1_118 [sel_A_1_ _133_] _134_ d_lut_NAND2X1
-ANAND3X1_140 [sel_A_0_ _130_ _134_] _135_ d_lut_NAND3X1
-ANAND3X1_141 [SEL_0_ _126_ _135_] _136_ d_lut_NAND3X1
-AAOI21X1_12 [_117_ _136_ _137_] _1__3_ d_lut_AOI21X1
-ADFFPOSX1_9 _1__0_ CLK NULL NULL _0__0_ NULL ddflop
-ADFFPOSX1_10 _1__1_ CLK NULL NULL _0__1_ NULL ddflop
-ADFFPOSX1_11 _1__2_ CLK NULL NULL _0__2_ NULL ddflop
-ADFFPOSX1_12 _1__3_ CLK NULL NULL _0__3_ NULL ddflop
-AINVX2_10 [RESET_L] _296_ d_lut_INVX2
-AINVX2_11 [SEL_1_] _297_ d_lut_INVX2
-AINVX2_12 [sel_B_3_] _298_ d_lut_INVX2
-AINVX4_6 [sel_B_4_] _299_ d_lut_INVX4
-AOR2X2_70 [DATA_B_0_ sel_B_5_bF$buf4_] _300_ d_lut_OR2X2
-AINVX1_94 [DATA_B_16_] _301_ d_lut_INVX1
-ANAND2X1_119 [sel_B_5_bF$buf3_ _301_] _302_ d_lut_NAND2X1
-ANAND3X1_142 [_299_ _300_ _302_] _303_ d_lut_NAND3X1
-AINVX1_95 [DATA_B_24_] _304_ d_lut_INVX1
-ANAND2X1_120 [sel_B_5_bF$buf2_ _304_] _305_ d_lut_NAND2X1
-AOR2X2_71 [sel_B_5_bF$buf1_ DATA_B_8_] _306_ d_lut_OR2X2
-ANAND3X1_143 [sel_B_4_ _306_ _305_] _307_ d_lut_NAND3X1
-ANAND3X1_144 [_298_ _303_ _307_] _308_ d_lut_NAND3X1
-AOR2X2_72 [sel_B_5_bF$buf0_ DATA_B_4_] _309_ d_lut_OR2X2
-AINVX1_96 [DATA_B_20_] _310_ d_lut_INVX1
-ANAND2X1_121 [sel_B_5_bF$buf4_ _310_] _311_ d_lut_NAND2X1
-ANAND3X1_145 [_299_ _309_ _311_] _312_ d_lut_NAND3X1
-AINVX1_97 [DATA_B_12_] _313_ d_lut_INVX1
-ANAND2X1_122 [sel_B_5_bF$buf3_ DATA_B_28_] _314_ d_lut_NAND2X1
-AOAI21X1_25 [_313_ sel_B_5_bF$buf2_ _314_] _315_ d_lut_OAI21X1
-ANAND2X1_123 [sel_B_4_ _315_] _316_ d_lut_NAND2X1
-ANAND3X1_146 [sel_B_3_ _312_ _316_] _317_ d_lut_NAND3X1
-ANAND3X1_147 [_297_ _308_ _317_] _318_ d_lut_NAND3X1
-AINVX2_13 [sel_A_3_] _161_ d_lut_INVX2
-AINVX4_7 [sel_A_4_] _162_ d_lut_INVX4
-AOR2X2_73 [DATA_A_0_ sel_A_5_bF$buf4_] _163_ d_lut_OR2X2
-AINVX1_98 [DATA_A_16_] _164_ d_lut_INVX1
-ANAND2X1_124 [sel_A_5_bF$buf3_ _164_] _165_ d_lut_NAND2X1
-ANAND3X1_148 [_162_ _163_ _165_] _166_ d_lut_NAND3X1
-AINVX1_99 [DATA_A_24_] _167_ d_lut_INVX1
-ANAND2X1_125 [sel_A_5_bF$buf2_ _167_] _168_ d_lut_NAND2X1
-AOR2X2_74 [sel_A_5_bF$buf1_ DATA_A_8_] _169_ d_lut_OR2X2
-ANAND3X1_149 [sel_A_4_ _169_ _168_] _170_ d_lut_NAND3X1
-ANAND3X1_150 [_161_ _166_ _170_] _171_ d_lut_NAND3X1
-AOR2X2_75 [sel_A_5_bF$buf0_ DATA_A_4_] _172_ d_lut_OR2X2
-AINVX1_100 [DATA_A_20_] _173_ d_lut_INVX1
-ANAND2X1_126 [sel_A_5_bF$buf4_ _173_] _174_ d_lut_NAND2X1
-ANAND3X1_151 [_162_ _172_ _174_] _175_ d_lut_NAND3X1
-AINVX1_101 [DATA_A_12_] _176_ d_lut_INVX1
-ANAND2X1_127 [sel_A_5_bF$buf3_ DATA_A_28_] _177_ d_lut_NAND2X1
-AOAI21X1_26 [_176_ sel_A_5_bF$buf2_ _177_] _178_ d_lut_OAI21X1
-ANAND2X1_128 [sel_A_4_ _178_] _179_ d_lut_NAND2X1
-ANAND3X1_152 [sel_A_3_ _175_ _179_] _180_ d_lut_NAND3X1
-ANAND3X1_153 [SEL_1_ _171_ _180_] _181_ d_lut_NAND3X1
-AAOI21X1_13 [_318_ _181_ _296_] _160__0_ d_lut_AOI21X1
-AOR2X2_76 [sel_B_5_bF$buf1_ DATA_B_1_] _182_ d_lut_OR2X2
-AINVX1_102 [DATA_B_17_] _183_ d_lut_INVX1
-ANAND2X1_129 [sel_B_5_bF$buf0_ _183_] _184_ d_lut_NAND2X1
-ANAND3X1_154 [_299_ _182_ _184_] _185_ d_lut_NAND3X1
-AINVX1_103 [DATA_B_25_] _186_ d_lut_INVX1
-ANAND2X1_130 [sel_B_5_bF$buf4_ _186_] _187_ d_lut_NAND2X1
-AOR2X2_77 [sel_B_5_bF$buf3_ DATA_B_9_] _188_ d_lut_OR2X2
-ANAND3X1_155 [sel_B_4_ _188_ _187_] _189_ d_lut_NAND3X1
-ANAND3X1_156 [_298_ _185_ _189_] _190_ d_lut_NAND3X1
-AOR2X2_78 [sel_B_5_bF$buf2_ DATA_B_5_] _191_ d_lut_OR2X2
-AINVX1_104 [DATA_B_21_] _192_ d_lut_INVX1
-ANAND2X1_131 [sel_B_5_bF$buf1_ _192_] _193_ d_lut_NAND2X1
-ANAND3X1_157 [_299_ _191_ _193_] _194_ d_lut_NAND3X1
-AINVX1_105 [DATA_B_13_] _195_ d_lut_INVX1
-ANAND2X1_132 [sel_B_5_bF$buf0_ DATA_B_29_] _196_ d_lut_NAND2X1
-AOAI21X1_27 [_195_ sel_B_5_bF$buf4_ _196_] _197_ d_lut_OAI21X1
-ANAND2X1_133 [sel_B_4_ _197_] _198_ d_lut_NAND2X1
-ANAND3X1_158 [sel_B_3_ _194_ _198_] _199_ d_lut_NAND3X1
-ANAND3X1_159 [_297_ _190_ _199_] _200_ d_lut_NAND3X1
-AOR2X2_79 [sel_A_5_bF$buf1_ DATA_A_1_] _201_ d_lut_OR2X2
-AINVX1_106 [DATA_A_17_] _202_ d_lut_INVX1
-ANAND2X1_134 [sel_A_5_bF$buf0_ _202_] _203_ d_lut_NAND2X1
-ANAND3X1_160 [_162_ _201_ _203_] _204_ d_lut_NAND3X1
-AINVX1_107 [DATA_A_25_] _205_ d_lut_INVX1
-ANAND2X1_135 [sel_A_5_bF$buf4_ _205_] _206_ d_lut_NAND2X1
-AOR2X2_80 [sel_A_5_bF$buf3_ DATA_A_9_] _207_ d_lut_OR2X2
-ANAND3X1_161 [sel_A_4_ _207_ _206_] _208_ d_lut_NAND3X1
-ANAND3X1_162 [_161_ _204_ _208_] _209_ d_lut_NAND3X1
-AOR2X2_81 [sel_A_5_bF$buf2_ DATA_A_5_] _210_ d_lut_OR2X2
-AINVX1_108 [DATA_A_21_] _211_ d_lut_INVX1
-ANAND2X1_136 [sel_A_5_bF$buf1_ _211_] _212_ d_lut_NAND2X1
-ANAND3X1_163 [_162_ _210_ _212_] _213_ d_lut_NAND3X1
-AINVX1_109 [DATA_A_13_] _214_ d_lut_INVX1
-ANAND2X1_137 [sel_A_5_bF$buf0_ DATA_A_29_] _215_ d_lut_NAND2X1
-AOAI21X1_28 [_214_ sel_A_5_bF$buf4_ _215_] _216_ d_lut_OAI21X1
-ANAND2X1_138 [sel_A_4_ _216_] _217_ d_lut_NAND2X1
-ANAND3X1_164 [sel_A_3_ _213_ _217_] _218_ d_lut_NAND3X1
-ANAND3X1_165 [SEL_1_ _209_ _218_] _219_ d_lut_NAND3X1
-AAOI21X1_14 [_200_ _219_ _296_] _160__1_ d_lut_AOI21X1
-AOR2X2_82 [sel_B_5_bF$buf3_ DATA_B_2_] _220_ d_lut_OR2X2
-AINVX1_110 [DATA_B_18_] _221_ d_lut_INVX1
-ANAND2X1_139 [sel_B_5_bF$buf2_ _221_] _222_ d_lut_NAND2X1
-ANAND3X1_166 [_299_ _220_ _222_] _223_ d_lut_NAND3X1
-AINVX1_111 [DATA_B_26_] _224_ d_lut_INVX1
-ANAND2X1_140 [sel_B_5_bF$buf1_ _224_] _225_ d_lut_NAND2X1
-AOR2X2_83 [sel_B_5_bF$buf0_ DATA_B_10_] _226_ d_lut_OR2X2
-ANAND3X1_167 [sel_B_4_ _226_ _225_] _227_ d_lut_NAND3X1
-ANAND3X1_168 [_298_ _223_ _227_] _228_ d_lut_NAND3X1
-AOR2X2_84 [sel_B_5_bF$buf4_ DATA_B_6_] _229_ d_lut_OR2X2
-AINVX1_112 [DATA_B_22_] _230_ d_lut_INVX1
-ANAND2X1_141 [sel_B_5_bF$buf3_ _230_] _231_ d_lut_NAND2X1
-ANAND3X1_169 [_299_ _229_ _231_] _232_ d_lut_NAND3X1
-AINVX1_113 [DATA_B_14_] _233_ d_lut_INVX1
-ANAND2X1_142 [sel_B_5_bF$buf2_ DATA_B_30_] _234_ d_lut_NAND2X1
-AOAI21X1_29 [_233_ sel_B_5_bF$buf1_ _234_] _235_ d_lut_OAI21X1
-ANAND2X1_143 [sel_B_4_ _235_] _236_ d_lut_NAND2X1
-ANAND3X1_170 [sel_B_3_ _232_ _236_] _237_ d_lut_NAND3X1
-ANAND3X1_171 [_297_ _228_ _237_] _238_ d_lut_NAND3X1
-AOR2X2_85 [sel_A_5_bF$buf3_ DATA_A_6_] _239_ d_lut_OR2X2
-AINVX1_114 [DATA_A_22_] _240_ d_lut_INVX1
-ANAND2X1_144 [sel_A_5_bF$buf2_ _240_] _241_ d_lut_NAND2X1
-ANAND3X1_172 [_162_ _239_ _241_] _242_ d_lut_NAND3X1
-AINVX1_115 [DATA_A_30_] _243_ d_lut_INVX1
-ANAND2X1_145 [sel_A_5_bF$buf1_ _243_] _244_ d_lut_NAND2X1
-AOR2X2_86 [sel_A_5_bF$buf0_ DATA_A_14_] _245_ d_lut_OR2X2
-ANAND3X1_173 [sel_A_4_ _245_ _244_] _246_ d_lut_NAND3X1
-ANAND3X1_174 [sel_A_3_ _242_ _246_] _247_ d_lut_NAND3X1
-AOR2X2_87 [sel_A_5_bF$buf4_ DATA_A_2_] _248_ d_lut_OR2X2
-AINVX1_116 [DATA_A_18_] _249_ d_lut_INVX1
-ANAND2X1_146 [sel_A_5_bF$buf3_ _249_] _250_ d_lut_NAND2X1
-ANAND3X1_175 [_162_ _248_ _250_] _251_ d_lut_NAND3X1
-AINVX1_117 [DATA_A_10_] _252_ d_lut_INVX1
-ANAND2X1_147 [sel_A_5_bF$buf2_ DATA_A_26_] _253_ d_lut_NAND2X1
-AOAI21X1_30 [_252_ sel_A_5_bF$buf1_ _253_] _254_ d_lut_OAI21X1
-ANAND2X1_148 [sel_A_4_ _254_] _255_ d_lut_NAND2X1
-ANAND3X1_176 [_161_ _251_ _255_] _256_ d_lut_NAND3X1
-ANAND3X1_177 [SEL_1_ _247_ _256_] _257_ d_lut_NAND3X1
-AAOI21X1_15 [_238_ _257_ _296_] _160__2_ d_lut_AOI21X1
-AOR2X2_88 [sel_B_5_bF$buf0_ DATA_B_3_] _258_ d_lut_OR2X2
-AINVX1_118 [DATA_B_19_] _259_ d_lut_INVX1
-ANAND2X1_149 [sel_B_5_bF$buf4_ _259_] _260_ d_lut_NAND2X1
-ANAND3X1_178 [_299_ _258_ _260_] _261_ d_lut_NAND3X1
-AINVX1_119 [DATA_B_27_] _262_ d_lut_INVX1
-ANAND2X1_150 [sel_B_5_bF$buf3_ _262_] _263_ d_lut_NAND2X1
-AOR2X2_89 [sel_B_5_bF$buf2_ DATA_B_11_] _264_ d_lut_OR2X2
-ANAND3X1_179 [sel_B_4_ _264_ _263_] _265_ d_lut_NAND3X1
-ANAND3X1_180 [_298_ _261_ _265_] _266_ d_lut_NAND3X1
-AOR2X2_90 [sel_B_5_bF$buf1_ DATA_B_7_] _267_ d_lut_OR2X2
-AINVX1_120 [DATA_B_23_] _268_ d_lut_INVX1
-ANAND2X1_151 [sel_B_5_bF$buf0_ _268_] _269_ d_lut_NAND2X1
-ANAND3X1_181 [_299_ _267_ _269_] _270_ d_lut_NAND3X1
-AINVX1_121 [DATA_B_15_] _271_ d_lut_INVX1
-ANAND2X1_152 [sel_B_5_bF$buf4_ DATA_B_31_] _272_ d_lut_NAND2X1
-AOAI21X1_31 [_271_ sel_B_5_bF$buf3_ _272_] _273_ d_lut_OAI21X1
-ANAND2X1_153 [sel_B_4_ _273_] _274_ d_lut_NAND2X1
-ANAND3X1_182 [sel_B_3_ _270_ _274_] _275_ d_lut_NAND3X1
-ANAND3X1_183 [_297_ _266_ _275_] _276_ d_lut_NAND3X1
-AOR2X2_91 [sel_A_5_bF$buf0_ DATA_A_3_] _277_ d_lut_OR2X2
-AINVX1_122 [DATA_A_19_] _278_ d_lut_INVX1
-ANAND2X1_154 [sel_A_5_bF$buf4_ _278_] _279_ d_lut_NAND2X1
-ANAND3X1_184 [_162_ _277_ _279_] _280_ d_lut_NAND3X1
-AINVX1_123 [DATA_A_27_] _281_ d_lut_INVX1
-ANAND2X1_155 [sel_A_5_bF$buf3_ _281_] _282_ d_lut_NAND2X1
-AOR2X2_92 [sel_A_5_bF$buf2_ DATA_A_11_] _283_ d_lut_OR2X2
-ANAND3X1_185 [sel_A_4_ _283_ _282_] _284_ d_lut_NAND3X1
-ANAND3X1_186 [_161_ _280_ _284_] _285_ d_lut_NAND3X1
-AOR2X2_93 [sel_A_5_bF$buf1_ DATA_A_7_] _286_ d_lut_OR2X2
-AINVX1_124 [DATA_A_23_] _287_ d_lut_INVX1
-ANAND2X1_156 [sel_A_5_bF$buf0_ _287_] _288_ d_lut_NAND2X1
-ANAND3X1_187 [_162_ _286_ _288_] _289_ d_lut_NAND3X1
-AINVX1_125 [DATA_A_15_] _290_ d_lut_INVX1
-ANAND2X1_157 [sel_A_5_bF$buf4_ DATA_A_31_] _291_ d_lut_NAND2X1
-AOAI21X1_32 [_290_ sel_A_5_bF$buf3_ _291_] _292_ d_lut_OAI21X1
-ANAND2X1_158 [sel_A_4_ _292_] _293_ d_lut_NAND2X1
-ANAND3X1_188 [sel_A_3_ _289_ _293_] _294_ d_lut_NAND3X1
-ANAND3X1_189 [SEL_1_ _285_ _294_] _295_ d_lut_NAND3X1
-AAOI21X1_16 [_276_ _295_ _296_] _160__3_ d_lut_AOI21X1
-ADFFPOSX1_13 _160__0_ CLK NULL NULL _0__4_ NULL ddflop
-ADFFPOSX1_14 _160__1_ CLK NULL NULL _0__5_ NULL ddflop
-ADFFPOSX1_15 _160__2_ CLK NULL NULL _0__6_ NULL ddflop
-ADFFPOSX1_16 _160__3_ CLK NULL NULL _0__7_ NULL ddflop
-AINVX2_14 [RESET_L] _455_ d_lut_INVX2
-AINVX2_15 [SEL_2_] _456_ d_lut_INVX2
-AINVX2_16 [sel_B_6_] _457_ d_lut_INVX2
-AINVX4_8 [sel_B_7_] _458_ d_lut_INVX4
-AOR2X2_94 [DATA_B_0_ sel_B_8_bF$buf2_] _459_ d_lut_OR2X2
-AINVX1_126 [DATA_B_16_] _460_ d_lut_INVX1
-ANAND2X1_159 [sel_B_8_bF$buf1_ _460_] _461_ d_lut_NAND2X1
-ANAND3X1_190 [_458_ _459_ _461_] _462_ d_lut_NAND3X1
-AINVX1_127 [DATA_B_24_] _463_ d_lut_INVX1
-ANAND2X1_160 [sel_B_8_bF$buf0_ _463_] _464_ d_lut_NAND2X1
-AOR2X2_95 [sel_B_8_bF$buf4_ DATA_B_8_] _465_ d_lut_OR2X2
-ANAND3X1_191 [sel_B_7_ _465_ _464_] _466_ d_lut_NAND3X1
-ANAND3X1_192 [_457_ _462_ _466_] _467_ d_lut_NAND3X1
-AOR2X2_96 [sel_B_8_bF$buf3_ DATA_B_4_] _468_ d_lut_OR2X2
-AINVX1_128 [DATA_B_20_] _469_ d_lut_INVX1
+*SPICE netlist created from verilog structural netlist module selector4 by vlog2Spice (qflow)
+** Start of included library /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp
+** End of included library /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp
+.subckt selector4 a_vdd a_gnd a_CLK a_DATA_A_0_ a_DATA_A_1_ a_DATA_A_2_ a_DATA_A_3_ a_DATA_A_4_ a_DATA_A_5_ a_DATA_A_6_ a_DATA_A_7_ a_DATA_A_8_ a_DATA_A_9_ a_DATA_A_10_ a_DATA_A_11_ a_DATA_A_12_ a_DATA_A_13_ a_DATA_A_14_ a_DATA_A_15_ a_DATA_A_16_ a_DATA_A_17_ a_DATA_A_18_ a_DATA_A_19_ a_DATA_A_20_ a_DATA_A_21_ a_DATA_A_22_ a_DATA_A_23_ a_DATA_A_24_ a_DATA_A_25_ a_DATA_A_26_ a_DATA_A_27_ a_DATA_A_28_ a_DATA_A_29_ a_DATA_A_30_ a_DATA_A_31_ a_DATA_B_0_ a_DATA_B_1_ a_DATA_B_2_ a_DATA_B_3_ a_DATA_B_4_ a_DATA_B_5_ a_DATA_B_6_ a_DATA_B_7_ a_DATA_B_8_ a_DATA_B_9_ a_DATA_B_10_ a_DATA_B_11_ a_DATA_B_12_ a_DATA_B_13_ a_DATA_B_14_ a_DATA_B_15_ a_DATA_B_16_ a_DATA_B_17_ a_DATA_B_18_ a_DATA_B_19_ a_DATA_B_20_ a_DATA_B_21_ a_DATA_B_22_ a_DATA_B_23_ a_DATA_B_24_ a_DATA_B_25_ a_DATA_B_26_ a_DATA_B_27_ a_DATA_B_28_ a_DATA_B_29_ a_DATA_B_30_ a_DATA_B_31_ a_NIBBLE_OUT_0_ a_NIBBLE_OUT_1_ a_NIBBLE_OUT_2_ a_NIBBLE_OUT_3_ a_NIBBLE_OUT_4_ a_NIBBLE_OUT_5_ a_NIBBLE_OUT_6_ a_NIBBLE_OUT_7_ a_NIBBLE_OUT_8_ a_NIBBLE_OUT_9_ a_NIBBLE_OUT_10_ a_NIBBLE_OUT_11_ a_NIBBLE_OUT_12_ a_NIBBLE_OUT_13_ a_NIBBLE_OUT_14_ a_NIBBLE_OUT_15_ a_RESET_L a_SEL_0_ a_SEL_1_ a_SEL_2_ a_SEL_3_ a_sel_A_0_ a_sel_A_1_ a_sel_A_2_ a_sel_A_3_ a_sel_A_4_ a_sel_A_5_ a_sel_A_6_ a_sel_A_7_ a_sel_A_8_ a_sel_A_9_ a_sel_A_10_ a_sel_A_11_ a_sel_B_0_ a_sel_B_1_ a_sel_B_2_ a_sel_B_3_ a_sel_B_4_ a_sel_B_5_ a_sel_B_6_ a_sel_B_7_ a_sel_B_8_ a_sel_B_9_ a_sel_B_10_ a_sel_B_11_
+ABUFX2_insert39 [sel_B_11_] sel_B_11_bF$buf0 d_lut_BUFX2
+ABUFX2_insert38 [sel_B_11_] sel_B_11_bF$buf1 d_lut_BUFX2
+ABUFX2_insert37 [sel_B_11_] sel_B_11_bF$buf2 d_lut_BUFX2
+ABUFX2_insert36 [sel_B_11_] sel_B_11_bF$buf3 d_lut_BUFX2
+ABUFX2_insert35 [sel_B_11_] sel_B_11_bF$buf4 d_lut_BUFX2
+ABUFX2_insert34 [sel_A_2_] sel_A_2_bF$buf0 d_lut_BUFX2
+ABUFX2_insert33 [sel_A_2_] sel_A_2_bF$buf1 d_lut_BUFX2
+ABUFX2_insert32 [sel_A_2_] sel_A_2_bF$buf2 d_lut_BUFX2
+ABUFX2_insert31 [sel_A_2_] sel_A_2_bF$buf3 d_lut_BUFX2
+ABUFX2_insert30 [sel_A_2_] sel_A_2_bF$buf4 d_lut_BUFX2
+ABUFX2_insert29 [sel_A_5_] sel_A_5_bF$buf0 d_lut_BUFX2
+ABUFX2_insert28 [sel_A_5_] sel_A_5_bF$buf1 d_lut_BUFX2
+ABUFX2_insert27 [sel_A_5_] sel_A_5_bF$buf2 d_lut_BUFX2
+ABUFX2_insert26 [sel_A_5_] sel_A_5_bF$buf3 d_lut_BUFX2
+ABUFX2_insert25 [sel_A_5_] sel_A_5_bF$buf4 d_lut_BUFX2
+ABUFX2_insert24 [sel_B_2_] sel_B_2_bF$buf0 d_lut_BUFX2
+ABUFX2_insert23 [sel_B_2_] sel_B_2_bF$buf1 d_lut_BUFX2
+ABUFX2_insert22 [sel_B_2_] sel_B_2_bF$buf2 d_lut_BUFX2
+ABUFX2_insert21 [sel_B_2_] sel_B_2_bF$buf3 d_lut_BUFX2
+ABUFX2_insert20 [sel_B_2_] sel_B_2_bF$buf4 d_lut_BUFX2
+ABUFX2_insert19 [sel_A_8_] sel_A_8_bF$buf0 d_lut_BUFX2
+ABUFX2_insert18 [sel_A_8_] sel_A_8_bF$buf1 d_lut_BUFX2
+ABUFX2_insert17 [sel_A_8_] sel_A_8_bF$buf2 d_lut_BUFX2
+ABUFX2_insert16 [sel_A_8_] sel_A_8_bF$buf3 d_lut_BUFX2
+ABUFX2_insert15 [sel_A_8_] sel_A_8_bF$buf4 d_lut_BUFX2
+ABUFX2_insert14 [sel_B_5_] sel_B_5_bF$buf0 d_lut_BUFX2
+ABUFX2_insert13 [sel_B_5_] sel_B_5_bF$buf1 d_lut_BUFX2
+ABUFX2_insert12 [sel_B_5_] sel_B_5_bF$buf2 d_lut_BUFX2
+ABUFX2_insert11 [sel_B_5_] sel_B_5_bF$buf3 d_lut_BUFX2
+ABUFX2_insert10 [sel_B_5_] sel_B_5_bF$buf4 d_lut_BUFX2
+ABUFX2_insert9 [sel_B_8_] sel_B_8_bF$buf0 d_lut_BUFX2
+ABUFX2_insert8 [sel_B_8_] sel_B_8_bF$buf1 d_lut_BUFX2
+ABUFX2_insert7 [sel_B_8_] sel_B_8_bF$buf2 d_lut_BUFX2
+ABUFX2_insert6 [sel_B_8_] sel_B_8_bF$buf3 d_lut_BUFX2
+ABUFX2_insert5 [sel_B_8_] sel_B_8_bF$buf4 d_lut_BUFX2
+ABUFX2_insert4 [sel_A_11_] sel_A_11_bF$buf0 d_lut_BUFX2
+ABUFX2_insert3 [sel_A_11_] sel_A_11_bF$buf1 d_lut_BUFX2
+ABUFX2_insert2 [sel_A_11_] sel_A_11_bF$buf2 d_lut_BUFX2
+ABUFX2_insert1 [sel_A_11_] sel_A_11_bF$buf3 d_lut_BUFX2
+ABUFX2_insert0 [sel_A_11_] sel_A_11_bF$buf4 d_lut_BUFX2
+A_1000_ [sel_B_8_bF$buf4 _469_] _470_ d_lut_NAND2X1
+A_1001_ [_458_ _468_ _470_] _471_ d_lut_NAND3X1
+A_1002_ [DATA_B_12_] _472_ d_lut_INVX1
+A_1003_ [sel_B_8_bF$buf3 DATA_B_28_] _473_ d_lut_NAND2X1
+A_1004_ [_472_ sel_B_8_bF$buf2 _473_] _474_ d_lut_OAI21X1
+A_1005_ [sel_B_7_ _474_] _475_ d_lut_NAND2X1
+A_1006_ [sel_B_6_ _471_ _475_] _476_ d_lut_NAND3X1
+A_1007_ [_456_ _467_ _476_] _477_ d_lut_NAND3X1
+A_1008_ [sel_A_6_] _320_ d_lut_INVX2
+A_1009_ [sel_A_7_] _321_ d_lut_INVX4
+A_1010_ [DATA_A_0_ sel_A_8_bF$buf4] _322_ d_lut_OR2X2
+A_1011_ [DATA_A_16_] _323_ d_lut_INVX1
+A_1012_ [sel_A_8_bF$buf3 _323_] _324_ d_lut_NAND2X1
+A_1013_ [_321_ _322_ _324_] _325_ d_lut_NAND3X1
+A_1014_ [DATA_A_24_] _326_ d_lut_INVX1
+A_1015_ [sel_A_8_bF$buf2 _326_] _327_ d_lut_NAND2X1
+A_1016_ [sel_A_8_bF$buf1 DATA_A_8_] _328_ d_lut_OR2X2
+A_1017_ [sel_A_7_ _328_ _327_] _329_ d_lut_NAND3X1
+A_1018_ [_320_ _325_ _329_] _330_ d_lut_NAND3X1
+A_1019_ [sel_A_8_bF$buf0 DATA_A_4_] _331_ d_lut_OR2X2
+A_1020_ [DATA_A_20_] _332_ d_lut_INVX1
+A_1021_ [sel_A_8_bF$buf4 _332_] _333_ d_lut_NAND2X1
+A_1022_ [_321_ _331_ _333_] _334_ d_lut_NAND3X1
+A_1023_ [DATA_A_12_] _335_ d_lut_INVX1
+A_1024_ [sel_A_8_bF$buf3 DATA_A_28_] _336_ d_lut_NAND2X1
+A_1025_ [_335_ sel_A_8_bF$buf2 _336_] _337_ d_lut_OAI21X1
+A_1026_ [sel_A_7_ _337_] _338_ d_lut_NAND2X1
+A_1027_ [sel_A_6_ _334_ _338_] _339_ d_lut_NAND3X1
+A_1028_ [SEL_2_ _330_ _339_] _340_ d_lut_NAND3X1
+A_1029_ [_477_ _340_ _455_] _319__0_ d_lut_AOI21X1
+A_1030_ [sel_B_8_bF$buf1 DATA_B_1_] _341_ d_lut_OR2X2
+A_1031_ [DATA_B_17_] _342_ d_lut_INVX1
+A_1032_ [sel_B_8_bF$buf0 _342_] _343_ d_lut_NAND2X1
+A_1033_ [_458_ _341_ _343_] _344_ d_lut_NAND3X1
+A_1034_ [DATA_B_25_] _345_ d_lut_INVX1
+A_1035_ [sel_B_8_bF$buf4 _345_] _346_ d_lut_NAND2X1
+A_1036_ [sel_B_8_bF$buf3 DATA_B_9_] _347_ d_lut_OR2X2
+A_1037_ [sel_B_7_ _347_ _346_] _348_ d_lut_NAND3X1
+A_1038_ [_457_ _344_ _348_] _349_ d_lut_NAND3X1
+A_1039_ [sel_B_8_bF$buf2 DATA_B_5_] _350_ d_lut_OR2X2
+A_1040_ [DATA_B_21_] _351_ d_lut_INVX1
+A_1041_ [sel_B_8_bF$buf1 _351_] _352_ d_lut_NAND2X1
+A_1042_ [_458_ _350_ _352_] _353_ d_lut_NAND3X1
+A_1043_ [DATA_B_13_] _354_ d_lut_INVX1
+A_1044_ [sel_B_8_bF$buf0 DATA_B_29_] _355_ d_lut_NAND2X1
+A_1045_ [_354_ sel_B_8_bF$buf4 _355_] _356_ d_lut_OAI21X1
+A_1046_ [sel_B_7_ _356_] _357_ d_lut_NAND2X1
+A_1047_ [sel_B_6_ _353_ _357_] _358_ d_lut_NAND3X1
+A_1048_ [_456_ _349_ _358_] _359_ d_lut_NAND3X1
+A_1049_ [sel_A_8_bF$buf1 DATA_A_1_] _360_ d_lut_OR2X2
+A_1050_ [DATA_A_17_] _361_ d_lut_INVX1
+A_1051_ [sel_A_8_bF$buf0 _361_] _362_ d_lut_NAND2X1
+A_1052_ [_321_ _360_ _362_] _363_ d_lut_NAND3X1
+A_1053_ [DATA_A_25_] _364_ d_lut_INVX1
+A_1054_ [sel_A_8_bF$buf4 _364_] _365_ d_lut_NAND2X1
+A_1055_ [sel_A_8_bF$buf3 DATA_A_9_] _366_ d_lut_OR2X2
+A_1056_ [sel_A_7_ _366_ _365_] _367_ d_lut_NAND3X1
+A_1057_ [_320_ _363_ _367_] _368_ d_lut_NAND3X1
+A_1058_ [sel_A_8_bF$buf2 DATA_A_5_] _369_ d_lut_OR2X2
+A_1059_ [DATA_A_21_] _370_ d_lut_INVX1
+A_1060_ [sel_A_8_bF$buf1 _370_] _371_ d_lut_NAND2X1
+A_1061_ [_321_ _369_ _371_] _372_ d_lut_NAND3X1
+A_1062_ [DATA_A_13_] _373_ d_lut_INVX1
+A_1063_ [sel_A_8_bF$buf0 DATA_A_29_] _374_ d_lut_NAND2X1
+A_1064_ [_373_ sel_A_8_bF$buf4 _374_] _375_ d_lut_OAI21X1
+A_1065_ [sel_A_7_ _375_] _376_ d_lut_NAND2X1
+A_1066_ [sel_A_6_ _372_ _376_] _377_ d_lut_NAND3X1
+A_1067_ [SEL_2_ _368_ _377_] _378_ d_lut_NAND3X1
+A_1068_ [_359_ _378_ _455_] _319__1_ d_lut_AOI21X1
+A_1069_ [sel_B_8_bF$buf3 DATA_B_2_] _379_ d_lut_OR2X2
+A_1070_ [DATA_B_18_] _380_ d_lut_INVX1
+A_1071_ [sel_B_8_bF$buf2 _380_] _381_ d_lut_NAND2X1
+A_1072_ [_458_ _379_ _381_] _382_ d_lut_NAND3X1
+A_1073_ [DATA_B_26_] _383_ d_lut_INVX1
+A_1074_ [sel_B_8_bF$buf1 _383_] _384_ d_lut_NAND2X1
+A_1075_ [sel_B_8_bF$buf0 DATA_B_10_] _385_ d_lut_OR2X2
+A_1076_ [sel_B_7_ _385_ _384_] _386_ d_lut_NAND3X1
+A_1077_ [_457_ _382_ _386_] _387_ d_lut_NAND3X1
+A_1078_ [sel_B_8_bF$buf4 DATA_B_6_] _388_ d_lut_OR2X2
+A_1079_ [DATA_B_22_] _389_ d_lut_INVX1
+A_1080_ [sel_B_8_bF$buf3 _389_] _390_ d_lut_NAND2X1
+A_1081_ [_458_ _388_ _390_] _391_ d_lut_NAND3X1
+A_1082_ [DATA_B_14_] _392_ d_lut_INVX1
+A_1083_ [sel_B_8_bF$buf2 DATA_B_30_] _393_ d_lut_NAND2X1
+A_1084_ [_392_ sel_B_8_bF$buf1 _393_] _394_ d_lut_OAI21X1
+A_1085_ [sel_B_7_ _394_] _395_ d_lut_NAND2X1
+A_1086_ [sel_B_6_ _391_ _395_] _396_ d_lut_NAND3X1
+A_1087_ [_456_ _387_ _396_] _397_ d_lut_NAND3X1
+A_1088_ [sel_A_8_bF$buf3 DATA_A_6_] _398_ d_lut_OR2X2
+A_1089_ [DATA_A_22_] _399_ d_lut_INVX1
+A_1090_ [sel_A_8_bF$buf2 _399_] _400_ d_lut_NAND2X1
+A_1091_ [_321_ _398_ _400_] _401_ d_lut_NAND3X1
+A_1092_ [DATA_A_30_] _402_ d_lut_INVX1
+A_1093_ [sel_A_8_bF$buf1 _402_] _403_ d_lut_NAND2X1
+A_1094_ [sel_A_8_bF$buf0 DATA_A_14_] _404_ d_lut_OR2X2
+A_1095_ [sel_A_7_ _404_ _403_] _405_ d_lut_NAND3X1
+A_1096_ [sel_A_6_ _401_ _405_] _406_ d_lut_NAND3X1
+A_1097_ [sel_A_8_bF$buf4 DATA_A_2_] _407_ d_lut_OR2X2
+A_1098_ [DATA_A_18_] _408_ d_lut_INVX1
+A_1099_ [sel_A_8_bF$buf3 _408_] _409_ d_lut_NAND2X1
+A_1100_ [_321_ _407_ _409_] _410_ d_lut_NAND3X1
+A_1101_ [DATA_A_10_] _411_ d_lut_INVX1
+A_1102_ [sel_A_8_bF$buf2 DATA_A_26_] _412_ d_lut_NAND2X1
+A_1103_ [_411_ sel_A_8_bF$buf1 _412_] _413_ d_lut_OAI21X1
+A_1104_ [sel_A_7_ _413_] _414_ d_lut_NAND2X1
+A_1105_ [_320_ _410_ _414_] _415_ d_lut_NAND3X1
+A_1106_ [SEL_2_ _406_ _415_] _416_ d_lut_NAND3X1
+A_1107_ [_397_ _416_ _455_] _319__2_ d_lut_AOI21X1
+A_1108_ [sel_B_8_bF$buf0 DATA_B_3_] _417_ d_lut_OR2X2
+A_1109_ [DATA_B_19_] _418_ d_lut_INVX1
+A_1110_ [sel_B_8_bF$buf4 _418_] _419_ d_lut_NAND2X1
+A_1111_ [_458_ _417_ _419_] _420_ d_lut_NAND3X1
+A_1112_ [DATA_B_27_] _421_ d_lut_INVX1
+A_1113_ [sel_B_8_bF$buf3 _421_] _422_ d_lut_NAND2X1
+A_1114_ [sel_B_8_bF$buf2 DATA_B_11_] _423_ d_lut_OR2X2
+A_1115_ [sel_B_7_ _423_ _422_] _424_ d_lut_NAND3X1
+A_1116_ [_457_ _420_ _424_] _425_ d_lut_NAND3X1
+A_1117_ [sel_B_8_bF$buf1 DATA_B_7_] _426_ d_lut_OR2X2
+A_1118_ [DATA_B_23_] _427_ d_lut_INVX1
+A_1119_ [sel_B_8_bF$buf0 _427_] _428_ d_lut_NAND2X1
+A_1120_ [_458_ _426_ _428_] _429_ d_lut_NAND3X1
+A_1121_ [DATA_B_15_] _430_ d_lut_INVX1
+A_1122_ [sel_B_8_bF$buf4 DATA_B_31_] _431_ d_lut_NAND2X1
+A_1123_ [_430_ sel_B_8_bF$buf3 _431_] _432_ d_lut_OAI21X1
+A_1124_ [sel_B_7_ _432_] _433_ d_lut_NAND2X1
+A_1125_ [sel_B_6_ _429_ _433_] _434_ d_lut_NAND3X1
+A_1126_ [_456_ _425_ _434_] _435_ d_lut_NAND3X1
+A_1127_ [sel_A_8_bF$buf0 DATA_A_3_] _436_ d_lut_OR2X2
+A_1128_ [DATA_A_19_] _437_ d_lut_INVX1
+A_1129_ [sel_A_8_bF$buf4 _437_] _438_ d_lut_NAND2X1
+A_1130_ [_321_ _436_ _438_] _439_ d_lut_NAND3X1
+A_1131_ [DATA_A_27_] _440_ d_lut_INVX1
+A_1132_ [sel_A_8_bF$buf3 _440_] _441_ d_lut_NAND2X1
+A_1133_ [sel_A_8_bF$buf2 DATA_A_11_] _442_ d_lut_OR2X2
+A_1134_ [sel_A_7_ _442_ _441_] _443_ d_lut_NAND3X1
+A_1135_ [_320_ _439_ _443_] _444_ d_lut_NAND3X1
+A_1136_ [sel_A_8_bF$buf1 DATA_A_7_] _445_ d_lut_OR2X2
+A_1137_ [DATA_A_23_] _446_ d_lut_INVX1
+A_1138_ [sel_A_8_bF$buf0 _446_] _447_ d_lut_NAND2X1
+A_1139_ [_321_ _445_ _447_] _448_ d_lut_NAND3X1
+A_1140_ [DATA_A_15_] _449_ d_lut_INVX1
+A_1141_ [sel_A_8_bF$buf4 DATA_A_31_] _450_ d_lut_NAND2X1
+A_1142_ [_449_ sel_A_8_bF$buf3 _450_] _451_ d_lut_OAI21X1
+A_1143_ [sel_A_7_ _451_] _452_ d_lut_NAND2X1
+A_1144_ [sel_A_6_ _448_ _452_] _453_ d_lut_NAND3X1
+A_1145_ [SEL_2_ _444_ _453_] _454_ d_lut_NAND3X1
+A_1146_ [_435_ _454_ _455_] _319__3_ d_lut_AOI21X1
+A_1147_ _319__0_ CLK NULL NULL _0__8_ NULL ddflop
+A_1148_ _319__1_ CLK NULL NULL _0__9_ NULL ddflop
+A_1149_ _319__2_ CLK NULL NULL _0__10_ NULL ddflop
+A_1150_ _319__3_ CLK NULL NULL _0__11_ NULL ddflop
+A_1151_ [RESET_L] _614_ d_lut_INVX2
+A_1152_ [SEL_3_] _615_ d_lut_INVX2
+A_1153_ [sel_B_9_] _616_ d_lut_INVX2
+A_1154_ [sel_B_10_] _617_ d_lut_INVX4
+A_1155_ [DATA_B_0_ sel_B_11_bF$buf4] _618_ d_lut_OR2X2
+A_1156_ [DATA_B_16_] _619_ d_lut_INVX1
+A_1157_ [sel_B_11_bF$buf3 _619_] _620_ d_lut_NAND2X1
+A_1158_ [_617_ _618_ _620_] _621_ d_lut_NAND3X1
+A_1159_ [DATA_B_24_] _622_ d_lut_INVX1
+A_1160_ [sel_B_11_bF$buf2 _622_] _623_ d_lut_NAND2X1
+A_1161_ [sel_B_11_bF$buf1 DATA_B_8_] _624_ d_lut_OR2X2
+A_1162_ [sel_B_10_ _624_ _623_] _625_ d_lut_NAND3X1
+A_1163_ [_616_ _621_ _625_] _626_ d_lut_NAND3X1
+A_1164_ [sel_B_11_bF$buf0 DATA_B_4_] _627_ d_lut_OR2X2
+A_1165_ [DATA_B_20_] _628_ d_lut_INVX1
+A_1166_ [sel_B_11_bF$buf4 _628_] _629_ d_lut_NAND2X1
+A_1167_ [_617_ _627_ _629_] _630_ d_lut_NAND3X1
+A_1168_ [DATA_B_12_] _631_ d_lut_INVX1
+A_1169_ [sel_B_11_bF$buf3 DATA_B_28_] _632_ d_lut_NAND2X1
+A_1170_ [_631_ sel_B_11_bF$buf2 _632_] _633_ d_lut_OAI21X1
+A_1171_ [sel_B_10_ _633_] _634_ d_lut_NAND2X1
+A_1172_ [sel_B_9_ _630_ _634_] _635_ d_lut_NAND3X1
+A_1173_ [_615_ _626_ _635_] _636_ d_lut_NAND3X1
+A_1174_ [sel_A_9_] _479_ d_lut_INVX2
+A_1175_ [sel_A_10_] _480_ d_lut_INVX4
+A_1176_ [DATA_A_0_ sel_A_11_bF$buf4] _481_ d_lut_OR2X2
+A_1177_ [DATA_A_16_] _482_ d_lut_INVX1
+A_1178_ [sel_A_11_bF$buf3 _482_] _483_ d_lut_NAND2X1
+A_1179_ [_480_ _481_ _483_] _484_ d_lut_NAND3X1
+A_1180_ [DATA_A_24_] _485_ d_lut_INVX1
+A_1181_ [sel_A_11_bF$buf2 _485_] _486_ d_lut_NAND2X1
+A_1182_ [sel_A_11_bF$buf1 DATA_A_8_] _487_ d_lut_OR2X2
+A_1183_ [sel_A_10_ _487_ _486_] _488_ d_lut_NAND3X1
+A_1184_ [_479_ _484_ _488_] _489_ d_lut_NAND3X1
+A_1185_ [sel_A_11_bF$buf0 DATA_A_4_] _490_ d_lut_OR2X2
+A_1186_ [DATA_A_20_] _491_ d_lut_INVX1
+A_1187_ [sel_A_11_bF$buf4 _491_] _492_ d_lut_NAND2X1
+A_1188_ [_480_ _490_ _492_] _493_ d_lut_NAND3X1
+A_1189_ [DATA_A_12_] _494_ d_lut_INVX1
+A_1190_ [sel_A_11_bF$buf3 DATA_A_28_] _495_ d_lut_NAND2X1
+A_1191_ [_494_ sel_A_11_bF$buf2 _495_] _496_ d_lut_OAI21X1
+A_1192_ [sel_A_10_ _496_] _497_ d_lut_NAND2X1
+A_1193_ [sel_A_9_ _493_ _497_] _498_ d_lut_NAND3X1
+A_1194_ [SEL_3_ _489_ _498_] _499_ d_lut_NAND3X1
+A_1195_ [_636_ _499_ _614_] _478__0_ d_lut_AOI21X1
+A_1196_ [sel_B_11_bF$buf1 DATA_B_1_] _500_ d_lut_OR2X2
+A_1197_ [DATA_B_17_] _501_ d_lut_INVX1
+A_1198_ [sel_B_11_bF$buf0 _501_] _502_ d_lut_NAND2X1
+A_1199_ [_617_ _500_ _502_] _503_ d_lut_NAND3X1
+A_1200_ [DATA_B_25_] _504_ d_lut_INVX1
+A_1201_ [sel_B_11_bF$buf4 _504_] _505_ d_lut_NAND2X1
+A_1202_ [sel_B_11_bF$buf3 DATA_B_9_] _506_ d_lut_OR2X2
+A_1203_ [sel_B_10_ _506_ _505_] _507_ d_lut_NAND3X1
+A_1204_ [_616_ _503_ _507_] _508_ d_lut_NAND3X1
+A_1205_ [sel_B_11_bF$buf2 DATA_B_5_] _509_ d_lut_OR2X2
+A_1206_ [DATA_B_21_] _510_ d_lut_INVX1
+A_1207_ [sel_B_11_bF$buf1 _510_] _511_ d_lut_NAND2X1
+A_1208_ [_617_ _509_ _511_] _512_ d_lut_NAND3X1
+A_1209_ [DATA_B_13_] _513_ d_lut_INVX1
+A_1210_ [sel_B_11_bF$buf0 DATA_B_29_] _514_ d_lut_NAND2X1
+A_1211_ [_513_ sel_B_11_bF$buf4 _514_] _515_ d_lut_OAI21X1
+A_1212_ [sel_B_10_ _515_] _516_ d_lut_NAND2X1
+A_1213_ [sel_B_9_ _512_ _516_] _517_ d_lut_NAND3X1
+A_1214_ [_615_ _508_ _517_] _518_ d_lut_NAND3X1
+A_1215_ [sel_A_11_bF$buf1 DATA_A_1_] _519_ d_lut_OR2X2
+A_1216_ [DATA_A_17_] _520_ d_lut_INVX1
+A_1217_ [sel_A_11_bF$buf0 _520_] _521_ d_lut_NAND2X1
+A_1218_ [_480_ _519_ _521_] _522_ d_lut_NAND3X1
+A_1219_ [DATA_A_25_] _523_ d_lut_INVX1
+A_1220_ [sel_A_11_bF$buf4 _523_] _524_ d_lut_NAND2X1
+A_1221_ [sel_A_11_bF$buf3 DATA_A_9_] _525_ d_lut_OR2X2
+A_1222_ [sel_A_10_ _525_ _524_] _526_ d_lut_NAND3X1
+A_1223_ [_479_ _522_ _526_] _527_ d_lut_NAND3X1
+A_1224_ [sel_A_11_bF$buf2 DATA_A_5_] _528_ d_lut_OR2X2
+A_1225_ [DATA_A_21_] _529_ d_lut_INVX1
+A_1226_ [sel_A_11_bF$buf1 _529_] _530_ d_lut_NAND2X1
+A_1227_ [_480_ _528_ _530_] _531_ d_lut_NAND3X1
+A_1228_ [DATA_A_13_] _532_ d_lut_INVX1
+A_1229_ [sel_A_11_bF$buf0 DATA_A_29_] _533_ d_lut_NAND2X1
+A_1230_ [_532_ sel_A_11_bF$buf4 _533_] _534_ d_lut_OAI21X1
+A_1231_ [sel_A_10_ _534_] _535_ d_lut_NAND2X1
+A_1232_ [sel_A_9_ _531_ _535_] _536_ d_lut_NAND3X1
+A_1233_ [SEL_3_ _527_ _536_] _537_ d_lut_NAND3X1
+A_1234_ [_518_ _537_ _614_] _478__1_ d_lut_AOI21X1
+A_1235_ [sel_B_11_bF$buf3 DATA_B_2_] _538_ d_lut_OR2X2
+A_1236_ [DATA_B_18_] _539_ d_lut_INVX1
+A_1237_ [sel_B_11_bF$buf2 _539_] _540_ d_lut_NAND2X1
+A_1238_ [_617_ _538_ _540_] _541_ d_lut_NAND3X1
+A_1239_ [DATA_B_26_] _542_ d_lut_INVX1
+A_1240_ [sel_B_11_bF$buf1 _542_] _543_ d_lut_NAND2X1
+A_1241_ [sel_B_11_bF$buf0 DATA_B_10_] _544_ d_lut_OR2X2
+A_1242_ [sel_B_10_ _544_ _543_] _545_ d_lut_NAND3X1
+A_1243_ [_616_ _541_ _545_] _546_ d_lut_NAND3X1
+A_1244_ [sel_B_11_bF$buf4 DATA_B_6_] _547_ d_lut_OR2X2
+A_1245_ [DATA_B_22_] _548_ d_lut_INVX1
+A_1246_ [sel_B_11_bF$buf3 _548_] _549_ d_lut_NAND2X1
+A_1247_ [_617_ _547_ _549_] _550_ d_lut_NAND3X1
+A_1248_ [DATA_B_14_] _551_ d_lut_INVX1
+A_1249_ [sel_B_11_bF$buf2 DATA_B_30_] _552_ d_lut_NAND2X1
+A_1250_ [_551_ sel_B_11_bF$buf1 _552_] _553_ d_lut_OAI21X1
+A_1251_ [sel_B_10_ _553_] _554_ d_lut_NAND2X1
+A_1252_ [sel_B_9_ _550_ _554_] _555_ d_lut_NAND3X1
+A_1253_ [_615_ _546_ _555_] _556_ d_lut_NAND3X1
+A_1254_ [sel_A_11_bF$buf3 DATA_A_6_] _557_ d_lut_OR2X2
+A_1255_ [DATA_A_22_] _558_ d_lut_INVX1
+A_1256_ [sel_A_11_bF$buf2 _558_] _559_ d_lut_NAND2X1
+A_1257_ [_480_ _557_ _559_] _560_ d_lut_NAND3X1
+A_1258_ [DATA_A_30_] _561_ d_lut_INVX1
+A_1259_ [sel_A_11_bF$buf1 _561_] _562_ d_lut_NAND2X1
+A_1260_ [sel_A_11_bF$buf0 DATA_A_14_] _563_ d_lut_OR2X2
+A_1261_ [sel_A_10_ _563_ _562_] _564_ d_lut_NAND3X1
+A_1262_ [sel_A_9_ _560_ _564_] _565_ d_lut_NAND3X1
+A_1263_ [sel_A_11_bF$buf4 DATA_A_2_] _566_ d_lut_OR2X2
+A_1264_ [DATA_A_18_] _567_ d_lut_INVX1
+A_1265_ [sel_A_11_bF$buf3 _567_] _568_ d_lut_NAND2X1
+A_1266_ [_480_ _566_ _568_] _569_ d_lut_NAND3X1
+A_1267_ [DATA_A_10_] _570_ d_lut_INVX1
+A_1268_ [sel_A_11_bF$buf2 DATA_A_26_] _571_ d_lut_NAND2X1
+A_1269_ [_570_ sel_A_11_bF$buf1 _571_] _572_ d_lut_OAI21X1
+A_1270_ [sel_A_10_ _572_] _573_ d_lut_NAND2X1
+A_1271_ [_479_ _569_ _573_] _574_ d_lut_NAND3X1
+A_1272_ [SEL_3_ _565_ _574_] _575_ d_lut_NAND3X1
+A_1273_ [_556_ _575_ _614_] _478__2_ d_lut_AOI21X1
+A_1274_ [sel_B_11_bF$buf0 DATA_B_3_] _576_ d_lut_OR2X2
+A_1275_ [DATA_B_19_] _577_ d_lut_INVX1
+A_1276_ [sel_B_11_bF$buf4 _577_] _578_ d_lut_NAND2X1
+A_1277_ [_617_ _576_ _578_] _579_ d_lut_NAND3X1
+A_1278_ [DATA_B_27_] _580_ d_lut_INVX1
+A_1279_ [sel_B_11_bF$buf3 _580_] _581_ d_lut_NAND2X1
+A_1280_ [sel_B_11_bF$buf2 DATA_B_11_] _582_ d_lut_OR2X2
+A_1281_ [sel_B_10_ _582_ _581_] _583_ d_lut_NAND3X1
+A_1282_ [_616_ _579_ _583_] _584_ d_lut_NAND3X1
+A_1283_ [sel_B_11_bF$buf1 DATA_B_7_] _585_ d_lut_OR2X2
+A_1284_ [DATA_B_23_] _586_ d_lut_INVX1
+A_1285_ [sel_B_11_bF$buf0 _586_] _587_ d_lut_NAND2X1
+A_1286_ [_617_ _585_ _587_] _588_ d_lut_NAND3X1
+A_1287_ [DATA_B_15_] _589_ d_lut_INVX1
+A_1288_ [sel_B_11_bF$buf4 DATA_B_31_] _590_ d_lut_NAND2X1
+A_1289_ [_589_ sel_B_11_bF$buf3 _590_] _591_ d_lut_OAI21X1
+A_1290_ [sel_B_10_ _591_] _592_ d_lut_NAND2X1
+A_1291_ [sel_B_9_ _588_ _592_] _593_ d_lut_NAND3X1
+A_1292_ [_615_ _584_ _593_] _594_ d_lut_NAND3X1
+A_1293_ [sel_A_11_bF$buf0 DATA_A_3_] _595_ d_lut_OR2X2
+A_1294_ [DATA_A_19_] _596_ d_lut_INVX1
+A_1295_ [sel_A_11_bF$buf4 _596_] _597_ d_lut_NAND2X1
+A_1296_ [_480_ _595_ _597_] _598_ d_lut_NAND3X1
+A_1297_ [DATA_A_27_] _599_ d_lut_INVX1
+A_1298_ [sel_A_11_bF$buf3 _599_] _600_ d_lut_NAND2X1
+A_1299_ [sel_A_11_bF$buf2 DATA_A_11_] _601_ d_lut_OR2X2
+A_1300_ [sel_A_10_ _601_ _600_] _602_ d_lut_NAND3X1
+A_1301_ [_479_ _598_ _602_] _603_ d_lut_NAND3X1
+A_1302_ [sel_A_11_bF$buf1 DATA_A_7_] _604_ d_lut_OR2X2
+A_1303_ [DATA_A_23_] _605_ d_lut_INVX1
+A_1304_ [sel_A_11_bF$buf0 _605_] _606_ d_lut_NAND2X1
+A_1305_ [_480_ _604_ _606_] _607_ d_lut_NAND3X1
+A_1306_ [DATA_A_15_] _608_ d_lut_INVX1
+A_1307_ [sel_A_11_bF$buf4 DATA_A_31_] _609_ d_lut_NAND2X1
+A_1308_ [_608_ sel_A_11_bF$buf3 _609_] _610_ d_lut_OAI21X1
+A_1309_ [sel_A_10_ _610_] _611_ d_lut_NAND2X1
+A_1310_ [sel_A_9_ _607_ _611_] _612_ d_lut_NAND3X1
+A_1311_ [SEL_3_ _603_ _612_] _613_ d_lut_NAND3X1
+A_1312_ [_594_ _613_ _614_] _478__3_ d_lut_AOI21X1
+A_1313_ _478__0_ CLK NULL NULL _0__12_ NULL ddflop
+A_1314_ _478__1_ CLK NULL NULL _0__13_ NULL ddflop
+A_1315_ _478__2_ CLK NULL NULL _0__14_ NULL ddflop
+A_1316_ _478__3_ CLK NULL NULL _0__15_ NULL ddflop
+A_637_ [_0__0_] NIBBLE_OUT_0_ d_lut_BUFX2
+A_638_ [_0__1_] NIBBLE_OUT_1_ d_lut_BUFX2
+A_639_ [_0__2_] NIBBLE_OUT_2_ d_lut_BUFX2
+A_640_ [_0__3_] NIBBLE_OUT_3_ d_lut_BUFX2
+A_641_ [_0__4_] NIBBLE_OUT_4_ d_lut_BUFX2
+A_642_ [_0__5_] NIBBLE_OUT_5_ d_lut_BUFX2
+A_643_ [_0__6_] NIBBLE_OUT_6_ d_lut_BUFX2
+A_644_ [_0__7_] NIBBLE_OUT_7_ d_lut_BUFX2
+A_645_ [_0__8_] NIBBLE_OUT_8_ d_lut_BUFX2
+A_646_ [_0__9_] NIBBLE_OUT_9_ d_lut_BUFX2
+A_647_ [_0__10_] NIBBLE_OUT_10_ d_lut_BUFX2
+A_648_ [_0__11_] NIBBLE_OUT_11_ d_lut_BUFX2
+A_649_ [_0__12_] NIBBLE_OUT_12_ d_lut_BUFX2
+A_650_ [_0__13_] NIBBLE_OUT_13_ d_lut_BUFX2
+A_651_ [_0__14_] NIBBLE_OUT_14_ d_lut_BUFX2
+A_652_ [_0__15_] NIBBLE_OUT_15_ d_lut_BUFX2
+A_653_ [RESET_L] _137_ d_lut_INVX2
+A_654_ [SEL_0_] _138_ d_lut_INVX2
+A_655_ [sel_B_0_] _139_ d_lut_INVX2
+A_656_ [sel_B_1_] _140_ d_lut_INVX4
+A_657_ [DATA_B_0_ sel_B_2_bF$buf4] _141_ d_lut_OR2X2
+A_658_ [DATA_B_16_] _142_ d_lut_INVX1
+A_659_ [sel_B_2_bF$buf3 _142_] _143_ d_lut_NAND2X1
+A_660_ [_140_ _141_ _143_] _144_ d_lut_NAND3X1
+A_661_ [DATA_B_24_] _145_ d_lut_INVX1
+A_662_ [sel_B_2_bF$buf2 _145_] _146_ d_lut_NAND2X1
+A_663_ [sel_B_2_bF$buf1 DATA_B_8_] _147_ d_lut_OR2X2
+A_664_ [sel_B_1_ _147_ _146_] _148_ d_lut_NAND3X1
+A_665_ [_139_ _144_ _148_] _149_ d_lut_NAND3X1
+A_666_ [sel_B_2_bF$buf0 DATA_B_4_] _150_ d_lut_OR2X2
+A_667_ [DATA_B_20_] _151_ d_lut_INVX1
+A_668_ [sel_B_2_bF$buf4 _151_] _152_ d_lut_NAND2X1
+A_669_ [_140_ _150_ _152_] _153_ d_lut_NAND3X1
+A_670_ [DATA_B_12_] _154_ d_lut_INVX1
+A_671_ [sel_B_2_bF$buf3 DATA_B_28_] _155_ d_lut_NAND2X1
+A_672_ [_154_ sel_B_2_bF$buf2 _155_] _156_ d_lut_OAI21X1
+A_673_ [sel_B_1_ _156_] _157_ d_lut_NAND2X1
+A_674_ [sel_B_0_ _153_ _157_] _158_ d_lut_NAND3X1
+A_675_ [_138_ _149_ _158_] _159_ d_lut_NAND3X1
+A_676_ [sel_A_0_] _2_ d_lut_INVX2
+A_677_ [sel_A_1_] _3_ d_lut_INVX4
+A_678_ [DATA_A_0_ sel_A_2_bF$buf4] _4_ d_lut_OR2X2
+A_679_ [DATA_A_16_] _5_ d_lut_INVX1
+A_680_ [sel_A_2_bF$buf3 _5_] _6_ d_lut_NAND2X1
+A_681_ [_3_ _4_ _6_] _7_ d_lut_NAND3X1
+A_682_ [DATA_A_24_] _8_ d_lut_INVX1
+A_683_ [sel_A_2_bF$buf2 _8_] _9_ d_lut_NAND2X1
+A_684_ [sel_A_2_bF$buf1 DATA_A_8_] _10_ d_lut_OR2X2
+A_685_ [sel_A_1_ _10_ _9_] _11_ d_lut_NAND3X1
+A_686_ [_2_ _7_ _11_] _12_ d_lut_NAND3X1
+A_687_ [sel_A_2_bF$buf0 DATA_A_4_] _13_ d_lut_OR2X2
+A_688_ [DATA_A_20_] _14_ d_lut_INVX1
+A_689_ [sel_A_2_bF$buf4 _14_] _15_ d_lut_NAND2X1
+A_690_ [_3_ _13_ _15_] _16_ d_lut_NAND3X1
+A_691_ [DATA_A_12_] _17_ d_lut_INVX1
+A_692_ [sel_A_2_bF$buf3 DATA_A_28_] _18_ d_lut_NAND2X1
+A_693_ [_17_ sel_A_2_bF$buf2 _18_] _19_ d_lut_OAI21X1
+A_694_ [sel_A_1_ _19_] _20_ d_lut_NAND2X1
+A_695_ [sel_A_0_ _16_ _20_] _21_ d_lut_NAND3X1
+A_696_ [SEL_0_ _12_ _21_] _22_ d_lut_NAND3X1
+A_697_ [_159_ _22_ _137_] _1__0_ d_lut_AOI21X1
+A_698_ [sel_B_2_bF$buf1 DATA_B_1_] _23_ d_lut_OR2X2
+A_699_ [DATA_B_17_] _24_ d_lut_INVX1
+A_700_ [sel_B_2_bF$buf0 _24_] _25_ d_lut_NAND2X1
+A_701_ [_140_ _23_ _25_] _26_ d_lut_NAND3X1
+A_702_ [DATA_B_25_] _27_ d_lut_INVX1
+A_703_ [sel_B_2_bF$buf4 _27_] _28_ d_lut_NAND2X1
+A_704_ [sel_B_2_bF$buf3 DATA_B_9_] _29_ d_lut_OR2X2
+A_705_ [sel_B_1_ _29_ _28_] _30_ d_lut_NAND3X1
+A_706_ [_139_ _26_ _30_] _31_ d_lut_NAND3X1
+A_707_ [sel_B_2_bF$buf2 DATA_B_5_] _32_ d_lut_OR2X2
+A_708_ [DATA_B_21_] _33_ d_lut_INVX1
+A_709_ [sel_B_2_bF$buf1 _33_] _34_ d_lut_NAND2X1
+A_710_ [_140_ _32_ _34_] _35_ d_lut_NAND3X1
+A_711_ [DATA_B_13_] _36_ d_lut_INVX1
+A_712_ [sel_B_2_bF$buf0 DATA_B_29_] _37_ d_lut_NAND2X1
+A_713_ [_36_ sel_B_2_bF$buf4 _37_] _38_ d_lut_OAI21X1
+A_714_ [sel_B_1_ _38_] _39_ d_lut_NAND2X1
+A_715_ [sel_B_0_ _35_ _39_] _40_ d_lut_NAND3X1
+A_716_ [_138_ _31_ _40_] _41_ d_lut_NAND3X1
+A_717_ [sel_A_2_bF$buf1 DATA_A_1_] _42_ d_lut_OR2X2
+A_718_ [DATA_A_17_] _43_ d_lut_INVX1
+A_719_ [sel_A_2_bF$buf0 _43_] _44_ d_lut_NAND2X1
+A_720_ [_3_ _42_ _44_] _45_ d_lut_NAND3X1
+A_721_ [DATA_A_25_] _46_ d_lut_INVX1
+A_722_ [sel_A_2_bF$buf4 _46_] _47_ d_lut_NAND2X1
+A_723_ [sel_A_2_bF$buf3 DATA_A_9_] _48_ d_lut_OR2X2
+A_724_ [sel_A_1_ _48_ _47_] _49_ d_lut_NAND3X1
+A_725_ [_2_ _45_ _49_] _50_ d_lut_NAND3X1
+A_726_ [sel_A_2_bF$buf2 DATA_A_5_] _51_ d_lut_OR2X2
+A_727_ [DATA_A_21_] _52_ d_lut_INVX1
+A_728_ [sel_A_2_bF$buf1 _52_] _53_ d_lut_NAND2X1
+A_729_ [_3_ _51_ _53_] _54_ d_lut_NAND3X1
+A_730_ [DATA_A_13_] _55_ d_lut_INVX1
+A_731_ [sel_A_2_bF$buf0 DATA_A_29_] _56_ d_lut_NAND2X1
+A_732_ [_55_ sel_A_2_bF$buf4 _56_] _57_ d_lut_OAI21X1
+A_733_ [sel_A_1_ _57_] _58_ d_lut_NAND2X1
+A_734_ [sel_A_0_ _54_ _58_] _59_ d_lut_NAND3X1
+A_735_ [SEL_0_ _50_ _59_] _60_ d_lut_NAND3X1
+A_736_ [_41_ _60_ _137_] _1__1_ d_lut_AOI21X1
+A_737_ [sel_B_2_bF$buf3 DATA_B_2_] _61_ d_lut_OR2X2
+A_738_ [DATA_B_18_] _62_ d_lut_INVX1
+A_739_ [sel_B_2_bF$buf2 _62_] _63_ d_lut_NAND2X1
+A_740_ [_140_ _61_ _63_] _64_ d_lut_NAND3X1
+A_741_ [DATA_B_26_] _65_ d_lut_INVX1
+A_742_ [sel_B_2_bF$buf1 _65_] _66_ d_lut_NAND2X1
+A_743_ [sel_B_2_bF$buf0 DATA_B_10_] _67_ d_lut_OR2X2
+A_744_ [sel_B_1_ _67_ _66_] _68_ d_lut_NAND3X1
+A_745_ [_139_ _64_ _68_] _69_ d_lut_NAND3X1
+A_746_ [sel_B_2_bF$buf4 DATA_B_6_] _70_ d_lut_OR2X2
+A_747_ [DATA_B_22_] _71_ d_lut_INVX1
+A_748_ [sel_B_2_bF$buf3 _71_] _72_ d_lut_NAND2X1
+A_749_ [_140_ _70_ _72_] _73_ d_lut_NAND3X1
+A_750_ [DATA_B_14_] _74_ d_lut_INVX1
+A_751_ [sel_B_2_bF$buf2 DATA_B_30_] _75_ d_lut_NAND2X1
+A_752_ [_74_ sel_B_2_bF$buf1 _75_] _76_ d_lut_OAI21X1
+A_753_ [sel_B_1_ _76_] _77_ d_lut_NAND2X1
+A_754_ [sel_B_0_ _73_ _77_] _78_ d_lut_NAND3X1
+A_755_ [_138_ _69_ _78_] _79_ d_lut_NAND3X1
+A_756_ [sel_A_2_bF$buf3 DATA_A_6_] _80_ d_lut_OR2X2
+A_757_ [DATA_A_22_] _81_ d_lut_INVX1
+A_758_ [sel_A_2_bF$buf2 _81_] _82_ d_lut_NAND2X1
+A_759_ [_3_ _80_ _82_] _83_ d_lut_NAND3X1
+A_760_ [DATA_A_30_] _84_ d_lut_INVX1
+A_761_ [sel_A_2_bF$buf1 _84_] _85_ d_lut_NAND2X1
+A_762_ [sel_A_2_bF$buf0 DATA_A_14_] _86_ d_lut_OR2X2
+A_763_ [sel_A_1_ _86_ _85_] _87_ d_lut_NAND3X1
+A_764_ [sel_A_0_ _83_ _87_] _88_ d_lut_NAND3X1
+A_765_ [sel_A_2_bF$buf4 DATA_A_2_] _89_ d_lut_OR2X2
+A_766_ [DATA_A_18_] _90_ d_lut_INVX1
+A_767_ [sel_A_2_bF$buf3 _90_] _91_ d_lut_NAND2X1
+A_768_ [_3_ _89_ _91_] _92_ d_lut_NAND3X1
+A_769_ [DATA_A_10_] _93_ d_lut_INVX1
+A_770_ [sel_A_2_bF$buf2 DATA_A_26_] _94_ d_lut_NAND2X1
+A_771_ [_93_ sel_A_2_bF$buf1 _94_] _95_ d_lut_OAI21X1
+A_772_ [sel_A_1_ _95_] _96_ d_lut_NAND2X1
+A_773_ [_2_ _92_ _96_] _97_ d_lut_NAND3X1
+A_774_ [SEL_0_ _88_ _97_] _98_ d_lut_NAND3X1
+A_775_ [_79_ _98_ _137_] _1__2_ d_lut_AOI21X1
+A_776_ [sel_B_2_bF$buf0 DATA_B_3_] _99_ d_lut_OR2X2
+A_777_ [DATA_B_19_] _100_ d_lut_INVX1
+A_778_ [sel_B_2_bF$buf4 _100_] _101_ d_lut_NAND2X1
+A_779_ [_140_ _99_ _101_] _102_ d_lut_NAND3X1
+A_780_ [DATA_B_27_] _103_ d_lut_INVX1
+A_781_ [sel_B_2_bF$buf3 _103_] _104_ d_lut_NAND2X1
+A_782_ [sel_B_2_bF$buf2 DATA_B_11_] _105_ d_lut_OR2X2
+A_783_ [sel_B_1_ _105_ _104_] _106_ d_lut_NAND3X1
+A_784_ [_139_ _102_ _106_] _107_ d_lut_NAND3X1
+A_785_ [sel_B_2_bF$buf1 DATA_B_7_] _108_ d_lut_OR2X2
+A_786_ [DATA_B_23_] _109_ d_lut_INVX1
+A_787_ [sel_B_2_bF$buf0 _109_] _110_ d_lut_NAND2X1
+A_788_ [_140_ _108_ _110_] _111_ d_lut_NAND3X1
+A_789_ [DATA_B_15_] _112_ d_lut_INVX1
+A_790_ [sel_B_2_bF$buf4 DATA_B_31_] _113_ d_lut_NAND2X1
+A_791_ [_112_ sel_B_2_bF$buf3 _113_] _114_ d_lut_OAI21X1
+A_792_ [sel_B_1_ _114_] _115_ d_lut_NAND2X1
+A_793_ [sel_B_0_ _111_ _115_] _116_ d_lut_NAND3X1
+A_794_ [_138_ _107_ _116_] _117_ d_lut_NAND3X1
+A_795_ [sel_A_2_bF$buf0 DATA_A_3_] _118_ d_lut_OR2X2
+A_796_ [DATA_A_19_] _119_ d_lut_INVX1
+A_797_ [sel_A_2_bF$buf4 _119_] _120_ d_lut_NAND2X1
+A_798_ [_3_ _118_ _120_] _121_ d_lut_NAND3X1
+A_799_ [DATA_A_27_] _122_ d_lut_INVX1
+A_800_ [sel_A_2_bF$buf3 _122_] _123_ d_lut_NAND2X1
+A_801_ [sel_A_2_bF$buf2 DATA_A_11_] _124_ d_lut_OR2X2
+A_802_ [sel_A_1_ _124_ _123_] _125_ d_lut_NAND3X1
+A_803_ [_2_ _121_ _125_] _126_ d_lut_NAND3X1
+A_804_ [sel_A_2_bF$buf1 DATA_A_7_] _127_ d_lut_OR2X2
+A_805_ [DATA_A_23_] _128_ d_lut_INVX1
+A_806_ [sel_A_2_bF$buf0 _128_] _129_ d_lut_NAND2X1
+A_807_ [_3_ _127_ _129_] _130_ d_lut_NAND3X1
+A_808_ [DATA_A_15_] _131_ d_lut_INVX1
+A_809_ [sel_A_2_bF$buf4 DATA_A_31_] _132_ d_lut_NAND2X1
+A_810_ [_131_ sel_A_2_bF$buf3 _132_] _133_ d_lut_OAI21X1
+A_811_ [sel_A_1_ _133_] _134_ d_lut_NAND2X1
+A_812_ [sel_A_0_ _130_ _134_] _135_ d_lut_NAND3X1
+A_813_ [SEL_0_ _126_ _135_] _136_ d_lut_NAND3X1
+A_814_ [_117_ _136_ _137_] _1__3_ d_lut_AOI21X1
+A_815_ _1__0_ CLK NULL NULL _0__0_ NULL ddflop
+A_816_ _1__1_ CLK NULL NULL _0__1_ NULL ddflop
+A_817_ _1__2_ CLK NULL NULL _0__2_ NULL ddflop
+A_818_ _1__3_ CLK NULL NULL _0__3_ NULL ddflop
+A_819_ [RESET_L] _296_ d_lut_INVX2
+A_820_ [SEL_1_] _297_ d_lut_INVX2
+A_821_ [sel_B_3_] _298_ d_lut_INVX2
+A_822_ [sel_B_4_] _299_ d_lut_INVX4
+A_823_ [DATA_B_0_ sel_B_5_bF$buf4] _300_ d_lut_OR2X2
+A_824_ [DATA_B_16_] _301_ d_lut_INVX1
+A_825_ [sel_B_5_bF$buf3 _301_] _302_ d_lut_NAND2X1
+A_826_ [_299_ _300_ _302_] _303_ d_lut_NAND3X1
+A_827_ [DATA_B_24_] _304_ d_lut_INVX1
+A_828_ [sel_B_5_bF$buf2 _304_] _305_ d_lut_NAND2X1
+A_829_ [sel_B_5_bF$buf1 DATA_B_8_] _306_ d_lut_OR2X2
+A_830_ [sel_B_4_ _306_ _305_] _307_ d_lut_NAND3X1
+A_831_ [_298_ _303_ _307_] _308_ d_lut_NAND3X1
+A_832_ [sel_B_5_bF$buf0 DATA_B_4_] _309_ d_lut_OR2X2
+A_833_ [DATA_B_20_] _310_ d_lut_INVX1
+A_834_ [sel_B_5_bF$buf4 _310_] _311_ d_lut_NAND2X1
+A_835_ [_299_ _309_ _311_] _312_ d_lut_NAND3X1
+A_836_ [DATA_B_12_] _313_ d_lut_INVX1
+A_837_ [sel_B_5_bF$buf3 DATA_B_28_] _314_ d_lut_NAND2X1
+A_838_ [_313_ sel_B_5_bF$buf2 _314_] _315_ d_lut_OAI21X1
+A_839_ [sel_B_4_ _315_] _316_ d_lut_NAND2X1
+A_840_ [sel_B_3_ _312_ _316_] _317_ d_lut_NAND3X1
+A_841_ [_297_ _308_ _317_] _318_ d_lut_NAND3X1
+A_842_ [sel_A_3_] _161_ d_lut_INVX2
+A_843_ [sel_A_4_] _162_ d_lut_INVX4
+A_844_ [DATA_A_0_ sel_A_5_bF$buf4] _163_ d_lut_OR2X2
+A_845_ [DATA_A_16_] _164_ d_lut_INVX1
+A_846_ [sel_A_5_bF$buf3 _164_] _165_ d_lut_NAND2X1
+A_847_ [_162_ _163_ _165_] _166_ d_lut_NAND3X1
+A_848_ [DATA_A_24_] _167_ d_lut_INVX1
+A_849_ [sel_A_5_bF$buf2 _167_] _168_ d_lut_NAND2X1
+A_850_ [sel_A_5_bF$buf1 DATA_A_8_] _169_ d_lut_OR2X2
+A_851_ [sel_A_4_ _169_ _168_] _170_ d_lut_NAND3X1
+A_852_ [_161_ _166_ _170_] _171_ d_lut_NAND3X1
+A_853_ [sel_A_5_bF$buf0 DATA_A_4_] _172_ d_lut_OR2X2
+A_854_ [DATA_A_20_] _173_ d_lut_INVX1
+A_855_ [sel_A_5_bF$buf4 _173_] _174_ d_lut_NAND2X1
+A_856_ [_162_ _172_ _174_] _175_ d_lut_NAND3X1
+A_857_ [DATA_A_12_] _176_ d_lut_INVX1
+A_858_ [sel_A_5_bF$buf3 DATA_A_28_] _177_ d_lut_NAND2X1
+A_859_ [_176_ sel_A_5_bF$buf2 _177_] _178_ d_lut_OAI21X1
+A_860_ [sel_A_4_ _178_] _179_ d_lut_NAND2X1
+A_861_ [sel_A_3_ _175_ _179_] _180_ d_lut_NAND3X1
+A_862_ [SEL_1_ _171_ _180_] _181_ d_lut_NAND3X1
+A_863_ [_318_ _181_ _296_] _160__0_ d_lut_AOI21X1
+A_864_ [sel_B_5_bF$buf1 DATA_B_1_] _182_ d_lut_OR2X2
+A_865_ [DATA_B_17_] _183_ d_lut_INVX1
+A_866_ [sel_B_5_bF$buf0 _183_] _184_ d_lut_NAND2X1
+A_867_ [_299_ _182_ _184_] _185_ d_lut_NAND3X1
+A_868_ [DATA_B_25_] _186_ d_lut_INVX1
+A_869_ [sel_B_5_bF$buf4 _186_] _187_ d_lut_NAND2X1
+A_870_ [sel_B_5_bF$buf3 DATA_B_9_] _188_ d_lut_OR2X2
+A_871_ [sel_B_4_ _188_ _187_] _189_ d_lut_NAND3X1
+A_872_ [_298_ _185_ _189_] _190_ d_lut_NAND3X1
+A_873_ [sel_B_5_bF$buf2 DATA_B_5_] _191_ d_lut_OR2X2
+A_874_ [DATA_B_21_] _192_ d_lut_INVX1
+A_875_ [sel_B_5_bF$buf1 _192_] _193_ d_lut_NAND2X1
+A_876_ [_299_ _191_ _193_] _194_ d_lut_NAND3X1
+A_877_ [DATA_B_13_] _195_ d_lut_INVX1
+A_878_ [sel_B_5_bF$buf0 DATA_B_29_] _196_ d_lut_NAND2X1
+A_879_ [_195_ sel_B_5_bF$buf4 _196_] _197_ d_lut_OAI21X1
+A_880_ [sel_B_4_ _197_] _198_ d_lut_NAND2X1
+A_881_ [sel_B_3_ _194_ _198_] _199_ d_lut_NAND3X1
+A_882_ [_297_ _190_ _199_] _200_ d_lut_NAND3X1
+A_883_ [sel_A_5_bF$buf1 DATA_A_1_] _201_ d_lut_OR2X2
+A_884_ [DATA_A_17_] _202_ d_lut_INVX1
+A_885_ [sel_A_5_bF$buf0 _202_] _203_ d_lut_NAND2X1
+A_886_ [_162_ _201_ _203_] _204_ d_lut_NAND3X1
+A_887_ [DATA_A_25_] _205_ d_lut_INVX1
+A_888_ [sel_A_5_bF$buf4 _205_] _206_ d_lut_NAND2X1
+A_889_ [sel_A_5_bF$buf3 DATA_A_9_] _207_ d_lut_OR2X2
+A_890_ [sel_A_4_ _207_ _206_] _208_ d_lut_NAND3X1
+A_891_ [_161_ _204_ _208_] _209_ d_lut_NAND3X1
+A_892_ [sel_A_5_bF$buf2 DATA_A_5_] _210_ d_lut_OR2X2
+A_893_ [DATA_A_21_] _211_ d_lut_INVX1
+A_894_ [sel_A_5_bF$buf1 _211_] _212_ d_lut_NAND2X1
+A_895_ [_162_ _210_ _212_] _213_ d_lut_NAND3X1
+A_896_ [DATA_A_13_] _214_ d_lut_INVX1
+A_897_ [sel_A_5_bF$buf0 DATA_A_29_] _215_ d_lut_NAND2X1
+A_898_ [_214_ sel_A_5_bF$buf4 _215_] _216_ d_lut_OAI21X1
+A_899_ [sel_A_4_ _216_] _217_ d_lut_NAND2X1
+A_900_ [sel_A_3_ _213_ _217_] _218_ d_lut_NAND3X1
+A_901_ [SEL_1_ _209_ _218_] _219_ d_lut_NAND3X1
+A_902_ [_200_ _219_ _296_] _160__1_ d_lut_AOI21X1
+A_903_ [sel_B_5_bF$buf3 DATA_B_2_] _220_ d_lut_OR2X2
+A_904_ [DATA_B_18_] _221_ d_lut_INVX1
+A_905_ [sel_B_5_bF$buf2 _221_] _222_ d_lut_NAND2X1
+A_906_ [_299_ _220_ _222_] _223_ d_lut_NAND3X1
+A_907_ [DATA_B_26_] _224_ d_lut_INVX1
+A_908_ [sel_B_5_bF$buf1 _224_] _225_ d_lut_NAND2X1
+A_909_ [sel_B_5_bF$buf0 DATA_B_10_] _226_ d_lut_OR2X2
+A_910_ [sel_B_4_ _226_ _225_] _227_ d_lut_NAND3X1
+A_911_ [_298_ _223_ _227_] _228_ d_lut_NAND3X1
+A_912_ [sel_B_5_bF$buf4 DATA_B_6_] _229_ d_lut_OR2X2
+A_913_ [DATA_B_22_] _230_ d_lut_INVX1
+A_914_ [sel_B_5_bF$buf3 _230_] _231_ d_lut_NAND2X1
+A_915_ [_299_ _229_ _231_] _232_ d_lut_NAND3X1
+A_916_ [DATA_B_14_] _233_ d_lut_INVX1
+A_917_ [sel_B_5_bF$buf2 DATA_B_30_] _234_ d_lut_NAND2X1
+A_918_ [_233_ sel_B_5_bF$buf1 _234_] _235_ d_lut_OAI21X1
+A_919_ [sel_B_4_ _235_] _236_ d_lut_NAND2X1
+A_920_ [sel_B_3_ _232_ _236_] _237_ d_lut_NAND3X1
+A_921_ [_297_ _228_ _237_] _238_ d_lut_NAND3X1
+A_922_ [sel_A_5_bF$buf3 DATA_A_6_] _239_ d_lut_OR2X2
+A_923_ [DATA_A_22_] _240_ d_lut_INVX1
+A_924_ [sel_A_5_bF$buf2 _240_] _241_ d_lut_NAND2X1
+A_925_ [_162_ _239_ _241_] _242_ d_lut_NAND3X1
+A_926_ [DATA_A_30_] _243_ d_lut_INVX1
+A_927_ [sel_A_5_bF$buf1 _243_] _244_ d_lut_NAND2X1
+A_928_ [sel_A_5_bF$buf0 DATA_A_14_] _245_ d_lut_OR2X2
+A_929_ [sel_A_4_ _245_ _244_] _246_ d_lut_NAND3X1
+A_930_ [sel_A_3_ _242_ _246_] _247_ d_lut_NAND3X1
+A_931_ [sel_A_5_bF$buf4 DATA_A_2_] _248_ d_lut_OR2X2
+A_932_ [DATA_A_18_] _249_ d_lut_INVX1
+A_933_ [sel_A_5_bF$buf3 _249_] _250_ d_lut_NAND2X1
+A_934_ [_162_ _248_ _250_] _251_ d_lut_NAND3X1
+A_935_ [DATA_A_10_] _252_ d_lut_INVX1
+A_936_ [sel_A_5_bF$buf2 DATA_A_26_] _253_ d_lut_NAND2X1
+A_937_ [_252_ sel_A_5_bF$buf1 _253_] _254_ d_lut_OAI21X1
+A_938_ [sel_A_4_ _254_] _255_ d_lut_NAND2X1
+A_939_ [_161_ _251_ _255_] _256_ d_lut_NAND3X1
+A_940_ [SEL_1_ _247_ _256_] _257_ d_lut_NAND3X1
+A_941_ [_238_ _257_ _296_] _160__2_ d_lut_AOI21X1
+A_942_ [sel_B_5_bF$buf0 DATA_B_3_] _258_ d_lut_OR2X2
+A_943_ [DATA_B_19_] _259_ d_lut_INVX1
+A_944_ [sel_B_5_bF$buf4 _259_] _260_ d_lut_NAND2X1
+A_945_ [_299_ _258_ _260_] _261_ d_lut_NAND3X1
+A_946_ [DATA_B_27_] _262_ d_lut_INVX1
+A_947_ [sel_B_5_bF$buf3 _262_] _263_ d_lut_NAND2X1
+A_948_ [sel_B_5_bF$buf2 DATA_B_11_] _264_ d_lut_OR2X2
+A_949_ [sel_B_4_ _264_ _263_] _265_ d_lut_NAND3X1
+A_950_ [_298_ _261_ _265_] _266_ d_lut_NAND3X1
+A_951_ [sel_B_5_bF$buf1 DATA_B_7_] _267_ d_lut_OR2X2
+A_952_ [DATA_B_23_] _268_ d_lut_INVX1
+A_953_ [sel_B_5_bF$buf0 _268_] _269_ d_lut_NAND2X1
+A_954_ [_299_ _267_ _269_] _270_ d_lut_NAND3X1
+A_955_ [DATA_B_15_] _271_ d_lut_INVX1
+A_956_ [sel_B_5_bF$buf4 DATA_B_31_] _272_ d_lut_NAND2X1
+A_957_ [_271_ sel_B_5_bF$buf3 _272_] _273_ d_lut_OAI21X1
+A_958_ [sel_B_4_ _273_] _274_ d_lut_NAND2X1
+A_959_ [sel_B_3_ _270_ _274_] _275_ d_lut_NAND3X1
+A_960_ [_297_ _266_ _275_] _276_ d_lut_NAND3X1
+A_961_ [sel_A_5_bF$buf0 DATA_A_3_] _277_ d_lut_OR2X2
+A_962_ [DATA_A_19_] _278_ d_lut_INVX1
+A_963_ [sel_A_5_bF$buf4 _278_] _279_ d_lut_NAND2X1
+A_964_ [_162_ _277_ _279_] _280_ d_lut_NAND3X1
+A_965_ [DATA_A_27_] _281_ d_lut_INVX1
+A_966_ [sel_A_5_bF$buf3 _281_] _282_ d_lut_NAND2X1
+A_967_ [sel_A_5_bF$buf2 DATA_A_11_] _283_ d_lut_OR2X2
+A_968_ [sel_A_4_ _283_ _282_] _284_ d_lut_NAND3X1
+A_969_ [_161_ _280_ _284_] _285_ d_lut_NAND3X1
+A_970_ [sel_A_5_bF$buf1 DATA_A_7_] _286_ d_lut_OR2X2
+A_971_ [DATA_A_23_] _287_ d_lut_INVX1
+A_972_ [sel_A_5_bF$buf0 _287_] _288_ d_lut_NAND2X1
+A_973_ [_162_ _286_ _288_] _289_ d_lut_NAND3X1
+A_974_ [DATA_A_15_] _290_ d_lut_INVX1
+A_975_ [sel_A_5_bF$buf4 DATA_A_31_] _291_ d_lut_NAND2X1
+A_976_ [_290_ sel_A_5_bF$buf3 _291_] _292_ d_lut_OAI21X1
+A_977_ [sel_A_4_ _292_] _293_ d_lut_NAND2X1
+A_978_ [sel_A_3_ _289_ _293_] _294_ d_lut_NAND3X1
+A_979_ [SEL_1_ _285_ _294_] _295_ d_lut_NAND3X1
+A_980_ [_276_ _295_ _296_] _160__3_ d_lut_AOI21X1
+A_981_ _160__0_ CLK NULL NULL _0__4_ NULL ddflop
+A_982_ _160__1_ CLK NULL NULL _0__5_ NULL ddflop
+A_983_ _160__2_ CLK NULL NULL _0__6_ NULL ddflop
+A_984_ _160__3_ CLK NULL NULL _0__7_ NULL ddflop
+A_985_ [RESET_L] _455_ d_lut_INVX2
+A_986_ [SEL_2_] _456_ d_lut_INVX2
+A_987_ [sel_B_6_] _457_ d_lut_INVX2
+A_988_ [sel_B_7_] _458_ d_lut_INVX4
+A_989_ [DATA_B_0_ sel_B_8_bF$buf2] _459_ d_lut_OR2X2
+A_990_ [DATA_B_16_] _460_ d_lut_INVX1
+A_991_ [sel_B_8_bF$buf1 _460_] _461_ d_lut_NAND2X1
+A_992_ [_458_ _459_ _461_] _462_ d_lut_NAND3X1
+A_993_ [DATA_B_24_] _463_ d_lut_INVX1
+A_994_ [sel_B_8_bF$buf0 _463_] _464_ d_lut_NAND2X1
+A_995_ [sel_B_8_bF$buf4 DATA_B_8_] _465_ d_lut_OR2X2
+A_996_ [sel_B_7_ _465_ _464_] _466_ d_lut_NAND3X1
+A_997_ [_457_ _462_ _466_] _467_ d_lut_NAND3X1
+A_998_ [sel_B_8_bF$buf3 DATA_B_4_] _468_ d_lut_OR2X2
+A_999_ [DATA_B_20_] _469_ d_lut_INVX1
 
 .model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=1n fall_delay=1n)
 .model toana_1v8 dac_bridge(out_high=1.8 out_low=0)
@@ -731,122 +733,121 @@ AINVX1_128 [DATA_B_20_] _469_ d_lut_INVX1
 
 AA2D1 [a_vdd] [vdd] todig_1v8
 AA2D2 [a_gnd] [gnd] todig_1v8
-AA2D3 [a_DATA_A_0_] [DATA_A_0_] todig_1v8
-AA2D4 [a_DATA_A_1_] [DATA_A_1_] todig_1v8
-AA2D5 [a_DATA_A_2_] [DATA_A_2_] todig_1v8
-AA2D6 [a_DATA_A_3_] [DATA_A_3_] todig_1v8
-AA2D7 [a_DATA_A_4_] [DATA_A_4_] todig_1v8
-AA2D8 [a_DATA_A_5_] [DATA_A_5_] todig_1v8
-AA2D9 [a_DATA_A_6_] [DATA_A_6_] todig_1v8
-AA2D10 [a_DATA_A_7_] [DATA_A_7_] todig_1v8
-AA2D11 [a_DATA_A_8_] [DATA_A_8_] todig_1v8
-AA2D12 [a_DATA_A_9_] [DATA_A_9_] todig_1v8
-AA2D13 [a_DATA_A_10_] [DATA_A_10_] todig_1v8
-AA2D14 [a_DATA_A_11_] [DATA_A_11_] todig_1v8
-AA2D15 [a_DATA_A_12_] [DATA_A_12_] todig_1v8
-AA2D16 [a_DATA_A_13_] [DATA_A_13_] todig_1v8
-AA2D17 [a_DATA_A_14_] [DATA_A_14_] todig_1v8
-AA2D18 [a_DATA_A_15_] [DATA_A_15_] todig_1v8
-AA2D19 [a_DATA_A_16_] [DATA_A_16_] todig_1v8
-AA2D20 [a_DATA_A_17_] [DATA_A_17_] todig_1v8
-AA2D21 [a_DATA_A_18_] [DATA_A_18_] todig_1v8
-AA2D22 [a_DATA_A_19_] [DATA_A_19_] todig_1v8
-AA2D23 [a_DATA_A_20_] [DATA_A_20_] todig_1v8
-AA2D24 [a_DATA_A_21_] [DATA_A_21_] todig_1v8
-AA2D25 [a_DATA_A_22_] [DATA_A_22_] todig_1v8
-AA2D26 [a_DATA_A_23_] [DATA_A_23_] todig_1v8
-AA2D27 [a_DATA_A_24_] [DATA_A_24_] todig_1v8
-AA2D28 [a_DATA_A_25_] [DATA_A_25_] todig_1v8
-AA2D29 [a_DATA_A_26_] [DATA_A_26_] todig_1v8
-AA2D30 [a_DATA_A_27_] [DATA_A_27_] todig_1v8
-AA2D31 [a_DATA_A_28_] [DATA_A_28_] todig_1v8
-AA2D32 [a_DATA_A_29_] [DATA_A_29_] todig_1v8
-AA2D33 [a_DATA_A_30_] [DATA_A_30_] todig_1v8
-AA2D34 [a_DATA_A_31_] [DATA_A_31_] todig_1v8
-AA2D35 [a_DATA_B_0_] [DATA_B_0_] todig_1v8
-AA2D36 [a_DATA_B_1_] [DATA_B_1_] todig_1v8
-AA2D37 [a_DATA_B_2_] [DATA_B_2_] todig_1v8
-AA2D38 [a_DATA_B_3_] [DATA_B_3_] todig_1v8
-AA2D39 [a_DATA_B_4_] [DATA_B_4_] todig_1v8
-AA2D40 [a_DATA_B_5_] [DATA_B_5_] todig_1v8
-AA2D41 [a_DATA_B_6_] [DATA_B_6_] todig_1v8
-AA2D42 [a_DATA_B_7_] [DATA_B_7_] todig_1v8
-AA2D43 [a_DATA_B_8_] [DATA_B_8_] todig_1v8
-AA2D44 [a_DATA_B_9_] [DATA_B_9_] todig_1v8
-AA2D45 [a_DATA_B_10_] [DATA_B_10_] todig_1v8
-AA2D46 [a_DATA_B_11_] [DATA_B_11_] todig_1v8
-AA2D47 [a_DATA_B_12_] [DATA_B_12_] todig_1v8
-AA2D48 [a_DATA_B_13_] [DATA_B_13_] todig_1v8
-AA2D49 [a_DATA_B_14_] [DATA_B_14_] todig_1v8
-AA2D50 [a_DATA_B_15_] [DATA_B_15_] todig_1v8
-AA2D51 [a_DATA_B_16_] [DATA_B_16_] todig_1v8
-AA2D52 [a_DATA_B_17_] [DATA_B_17_] todig_1v8
-AA2D53 [a_DATA_B_18_] [DATA_B_18_] todig_1v8
-AA2D54 [a_DATA_B_19_] [DATA_B_19_] todig_1v8
-AA2D55 [a_DATA_B_20_] [DATA_B_20_] todig_1v8
-AA2D56 [a_DATA_B_21_] [DATA_B_21_] todig_1v8
-AA2D57 [a_DATA_B_22_] [DATA_B_22_] todig_1v8
-AA2D58 [a_DATA_B_23_] [DATA_B_23_] todig_1v8
-AA2D59 [a_DATA_B_24_] [DATA_B_24_] todig_1v8
-AA2D60 [a_DATA_B_25_] [DATA_B_25_] todig_1v8
-AA2D61 [a_DATA_B_26_] [DATA_B_26_] todig_1v8
-AA2D62 [a_DATA_B_27_] [DATA_B_27_] todig_1v8
-AA2D63 [a_DATA_B_28_] [DATA_B_28_] todig_1v8
-AA2D64 [a_DATA_B_29_] [DATA_B_29_] todig_1v8
-AA2D65 [a_DATA_B_30_] [DATA_B_30_] todig_1v8
-AA2D66 [a_DATA_B_31_] [DATA_B_31_] todig_1v8
-AA2D67 [a_sel_A_0_] [sel_A_0_] todig_1v8
-AA2D68 [a_sel_A_1_] [sel_A_1_] todig_1v8
-AA2D69 [a_sel_A_2_] [sel_A_2_] todig_1v8
-AA2D70 [a_sel_A_3_] [sel_A_3_] todig_1v8
-AA2D71 [a_sel_A_4_] [sel_A_4_] todig_1v8
-AA2D72 [a_sel_A_5_] [sel_A_5_] todig_1v8
-AA2D73 [a_sel_A_6_] [sel_A_6_] todig_1v8
-AA2D74 [a_sel_A_7_] [sel_A_7_] todig_1v8
-AA2D75 [a_sel_A_8_] [sel_A_8_] todig_1v8
-AA2D76 [a_sel_A_9_] [sel_A_9_] todig_1v8
-AA2D77 [a_sel_A_10_] [sel_A_10_] todig_1v8
-AA2D78 [a_sel_A_11_] [sel_A_11_] todig_1v8
-AA2D79 [a_sel_B_0_] [sel_B_0_] todig_1v8
-AA2D80 [a_sel_B_1_] [sel_B_1_] todig_1v8
-AA2D81 [a_sel_B_2_] [sel_B_2_] todig_1v8
-AA2D82 [a_sel_B_3_] [sel_B_3_] todig_1v8
-AA2D83 [a_sel_B_4_] [sel_B_4_] todig_1v8
-AA2D84 [a_sel_B_5_] [sel_B_5_] todig_1v8
-AA2D85 [a_sel_B_6_] [sel_B_6_] todig_1v8
-AA2D86 [a_sel_B_7_] [sel_B_7_] todig_1v8
-AA2D87 [a_sel_B_8_] [sel_B_8_] todig_1v8
-AA2D88 [a_sel_B_9_] [sel_B_9_] todig_1v8
-AA2D89 [a_sel_B_10_] [sel_B_10_] todig_1v8
-AA2D90 [a_sel_B_11_] [sel_B_11_] todig_1v8
-AA2D91 [a_SEL_0_] [SEL_0_] todig_1v8
-AA2D92 [a_SEL_1_] [SEL_1_] todig_1v8
-AA2D93 [a_SEL_2_] [SEL_2_] todig_1v8
-AA2D94 [a_SEL_3_] [SEL_3_] todig_1v8
-AA2D95 [a_RESET_L] [RESET_L] todig_1v8
-AA2D96 [a_CLK] [CLK] todig_1v8
-AD2A1 [temp_0_] [a_temp_0_] toana_1v8
-AD2A2 [temp_1_] [a_temp_1_] toana_1v8
-AD2A3 [temp_2_] [a_temp_2_] toana_1v8
-AD2A4 [temp_3_] [a_temp_3_] toana_1v8
-AD2A5 [temp_4_] [a_temp_4_] toana_1v8
-AD2A6 [temp_5_] [a_temp_5_] toana_1v8
-AD2A7 [temp_6_] [a_temp_6_] toana_1v8
-AD2A8 [temp_7_] [a_temp_7_] toana_1v8
-AD2A9 [temp_8_] [a_temp_8_] toana_1v8
-AD2A10 [temp_9_] [a_temp_9_] toana_1v8
-AD2A11 [temp_10_] [a_temp_10_] toana_1v8
-AD2A12 [temp_11_] [a_temp_11_] toana_1v8
-AD2A13 [temp_12_] [a_temp_12_] toana_1v8
-AD2A14 [temp_13_] [a_temp_13_] toana_1v8
-AD2A15 [temp_14_] [a_temp_14_] toana_1v8
-AD2A16 [temp_15_] [a_temp_15_] toana_1v8
+AA2D3 [a_CLK] [CLK] todig_1v8
+AA2D4 [a_DATA_A_0_] [DATA_A_0_] todig_1v8
+AA2D5 [a_DATA_A_1_] [DATA_A_1_] todig_1v8
+AA2D6 [a_DATA_A_2_] [DATA_A_2_] todig_1v8
+AA2D7 [a_DATA_A_3_] [DATA_A_3_] todig_1v8
+AA2D8 [a_DATA_A_4_] [DATA_A_4_] todig_1v8
+AA2D9 [a_DATA_A_5_] [DATA_A_5_] todig_1v8
+AA2D10 [a_DATA_A_6_] [DATA_A_6_] todig_1v8
+AA2D11 [a_DATA_A_7_] [DATA_A_7_] todig_1v8
+AA2D12 [a_DATA_A_8_] [DATA_A_8_] todig_1v8
+AA2D13 [a_DATA_A_9_] [DATA_A_9_] todig_1v8
+AA2D14 [a_DATA_A_10_] [DATA_A_10_] todig_1v8
+AA2D15 [a_DATA_A_11_] [DATA_A_11_] todig_1v8
+AA2D16 [a_DATA_A_12_] [DATA_A_12_] todig_1v8
+AA2D17 [a_DATA_A_13_] [DATA_A_13_] todig_1v8
+AA2D18 [a_DATA_A_14_] [DATA_A_14_] todig_1v8
+AA2D19 [a_DATA_A_15_] [DATA_A_15_] todig_1v8
+AA2D20 [a_DATA_A_16_] [DATA_A_16_] todig_1v8
+AA2D21 [a_DATA_A_17_] [DATA_A_17_] todig_1v8
+AA2D22 [a_DATA_A_18_] [DATA_A_18_] todig_1v8
+AA2D23 [a_DATA_A_19_] [DATA_A_19_] todig_1v8
+AA2D24 [a_DATA_A_20_] [DATA_A_20_] todig_1v8
+AA2D25 [a_DATA_A_21_] [DATA_A_21_] todig_1v8
+AA2D26 [a_DATA_A_22_] [DATA_A_22_] todig_1v8
+AA2D27 [a_DATA_A_23_] [DATA_A_23_] todig_1v8
+AA2D28 [a_DATA_A_24_] [DATA_A_24_] todig_1v8
+AA2D29 [a_DATA_A_25_] [DATA_A_25_] todig_1v8
+AA2D30 [a_DATA_A_26_] [DATA_A_26_] todig_1v8
+AA2D31 [a_DATA_A_27_] [DATA_A_27_] todig_1v8
+AA2D32 [a_DATA_A_28_] [DATA_A_28_] todig_1v8
+AA2D33 [a_DATA_A_29_] [DATA_A_29_] todig_1v8
+AA2D34 [a_DATA_A_30_] [DATA_A_30_] todig_1v8
+AA2D35 [a_DATA_A_31_] [DATA_A_31_] todig_1v8
+AA2D36 [a_DATA_B_0_] [DATA_B_0_] todig_1v8
+AA2D37 [a_DATA_B_1_] [DATA_B_1_] todig_1v8
+AA2D38 [a_DATA_B_2_] [DATA_B_2_] todig_1v8
+AA2D39 [a_DATA_B_3_] [DATA_B_3_] todig_1v8
+AA2D40 [a_DATA_B_4_] [DATA_B_4_] todig_1v8
+AA2D41 [a_DATA_B_5_] [DATA_B_5_] todig_1v8
+AA2D42 [a_DATA_B_6_] [DATA_B_6_] todig_1v8
+AA2D43 [a_DATA_B_7_] [DATA_B_7_] todig_1v8
+AA2D44 [a_DATA_B_8_] [DATA_B_8_] todig_1v8
+AA2D45 [a_DATA_B_9_] [DATA_B_9_] todig_1v8
+AA2D46 [a_DATA_B_10_] [DATA_B_10_] todig_1v8
+AA2D47 [a_DATA_B_11_] [DATA_B_11_] todig_1v8
+AA2D48 [a_DATA_B_12_] [DATA_B_12_] todig_1v8
+AA2D49 [a_DATA_B_13_] [DATA_B_13_] todig_1v8
+AA2D50 [a_DATA_B_14_] [DATA_B_14_] todig_1v8
+AA2D51 [a_DATA_B_15_] [DATA_B_15_] todig_1v8
+AA2D52 [a_DATA_B_16_] [DATA_B_16_] todig_1v8
+AA2D53 [a_DATA_B_17_] [DATA_B_17_] todig_1v8
+AA2D54 [a_DATA_B_18_] [DATA_B_18_] todig_1v8
+AA2D55 [a_DATA_B_19_] [DATA_B_19_] todig_1v8
+AA2D56 [a_DATA_B_20_] [DATA_B_20_] todig_1v8
+AA2D57 [a_DATA_B_21_] [DATA_B_21_] todig_1v8
+AA2D58 [a_DATA_B_22_] [DATA_B_22_] todig_1v8
+AA2D59 [a_DATA_B_23_] [DATA_B_23_] todig_1v8
+AA2D60 [a_DATA_B_24_] [DATA_B_24_] todig_1v8
+AA2D61 [a_DATA_B_25_] [DATA_B_25_] todig_1v8
+AA2D62 [a_DATA_B_26_] [DATA_B_26_] todig_1v8
+AA2D63 [a_DATA_B_27_] [DATA_B_27_] todig_1v8
+AA2D64 [a_DATA_B_28_] [DATA_B_28_] todig_1v8
+AA2D65 [a_DATA_B_29_] [DATA_B_29_] todig_1v8
+AA2D66 [a_DATA_B_30_] [DATA_B_30_] todig_1v8
+AA2D67 [a_DATA_B_31_] [DATA_B_31_] todig_1v8
+AD2A1 [NIBBLE_OUT_0_] [a_NIBBLE_OUT_0_] toana_1v8
+AD2A2 [NIBBLE_OUT_1_] [a_NIBBLE_OUT_1_] toana_1v8
+AD2A3 [NIBBLE_OUT_2_] [a_NIBBLE_OUT_2_] toana_1v8
+AD2A4 [NIBBLE_OUT_3_] [a_NIBBLE_OUT_3_] toana_1v8
+AD2A5 [NIBBLE_OUT_4_] [a_NIBBLE_OUT_4_] toana_1v8
+AD2A6 [NIBBLE_OUT_5_] [a_NIBBLE_OUT_5_] toana_1v8
+AD2A7 [NIBBLE_OUT_6_] [a_NIBBLE_OUT_6_] toana_1v8
+AD2A8 [NIBBLE_OUT_7_] [a_NIBBLE_OUT_7_] toana_1v8
+AD2A9 [NIBBLE_OUT_8_] [a_NIBBLE_OUT_8_] toana_1v8
+AD2A10 [NIBBLE_OUT_9_] [a_NIBBLE_OUT_9_] toana_1v8
+AD2A11 [NIBBLE_OUT_10_] [a_NIBBLE_OUT_10_] toana_1v8
+AD2A12 [NIBBLE_OUT_11_] [a_NIBBLE_OUT_11_] toana_1v8
+AD2A13 [NIBBLE_OUT_12_] [a_NIBBLE_OUT_12_] toana_1v8
+AD2A14 [NIBBLE_OUT_13_] [a_NIBBLE_OUT_13_] toana_1v8
+AD2A15 [NIBBLE_OUT_14_] [a_NIBBLE_OUT_14_] toana_1v8
+AD2A16 [NIBBLE_OUT_15_] [a_NIBBLE_OUT_15_] toana_1v8
+AA2D68 [a_RESET_L] [RESET_L] todig_1v8
+AA2D69 [a_SEL_0_] [SEL_0_] todig_1v8
+AA2D70 [a_SEL_1_] [SEL_1_] todig_1v8
+AA2D71 [a_SEL_2_] [SEL_2_] todig_1v8
+AA2D72 [a_SEL_3_] [SEL_3_] todig_1v8
+AA2D73 [a_sel_A_0_] [sel_A_0_] todig_1v8
+AA2D74 [a_sel_A_1_] [sel_A_1_] todig_1v8
+AA2D75 [a_sel_A_2_] [sel_A_2_] todig_1v8
+AA2D76 [a_sel_A_3_] [sel_A_3_] todig_1v8
+AA2D77 [a_sel_A_4_] [sel_A_4_] todig_1v8
+AA2D78 [a_sel_A_5_] [sel_A_5_] todig_1v8
+AA2D79 [a_sel_A_6_] [sel_A_6_] todig_1v8
+AA2D80 [a_sel_A_7_] [sel_A_7_] todig_1v8
+AA2D81 [a_sel_A_8_] [sel_A_8_] todig_1v8
+AA2D82 [a_sel_A_9_] [sel_A_9_] todig_1v8
+AA2D83 [a_sel_A_10_] [sel_A_10_] todig_1v8
+AA2D84 [a_sel_A_11_] [sel_A_11_] todig_1v8
+AA2D85 [a_sel_B_0_] [sel_B_0_] todig_1v8
+AA2D86 [a_sel_B_1_] [sel_B_1_] todig_1v8
+AA2D87 [a_sel_B_2_] [sel_B_2_] todig_1v8
+AA2D88 [a_sel_B_3_] [sel_B_3_] todig_1v8
+AA2D89 [a_sel_B_4_] [sel_B_4_] todig_1v8
+AA2D90 [a_sel_B_5_] [sel_B_5_] todig_1v8
+AA2D91 [a_sel_B_6_] [sel_B_6_] todig_1v8
+AA2D92 [a_sel_B_7_] [sel_B_7_] todig_1v8
+AA2D93 [a_sel_B_8_] [sel_B_8_] todig_1v8
+AA2D94 [a_sel_B_9_] [sel_B_9_] todig_1v8
+AA2D95 [a_sel_B_10_] [sel_B_10_] todig_1v8
+AA2D96 [a_sel_B_11_] [sel_B_11_] todig_1v8
 
-.ends selector4
- 
+.ends
 
-* BUFX4 A
-.model d_lut_BUFX4 d_lut (rise_delay=100p fall_delay=100p input_load=500f
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=100p fall_delay=100p input_load=500f
 + table_values "01")
 * NAND2X1 (!(A B))
 .model d_lut_NAND2X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
@@ -873,7 +874,4 @@ AD2A16 [temp_15_] [a_temp_15_] toana_1v8
 .model d_lut_AOI21X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
 + table_values "11100000")
 * DFFPOSX1 DS0000
-* BUFX2 A
-.model d_lut_BUFX2 d_lut (rise_delay=100p fall_delay=100p input_load=500f
-+ table_values "01")
 .end
