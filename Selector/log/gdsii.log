@@ -1,4 +1,4 @@
-Qflow gdsii logfile created on mié 5 jun 20:18:19 CST 2019
+Qflow gdsii logfile created on sáb 8 jun 12:22:05 CST 2019
 magic -dnull -noconsole  /home/alberto/gir_repo/ProyectoMicros/Selector/layout/generate_gds_selector4.tcl
 
 Magic 8.2 revision 112 - Compiled on dom 12 may 08:26:38 CST 2019.
@@ -323,5 +323,5 @@ Moving label "vdd" from space to metal1 in cell CLKBUF3.
 Moving label "A" from space to metal1 in cell CLKBUF3.
 Moving label "Y" from space to metal1 in cell CLKBUF3.
 Reading "iit_stdcells".
-Processing timestamp mismatches: FILL, OR2X2, NAND3X1, INVX1, NAND2X1, BUFX2, OAI21X1, INVX2, DFFPOSX1, INVX4, AOI21X1.
-GDS generating script ended on mié 5 jun 20:18:20 CST 2019
+Processing timestamp mismatches: FILL, INVX1, BUFX2, OAI21X1, NAND2X1, OR2X2, NAND3X1, INVX4, INVX2, DFFPOSX1, AOI21X1.
+GDS generating script ended on sáb 8 jun 12:22:06 CST 2019

@@ -11,24 +11,24 @@ module testbench;
     wire		CLK;			// From prob of prob.v
     wire [31:0]		DATA_A;			// From prob of prob.v
     wire [31:0]		DATA_B;			// From prob of prob.v
+    wire [15:0]		NIBBLE_OUT;		// From pog of selector4.v
     wire		RESET_L;		// From prob of prob.v
-    wire [3:0]		SEL;			// From prob of prob.v
-    wire [3:0] [2:0]	sel_A;			// From prob of prob.v
-    wire [3:0] [2:0]	sel_B;			// From prob of prob.v
-    wire [15:0]		temp;			// From pog of selector4.v
+    wire [3:0]		sl_SEL;			// From prob of prob.v
+    wire [11:0]		sl_sel_A;		// From prob of prob.v
+    wire [11:0]		sl_sel_B;		// From prob of prob.v
     // End of automatics
 
 
 
     selector4 pog(/*AUTOINST*/
 		  // Outputs
-		  .temp			(temp[4*4-1:0]),
+		  .NIBBLE_OUT		(NIBBLE_OUT[4*4-1:0]),
 		  // Inputs
 		  .DATA_A		(DATA_A[31:0]),
 		  .DATA_B		(DATA_B[31:0]),
-		  .sel_A		(sel_A/*[3:0][2:0]*/),
-		  .sel_B		(sel_B/*[3:0][2:0]*/),
-		  .SEL			(SEL[3:0]),
+		  .sl_sel_A		(sl_sel_A[11:0]),
+		  .sl_sel_B		(sl_sel_B[11:0]),
+		  .sl_SEL		(sl_SEL[3:0]),
 		  .RESET_L		(RESET_L),
 		  .CLK			(CLK));
 
@@ -38,11 +38,9 @@ module testbench;
 	      .CLK			(CLK),
 	      .DATA_A			(DATA_A[31:0]),
 	      .DATA_B			(DATA_B[31:0]),
-	      .sel_A			(sel_A/*[3:0][2:0]*/),
-	      .sel_B			(sel_B/*[3:0][2:0]*/),
-	      .SEL			(SEL[3:0]),
-	      .RESET_L			(RESET_L),
-	      // Inputs
-	      .temp			(temp[4*4-1:0]));
+	      .sl_sel_A			(sl_sel_A[11:0]),
+	      .sl_sel_B			(sl_sel_B[11:0]),
+	      .sl_SEL			(sl_SEL[3:0]),
+	      .RESET_L			(RESET_L));
 
 endmodule

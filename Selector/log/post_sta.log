@@ -1,4 +1,4 @@
-Qflow static timing analysis logfile created on mié 5 jun 20:18:16 CST 2019
+Qflow static timing analysis logfile created on sáb 8 jun 12:22:02 CST 2019
 Converting qrouter output to vesta delay format
 Running rc2dly -r selector4.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -V /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtl.v
 -d selector4.dly
