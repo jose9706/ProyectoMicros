@@ -9,18 +9,7 @@ module selector4(output wire [4*4-1:0] NIBBLE_OUT,
                  input [11:0] sl_sel_B,
                  input [3:0] sl_SEL,
                  input RESET_L,
-                 input CLK);
-                 
-    wire [3:0] temp_nibble [3:0];
-
-    generate
-        genvar k;
-        for(k = 0; k<4; k = k +1) begin: outs
-            assign NIBBLE_OUT[4*k+3:4*k] = temp_nibble[k];
-        end
-    endgenerate
-
-
+                 input CLK);           
     generate
         genvar i;
         for(i = 0; i <= 3; i = i + 1)
@@ -32,14 +21,11 @@ module selector4(output wire [4*4-1:0] NIBBLE_OUT,
                      sl_SEL[i],
                      RESET_L,
                      CLK,
-                     temp_nibble[i][3:0]);
+                     NIBBLE_OUT[i*4 +: 4]);
 
         end
     endgenerate
-
-
 endmodule
-
 
 
 module selector(  
