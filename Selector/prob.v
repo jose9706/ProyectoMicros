@@ -1,11 +1,10 @@
 module prob(output reg CLK,
             output reg [31:0] DATA_A,
             output reg [31:0] DATA_B,
-            output reg [3:0] [2:0] sel_A,
-            output reg [3:0] [2:0] sel_B,
+            output reg [11:0] sel_A,
+            output reg [11:0] sel_B,
             output reg [3:0] SEL,
-            output reg RESET_L,
-            input  [4*4-1:0] temp);
+            output reg RESET_L);
 
 
     initial begin
@@ -18,11 +17,11 @@ module prob(output reg CLK,
         @(posedge CLK);
         DATA_A <= 'hFFF;
         DATA_B <= 'hABCD;
-        sel_A <= 1;
-        sel_B[0][2:0] <= 0;
-        sel_B[1][2:0] <= 1;
-        sel_B[2][2:0] <= 2;
-        sel_B[3][2:0] <= 3;
+        sel_A[2:0] <= 1;
+        sel_B[2:0] <= 0;
+        sel_B[5:3] <= 1;
+        sel_B[8:6] <= 2;
+        sel_B[11:9] <= 3;
         SEL [0]<=1;
         SEL [1] <=1;
         @(posedge CLK);
