@@ -1,5 +1,4 @@
-Qflow static timing analysis logfile created on mié 5 jun 20:18:13 CST 2019
-Creating example SDC file for timing
+Qflow static timing analysis logfile created on sáb 8 jun 12:21:59 CST 2019
 Creating OpenSTA input file selector4.conf
 Running OpenSTA static timing analysis
 sta  -f selector4.conf

@@ -1,28 +1,35 @@
-Qflow synthesis logfile created on sáb 8 jun 12:21:49 CST 2019
+Starting new log file Sat Jun  8 12:21:35 2019
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu018 from existing qflow_vars.sh file
+Regenerating files for existing project selector4
 Running yosys for verilog parsing and synthesis
 yosys  -s selector4.ys
 
- /----------------------------------------------------------------------------\
- |                                                                            |
- |  yosys -- Yosys Open SYnthesis Suite                                       |
- |                                                                            |
- |  Copyright (C) 2012 - 2016  Clifford Wolf <clifford@clifford.at>           |
- |                                                                            |
- |  Permission to use, copy, modify, and/or distribute this software for any  |
- |  purpose with or without fee is hereby granted, provided that the above    |
- |  copyright notice and this permission notice appear in all copies.         |
- |                                                                            |
- |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
- |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
- |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
- |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
- |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
- |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
- |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
- |                                                                            |
- \----------------------------------------------------------------------------/
+/----------------------------------------------------------------------------\
+|                                                                            |
+|  yosys -- Yosys Open SYnthesis Suite                                       |
+|                                                                            |
+|  Copyright (C) 2012 - 2016  Clifford Wolf <clifford@clifford.at>           |
+|                                                                            |
+|  Permission to use, copy, modify, and/or distribute this software for any  |
+|  purpose with or without fee is hereby granted, provided that the above    |
+|  copyright notice and this permission notice appear in all copies.         |
+|                                                                            |
+|  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+|  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+|  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+|  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+|  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+|  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+|  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+|                                                                            |
+\----------------------------------------------------------------------------/
 
- Yosys 0.7 (git sha1 61f6811, gcc 6.2.0-11ubuntu1 -O2 -fdebug-prefix-map=/build/yosys-OIL3SR/yosys-0.7=. -fstack-protector-strong -fPIC -Os)
+Yosys 0.7 (git sha1 61f6811, gcc 6.2.0-11ubuntu1 -O2 -fdebug-prefix-map=/build/yosys-OIL3SR/yosys-0.7=. -fstack-protector-strong -fPIC -Os)
 
 
 -- Executing script file `selector4.ys' --
@@ -67,15 +74,15 @@ Removed a total of 0 dead cases.
 
 3.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
 Creating decoders for process `\selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
-     1/1: $0\nibbleOut[3:0]
+1/1: $0\nibbleOut[3:0]
 Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$11'.
-     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$4[3:0]$12
+1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$4[3:0]$12
 Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$9'.
-     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$3[3:0]$10
+1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$3[3:0]$10
 Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$7'.
-     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$2[3:0]$8
+1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$2[3:0]$8
 Creating decoders for process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$5'.
-     1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$1[3:0]$6
+1/1: $0$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$1[3:0]$6
 
 3.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
 No latch inferred for signal `\selector4.$mem2bits$\temp_nibble$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$4' from process `\selector4.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:35$11'.
@@ -85,7 +92,7 @@ No latch inferred for signal `\selector4.$mem2bits$\temp_nibble$/home/alberto/gi
 
 3.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `\selector.\nibbleOut' using process `\selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
-  created $dff cell `$procdff$25' with positive edge clock.
+created $dff cell `$procdff$25' with positive edge clock.
 
 3.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Found and cleaned up 1 empty switch in `\selector.$proc$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:56$13'.
@@ -107,9 +114,9 @@ Replacing $shl cell `$mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/
 
 3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \selector..
-  removing buffer cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19': $add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19_Y = $mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$18_Y
-  removing buffer cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16': $add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16_Y = $mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$15_Y
-  removing unused `$not' cell `$not$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:57$14'.
+removing buffer cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19': $add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$19_Y = $mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$18_Y
+removing buffer cell `$add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16': $add$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$16_Y = $mul$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:60$15_Y
+removing unused `$not' cell `$not$/home/alberto/gir_repo/ProyectoMicros/Selector/source/selector4.v:57$14'.
 Finding unused cells or wires in module \selector4..
 
 3.5. Executing CHECK pass (checking for obvious problems).
@@ -128,18 +135,18 @@ Removed a total of 0 cells.
 
 3.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \selector..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-    Root of a mux tree: $procmux$23 (pure)
-  Analyzing evaluation results.
+Creating internal representation of mux trees.
+Evaluating internal representation of mux trees.
+Root of a mux tree: $procmux$23 (pure)
+Analyzing evaluation results.
 Running muxtree optimizer on module \selector4..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
+Creating internal representation of mux trees.
+No muxes found in this module.
 Removed 0 multiplexer ports.
 
 3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \selector.
-  Optimizing cells in module \selector4.
+Optimizing cells in module \selector.
+Optimizing cells in module \selector4.
 Performed a total of 0 changes.
 
 3.6.5. Executing OPT_MERGE pass (detect identical cells).
@@ -163,9 +170,9 @@ Removed top 26 bits (of 32) from port B of cell selector.$shiftx$/home/alberto/g
 
 3.8. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module selector:
-  created 0 $alu and 0 $macc cells.
+created 0 $alu and 0 $macc cells.
 Extracting $alu and $macc cells in module selector4:
-  created 0 $alu and 0 $macc cells.
+created 0 $alu and 0 $macc cells.
 
 3.9. Executing SHARE pass (SAT-based resource sharing).
 
@@ -180,18 +187,18 @@ Removed a total of 0 cells.
 
 3.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \selector..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-    Root of a mux tree: $procmux$23 (pure)
-  Analyzing evaluation results.
+Creating internal representation of mux trees.
+Evaluating internal representation of mux trees.
+Root of a mux tree: $procmux$23 (pure)
+Analyzing evaluation results.
 Running muxtree optimizer on module \selector4..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
+Creating internal representation of mux trees.
+No muxes found in this module.
 Removed 0 multiplexer ports.
 
 3.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \selector.
-  Optimizing cells in module \selector4.
+Optimizing cells in module \selector.
+Optimizing cells in module \selector4.
 Performed a total of 0 changes.
 
 3.10.5. Executing OPT_MERGE pass (detect identical cells).
@@ -296,18 +303,18 @@ Removed a total of 0 cells.
 
 3.17.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \selector..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-    Root of a mux tree: $procmux$23 (pure)
-  Analyzing evaluation results.
+Creating internal representation of mux trees.
+Evaluating internal representation of mux trees.
+Root of a mux tree: $procmux$23 (pure)
+Analyzing evaluation results.
 Running muxtree optimizer on module \selector4..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
+Creating internal representation of mux trees.
+No muxes found in this module.
 Removed 0 multiplexer ports.
 
 3.17.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \selector.
-  Optimizing cells in module \selector4.
+Optimizing cells in module \selector.
+Optimizing cells in module \selector4.
 Performed a total of 0 changes.
 
 3.17.5. Executing OPT_MERGE pass (detect identical cells).
@@ -377,25 +384,25 @@ Removed a total of 0 dead cases.
 
 3.18.3.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
 Creating decoders for process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$84'.
-     1/19: $17\buffer[63:0]
-     2/19: $16\buffer[63:0]
-     3/19: $15\buffer[63:0]
-     4/19: $14\buffer[63:0]
-     5/19: $13\buffer[63:0]
-     6/19: $12\buffer[63:0]
-     7/19: $11\buffer[63:0]
-     8/19: $10\buffer[63:0]
-     9/19: $9\buffer[63:0]
-    10/19: $8\buffer[63:0]
-    11/19: $7\buffer[63:0]
-    12/19: $6\buffer[63:0]
-    13/19: $5\buffer[63:0]
-    14/19: $4\buffer[63:0]
-    15/19: $3\buffer[63:0]
-    16/19: $2\buffer[63:0]
-    17/19: $1\buffer[63:0]
-    18/19: $0\buffer[63:0]
-    19/19: $0\overflow[0:0]
+1/19: $17\buffer[63:0]
+2/19: $16\buffer[63:0]
+3/19: $15\buffer[63:0]
+4/19: $14\buffer[63:0]
+5/19: $13\buffer[63:0]
+6/19: $12\buffer[63:0]
+7/19: $11\buffer[63:0]
+8/19: $10\buffer[63:0]
+9/19: $9\buffer[63:0]
+10/19: $8\buffer[63:0]
+11/19: $7\buffer[63:0]
+12/19: $6\buffer[63:0]
+13/19: $5\buffer[63:0]
+14/19: $4\buffer[63:0]
+15/19: $3\buffer[63:0]
+16/19: $2\buffer[63:0]
+17/19: $1\buffer[63:0]
+18/19: $0\buffer[63:0]
+19/19: $0\overflow[0:0]
 
 3.18.3.6. Executing PROC_DLATCH pass (convert process syncs to latches).
 No latch inferred for signal `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.\overflow' from process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$84'.
@@ -409,42 +416,42 @@ Removing empty process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_sh
 Cleaned up 6 empty switches.
 Removed 0 unused cells and 39 unused wires.
 Analyzing pattern of constant bits for this cell:
-  Constant input on bit 0 of port B: 1'0
-  Constant input on bit 1 of port B: 1'0
-  Constant input on bit 5 of port B: 1'0
+Constant input on bit 0 of port B: 1'0
+Constant input on bit 1 of port B: 1'0
+Constant input on bit 5 of port B: 1'0
 Creating constmapped module `$paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx'.
 
 3.18.4. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx..
-  Creating internal representation of mux trees.
-  Evaluating internal representation of mux trees.
-    Root of a mux tree: $procmux$92 (pure)
-      Removing pure flag from root mux $procmux$128.
-    Root of a mux tree: $procmux$134
-    Root of a mux tree: $procmux$128 (pure)
-    Root of a mux tree: $procmux$119
-    Root of a mux tree: $procmux$110
-    Root of a mux tree: $procmux$101
-  Analyzing evaluation results.
-    dead port 1/2 on $mux $procmux$98.
-    dead port 2/2 on $mux $procmux$98.
-    dead port 1/2 on $mux $procmux$95.
-    dead port 2/2 on $mux $procmux$95.
-    dead port 1/2 on $mux $procmux$92.
-    dead port 1/2 on $mux $procmux$89.
-    dead port 2/2 on $mux $procmux$89.
-    dead port 1/2 on $mux $procmux$86.
-    dead port 2/2 on $mux $procmux$86.
-    dead port 1/2 on $mux $procmux$134.
-    dead port 1/2 on $mux $procmux$131.
-    dead port 2/2 on $mux $procmux$131.
-    dead port 2/2 on $mux $procmux$125.
-    dead port 2/2 on $mux $procmux$122.
-    dead port 2/2 on $mux $procmux$116.
-    dead port 2/2 on $mux $procmux$113.
-    dead port 2/2 on $mux $procmux$107.
-    dead port 2/2 on $mux $procmux$104.
-    dead port 1/2 on $mux $procmux$101.
+Creating internal representation of mux trees.
+Evaluating internal representation of mux trees.
+Root of a mux tree: $procmux$92 (pure)
+Removing pure flag from root mux $procmux$128.
+Root of a mux tree: $procmux$134
+Root of a mux tree: $procmux$128 (pure)
+Root of a mux tree: $procmux$119
+Root of a mux tree: $procmux$110
+Root of a mux tree: $procmux$101
+Analyzing evaluation results.
+dead port 1/2 on $mux $procmux$98.
+dead port 2/2 on $mux $procmux$98.
+dead port 1/2 on $mux $procmux$95.
+dead port 2/2 on $mux $procmux$95.
+dead port 1/2 on $mux $procmux$92.
+dead port 1/2 on $mux $procmux$89.
+dead port 2/2 on $mux $procmux$89.
+dead port 1/2 on $mux $procmux$86.
+dead port 2/2 on $mux $procmux$86.
+dead port 1/2 on $mux $procmux$134.
+dead port 1/2 on $mux $procmux$131.
+dead port 2/2 on $mux $procmux$131.
+dead port 2/2 on $mux $procmux$125.
+dead port 2/2 on $mux $procmux$122.
+dead port 2/2 on $mux $procmux$116.
+dead port 2/2 on $mux $procmux$113.
+dead port 2/2 on $mux $procmux$107.
+dead port 2/2 on $mux $procmux$104.
+dead port 1/2 on $mux $procmux$101.
 Removed 19 multiplexer ports.
 
 3.18.5. Executing OPT_EXPR pass (perform const folding).
@@ -667,142 +674,142 @@ Removed a total of 0 cells.
 
 3.19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \selector..
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$158'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$159'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$160'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$161'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$162'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$163'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$164'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$165'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$166'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$167'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$168'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$169'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$170'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$171'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$172'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$173'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$210'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$211'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$212'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$213'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$214'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$215'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$216'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$217'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$218'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$219'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$220'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$221'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$222'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$223'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$224'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$225'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$226'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$227'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$228'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$229'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$230'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$231'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$232'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$233'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$234'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$235'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$236'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$237'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$278'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$279'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$280'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$281'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$282'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$283'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$284'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$285'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$286'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$287'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$288'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$289'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$290'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$291'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$292'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$293'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$294'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$295'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$296'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$297'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$298'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$299'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$300'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$301'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$350'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$351'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$352'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$353'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$354'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$355'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$356'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$357'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$358'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$359'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$360'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$361'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$362'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$363'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$364'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$365'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$402'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$403'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$404'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$405'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$406'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$407'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$408'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$409'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$410'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$411'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$412'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$413'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$414'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$415'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$416'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$417'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$418'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$419'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$420'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$421'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$422'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$423'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$424'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$425'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$426'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$427'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$428'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$429'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$470'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$471'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$472'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$473'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$474'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$475'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$476'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$477'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$478'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$479'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$480'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$481'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$482'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$483'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$484'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$485'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$486'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$487'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$488'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$489'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$490'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$491'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$492'.
-  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$493'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$158'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$159'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$160'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$161'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$162'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$163'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$164'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$165'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$166'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$167'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$168'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$169'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$170'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$171'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$172'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$173'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$210'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$211'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$212'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$213'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$214'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$215'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$216'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$217'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$218'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$219'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$220'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$221'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$222'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$223'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$224'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$225'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$226'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$227'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$228'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$229'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$230'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$231'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$232'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$233'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$234'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$235'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$236'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$237'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$278'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$279'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$280'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$281'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$282'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$283'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$284'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$285'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$286'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$287'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$288'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$289'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$290'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$291'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$292'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$293'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$294'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$295'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$296'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$297'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$298'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$299'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$300'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$301'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$350'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$351'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$352'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$353'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$354'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$355'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$356'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$357'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$358'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$359'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$360'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$361'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$362'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$363'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$364'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$365'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$402'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$403'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$404'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$405'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$406'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$407'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$408'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$409'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$410'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$411'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$412'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$413'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$414'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$415'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$416'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$417'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$418'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$419'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$420'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$421'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$422'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$423'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$424'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$425'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$426'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$427'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$428'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$429'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$470'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$471'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$472'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$473'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$474'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$475'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$476'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$477'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$478'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$479'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$480'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$481'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$482'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$483'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$484'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$485'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$486'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$487'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$488'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$489'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$490'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$491'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$492'.
+removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$493'.
 Finding unused cells or wires in module \selector4..
 
 3.19.5. Finished fast OPT passes.
@@ -815,14 +822,14 @@ Extracted 64 gates and 137 wires to a netlist network with 72 inputs and 4 outpu
 3.20.1.1. Executing ABC.
 Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ABC command line: "source <abc-temp-dir>/abc.script".
-ABC: 
-ABC: + read_blif <abc-temp-dir>/input.blif 
-ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC:
+ABC: + read_blif <abc-temp-dir>/input.blif
+ABC: + read_library <abc-temp-dir>/stdcells.genlib
 ABC: Entered genlib library with 15 gates from file "<abc-temp-dir>/stdcells.genlib".
-ABC: + retime -o 
-ABC: + map 
+ABC: + retime -o
+ABC: + map
 ABC: Warning: The network was strashed and balanced before mapping.
-ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: + write_blif <abc-temp-dir>/output.blif
 
 3.20.1.2. Re-integrating ABC results.
 ABC RESULTS:               AND cells:        4
@@ -879,11 +886,11 @@ Removed a total of 0 cells.
 
 3.21.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \selector..
-  removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$538'.
-  removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$528'.
-  removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$537'.
-  removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$529'.
-  removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$527'.
+removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$538'.
+removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$528'.
+removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$537'.
+removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$529'.
+removing unused `$_NOT_' cell `$abc$526$auto$blifparse.cc:286:parse_blif$527'.
 Finding unused cells or wires in module \selector4..
 
 3.21.5. Finished fast OPT passes.
@@ -903,46 +910,46 @@ Removed 0 unused modules.
 
 === selector ===
 
-   Number of wires:                 69
-   Number of wire bits:            141
-   Number of public wires:           8
-   Number of public wire bits:      77
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                 68
-     $_AND_                          4
-     $_DFF_P_                        4
-     $_MUX_                         60
+Number of wires:                 69
+Number of wire bits:            141
+Number of public wires:           8
+Number of public wire bits:      77
+Number of memories:               0
+Number of memory bits:            0
+Number of processes:              0
+Number of cells:                 68
+$_AND_                          4
+$_DFF_P_                        4
+$_MUX_                         60
 
 === selector4 ===
 
-   Number of wires:                 12
-   Number of wire bits:            126
-   Number of public wires:          12
-   Number of public wire bits:     126
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                  4
-     selector                        4
+Number of wires:                 12
+Number of wire bits:            126
+Number of public wires:          12
+Number of public wire bits:     126
+Number of memories:               0
+Number of memory bits:            0
+Number of processes:              0
+Number of cells:                  4
+selector                        4
 
 === design hierarchy ===
 
-   selector4                         1
-     selector                        4
+selector4                         1
+selector                        4
 
-   Number of wires:                288
-   Number of wire bits:            690
-   Number of public wires:          44
-   Number of public wire bits:     434
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                272
-     $_AND_                         16
-     $_DFF_P_                       16
-     $_MUX_                        240
+Number of wires:                288
+Number of wire bits:            690
+Number of public wires:          44
+Number of public wire bits:     434
+Number of memories:               0
+Number of memory bits:            0
+Number of processes:              0
+Number of cells:                272
+$_AND_                         16
+$_DFF_P_                       16
+$_MUX_                        240
 
 3.24. Executing CHECK pass (checking for obvious problems).
 checking module selector..
@@ -950,45 +957,45 @@ checking module selector4..
 found and reported 0 problems.
 
 4. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
-  cell DFFNEGX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_N_.
-  cell DFFPOSX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_P_.
-  cell DFFSR (noninv, pins=5, area=176.00) is a direct match for cell type $_DFFSR_PNN_.
-  create mapping for $_DFFSR_PPN_ from mapping for $_DFFSR_PNN_.
-  create mapping for $_DFFSR_PNP_ from mapping for $_DFFSR_PNN_.
-  create mapping for $_DFFSR_PPP_ from mapping for $_DFFSR_PNP_.
-  create mapping for $_DFFSR_NNN_ from mapping for $_DFFSR_PNN_.
-  create mapping for $_DFFSR_NPN_ from mapping for $_DFFSR_NNN_.
-  create mapping for $_DFFSR_NNP_ from mapping for $_DFFSR_NNN_.
-  create mapping for $_DFFSR_NPP_ from mapping for $_DFFSR_NNP_.
-  create mapping for $_DFF_NN0_ from mapping for $_DFFSR_NNN_.
-  create mapping for $_DFF_NN1_ from mapping for $_DFFSR_NNN_.
-  create mapping for $_DFF_NP0_ from mapping for $_DFFSR_NPP_.
-  create mapping for $_DFF_NP1_ from mapping for $_DFFSR_NPP_.
-  create mapping for $_DFF_PN0_ from mapping for $_DFFSR_PNN_.
-  create mapping for $_DFF_PN1_ from mapping for $_DFFSR_PNN_.
-  create mapping for $_DFF_PP0_ from mapping for $_DFFSR_PPP_.
-  create mapping for $_DFF_PP1_ from mapping for $_DFFSR_PPP_.
-  final dff cell mappings:
-    DFFNEGX1 _DFF_N_ (.CLK( C), .D( D), .Q( Q));
-    DFFPOSX1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
-    DFFSR _DFF_NN0_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S( 1));
-    DFFSR _DFF_NN1_ (.CLK(~C), .D( D), .Q( Q), .R( 1), .S( R));
-    DFFSR _DFF_NP0_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S( 1));
-    DFFSR _DFF_NP1_ (.CLK(~C), .D( D), .Q( Q), .R( 1), .S(~R));
-    DFFSR _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( 1));
-    DFFSR _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .R( 1), .S( R));
-    DFFSR _DFF_PP0_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( 1));
-    DFFSR _DFF_PP1_ (.CLK( C), .D( D), .Q( Q), .R( 1), .S(~R));
-    DFFSR _DFFSR_NNN_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S( S));
-    DFFSR _DFFSR_NNP_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S( S));
-    DFFSR _DFFSR_NPN_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S(~S));
-    DFFSR _DFFSR_NPP_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S(~S));
-    DFFSR _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( S));
-    DFFSR _DFFSR_PNP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( S));
-    DFFSR _DFFSR_PPN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S(~S));
-    DFFSR _DFFSR_PPP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S(~S));
+cell DFFNEGX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_N_.
+cell DFFPOSX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_P_.
+cell DFFSR (noninv, pins=5, area=176.00) is a direct match for cell type $_DFFSR_PNN_.
+create mapping for $_DFFSR_PPN_ from mapping for $_DFFSR_PNN_.
+create mapping for $_DFFSR_PNP_ from mapping for $_DFFSR_PNN_.
+create mapping for $_DFFSR_PPP_ from mapping for $_DFFSR_PNP_.
+create mapping for $_DFFSR_NNN_ from mapping for $_DFFSR_PNN_.
+create mapping for $_DFFSR_NPN_ from mapping for $_DFFSR_NNN_.
+create mapping for $_DFFSR_NNP_ from mapping for $_DFFSR_NNN_.
+create mapping for $_DFFSR_NPP_ from mapping for $_DFFSR_NNP_.
+create mapping for $_DFF_NN0_ from mapping for $_DFFSR_NNN_.
+create mapping for $_DFF_NN1_ from mapping for $_DFFSR_NNN_.
+create mapping for $_DFF_NP0_ from mapping for $_DFFSR_NPP_.
+create mapping for $_DFF_NP1_ from mapping for $_DFFSR_NPP_.
+create mapping for $_DFF_PN0_ from mapping for $_DFFSR_PNN_.
+create mapping for $_DFF_PN1_ from mapping for $_DFFSR_PNN_.
+create mapping for $_DFF_PP0_ from mapping for $_DFFSR_PPP_.
+create mapping for $_DFF_PP1_ from mapping for $_DFFSR_PPP_.
+final dff cell mappings:
+DFFNEGX1 _DFF_N_ (.CLK( C), .D( D), .Q( Q));
+DFFPOSX1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+DFFSR _DFF_NN0_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S( 1));
+DFFSR _DFF_NN1_ (.CLK(~C), .D( D), .Q( Q), .R( 1), .S( R));
+DFFSR _DFF_NP0_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S( 1));
+DFFSR _DFF_NP1_ (.CLK(~C), .D( D), .Q( Q), .R( 1), .S(~R));
+DFFSR _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( 1));
+DFFSR _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .R( 1), .S( R));
+DFFSR _DFF_PP0_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( 1));
+DFFSR _DFF_PP1_ (.CLK( C), .D( D), .Q( Q), .R( 1), .S(~R));
+DFFSR _DFFSR_NNN_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S( S));
+DFFSR _DFFSR_NNP_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S( S));
+DFFSR _DFFSR_NPN_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S(~S));
+DFFSR _DFFSR_NPP_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S(~S));
+DFFSR _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( S));
+DFFSR _DFFSR_PNP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( S));
+DFFSR _DFFSR_PPN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S(~S));
+DFFSR _DFFSR_PPP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S(~S));
 Mapping DFF cells in module `\selector':
-  mapped 4 $_DFF_P_ cells to \DFFPOSX1 cells.
+mapped 4 $_DFF_P_ cells to \DFFPOSX1 cells.
 Mapping DFF cells in module `\selector4':
 
 5. Executing OPT pass (performing simple optimizations).
@@ -1002,16 +1009,16 @@ Removed a total of 0 cells.
 
 5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \selector..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
+Creating internal representation of mux trees.
+No muxes found in this module.
 Running muxtree optimizer on module \selector4..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
+Creating internal representation of mux trees.
+No muxes found in this module.
 Removed 0 multiplexer ports.
 
 5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \selector.
-  Optimizing cells in module \selector4.
+Optimizing cells in module \selector.
+Optimizing cells in module \selector4.
 Performed a total of 0 changes.
 
 5.5. Executing OPT_MERGE pass (detect identical cells).
@@ -1037,9 +1044,9 @@ Extracted 64 gates and 136 wires to a netlist network with 72 inputs and 4 outpu
 6.1.1. Executing ABC.
 Running ABC command: /usr/local/share/qflow/bin/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ABC command line: "source <abc-temp-dir>/abc.script".
-ABC: 
-ABC: + read_blif <abc-temp-dir>/input.blif 
-ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib 
+ABC:
+ABC: + read_blif <abc-temp-dir>/input.blif
+ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
 ABC: Parsing finished successfully.  Parsing time =     0.00 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
@@ -1050,15 +1057,15 @@ ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
 ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.00 sec
 ABC: Memory =    0.36 MB. Time =     0.00 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
-ABC: + strash 
-ABC: + scorr 
+ABC: + strash
+ABC: + scorr
 ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
-ABC: + ifraig 
-ABC: + retime 
-ABC: + strash 
-ABC: + dch -f 
-ABC: + map -M 1 
-ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: + ifraig
+ABC: + retime
+ABC: + strash
+ABC: + dch -f
+ABC: + map -M 1
+ABC: + write_blif <abc-temp-dir>/output.blif
 
 6.1.2. Re-integrating ABC results.
 ABC RESULTS:           AOI21X1 cells:        4
@@ -1106,12 +1113,12 @@ Removed a total of 0 cells.
 
 9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \selector4..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
+Creating internal representation of mux trees.
+No muxes found in this module.
 Removed 0 multiplexer ports.
 
 9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \selector4.
+Optimizing cells in module \selector4.
 Performed a total of 0 changes.
 
 9.5. Executing OPT_MERGE pass (detect identical cells).
@@ -1134,22 +1141,22 @@ Dumping module `\selector4'.
 
 === selector4 ===
 
-   Number of wires:                645
-   Number of wire bits:            774
-   Number of public wires:         645
-   Number of public wire bits:     774
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                680
-     AOI21X1                        16
-     BUFX2                          16
-     DFFPOSX1                       16
-     INVX1                         152
-     NAND2X1                       160
-     NAND3X1                       192
-     OAI21X1                        32
-     OR2X2                          96
+Number of wires:                645
+Number of wire bits:            774
+Number of public wires:         645
+Number of public wire bits:     774
+Number of memories:               0
+Number of memory bits:            0
+Number of processes:              0
+Number of cells:                680
+AOI21X1                        16
+BUFX2                          16
+DFFPOSX1                       16
+INVX1                         152
+NAND2X1                       160
+NAND3X1                       192
+OAI21X1                        32
+OR2X2                          96
 
 End of script. Logfile hash: cdc7022ef1
 CPU: user 0.16s system 0.00s, MEM: 38.45 MB total, 11.11 MB resident
@@ -1159,61 +1166,477 @@ Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
 Running vlogFanout
 vlogFanout -l 100 -c 20 -I selector4_nofanout -s nullstring -p /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y selector4_mapped.v selector4_sized.v
-
 vlogFanout for qflow 1.4.35
 Parsing library "osu018_stdcells"
 End of library at line 6141
 Lib Read:  Processed 6142 lines.
-Top internal fanout is 8 (load 144.112) from node _480_,
-driven by INVX1 with strength 58.615 (fF driven at latency 100)
-Top fanout load-to-strength ratio is 2.45862 (latency = 245.862 ps)
-Top input node fanout is 32 (load 452.894) from node sel_B[11].
-0 gates exceed specified minimum load.
-40 buffers were added.
-Warning 1: load of 127.439 is 1.14652 times greater than strongest gate OR2X2
-This warning will only be repeated for larger overload ratios.  Warning count reflects
-the total number of overloaded nets.
-24 gates were changed.
 
-Gate counts by drive strength:
 
-	"1" gates	In: 568    	Out: 544    	-24
-	"2" gates	In: 152    	Out: 168    	+16
+LEF Read, Line 191: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 192: NOTE:  Old format VIARULE ignored.
+Qflow project setup
+LEF Read, Line 196: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 197: NOTE:  Old format VIARULE ignored.
 
-96 gates exceed specified minimum load.
-0 buffers were added.
-0 gates were changed.
+LEF Read, Line 207: NOTE:  Old format VIARULE ignored.
+Technology set to osu018 from existing qflow_vars.sh file
+LEF Read, Line 208: NOTE:  Old format VIARULE ignored.
+Regenerating files for existing project selector4
+LEF Read, Line 212: NOTE:  Old format VIARULE ignored.
+Qrouter detail maze router version 1.4.49.T
+LEF Read, Line 213: NOTE:  Old format VIARULE ignored.
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+LEF Read, Line 223: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site core (ignored)
+LEF Read, Line 224: NOTE:  Old format VIARULE ignored.
+LEF read: Processed 2941 lines.
+LEF Read, Line 228: NOTE:  Old format VIARULE ignored.
+LEF Read: encountered 0 errors and 20 warnings total.
+LEF Read, Line 229: NOTE:  Old format VIARULE ignored.
+Vertical route layer at non-minimum pitch 1.6.  Using smaller pitch 0.8, will route on 1-of-2 tracks for layer metal6.
+LEF Read, Line 239: NOTE:  Old format VIARULE ignored.
+Running vlog2Cel to generate input files for graywolf
+LEF Read, Line 240: NOTE:  Old format VIARULE ignored.
+vlog2Cel  -l  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef -u 100 -o /home/alberto/gir_repo/ProyectoMicros/Selector/layout/selector4.cel /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtlnopwr.v
+LEF Read, Line 244: NOTE:  Old format VIARULE ignored.
+No selector4.cel1 file found for project. . . no partial blockages to apply to layout.
+LEF Read, Line 245: NOTE:  Old format VIARULE ignored.
+No selector4.cel2 file found for project. . . continuing without pin placement hints
+LEF Read, Line 255: NOTE:  Old format VIARULE ignored.
+Running GrayWolf placement
+LEF Read, Line 256: NOTE:  Old format VIARULE ignored.
+graywolf  selector4
+LEF Read, Line 260: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 261: NOTE:  Old format VIARULE ignored.
+Running getantennacell to determine cell to use for antenna anchors.
+getantennacell.tcl selector4  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
+Running getfillcell to determine cell to use for fill.
+getfillcell.tcl selector4  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef FILL
+Using cell FILL for fill
+Running place2def to translate graywolf output to DEF format.
+place2def.tcl selector4 FILL
+Running addspacers to generate power stripes and align cell right edge
+addspacers.tcl  -stripe 2.0 50.0 PG selector4  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef FILL
 
-Gate counts by drive strength:
+--------------------------------
+Qflow project setup
+--------------------------------
 
-	"1" gates	In: 568    	Out: 544    	-24
-	"2" gates	In: 152    	Out: 168    	+16
+Technology set to osu018 from existing qflow_vars.sh file
+Regenerating files for existing project selector4
+Running qrouter 1.4.49.T
+qrouter -noc  -s selector4.cfg
 
-Number of gates changed: 0
-Running vlog2Verilog for antenna cell mapping.
-vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
-   -o selector4.v selector4_sized.v
+--------------------------------
+Qflow project setup
+--------------------------------
 
-Generating RTL verilog and SPICE netlist file in directory
-	 /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis
-Files:
-   Verilog: /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtl.v
-   Verilog: /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtlnopwr.v
-   Verilog: /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.rtlbb.v
-   Spice:   /home/alberto/gir_repo/ProyectoMicros/Selector/synthesis/selector4.spc
+Technology set to osu018 from existing qflow_vars.sh file
+Regenerating files for existing project selector4
+Running magic 8.2.112
+magic -dnull -noconsole  migrate_selector4.tcl
 
-Running vlog2Verilog.
-vlog2Verilog -c -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
-	-o selector4.rtl.v
-   selector4.v
-vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
-	-o selector4.rtlnopwr.v
-   selector4.v
-/usr/local/share/qflow/bin/vlog2Verilog -c -p -b -n -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
-   -o selector4.rtlbb.v
-Running vlog2Spice.
-vlog2Spice -i -l  /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp -o selector4.spc selector4.rtl.v
-Running spi2xspice.py
-spi2xspice.py "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" -io_time=1n -time=100p -idelay=10p -odelay=100p -cload=500f selector4.spc selector4.xspice
+Magic 8.2 revision 112 - Compiled on dom 12 may 08:26:38 CST 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "migrate_selector4.tcl" from command line.
+Root cell box:
+width x height  (   llx,  lly  ), (   urx,  ury  )
 
-Synthesis script ended on sáb 8 jun 12:21:50 CST 2019
+microns:    0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+lambda:        0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+This action cannot be undone.
+LEF Read, Line 16: Unknown keyword "OBS" in LEF file; ignoring.
+LEF Read, Line 17: Unknown keyword "PIN" in LEF file; ignoring.
+LEF file:  Defines site core (ignored)
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "A" from metal1 to m2contact in cell XNOR2X1.
+LEF read: Processed 2941 lines.
+LEF Read: encountered 2 errors total.
+Reading DEF data from file selector4.def.
+This action cannot be undone.
+Processed 5 vias total.
+Processed 800 subcell instances total.
+Processed 112 pins total.
+Processed 814 nets total.
+Processed 118 special nets total.
+DEF read: Processed 9907 lines.
+Generating LEF output selector4.lef for cell selector4:
+Diagnostic:  Write LEF header for cell selector4
+Diagnostic:  Writing LEF output for cell selector4
+Diagnostic:  Scale value is 0.100000
+Extracting AOI21X1 into AOI21X1.ext:
+Completed 100%
+Extracting DFFPOSX1 into DFFPOSX1.ext:
+Completed 100%
+Extracting INVX2 into INVX2.ext:
+Completed 100%
+Extracting INVX4 into INVX4.ext:
+Completed 100%
+Extracting NAND3X1 into NAND3X1.ext:
+Completed 100%
+Extracting FILL into FILL.ext:
+Completed 100%
+Extracting BUFX2 into BUFX2.ext:
+Completed 100%
+Extracting OAI21X1 into OAI21X1.ext:
+Completed 100%
+Extracting OR2X2 into OR2X2.ext:
+Completed 100%
+Extracting NAND2X1 into NAND2X1.ext:
+Completed 100%
+Extracting INVX1 into INVX1.ext:
+Completed 100%
+Extracting selector4 into selector4.ext:
+Completed 5%
+Completed 11%
+Completed 16%
+Completed 22%
+Completed 27%
+Completed 32%
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu018 from existing qflow_vars.sh file
+Regenerating files for existing project selector4
+Running magic 8.2.112
+magic -dnull -noconsole  /home/alberto/gir_repo/ProyectoMicros/Selector/layout/generate_gds_selector4.tcl
+
+Magic 8.2 revision 112 - Compiled on dom 12 may 08:26:38 CST 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "/home/alberto/gir_repo/ProyectoMicros/Selector/layout/generate_gds_selector4.tcl" from command line.
+Root cell box:
+width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:    0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+lambda:        0 x 0       (     0,  0    ), (     0,  0    )
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: iit_stdcells
+Reading "FILL".
+Moving label "vdd" from space to metal1 in cell FILL.
+Moving label "gnd" from space to metal1 in cell FILL.
+Reading "AND2X1".
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Moving label "Y" from space to metal1 in cell AND2X1.
+Moving label "B" from space to metal1 in cell AND2X1.
+Moving label "vdd" from space to metal1 in cell AND2X1.
+Moving label "gnd" from space to metal1 in cell AND2X1.
+Moving label "A" from space to metal1 in cell AND2X1.
+Reading "AND2X2".
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Moving label "vdd" from space to metal1 in cell AND2X2.
+Moving label "gnd" from space to metal1 in cell AND2X2.
+Moving label "A" from space to metal1 in cell AND2X2.
+Moving label "B" from space to metal1 in cell AND2X2.
+Moving label "Y" from space to metal1 in cell AND2X2.
+Reading "AOI21X1".
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Moving label "gnd" from space to metal1 in cell AOI21X1.
+Moving label "vdd" from space to metal1 in cell AOI21X1.
+Moving label "A" from space to metal1 in cell AOI21X1.
+Moving label "B" from space to metal1 in cell AOI21X1.
+Moving label "Y" from space to metal1 in cell AOI21X1.
+Moving label "C" from space to metal1 in cell AOI21X1.
+Reading "AOI22X1".
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Moving label "gnd" from space to metal1 in cell AOI22X1.
+Moving label "vdd" from space to metal1 in cell AOI22X1.
+Moving label "C" from space to metal1 in cell AOI22X1.
+Moving label "D" from space to metal1 in cell AOI22X1.
+Moving label "Y" from space to metal1 in cell AOI22X1.
+Moving label "A" from space to metal1 in cell AOI22X1.
+Moving label "B" from space to metal1 in cell AOI22X1.
+Reading "BUFX2".
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Moving label "vdd" from space to metal1 in cell BUFX2.
+Moving label "gnd" from space to metal1 in cell BUFX2.
+Moving label "A" from space to metal1 in cell BUFX2.
+Moving label "Y" from space to metal1 in cell BUFX2.
+Reading "BUFX4".
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning at line 0 of CIF file: Input off lambda grid by 1/2; snapped to grid.
+Warning limit set:  Remaining warnings will not be reported.
+Moving label "vdd" from space to metal1 in cell BUFX4.
+Moving label "gnd" from space to metal1 in cell BUFX4.
+Moving label "A" from space to metal1 in cell BUFX4.
+Moving label "Y" from space to metal1 in cell BUFX4.
+Reading "DFFNEGX1".
+Moving label "CLK" from space to metal1 in cell DFFNEGX1.
+Moving label "vdd" from space to metal1 in cell DFFNEGX1.
+Moving label "D" from space to metal1 in cell DFFNEGX1.
+Moving label "gnd" from space to metal1 in cell DFFNEGX1.
+Moving label "Q" from space to metal1 in cell DFFNEGX1.
+Reading "NOR3X1".
+Moving label "vdd" from space to metal1 in cell NOR3X1.
+Moving label "gnd" from space to metal1 in cell NOR3X1.
+Moving label "B" from space to metal1 in cell NOR3X1.
+Moving label "C" from space to metal1 in cell NOR3X1.
+Moving label "A" from space to metal1 in cell NOR3X1.
+Moving label "Y" from space to metal1 in cell NOR3X1.
+Reading "DFFPOSX1".
+Moving label "vdd" from space to metal1 in cell DFFPOSX1.
+Moving label "D" from space to metal1 in cell DFFPOSX1.
+Moving label "gnd" from space to metal1 in cell DFFPOSX1.
+Moving label "Q" from space to metal1 in cell DFFPOSX1.
+Moving label "CLK" from space to metal1 in cell DFFPOSX1.
+Reading "FAX1".
+Moving label "gnd" from space to metal1 in cell FAX1.
+Moving label "vdd" from space to metal1 in cell FAX1.
+Moving label "A" from space to metal1 in cell FAX1.
+Moving label "B" from space to metal1 in cell FAX1.
+Moving label "C" from space to metal1 in cell FAX1.
+Moving label "YC" from space to metal1 in cell FAX1.
+Moving label "YS" from space to metal1 in cell FAX1.
+Reading "HAX1".
+Moving label "vdd" from space to metal1 in cell HAX1.
+Moving label "gnd" from space to metal1 in cell HAX1.
+Moving label "YC" from space to metal1 in cell HAX1.
+Moving label "A" from space to metal1 in cell HAX1.
+Moving label "B" from space to metal1 in cell HAX1.
+Moving label "YS" from space to metal1 in cell HAX1.
+Reading "INVX1".
+Moving label "A" from space to metal1 in cell INVX1.
+Moving label "Y" from space to metal1 in cell INVX1.
+Moving label "vdd" from space to metal1 in cell INVX1.
+Moving label "gnd" from space to metal1 in cell INVX1.
+Reading "INVX2".
+Moving label "vdd" from space to metal1 in cell INVX2.
+Moving label "gnd" from space to metal1 in cell INVX2.
+Moving label "Y" from space to metal1 in cell INVX2.
+Moving label "A" from space to metal1 in cell INVX2.
+Reading "INVX4".
+Moving label "vdd" from space to metal1 in cell INVX4.
+Moving label "gnd" from space to metal1 in cell INVX4.
+Moving label "Y" from space to metal1 in cell INVX4.
+Moving label "A" from space to metal1 in cell INVX4.
+Reading "INVX8".
+Moving label "vdd" from space to metal1 in cell INVX8.
+Moving label "gnd" from space to metal1 in cell INVX8.
+Moving label "A" from space to metal1 in cell INVX8.
+Moving label "Y" from space to metal1 in cell INVX8.
+Reading "NAND2X1".
+Moving label "vdd" from space to metal1 in cell NAND2X1.
+Moving label "Y" from space to metal1 in cell NAND2X1.
+Moving label "gnd" from space to metal1 in cell NAND2X1.
+Moving label "A" from space to metal1 in cell NAND2X1.
+Moving label "B" from space to metal1 in cell NAND2X1.
+Reading "NAND3X1".
+Moving label "B" from space to metal1 in cell NAND3X1.
+Moving label "vdd" from space to metal1 in cell NAND3X1.
+Moving label "gnd" from space to metal1 in cell NAND3X1.
+Moving label "A" from space to metal1 in cell NAND3X1.
+Moving label "C" from space to metal1 in cell NAND3X1.
+Moving label "Y" from space to metal1 in cell NAND3X1.
+Reading "NOR2X1".
+Moving label "vdd" from space to metal1 in cell NOR2X1.
+Moving label "B" from space to metal1 in cell NOR2X1.
+Moving label "gnd" from space to metal1 in cell NOR2X1.
+Moving label "Y" from space to metal1 in cell NOR2X1.
+Moving label "A" from space to metal1 in cell NOR2X1.
+Reading "OAI21X1".
+Moving label "gnd" from space to metal1 in cell OAI21X1.
+Moving label "vdd" from space to metal1 in cell OAI21X1.
+Moving label "A" from space to metal1 in cell OAI21X1.
+Moving label "B" from space to metal1 in cell OAI21X1.
+Moving label "Y" from space to metal1 in cell OAI21X1.
+Moving label "C" from space to metal1 in cell OAI21X1.
+Reading "OAI22X1".
+Moving label "gnd" from space to metal1 in cell OAI22X1.
+Moving label "vdd" from space to metal1 in cell OAI22X1.
+Moving label "D" from space to metal1 in cell OAI22X1.
+Moving label "C" from space to metal1 in cell OAI22X1.
+Moving label "A" from space to metal1 in cell OAI22X1.
+Moving label "B" from space to metal1 in cell OAI22X1.
+Moving label "Y" from space to metal1 in cell OAI22X1.
+Reading "OR2X1".
+Moving label "Y" from space to metal1 in cell OR2X1.
+Moving label "B" from space to metal1 in cell OR2X1.
+Moving label "vdd" from space to metal1 in cell OR2X1.
+Moving label "gnd" from space to metal1 in cell OR2X1.
+Moving label "A" from space to metal1 in cell OR2X1.
+Reading "OR2X2".
+Moving label "Y" from space to metal1 in cell OR2X2.
+Moving label "B" from space to metal1 in cell OR2X2.
+Moving label "vdd" from space to metal1 in cell OR2X2.
+Moving label "gnd" from space to metal1 in cell OR2X2.
+Moving label "A" from space to metal1 in cell OR2X2.
+Reading "TBUFX1".
+Moving label "vdd" from space to metal1 in cell TBUFX1.
+Moving label "gnd" from space to metal1 in cell TBUFX1.
+Moving label "EN" from space to metal1 in cell TBUFX1.
+Moving label "A" from space to metal1 in cell TBUFX1.
+Moving label "Y" from space to metal1 in cell TBUFX1.
+Reading "TBUFX2".
+Moving label "vdd" from space to metal1 in cell TBUFX2.
+Moving label "gnd" from space to metal1 in cell TBUFX2.
+Moving label "A" from space to metal1 in cell TBUFX2.
+Moving label "EN" from space to metal1 in cell TBUFX2.
+Moving label "Y" from space to metal1 in cell TBUFX2.
+Reading "XOR2X1".
+Moving label "Y" from space to metal1 in cell XOR2X1.
+Moving label "vdd" from space to metal1 in cell XOR2X1.
+Moving label "B" from space to metal1 in cell XOR2X1.
+Moving label "A" from space to metal1 in cell XOR2X1.
+Moving label "gnd" from space to metal1 in cell XOR2X1.
+Reading "MUX2X1".
+Moving label "S" from space to metal1 in cell MUX2X1.
+Moving label "vdd" from space to metal1 in cell MUX2X1.
+Moving label "gnd" from space to metal1 in cell MUX2X1.
+Moving label "Y" from space to metal1 in cell MUX2X1.
+Moving label "A" from space to metal1 in cell MUX2X1.
+Moving label "B" from space to metal1 in cell MUX2X1.
+Reading "XNOR2X1".
+Moving label "A" from space to metal1 in cell XNOR2X1.
+Moving label "B" from space to metal1 in cell XNOR2X1.
+Moving label "gnd" from space to metal1 in cell XNOR2X1.
+Moving label "vdd" from space to metal1 in cell XNOR2X1.
+Moving label "Y" from space to metal1 in cell XNOR2X1.
+Reading "LATCH".
+Moving label "D" from space to metal1 in cell LATCH.
+Moving label "Q" from space to metal1 in cell LATCH.
+Moving label "gnd" from space to metal1 in cell LATCH.
+Moving label "vdd" from space to metal1 in cell LATCH.
+Moving label "CLK" from space to metal1 in cell LATCH.
+Reading "DFFSR".
+Moving label "gnd" from space to metal1 in cell DFFSR.
+Moving label "vdd" from space to metal1 in cell DFFSR.
+Moving label "D" from space to metal1 in cell DFFSR.
+Moving label "S" from space to metal1 in cell DFFSR.
+Moving label "R" from space to metal1 in cell DFFSR.
+Moving label "Q" from space to metal1 in cell DFFSR.
+Moving label "CLK" from space to metal1 in cell DFFSR.
+Reading "CLKBUF1".
+Moving label "A" from space to metal1 in cell CLKBUF1.
+Moving label "vdd" from space to metal1 in cell CLKBUF1.
+Moving label "gnd" from space to metal1 in cell CLKBUF1.
+Moving label "Y" from space to metal1 in cell CLKBUF1.
+Reading "CLKBUF2".
+Moving label "vdd" from space to metal1 in cell CLKBUF2.
+Moving label "gnd" from space to metal1 in cell CLKBUF2.
+Moving label "A" from space to metal1 in cell CLKBUF2.
+Moving label "Y" from space to metal1 in cell CLKBUF2.
+Reading "CLKBUF3".
+Moving label "gnd" from space to metal1 in cell CLKBUF3.
+Moving label "vdd" from space to metal1 in cell CLKBUF3.
+Moving label "A" from space to metal1 in cell CLKBUF3.
+Moving label "Y" from space to metal1 in cell CLKBUF3.
+Reading "iit_stdcells".
+Processing timestamp mismatches: FILL, INVX1, BUFX2, OAI21X1, NAND2X1, OR2X2, NAND3X1, INVX4, INVX2, DFFPOSX1, AOI21X1.

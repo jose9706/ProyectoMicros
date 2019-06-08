@@ -1,4 +1,4 @@
-Qflow migration logfile created on mié 5 jun 20:18:17 CST 2019
+Qflow migration logfile created on sáb 8 jun 12:22:03 CST 2019
 magic -dnull -noconsole  migrate_selector4.tcl
 
 Magic 8.2 revision 112 - Compiled on dom 12 may 08:26:38 CST 2019.
@@ -35,8 +35,8 @@ This action cannot be undone.
   Processed 800 subcell instances total.
   Processed 112 pins total.
   Processed 814 nets total.
-  Processed 110 special nets total.
-DEF read: Processed 9885 lines.
+  Processed 118 special nets total.
+DEF read: Processed 9907 lines.
 Generating LEF output selector4.lef for cell selector4:
 Diagnostic:  Write LEF header for cell selector4
 Diagnostic:  Writing LEF output for cell selector4
@@ -51,15 +51,15 @@ Extracting INVX4 into INVX4.ext:
 Completed 100%
 Extracting NAND3X1 into NAND3X1.ext:
 Completed 100%
-Extracting OR2X2 into OR2X2.ext:
-Completed 100%
 Extracting FILL into FILL.ext:
 Completed 100%
 Extracting BUFX2 into BUFX2.ext:
 Completed 100%
-Extracting NAND2X1 into NAND2X1.ext:
-Completed 100%
 Extracting OAI21X1 into OAI21X1.ext:
+Completed 100%
+Extracting OR2X2 into OR2X2.ext:
+Completed 100%
+Extracting NAND2X1 into NAND2X1.ext:
 Completed 100%
 Extracting INVX1 into INVX1.ext:
 Completed 100%
@@ -84,4 +84,4 @@ Completed 91%
 Completed 96%
 Completed 100%
 exttospice finished.
-Migration script ended on mié 5 jun 20:18:18 CST 2019
+Migration script ended on sáb 8 jun 12:22:04 CST 2019
