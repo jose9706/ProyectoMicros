@@ -5,9 +5,9 @@
 module selector4(output wire [4*4-1:0] NIBBLE_OUT,
                  input [31:0] DATA_A,
                  input [31:0] DATA_B,
-                 input [11:0] sel_A,
-                 input [11:0] sel_B,
-                 input [3:0] SEL,
+                 input [11:0] sl_sel_A,
+                 input [11:0] sl_sel_B,
+                 input [3:0] sl_SEL,
                  input RESET_L,
                  input CLK);
                  
@@ -27,9 +27,9 @@ module selector4(output wire [4*4-1:0] NIBBLE_OUT,
         begin: selectores
             selector seli(DATA_A[31:0],
                      DATA_B[31:0], 
-                     sel_A[i*3+:3],
-                     sel_B[i*3+:3],
-                     SEL[i],
+                     sl_sel_A[i*3+:3],
+                     sl_sel_B[i*3+:3],
+                     sl_SEL[i],
                      RESET_L,
                      CLK,
                      temp_nibble[i][3:0]);
