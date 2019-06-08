@@ -13,7 +13,8 @@ always @(posedge clk)begin
     if(~reset_L) begin 
     nibbleOut<=0; 
     end else begin 
-    nibbleOut<=sel?dataA[selA[2:0]*4 +: 4]:dataB[selB[2:0]*4 +: 4]; 
+    //nibbleOut<=sel?dataA[selA[2:0]*4 +: 4]:dataB[selB[2:0]*4 +: 4]; 
+    nibbleOut<=sel?dataB[selB[2:0]*4 +: 4]:dataA[selA[2:0]*4 +: 4];
     end 
 end
 endmodule 
