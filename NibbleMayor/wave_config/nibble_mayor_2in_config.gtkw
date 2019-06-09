@@ -1,0 +1,134 @@
+[*]
+[*] GTKWave Analyzer v3.3.94 (w)1999-2018 BSI
+[*] Sun Jun  9 01:07:56 2019
+[*]
+[dumpfile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/nibble_mayor_2in.vcd"
+[dumpfile_mtime] "Sun Jun  9 00:59:47 2019"
+[dumpfile_size] 19217
+[savefile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/wave_config/nibble_mayor_2in_config.gtkw"
+[timestart] 3247100
+[size] 2541 1412
+[pos] -1 -1
+*-14.616678 3413100 60000 90000 120000 150000 180000 3330000 3360000 3390000 3420000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[markername] ADistintos en bit 1
+[markername] BSube distintos bit 1, distintos en bit 2
+[markername] CCambia selector
+[markername] DCambia selector de nibble
+[markername] ECambia nibble mayor
+[markername] FCambio 7 y 8
+[markername] GSelector entre 7 y 8 en dist  3
+[markername] HNMSEL dist 3
+[markername] ISelector nibble
+[treeopen] nibble_mayor_2in_tb.
+[treeopen] nibble_mayor_2in_tb.bm_.
+[treeopen] nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].
+[treeopen] nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].
+[treeopen] nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].
+[treeopen] nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].
+[sst_width] 235
+[signals_width] 249
+[sst_expanded] 1
+[sst_vpaned_height] 437
+@200
+-ENTRADAS Y SALIDAS
+@c00022
+[color] 1
+nibble_mayor_2in_tb.a[3:0]
+@28
+[color] 1
+(0)nibble_mayor_2in_tb.a[3:0]
+[color] 1
+(1)nibble_mayor_2in_tb.a[3:0]
+[color] 1
+(2)nibble_mayor_2in_tb.a[3:0]
+[color] 1
+(3)nibble_mayor_2in_tb.a[3:0]
+@1401200
+-group_end
+@c00022
+[color] 2
+nibble_mayor_2in_tb.b[3:0]
+@28
+[color] 2
+(0)nibble_mayor_2in_tb.b[3:0]
+[color] 2
+(1)nibble_mayor_2in_tb.b[3:0]
+[color] 2
+(2)nibble_mayor_2in_tb.b[3:0]
+[color] 2
+(3)nibble_mayor_2in_tb.b[3:0]
+@1401200
+-group_end
+@28
+[color] 3
+nibble_mayor_2in_tb.clk
+@22
+[color] 4
+nibble_mayor_2in_tb.mayor[3:0]
+@28
+[color] 5
+nibble_mayor_2in_tb.reset
+@200
+-LÓGICA INTERNA
+@28
+nibble_mayor_2in_tb.bm_.clk
+@22
+nibble_mayor_2in_tb.bm_.nm2_a[3:0]
+nibble_mayor_2in_tb.bm_.nm2_b[3:0]
+nibble_mayor_2in_tb.bm_.nm2_mayor[3:0]
+@28
+[color] 2
+nibble_mayor_2in_tb.bm_.nm2_selector[1:0]
+[color] 3
+nibble_mayor_2in_tb.bm_.nm2_selector_de_nibble
+nibble_mayor_2in_tb.bm_.reset
+@200
+-COMPARADORES
+-COMPARADOR 0
+@28
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_a
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_b
+[color] 6
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_distintos
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_selector
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.clk
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.reset
+@200
+-COMPARADOR 1
+@28
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_a
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_b
+[color] 6
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_distintos
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_selector
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.clk
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.reset
+@200
+-COMPARADOR 2
+@28
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_a
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_b
+[color] 6
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_distintos
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_selector
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.clk
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.reset
+@200
+-COMPARADOR 3
+@28
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_a
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_b
+@29
+[color] 6
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_distintos
+@28
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_selector
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.clk
+nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.reset
+@200
+-SEÑALES ATRASADAS
+@22
+nibble_mayor_2in_tb.bm_.nm2_a_late_4clk[3:0]
+nibble_mayor_2in_tb.bm_.nm2_b_late_4clk[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

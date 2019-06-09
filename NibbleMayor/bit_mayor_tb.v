@@ -3,7 +3,7 @@
 
 module bit_mayor_tb ();
    initial begin
-      $dumpfile("contador.vcd");
+      $dumpfile("bit_mayor.vcd");
       $dumpvars();
    end
 

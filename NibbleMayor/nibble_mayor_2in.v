@@ -1,26 +1,83 @@
+`include "bit_mayor.v"
+
 module nibble_mayor_2in (
                          input            clk,
                          input            reset,
-                         input [3:0] nm2_a,
-                         input [3:0] nm2_b,
-                         output reg       nm2_mayor
+                         input [3:0]      nm2_a,
+                         input [3:0]      nm2_b,
+                         output reg [3:0] nm2_mayor,
+                         output late_selectores_por_bit_0,
+                         output late_selectores_por_bit_1,
+                         output late_selectores_por_bit_2,
+                         output late_selectores_por_bit_3
                          );
 
-   wire                                       selectores_por_bit [3: 0];
+   wire                                       selectores_por_bit [3:0];
    wire                                       distintos_por_bit [3:0];
+
+   // delay nm2 to wait for logic to complete
+   wire [3:0]                                 nm2_a_late_4clk;
+   wire [3:0]                                 nm2_b_late_4clk;
+   reg [3:0]                                  nm2_a_buffer [2:0];
+   reg [3:0]                                  nm2_b_buffer [2:0];
+
+   always @(posedge clk) begin
+      if (reset) begin
+         nm2_a_buffer[0] <= 0;
+         nm2_b_buffer[0] <= 0;
+         nm2_a_buffer[1] <= 0;
+         nm2_b_buffer[1] <= 0;
+         nm2_a_buffer[2] <= 0;
+         nm2_b_buffer[2] <= 0;
+      end else begin
+         // DELAY FOR A SIGNAL
+         nm2_a_buffer[0] <= nm2_a;
+         nm2_a_buffer[1] <= nm2_a_buffer[0];
+         nm2_a_buffer[2] <= nm2_a_buffer[1];
+         // DELAY FOR B SIGNAL
+         nm2_b_buffer[0] <= nm2_b;
+         nm2_b_buffer[1] <= nm2_b_buffer[0];
+         nm2_b_buffer[2] <= nm2_b_buffer[1];
+      end
+   end // always @ (posedge clk)
+
+   assign nm2_a_late_4clk = nm2_a_buffer[2];
+   assign nm2_b_late_4clk = nm2_b_buffer[2];
+
+   // atrasar selectores un ciclo selector de todos
+   reg selectores_por_bit_buffer [3:0];
+
+   always @(posedge clk) begin
+      if (reset) begin
+         selectores_por_bit_buffer[0] <= 0;
+         selectores_por_bit_buffer[1] <= 0;
+         selectores_por_bit_buffer[2] <= 0;
+         selectores_por_bit_buffer[3] <= 0;
+      end else begin
+         selectores_por_bit_buffer[0] <= selectores_por_bit[0];
+         selectores_por_bit_buffer[1] <= selectores_por_bit[1];
+         selectores_por_bit_buffer[2] <= selectores_por_bit[2];
+         selectores_por_bit_buffer[3] <= selectores_por_bit[3];
+      end
+   end // always @ (posedge clk)
+
+   assign late_selectores_por_bit_0 = selectores_por_bit_buffer[0];
+   assign late_selectores_por_bit_1 = selectores_por_bit_buffer[1];
+   assign late_selectores_por_bit_2 = selectores_por_bit_buffer[2];
+   assign late_selectores_por_bit_3 = selectores_por_bit_buffer[3];
 
    // comparadores por bit
    generate
       genvar                                  i;
-      for (i=0; i < SIZE; i+=1;)
+      for (i=0; i < 4; i=i+1)
         begin: comparadores_de_bit
            bit_mayor bit_mayor_i (
-                                  clk (clk),
-                                  reset (reset),
-                                  bm_a (nm2_a[i]),
-                                  bm_b (nm2_b[i]),
-                                  bm_selector (selectores_por_bit[i]),
-                                  bm_distintos (distintos_por_bit[i])
+                                  .clk (clk),
+                                  .reset (reset),
+                                  .bm_a (nm2_a[i]),
+                                  .bm_b (nm2_b[i]),
+                                  .bm_selector (selectores_por_bit[i]),
+                                  .bm_distintos (distintos_por_bit[i])
                                   );
         end
    endgenerate
@@ -50,11 +107,11 @@ module nibble_mayor_2in (
       if (reset) begin
          nm2_selector_de_nibble <= 0;
       end else begin
-         case (nm2_selector) begin
-            'b00: nm2_selector_de_nibble <= selectores_por_bit[0];
-            'b01: nm2_selector_de_nibble <= selectores_por_bit[1];
-            'b10: nm2_selector_de_nibble <= selectores_por_bit[2];
-            'b10: nm2_selector_de_nibble <= selectores_por_bit[3];
+         case (nm2_selector)
+            'b00: nm2_selector_de_nibble <= selectores_por_bit_buffer[0];
+            'b01: nm2_selector_de_nibble <= selectores_por_bit_buffer[1];
+            'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[2];
+            'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[3];
          endcase // case (nm2_selector)
       end
    end // always @ (posedge clk)
@@ -64,7 +121,7 @@ module nibble_mayor_2in (
       if (reset) begin
          nm2_mayor <= 0;
       end else begin
-         nm2_mayor <= nm2_selector_de_nibble ? nm2_b : nm2_a;
+         nm2_mayor <= nm2_selector_de_nibble ? nm2_b_late_4clk : nm2_a_late_4clk;
       end
    end
 

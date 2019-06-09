@@ -1,32 +1,31 @@
 [*]
 [*] GTKWave Analyzer v3.3.94 (w)1999-2018 BSI
-[*] Sat Jun  8 23:34:17 2019
+[*] Sat Jun  8 23:56:02 2019
 [*]
-[dumpfile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/contador.vcd"
-[dumpfile_mtime] "Sat Jun  8 23:27:29 2019"
+[dumpfile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/bit_mayor.vcd"
+[dumpfile_mtime] "Sat Jun  8 23:54:35 2019"
 [dumpfile_size] 782
 [savefile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/wave_config/bit_mayor_config.gtkw"
 [timestart] 0
 [size] 2541 1412
-[pos] -1 -1
-*-14.754684 7300 60000 90000 180000 210000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[markername] ACambio
-[markername] BAparece distintos
-[markername] CDistintos, B mayor
-[markername] DAparece B mayor
+[pos] -1273 -787
+*-14.893818 14700 60000 90000 180000 210000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[markername] ADiferentes
+[markername] BCambio distintos
+[markername] CB > A
+[markername] DReflejado
 [treeopen] bit_mayor_tb.
 [sst_width] 200
-[signals_width] 190
+[signals_width] 126
 [sst_expanded] 1
 [sst_vpaned_height] 437
-@28
+@29
 [color] 1
 bit_mayor_tb.bm_.bm_a
 [color] 2
 bit_mayor_tb.bm_.bm_b
-@29
+[color] 3
 bit_mayor_tb.bm_.bm_distintos
-@28
 [color] 4
 bit_mayor_tb.bm_.bm_selector
 [color] 5
