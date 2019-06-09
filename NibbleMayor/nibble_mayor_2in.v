@@ -5,11 +5,7 @@ module nibble_mayor_2in (
                          input            reset,
                          input [3:0]      nm2_a,
                          input [3:0]      nm2_b,
-                         output reg [3:0] nm2_mayor,
-                         output late_selectores_por_bit_0,
-                         output late_selectores_por_bit_1,
-                         output late_selectores_por_bit_2,
-                         output late_selectores_por_bit_3
+                         output reg [3:0] nm2_mayor
                          );
 
    wire                                       selectores_por_bit [3:0];
@@ -60,11 +56,6 @@ module nibble_mayor_2in (
          selectores_por_bit_buffer[3] <= selectores_por_bit[3];
       end
    end // always @ (posedge clk)
-
-   assign late_selectores_por_bit_0 = selectores_por_bit_buffer[0];
-   assign late_selectores_por_bit_1 = selectores_por_bit_buffer[1];
-   assign late_selectores_por_bit_2 = selectores_por_bit_buffer[2];
-   assign late_selectores_por_bit_3 = selectores_por_bit_buffer[3];
 
    // comparadores por bit
    generate
