@@ -1,5 +1,5 @@
 $date
-	Sat Jun  8 12:21:27 2019
+	Sat Jun  8 20:42:06 2019
 $end
 $version
 	Icarus Verilog
@@ -8,31 +8,23 @@ $timescale
 	1s
 $end
 $scope module testbench $end
-$var wire 12 ! sel_B [11:0] $end
-$var wire 12 " sel_A [11:0] $end
-$var wire 4 # SEL [3:0] $end
+$var wire 12 ! sl_sel_B [11:0] $end
+$var wire 12 " sl_sel_A [11:0] $end
+$var wire 4 # sl_SEL [3:0] $end
 $var wire 1 $ RESET_L $end
 $var wire 16 % NIBBLE_OUT [15:0] $end
 $var wire 32 & DATA_B [31:0] $end
 $var wire 32 ' DATA_A [31:0] $end
 $var wire 1 ( CLK $end
 $scope module pog $end
-$var wire 12 ) sel_B [11:0] $end
-$var wire 12 * sel_A [11:0] $end
-$var wire 4 + SEL [3:0] $end
+$var wire 12 ) sl_sel_B [11:0] $end
+$var wire 12 * sl_sel_A [11:0] $end
+$var wire 4 + sl_SEL [3:0] $end
 $var wire 1 $ RESET_L $end
 $var wire 16 , NIBBLE_OUT [15:0] $end
 $var wire 32 - DATA_B [31:0] $end
 $var wire 32 . DATA_A [31:0] $end
 $var wire 1 ( CLK $end
-$scope begin outs[0] $end
-$upscope $end
-$scope begin outs[1] $end
-$upscope $end
-$scope begin outs[2] $end
-$upscope $end
-$scope begin outs[3] $end
-$upscope $end
 $scope begin selectores[0] $end
 $scope module seli $end
 $var wire 1 / sel $end
@@ -87,9 +79,9 @@ $var reg 1 ( CLK $end
 $var reg 32 G DATA_A [31:0] $end
 $var reg 32 H DATA_B [31:0] $end
 $var reg 1 $ RESET_L $end
-$var reg 4 I SEL [3:0] $end
-$var reg 12 J sel_A [11:0] $end
-$var reg 12 K sel_B [11:0] $end
+$var reg 4 I sl_SEL [3:0] $end
+$var reg 12 J sl_sel_A [11:0] $end
+$var reg 12 K sl_sel_B [11:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end

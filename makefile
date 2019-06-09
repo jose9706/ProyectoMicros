@@ -1,7 +1,7 @@
-# makefile for TAREA6 IE0523
+# makefile for Proyecto #1 IE0411
 # @Author Giancarlo Marin H.
-# @Date 29/05/2019
-# @Brief UCR - IE0523 - makefile del phy para el pcie
+# @Date 08/06/2019
+# @Brief UCR - IE0411 - makefile del selector de nibble mayor 
 
 # Tags de Variables de Programa
 CC := iverilog
