@@ -27,7 +27,7 @@ module bit_mayor (
               bm_distintos <= 0;
            end
          endcase // case ({bm_a, bm_b})
-      end else begin       
+      end else begin
          bm_selector <= 0;
          bm_distintos <= 0;
       end // end else if reset

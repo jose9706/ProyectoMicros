@@ -2,7 +2,7 @@
 
 module nibble_mayor_2in (
                          input            clk,
-                         input            reset,
+                         input            reset_L,
                          input [3:0]      nm2_a,
                          input [3:0]      nm2_b,
                          output reg [3:0] nm2_mayor
@@ -18,14 +18,7 @@ module nibble_mayor_2in (
    reg [3:0]                                  nm2_b_buffer [2:0];
 
    always @(posedge clk) begin
-      if (reset) begin
-         nm2_a_buffer[0] <= 0;
-         nm2_b_buffer[0] <= 0;
-         nm2_a_buffer[1] <= 0;
-         nm2_b_buffer[1] <= 0;
-         nm2_a_buffer[2] <= 0;
-         nm2_b_buffer[2] <= 0;
-      end else begin
+      if (reset_L) begin
          // DELAY FOR A SIGNAL
          nm2_a_buffer[0] <= nm2_a;
          nm2_a_buffer[1] <= nm2_a_buffer[0];
@@ -34,6 +27,13 @@ module nibble_mayor_2in (
          nm2_b_buffer[0] <= nm2_b;
          nm2_b_buffer[1] <= nm2_b_buffer[0];
          nm2_b_buffer[2] <= nm2_b_buffer[1];
+      end else begin
+         nm2_a_buffer[0] <= 0;
+         nm2_b_buffer[0] <= 0;
+         nm2_a_buffer[1] <= 0;
+         nm2_b_buffer[1] <= 0;
+         nm2_a_buffer[2] <= 0;
+         nm2_b_buffer[2] <= 0;
       end
    end // always @ (posedge clk)
 
@@ -44,16 +44,16 @@ module nibble_mayor_2in (
    reg selectores_por_bit_buffer [3:0];
 
    always @(posedge clk) begin
-      if (reset) begin
-         selectores_por_bit_buffer[0] <= 0;
-         selectores_por_bit_buffer[1] <= 0;
-         selectores_por_bit_buffer[2] <= 0;
-         selectores_por_bit_buffer[3] <= 0;
-      end else begin
+      if (reset_L) begin
          selectores_por_bit_buffer[0] <= selectores_por_bit[0];
          selectores_por_bit_buffer[1] <= selectores_por_bit[1];
          selectores_por_bit_buffer[2] <= selectores_por_bit[2];
          selectores_por_bit_buffer[3] <= selectores_por_bit[3];
+      end else begin
+         selectores_por_bit_buffer[0] <= 0;
+         selectores_por_bit_buffer[1] <= 0;
+         selectores_por_bit_buffer[2] <= 0;
+         selectores_por_bit_buffer[3] <= 0;
       end
    end // always @ (posedge clk)
 
@@ -64,7 +64,7 @@ module nibble_mayor_2in (
         begin: comparadores_de_bit
            bit_mayor bit_mayor_i (
                                   .clk (clk),
-                                  .reset (reset),
+                                  .reset_L (reset_L),
                                   .bm_a (nm2_a[i]),
                                   .bm_b (nm2_b[i]),
                                   .bm_selector (selectores_por_bit[i]),
@@ -76,10 +76,7 @@ module nibble_mayor_2in (
    // logica para definir cual nibble es mayor
    reg [1:0] nm2_selector;
    always @(posedge clk) begin
-      if (reset) begin
-         nm2_selector <= 0;
-         nm2_mayor <= 0;
-      end else begin
+      if (reset_L) begin
          if (distintos_por_bit[3] == 1) begin
             nm2_selector <= 'b11;
          end else if (distintos_por_bit[2] == 1) begin
@@ -89,30 +86,33 @@ module nibble_mayor_2in (
          end else begin
             nm2_selector <= 'b00;
          end
+      end else begin
+         nm2_selector <= 0;
+         nm2_mayor <= 0;
       end
    end // always @ (posedge clk)
 
    // logica de seleccionar nm2_selector de nibble
    reg nm2_selector_de_nibble;
    always @(posedge clk) begin
-      if (reset) begin
-         nm2_selector_de_nibble <= 0;
-      end else begin
+      if (reset_L) begin
          case (nm2_selector)
-            'b00: nm2_selector_de_nibble <= selectores_por_bit_buffer[0];
-            'b01: nm2_selector_de_nibble <= selectores_por_bit_buffer[1];
-            'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[2];
-            'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[3];
+           'b00: nm2_selector_de_nibble <= selectores_por_bit_buffer[0];
+           'b01: nm2_selector_de_nibble <= selectores_por_bit_buffer[1];
+           'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[2];
+           'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[3];
          endcase // case (nm2_selector)
+      end else begin
+         nm2_selector_de_nibble <= 0;
       end
    end // always @ (posedge clk)
 
    // logica de seleccionar nibble mayor
    always @(posedge clk) begin
-      if (reset) begin
-         nm2_mayor <= 0;
-      end else begin
+      if (reset_L) begin
          nm2_mayor <= nm2_selector_de_nibble ? nm2_b_late_4clk : nm2_a_late_4clk;
+      end else begin
+         nm2_mayor <= 0;
       end
    end
 
