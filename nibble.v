@@ -6,7 +6,8 @@
  *@brief  Descripcion conductual del modulo nibble que une las logicas de seleccion de nibble y de nibble mayor
 */
 
-`include "selector/selector4.v"
+`include "Selector/selector4.v"
+`include "NibbleMayor/nibble_mayor_4in.v"
 
 module nibble(
 	output reg [3:0]	DATA_OUT,			// salida general del bloque que contiene el nibble mayor de la seleccion realizada
@@ -20,10 +21,39 @@ module nibble(
 	);
 
 	/*AUTOREGS*/
-	/*AUTOWIRES*/
+	/*AUTOWIRE*/
+	// Beginning of automatic wires (for undeclared instantiated-module outputs)
+	wire [3:0]	NIBBLE_MAYOR;		// From nibble_mayor of nibble_mayor_4in.v
+	wire [15:0]	NIBBLES;			// From logica_seleccion of selector4.v
+	// End of automatics
 
-	selector4 logica_seleccion(/*AUTOINST*/);
-	
+	// Instanciacion de modulos
+	selector4 logica_seleccion(/*AUTOINST*/
+				   // Outputs
+				   .NIBBLE_OUT		(NIBBLES[15:0]),
+				   // Inputs
+				   .DATA_A		(DATA_A[31:0]),
+				   .DATA_B		(DATA_B[31:0]),
+				   .sl_sel_A	(SEL_A[11:0]),
+				   .sl_sel_B	(SEL_B[11:0]),
+				   .sl_SEL		(SEL_AB[3:0]),
+				   .RESET_L		(RESET_L),
+				   .CLK			(CLK));
+	nibble_mayor_4in nibble_mayor(/*AUTOINST*/
+				      // Outputs
+				      .NIBBLE_MAYOR	(NIBBLE_MAYOR[3:0]),
+				      // Inputs
+				      .CLK			(CLK),
+				      .RESET_L		(RESET_L),
+				      .NIBBLES		(NIBBLES[15:0]));
 
+	// Flops para la salida general del bloque
+	always @(posedge CLK) begin
+		if(~RESET_L) begin
+			DATA_OUT <= 0;
+		end else begin
+			DATA_OUT <= NIBBLE_MAYOR;
+		end
+	end
 
 endmodule

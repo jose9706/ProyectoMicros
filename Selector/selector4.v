@@ -2,12 +2,12 @@
 //`include "selector4.v"
 
 
-module selector4(output wire [4*4-1:0] NIBBLE_OUT,
+module selector4(output wire [15:0] NIBBLES,
                  input [31:0] DATA_A,
                  input [31:0] DATA_B,
-                 input [11:0] sl_sel_A,
-                 input [11:0] sl_sel_B,
-                 input [3:0] sl_SEL,
+                 input [11:0] SEL_A,
+                 input [11:0] SEL_B,
+                 input [3:0] SEL_AB,
                  input RESET_L,
                  input CLK);           
     generate
@@ -16,9 +16,9 @@ module selector4(output wire [4*4-1:0] NIBBLE_OUT,
         begin: selectores
             selector seli(DATA_A[31:0],
                      DATA_B[31:0], 
-                     sl_sel_A[i*3+:3],
-                     sl_sel_B[i*3+:3],
-                     sl_SEL[i],
+                     SEL_A[i*3+:3],
+                     SEL_B[i*3+:3],
+                     SEL_AB[i],
                      RESET_L,
                      CLK,
                      NIBBLE_OUT[i*4 +: 4]);

@@ -24,7 +24,7 @@ export OUTPUT_SYNTH = nibble_synth.v
 .PHONY: clean
 
 autoinst_verilog: 
-	emacs-tealeg --batch --no-site-file -l verilog-mode.el tb.v nibble.v -f verilog-auto -f save-buffer
+	emacs-tealeg --batch --no-site-file -l verilog-mode.el nibble.v -f verilog-auto -f save-buffer
 
 assign_tb: 
 	$(eval TARGET_TOP = tb.v)
