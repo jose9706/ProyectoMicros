@@ -14,8 +14,8 @@ module tester(
 	output reg [11:0]			SEL_A,			// generador del array de selectores del DATA_A
 	output reg [11:0]			SEL_B,			// generador del array de selectores del DATA_B
 	output reg [3:0]			SEL_AB,			// generador del array de selectores para seleccion del DATO_A | DATO_B
-	input [4:0]					DATA_OUT_c,		// monitor de salida del nibble mayor conductual
-	input [4:0]					DATA_OUT_e		// monitor de salida del nibble mayor estructural
+	input [3:0]					DATA_OUT_c,		// monitor de salida del nibble mayor conductual
+	input [3:0]					DATA_OUT_e		// monitor de salida del nibble mayor estructural
 	);
 	wire check_data_out;		// salida del modulo checker
 
@@ -23,8 +23,8 @@ module tester(
 			.check_data_out(check_data_out),
 			.CLK(CLK),
 			.RESET_L(RESET_L),
-			.DATA_OUT_c(DATA_OUT_c[4:0]),
-			.DATA_OUT_e(DATA_OUT_e[4:0]));
+			.DATA_OUT_c(DATA_OUT_c[3:0]),
+			.DATA_OUT_e(DATA_OUT_e[3:0]));
 
 	initial begin
 		$dumpfile("nibble.vcd");		// archivo "dump"

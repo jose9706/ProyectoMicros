@@ -193,9 +193,9 @@ module nibble_top_synth(DATA_OUT, CLK, RESET_L, DATA_A, DATA_B, SEL_A, SEL_B, SE
   input [31:0] DATA_B;
   (* src = "nibble_top_synth.v:12" *)
   output [3:0] DATA_OUT;
-  (* src = "nibble_top_synth.v:26" *)
-  wire [15:0] NIBBLES;
   (* src = "nibble_top_synth.v:25" *)
+  wire [15:0] NIBBLES;
+  (* src = "nibble_top_synth.v:26" *)
   wire [3:0] NIBBLE_MAYOR;
   (* src = "nibble_top_synth.v:14" *)
   input RESET_L;

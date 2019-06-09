@@ -10,11 +10,11 @@ module checker(
 	output reg		check_data_out,		// salida de 1 bit que indica que ambos datos de data_out son iguales	
 	input 			CLK,				// señal de clock del modulo	
 	input 			RESET_L,			// señal de reset_L del modulo
-	input [4:0]		DATA_OUT_c,			// entrada de datos generada por del modulo conductual
-	input [4:0]		DATA_OUT_e			// entrada de datos generada por el modulo estructural
+	input [3:0]		DATA_OUT_c,			// entrada de datos generada por del modulo conductual
+	input [3:0]		DATA_OUT_e			// entrada de datos generada por el modulo estructural
 	);
 	// ffs de entrada 
-	reg [4:0] 		out_c,out_e; 	
+	reg [3:0] 		out_c,out_e; 	
 	
 	always @(posedge CLK) begin		// ffs para registrar las entradas
 		if(RESET_L==0) begin

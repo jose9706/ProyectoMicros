@@ -1,5 +1,5 @@
 $date
-	Sat Jun  8 23:38:48 2019
+	Sat Jun  8 23:50:56 2019
 $end
 $version
 	Icarus Verilog
@@ -4972,8 +4972,8 @@ $upscope $end
 $upscope $end
 $upscope $end
 $scope module test01 $end
-$var wire 5 P9 DATA_OUT_c [4:0] $end
-$var wire 5 Q9 DATA_OUT_e [4:0] $end
+$var wire 4 P9 DATA_OUT_c [3:0] $end
+$var wire 4 Q9 DATA_OUT_e [3:0] $end
 $var wire 1 R9 check_data_out $end
 $var reg 1 K" CLK $end
 $var reg 32 S9 DATA_A [31:0] $end
@@ -4984,12 +4984,12 @@ $var reg 4 V9 SEL_AB [3:0] $end
 $var reg 12 W9 SEL_B [11:0] $end
 $scope module c0 $end
 $var wire 1 K" CLK $end
-$var wire 5 X9 DATA_OUT_c [4:0] $end
-$var wire 5 Y9 DATA_OUT_e [4:0] $end
+$var wire 4 X9 DATA_OUT_c [3:0] $end
+$var wire 4 Y9 DATA_OUT_e [3:0] $end
 $var wire 1 F" RESET_L $end
 $var reg 1 R9 check_data_out $end
-$var reg 5 Z9 out_c [4:0] $end
-$var reg 5 [9 out_e [4:0] $end
+$var reg 4 Z9 out_c [3:0] $end
+$var reg 4 [9 out_e [3:0] $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -4998,7 +4998,7 @@ $enddefinitions $end
 $dumpvars
 bx [9
 bx Z9
-bxzzzz Y9
+bz Y9
 bx X9
 b0 W9
 b0 V9
@@ -5006,7 +5006,7 @@ b0 U9
 b0 T9
 b0 S9
 xR9
-bxzzzz Q9
+bz Q9
 bx P9
 b0 O9
 b0 N9
@@ -7329,6 +7329,8 @@ $end
 0<#
 0@#
 0D#
+b0 P9
+b0 X9
 b0 w"
 b0 y"
 b0 0#
@@ -7341,8 +7343,6 @@ b0 2#
 0S#
 0W#
 0[#
-bx0000 P9
-bx0000 X9
 b0 _"
 b0 e"
 b0 k"
@@ -7401,6 +7401,8 @@ b0 S"
 b0 [9
 b0 Z9
 1R9
+b0 Q9
+b0 Y9
 0m#
 0k#
 0i#
@@ -7409,8 +7411,6 @@ b0 G9
 b0 H9
 b0 J9
 b0 K9
-bx0000 Q9
-bx0000 Y9
 1D9
 0E9
 1?9
@@ -7507,8 +7507,6 @@ b0 d#
 #800
 0K"
 #1000
-bx0000 [9
-bx0000 Z9
 1K"
 #1200
 0K"
@@ -8491,7 +8489,6 @@ b1001000110100010101100111 F)
 b1001000110100010101100111 \.
 b1001000110100010101100111 r3
 b1001000110100010101100111 S9
-0R9
 1K"
 #1600
 0K"
@@ -8625,19 +8622,20 @@ b110 v"
 #5600
 0K"
 #5800
-bx0110 P9
-bx0110 X9
+b110 P9
+b110 X9
 b110 H"
 b110 S"
 1K"
 #6000
 0K"
 #6200
-bx0110 Z9
+b110 Z9
 1K"
 #6400
 0K"
 #6600
+0R9
 1K"
 #6800
 0K"
