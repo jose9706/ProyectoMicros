@@ -1,14 +1,14 @@
 module bit_mayor (
-                  input      clk,
-                  input      reset_L,
+                  input      CLK,
+                  input      RESET_L,
                   input      bm_a,
                   input      bm_b,
                   output reg bm_selector,
                   output reg bm_distintos
                   );
 
-   always @ (posedge clk) begin
-     if (reset_L) begin
+   always @ (posedge CLK) begin
+     if (RESET_L) begin
          case ({bm_a, bm_b})
            2'b00 : begin
               bm_selector <= bm_selector;
@@ -30,7 +30,7 @@ module bit_mayor (
       end else begin
          bm_selector <= 0;
          bm_distintos <= 0;
-      end // end else if reset
-   end // end always posedge clk
+      end // end else if RESET
+   end // end always posedge CLK
 
 endmodule

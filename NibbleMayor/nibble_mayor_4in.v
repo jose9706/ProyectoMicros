@@ -6,8 +6,6 @@
  *@brief  Descripcion conductual del modulo que selecciona el nibble mayor de una entrada 4 nibbles
 */
 
-`include "nibble_mayor_2in.v"
-
 module nibble_mayor_4in(
 	output reg [3:0]		NIBBLE_MAYOR,	// salida general del bloque de nibble mayor
 	input 					CLK,			// entrada de reloj del bloque
@@ -22,26 +20,26 @@ module nibble_mayor_4in(
 				// Outputs
 				.nm2_mayor	(nm_0[3:0]),
 				// Inputs
-				.clk		(CLK),
-				.reset		(RESET_L),
+				.CLK		(CLK),
+				.RESET_L	(RESET_L),
 				.nm2_a		(NIBBLES[3:0]),
 				.nm2_b		(NIBBLES[7:4]));
 	nibble_mayor_2in comp02(/*AUTOINST*/
 				// Outputs
 				.nm2_mayor	(nm_1[3:0]),
 				// Inputs
-				.clk		(CLK),
-				.reset		(RESET_L),
+				.CLK		(CLK),
+				.RESET_L	(RESET_L),
 				.nm2_a		(NIBBLES[11:8]),
 				.nm2_b		(NIBBLES[15:12]));
 	nibble_mayor_2in comp03(/*AUTOINST*/
 				// Outputs
 				.nm2_mayor	(out[3:0]),
 				// Inputs
-				.clk		(CLK),
-				.reset		(RESET_L),
-				.nm2_a		(nm_0),
-				.nm2_b		(nm_1);
+				.CLK		(CLK),
+				.RESET_L	(RESET_L),
+				.nm2_a		(nm_0[3:0]),
+				.nm2_b		(nm_1[3:0]));
 
 	always @(posedge CLK) begin
 		if(~RESET_L) begin

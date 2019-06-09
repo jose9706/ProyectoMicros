@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BM_GTKWAVE_CONFIG_PATH	makefile	/^BM_GTKWAVE_CONFIG_PATH = .\/wave_config\/bit_mayor_config.gtkw$/;"	m
+BM_MODULE_FILE	makefile	/^BM_MODULE_FILE = $(BM_MODULE_NAME).v$/;"	m
+BM_MODULE_NAME	makefile	/^BM_MODULE_NAME = bit_mayor$/;"	m
+BM_OUTPUT	makefile	/^BM_OUTPUT = $(BM_MODULE_NAME)_test.out$/;"	m
+BM_TEST_BENCH_NAME	makefile	/^BM_TEST_BENCH_NAME = $(BM_MODULE_NAME)_tb.v$/;"	m
+CLK	nibble_mayor_4in.v	/^	input 					CLK,			\/\/ entrada de reloj del bloque$/;"	p
+NIBBLES	nibble_mayor_4in.v	/^	input [15:0]			NIBBLES			\/\/ Datos de nibbles$/;"	p
+NM2_GTKWAVE_CONFIG_PATH	makefile	/^NM2_GTKWAVE_CONFIG_PATH = .\/wave_config\/nibble_mayor_2in_config.gtkw$/;"	m
+NM2_MODULE_FILE	makefile	/^NM2_MODULE_FILE = $(NM2_MODULE_NAME).v$/;"	m
+NM2_MODULE_NAME	makefile	/^NM2_MODULE_NAME = nibble_mayor_2in$/;"	m
+NM2_OUTPUT	makefile	/^NM2_OUTPUT = $(NM2_MODULE_NAME)_test.out$/;"	m
+NM2_TEST_BENCH_NAME	makefile	/^NM2_TEST_BENCH_NAME = $(NM2_MODULE_NAME)_tb.v$/;"	m
+OUT	nibble_mayor_4in.v	/^	wire [3:0]				OUT;			\/\/ señal interna de nibble mayor$/;"	n
+a	bit_mayor_tb.v	/^   reg  a;$/;"	r
+a	nibble_mayor_2in_tb.v	/^   reg [3:0] a;$/;"	r
+b	bit_mayor_tb.v	/^   reg  b;$/;"	r
+b	nibble_mayor_2in_tb.v	/^   reg [3:0] b;$/;"	r
+bit_mayor	bit_mayor.v	/^module bit_mayor ($/;"	m
+bit_mayor_tb	bit_mayor_tb.v	/^module bit_mayor_tb ();$/;"	m
+bm_a	bit_mayor.v	/^                  input      bm_a,$/;"	p
+bm_distintos	bit_mayor_tb.v	/^   wire bm_distintos;$/;"	n
+bm_selector	bit_mayor_tb.v	/^   wire bm_selector;$/;"	n
+clk	bit_mayor.v	/^                  input      clk,$/;"	p
+clk	bit_mayor_tb.v	/^   reg clk;$/;"	r
+clk	nibble_mayor_2in.v	/^                         input            clk,$/;"	p
+clk	nibble_mayor_2in_tb.v	/^   reg clk;$/;"	r
+distintos_por_bit	nibble_mayor_2in.v	/^   wire                                       distintos_por_bit [3:0];$/;"	n
+input	bit_mayor.v	/^                  input      bm_b,$/;"	p
+input	bit_mayor.v	/^                  input      reset,$/;"	p
+input	nibble_mayor_2in.v	/^                         input            reset,$/;"	p
+input	nibble_mayor_2in.v	/^                         input [3:0]      nm2_b,$/;"	p
+input	nibble_mayor_4in.v	/^	input					RESET_L,		\/\/ entrada de reset en bajo$/;"	p
+mayor	nibble_mayor_2in_tb.v	/^   wire [3:0] mayor;$/;"	n
+nibble_mayor_2in	nibble_mayor_2in.v	/^module nibble_mayor_2in ($/;"	m
+nibble_mayor_2in_tb	nibble_mayor_2in_tb.v	/^module nibble_mayor_2in_tb ();$/;"	m
+nibble_mayor_4in	nibble_mayor_4in.v	/^module nibble_mayor_4in($/;"	m
+nm2_a	nibble_mayor_2in.v	/^                         input [3:0]      nm2_a,$/;"	p
+nm2_a_buffer	nibble_mayor_2in.v	/^   reg [3:0]                                  nm2_a_buffer [2:0];$/;"	r
+nm2_a_late_4clk	nibble_mayor_2in.v	/^   wire [3:0]                                 nm2_a_late_4clk;$/;"	n
+nm2_b_buffer	nibble_mayor_2in.v	/^   reg [3:0]                                  nm2_b_buffer [2:0];$/;"	r
+nm2_b_late_4clk	nibble_mayor_2in.v	/^   wire [3:0]                                 nm2_b_late_4clk;$/;"	n
+nm2_selector	nibble_mayor_2in.v	/^   reg [1:0] nm2_selector;$/;"	r
+nm2_selector_de_nibble	nibble_mayor_2in.v	/^   reg nm2_selector_de_nibble;$/;"	r
+reg	bit_mayor.v	/^                  output reg bm_distintos$/;"	p
+reg	bit_mayor.v	/^                  output reg bm_selector,$/;"	p
+reg	nibble_mayor_2in.v	/^                         output reg [3:0] nm2_mayor$/;"	p
+reg	nibble_mayor_4in.v	/^	output reg [3:0]		NIBBLE_MAYOR,	\/\/ salida general del bloque de nibble mayor$/;"	p
+reset	bit_mayor_tb.v	/^   reg reset;$/;"	r
+reset	nibble_mayor_2in_tb.v	/^   reg reset;$/;"	r
+selectores_por_bit	nibble_mayor_2in.v	/^   wire                                       selectores_por_bit [3:0];$/;"	n
+selectores_por_bit_buffer	nibble_mayor_2in.v	/^   reg selectores_por_bit_buffer [3:0];$/;"	r
