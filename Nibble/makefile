@@ -29,7 +29,7 @@ autoinst_verilog:
 assign_tb: 
 	$(eval TARGET_TOP = tb.v)
 
-all: compile synth rename rename2 clean
+all: compile synth rename clean
 	$(MAKE) tb
 	@echo 'All Done'
 

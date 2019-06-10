@@ -1,18 +1,20 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Sun Jun  9 05:41:33 2019
+[*] Mon Jun 10 05:59:23 2019
 [*]
 [dumpfile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/nibble.vcd"
-[dumpfile_mtime] "Sun Jun  9 05:38:48 2019"
-[dumpfile_size] 131570
+[dumpfile_mtime] "Mon Jun 10 05:59:09 2019"
+[dumpfile_size] 137822
 [savefile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/config.gtkw"
 [timestart] 0
 [size] 1299 713
-[pos] -29 -29
-*-14.062171 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-14.697880 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb.
+[treeopen] tb.nibble_cond.
+[treeopen] tb.nibble_cond.nibble_mayor.
 [sst_width] 223
-[signals_width] 150
+[signals_width] 166
 [sst_expanded] 1
 [sst_vpaned_height] 192
 @200
@@ -29,11 +31,15 @@ tb.test01.SEL_AB[3:0]
 @200
 -outputs
 @22
-tb.test01.DATA_OUT_c[4:0]
-tb.test01.DATA_OUT_e[4:0]
+tb.test01.DATA_OUT_c[3:0]
+tb.test01.DATA_OUT_e[3:0]
 @200
 -checker
 @28
 tb.test01.check_data_out
+@200
+-internal
+@22
+tb.nibble_cond.NIBBLES[15:0]
 [pattern_trace] 1
 [pattern_trace] 0

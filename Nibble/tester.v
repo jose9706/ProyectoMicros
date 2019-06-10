@@ -29,9 +29,6 @@ module tester(
 	initial begin
 		$dumpfile("nibble.vcd");		// archivo "dump"
 		$dumpvars;					// dumping de variables
-		// Mensajes en consola 
-		$display ("\t\tCLK\tRESET_L\tDATA_OUT_c\tDATA_OUT_e\tcheck_data_out");
-		$monitor($time,"\t%b\t%b\t%b\t%x\t%x\t%b", CLK, RESET_L, DATA_OUT_c, DATA_OUT_e, check_data_out);
 		// Pruebas
 		// Pruebas #1: Reset bajo. 
 		RESET_L <= 0;
@@ -57,13 +54,17 @@ module tester(
 		repeat (8) begin
 			@(posedge CLK);
 		end
-		DATA_A <= 'h01234567;			
-		DATA_B <= 'h89ABCDEF;
-		SEL_A <= 'hF11;			
-		SEL_B <= 'hF11;
-		SEL_AB <= 'hA;
+		DATA_A <= 'hA0B1C2D3;			
+		DATA_B <= 'hF9E8D7C6;
+		SEL_A <= 'h770;			
+		SEL_B <= 'hA8F;
+		SEL_AB <= 'h5;
 		// Finalizacion de prueba
-		repeat (8) begin
+		repeat (16) begin
+			@(posedge CLK);
+		end
+		RESET_L <= 0;
+		repeat (2) begin
 			@(posedge CLK);
 		end
 		$finish;	

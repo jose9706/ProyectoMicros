@@ -17,6 +17,8 @@ yosys opt
 yosys dfflibmap -liberty $::env(LIB)
 #mapping logic to mycells.lib
 yosys abc -liberty $::env(LIB)
+#statistics
+yosys stat -liberty $::env(LIB)
 #clean up
 yosys clean
 #write synthetized design
