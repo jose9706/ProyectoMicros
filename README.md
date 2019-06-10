@@ -14,13 +14,19 @@ Para ejecutar la síntesis y simulación del módulo diseñado se utilizan las s
 
 Los makefile se distribuyen con 4 reglas
 ```bash
-$ make compile 	# compila el <archivo>.v
-$ make synth  	# genera la síntesis del módulo en <archivo>.v
-$ make rename		# realiza todo el proceso de renaming del <arhivo_synth>.v
-$ make tb 			# visualiza las formas de onda de las pruebas completas con GTKWave del banco de pruebas
-$ make clean 		# elimina archivos intermedios generados
-$ make all			# ejecuta todos los procesos en el orden correcto
+# compila el nibble_top.v
+$ make compile 	
+# genera la síntesis del módulo con yosys y libreria osu018_stdcells
+$ make synth  	
+# realiza todo el proceso de renaming del netlist generado. El netlist se renombra en Nibble/nibble_top_synth
+$ make rename		
+# visualiza las formas de onda de las pruebas completas con GTKWave del banco de pruebas
+$ make tb 		
+# elimina archivos intermedios generados
+$ make clean 	
+# ejecuta todos los procesos en el orden correcto
+$ make all			
 ```
 # Informe de trabajo
 
-Se adjunta el link:
+Se adjunta el link: https://drive.google.com/drive/folders/1g_AX-OG1ho3ouf4DkA0FgHjciaMlUYcJ?usp=sharing
