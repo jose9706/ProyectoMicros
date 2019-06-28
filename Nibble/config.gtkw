@@ -1,6 +1,6 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Fri Jun 28 04:35:35 2019
+[*] Fri Jun 28 04:43:31 2019
 [*]
 [dumpfile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/nibble.vcd"
 [dumpfile_mtime] "Fri Jun 28 04:35:17 2019"
@@ -10,8 +10,6 @@
 [size] 1299 713
 [pos] -1 -1
 *-14.697880 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[treeopen] tb.
-[treeopen] tb.nibble_cond.
 [treeopen] tb.nibble_cond.nibble_mayor.
 [sst_width] 223
 [signals_width] 166
@@ -20,13 +18,20 @@
 @200
 -inputs
 @28
+[color] 3
 tb.test01.CLK
+[color] 2
 tb.test01.RESET_L
 @22
+[color] 7
 tb.test01.DATA_A[31:0]
+[color] 7
 tb.test01.DATA_B[31:0]
+[color] 7
 tb.test01.SEL_A[11:0]
+[color] 7
 tb.test01.SEL_B[11:0]
+[color] 7
 tb.test01.SEL_AB[3:0]
 @200
 -outputs

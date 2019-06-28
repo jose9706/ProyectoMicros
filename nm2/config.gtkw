@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Fri Jun 28 04:57:08 2019
+[*]
+[dumpfile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/nm2/result.vcd"
+[dumpfile_mtime] "Fri Jun 28 04:55:53 2019"
+[dumpfile_size] 1641
+[savefile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/nm2/config.gtkw"
+[timestart] 0
+[size] 1299 713
+[pos] -67 -67
+*-3.548097 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] nib_m_tb.
+[sst_width] 223
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 192
+@200
+-input
+@28
+nib_m_tb.sel.CLK
+nib_m_tb.sel.RESET_L
+@22
+nib_m_tb.sel.NIBBLES[15:0]
+@200
+-output
+@22
+nib_m_tb.sel.NIBBLE_MAYOR[3:0]
+@29
+nib_m_tb.sel.ID_MAYOR[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
