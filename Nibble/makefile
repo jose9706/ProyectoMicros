@@ -48,6 +48,7 @@ sim:
 synth:
 	@echo 'Synthetizing module $(TOP_MODULE) with $(LIB)'
 	$(CC_SYNTH)	-c 	$(SRC)
+	>./log/osu018_stdcells_$(TOP_MODULE).log
 
 rename:
 	@echo 'Renaming module $(NEW_TOP_MODULE)'
