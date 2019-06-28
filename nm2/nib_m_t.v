@@ -1,56 +1,34 @@
-
 module nib_m_t(
-    output reg clk,
-    output reg reset_L,
-    output reg [3:0] nibble_A,
-    output reg [3:0] nibble_B,
-    output reg [3:0] nibble_C,
-    output reg [3:0] nibble_D
+    output reg CLK,
+    output reg RESET_L,
+    output reg [15:0] NIBBLES
 );
     initial begin
         $dumpfile("result.vcd");
         $dumpvars;
-        {reset_L , nibble_A, nibble_B, nibble_C, nibble_D} <= 0;
-        @(posedge clk); 
-
-        @(posedge clk);
-        @(posedge clk);
-        nibble_A <= 1;
-        nibble_B <= 2;
-        nibble_C <= 3;
-        nibble_D <= 4;
-        @(posedge clk);
-        @(posedge clk);
-        nibble_A <= 1;
-        nibble_B <= 5;
-        nibble_C <= 3;
-        nibble_D <= 4;
-        @(posedge clk);
-        @(posedge clk);
-        nibble_A <= 1;
-        nibble_B <= 5;
-        nibble_C <= 7;
-        nibble_D <= 4;
-        @(posedge clk);
-        @(posedge clk);
-        nibble_A <= 8;
-        nibble_B <= 5;
-        nibble_C <= 3;
-        nibble_D <= 4;
-        @(posedge clk);
-        @(posedge clk);
-        @(posedge clk);
-        @(posedge clk);
-
-
-
-
+        {RESET_L, NIBBLES} <= 0;
+        @(posedge CLK); 
+        RESET_L<=1;
+        @(posedge CLK);
+        @(posedge CLK);
+        NIBBLES <= 'h1234;
+        @(posedge CLK);
+        @(posedge CLK);
+        NIBBLES <= 'h1534;
+        @(posedge CLK);
+        @(posedge CLK);
+        NIBBLES <= 'h1574;
+        @(posedge CLK);
+        @(posedge CLK);
+        NIBBLES <= 'h8234;
+        @(posedge CLK);
+        @(posedge CLK);
+        @(posedge CLK);
+        @(posedge CLK);
         $finish;
     end
-
- 
-    initial	clk 	   <= 0;
-    always	#2 clk 	 <= ~clk;
+    initial	CLK <= 0;
+    always	#2 CLK <= ~CLK;
     
 
 endmodule // nib_m_t
