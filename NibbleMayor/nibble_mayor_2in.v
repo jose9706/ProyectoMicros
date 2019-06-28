@@ -1,4 +1,4 @@
-//`include "bit_mayor.v"
+`include "bit_mayor.v"
 
 module nibble_mayor_2in (
                          input            CLK,
@@ -43,8 +43,8 @@ module nibble_mayor_2in (
    // buffers de todos los selectores UN ciclos atrasados
    reg [3:0] delayed_selectores [0:0];
 
-   always @(posedge clk) begin
-      if (reset_L) begin
+   always @(posedge CLK) begin
+      if (RESET_L) begin
          delayed_selectores[0] <= selectores_por_bit;
          delayed_selectores[1] <= delayed_selectores[0];
       end else begin

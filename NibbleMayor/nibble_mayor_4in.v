@@ -6,6 +6,8 @@
  *@brief  Descripcion conductual del modulo que selecciona el nibble mayor de una entrada 4 nibbles
 */
 
+`include "nibble_mayor_2in.v"
+
 module nibble_mayor_4in(
 	output reg [3:0]		NIBBLE_MAYOR,	// salida general del bloque de nibble mayor
 	input 					CLK,			// entrada de reloj del bloque

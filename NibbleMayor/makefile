@@ -1,45 +1,66 @@
-# Modify
-BM_GTKWAVE_CONFIG_PATH = ./wave_config/bit_mayor_config.gtkw
-BM_MODULE_NAME = bit_mayor
+# makefile for Proyecto #1 IE0411
+# @Author Giancarlo Marin H.
+# @Date 08/06/2019
+# @Brief UCR - IE0411 - makefile del selector de nibble mayor 
 
-NM2_GTKWAVE_CONFIG_PATH = ./wave_config/nibble_mayor_2in_config.gtkw
-NM2_MODULE_NAME = nibble_mayor_2in
+# Tags de Variables dele Programa
+CC := iverilog
+CC_SYNTH := yosys
+CC_RUN := vvp
+VISUAL := gtkwave
+SRC = yosys.tcl
 
-# Don't modify
-BM_MODULE_FILE = $(BM_MODULE_NAME).v
-BM_TEST_BENCH_NAME = $(BM_MODULE_NAME)_tb.v
-BM_OUTPUT = $(BM_MODULE_NAME)_test.out
+# Tags de Variables de modulo con valores por defecto 
+TARGET_TOP := nibble_mayor_4in.v
+TARGET_VIS := config.gtkw
+OUTPUT_SIM := nibble_mayor_4in.out
+export LIB := ../libs/osu018_stdcells.lib
+export VLOG_FILE_NAME := nibble_mayor_4in.v
+NEW_VLOG_FILE_NAME = nibble_mayor_4in_synth.v
+export TOP_MODULE := nibble_mayor_4in
+NEW_TOP_MODULE = nibble_mayor_4in_synth
+export OUTPUT_SYNTH = nibble_mayor_4in_synth.v
 
-NM2_MODULE_FILE = $(NM2_MODULE_NAME).v
-NM2_TEST_BENCH_NAME = $(NM2_MODULE_NAME)_tb.v
-NM2_OUTPUT = $(NM2_MODULE_NAME)_test.out
+.PHONY: clean
 
-bit_mayor: bm_simulation
-nibble_mayor_2in: nm2_simulation
+all: compile synth rename clean
+	#$(MAKE) tb
+	@echo 'All Done'
 
 autoinst_verilog: 
-	emacs-tealeg --batch --no-site-file -l verilog-mode.el nibble_mayor_4in.v -f verilog-auto -f save-buffer	
+	emacs-tealeg --batch --no-site-file -l verilog-mode.el nibble_mayor_4in.v testbench.v -f verilog-auto -f save-buffer
 
-# SIMULATIONS
-bm_simulation: bm_testbench
-	gtkwave $(BM_GTKWAVE_CONFIG_PATH)
+assign_tb: 
+	$(eval TARGET_TOP = testbench.v)
 
-nm2_simulation: nm2_testbench
-	gtkwave $(NM2_GTKWAVE_CONFIG_PATH)
+compile:
+	@echo 'Compiling Design $(TARGET_TOP)'
+	$(CC) $(TARGET_TOP) -o $(OUTPUT_SIM)
 
-# TESTBENCHES
-bm_testbench: bm_verilog
-	vvp $(BM_OUTPUT)
+run: 
+	@echo 'Running Design $(TARGET_TOP)'
+	$(CC_RUN) $(OUTPUT_SIM)
 
-nm2_testbench: nm2_verilog
-	vvp $(NM2_OUTPUT)
+sim: 
+	@echo 'Show simulation on GTKWave $(TARGET_VIS)'
+	$(VISUAL) $(TARGET_VIS) &
 
-# VERILOG
-bm_verilog:
-	iverilog -o $(BM_OUTPUT) $(BM_TEST_BENCH_NAME)
+synth:
+	@echo 'Synthetizing module $(TOP_MODULE) with $(LIB)'
+	$(CC_SYNTH)	-c 	$(SRC)
+	#>./log/osu018_stdcells_$(TOP_MODULE).log
 
-nm2_verilog:
-	iverilog -o $(NM2_OUTPUT) $(NM2_TEST_BENCH_NAME)
+rename:
+	@echo 'Renaming module $(NEW_TOP_MODULE)'
+	sed -i 's/$(TOP_MODULE)/$(NEW_TOP_MODULE)/' $(NEW_VLOG_FILE_NAME)
 
-clean:
-	rm *.vcd *.out
+tb: assign_tb compile run sim clean
+	@echo 'Testbench tested'
+
+clean: 
+	rm *.out	
+	@echo 'Clean dir succesful...'
+
+$(V).SILENT:
+
+# end
