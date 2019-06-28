@@ -8,14 +8,14 @@ module nibble_mayor_2in (
                          output reg [3:0] nm2_mayor
                          );
 
-   wire                                       selectores_por_bit [3:0];
-   wire                                       distintos_por_bit [3:0];
+   wire [3:0]                             selectores_por_bit;
+   wire                                   distintos_por_bit [3:0];
 
    // delay nm2 to wait for logic to complete
-   wire [3:0]                                 nm2_a_late_4clk;
-   wire [3:0]                                 nm2_b_late_4clk;
-   reg [3:0]                                  nm2_a_buffer [2:0];
-   reg [3:0]                                  nm2_b_buffer [2:0];
+   wire [3:0]                             nm2_a_late_4clk;
+   wire [3:0]                             nm2_b_late_4clk;
+   reg [3:0]                              nm2_a_buffer [2:0];
+   reg [3:0]                              nm2_b_buffer [2:0];
 
    always @(posedge clk) begin
       if (reset_L) begin
@@ -40,20 +40,16 @@ module nibble_mayor_2in (
    assign nm2_a_late_4clk = nm2_a_buffer[2];
    assign nm2_b_late_4clk = nm2_b_buffer[2];
 
-   // atrasar selectores un ciclo selector de todos
-   reg selectores_por_bit_buffer [3:0];
+   // buffers de todos los selectores UN ciclos atrasados
+   reg [3:0] delayed_selectores [0:0];
 
    always @(posedge clk) begin
       if (reset_L) begin
-         selectores_por_bit_buffer[0] <= selectores_por_bit[0];
-         selectores_por_bit_buffer[1] <= selectores_por_bit[1];
-         selectores_por_bit_buffer[2] <= selectores_por_bit[2];
-         selectores_por_bit_buffer[3] <= selectores_por_bit[3];
+         delayed_selectores[0] <= selectores_por_bit;
+         delayed_selectores[1] <= delayed_selectores[0];
       end else begin
-         selectores_por_bit_buffer[0] <= 0;
-         selectores_por_bit_buffer[1] <= 0;
-         selectores_por_bit_buffer[2] <= 0;
-         selectores_por_bit_buffer[3] <= 0;
+         delayed_selectores[0] <= 4'b0000;
+         delayed_selectores[1] <= 4'b0000;
       end
    end // always @ (posedge clk)
 
@@ -97,10 +93,10 @@ module nibble_mayor_2in (
    always @(posedge clk) begin
       if (reset_L) begin
          case (nm2_selector)
-           'b00: nm2_selector_de_nibble <= selectores_por_bit_buffer[0];
-           'b01: nm2_selector_de_nibble <= selectores_por_bit_buffer[1];
-           'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[2];
-           'b10: nm2_selector_de_nibble <= selectores_por_bit_buffer[3];
+           'b00: nm2_selector_de_nibble <= delayed_selectores[0][0];
+           'b01: nm2_selector_de_nibble <= delayed_selectores[0][1];
+           'b10: nm2_selector_de_nibble <= delayed_selectores[0][2];
+           'b11: nm2_selector_de_nibble <= delayed_selectores[0][3];
          endcase // case (nm2_selector)
       end else begin
          nm2_selector_de_nibble <= 0;

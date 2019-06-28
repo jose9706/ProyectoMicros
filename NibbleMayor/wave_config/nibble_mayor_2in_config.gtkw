@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.94 (w)1999-2018 BSI
-[*] Sun Jun  9 01:07:56 2019
+[*] Fri Jun 28 04:54:57 2019
 [*]
 [dumpfile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/nibble_mayor_2in.vcd"
-[dumpfile_mtime] "Sun Jun  9 00:59:47 2019"
-[dumpfile_size] 19217
+[dumpfile_mtime] "Fri Jun 28 04:46:35 2019"
+[dumpfile_size] 19473
 [savefile] "/home/sleal/UCR/microelectronica/ProyectoMicros/NibbleMayor/wave_config/nibble_mayor_2in_config.gtkw"
-[timestart] 3247100
-[size] 2541 1412
+[timestart] 3157200
+[size] 1347 740
 [pos] -1 -1
-*-14.616678 3413100 60000 90000 120000 150000 180000 3330000 3360000 3390000 3420000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-16.616678 3295000 60000 90000 120000 150000 180000 3330000 3360000 3390000 3420000 3450000 3482000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [markername] ADistintos en bit 1
 [markername] BSube distintos bit 1, distintos en bit 2
 [markername] CCambia selector
@@ -28,7 +28,7 @@
 [sst_width] 235
 [signals_width] 249
 [sst_expanded] 1
-[sst_vpaned_height] 437
+[sst_vpaned_height] 264
 @200
 -ENTRADAS Y SALIDAS
 @c00022
@@ -65,9 +65,6 @@ nibble_mayor_2in_tb.clk
 @22
 [color] 4
 nibble_mayor_2in_tb.mayor[3:0]
-@28
-[color] 5
-nibble_mayor_2in_tb.reset
 @200
 -LÓGICA INTERNA
 @28
@@ -81,9 +78,20 @@ nibble_mayor_2in_tb.bm_.nm2_mayor[3:0]
 nibble_mayor_2in_tb.bm_.nm2_selector[1:0]
 [color] 3
 nibble_mayor_2in_tb.bm_.nm2_selector_de_nibble
-nibble_mayor_2in_tb.bm_.reset
 @200
+-SELECTORES POR BIT
+@800022
+nibble_mayor_2in_tb.bm_.selectores_por_bit[3:0]
+@28
+(0)nibble_mayor_2in_tb.bm_.selectores_por_bit[3:0]
+(1)nibble_mayor_2in_tb.bm_.selectores_por_bit[3:0]
+(2)nibble_mayor_2in_tb.bm_.selectores_por_bit[3:0]
+(3)nibble_mayor_2in_tb.bm_.selectores_por_bit[3:0]
+@1001200
+-group_end
+@201
 -COMPARADORES
+@200
 -COMPARADOR 0
 @28
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_a
@@ -92,7 +100,6 @@ nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_b
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_distintos
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.bm_selector
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.clk
-nibble_mayor_2in_tb.bm_.comparadores_de_bit[0].bit_mayor_i.reset
 @200
 -COMPARADOR 1
 @28
@@ -102,7 +109,6 @@ nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_b
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_distintos
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.bm_selector
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.clk
-nibble_mayor_2in_tb.bm_.comparadores_de_bit[1].bit_mayor_i.reset
 @200
 -COMPARADOR 2
 @28
@@ -112,19 +118,15 @@ nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_b
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_distintos
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.bm_selector
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.clk
-nibble_mayor_2in_tb.bm_.comparadores_de_bit[2].bit_mayor_i.reset
 @200
 -COMPARADOR 3
 @28
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_a
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_b
-@29
 [color] 6
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_distintos
-@28
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.bm_selector
 nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.clk
-nibble_mayor_2in_tb.bm_.comparadores_de_bit[3].bit_mayor_i.reset
 @200
 -SEÑALES ATRASADAS
 @22
