@@ -1,15 +1,14 @@
 /*
  *Universidad de Costa Rica - Escuela de Ingenieria Electrica
- *Project #1 - IE-0523 - modulo nibble
+ *Project #1 - IE-0523 - modulo nibble_top
  *@author Giancarlo Marin H.
  *@date   07/06/2019
  *@brief  Descripcion conductual del modulo nibble que une las logicas de seleccion de nibble y de nibble mayor
 */
 
-`include "Selector/selector4.v"
-`include "NibbleMayor/nibble_mayor_4in.v"
+`include "includes.vh"
 
-module nibble(
+module nibble_top(
 	output reg [3:0]	DATA_OUT,			// salida general del bloque que contiene el nibble mayor de la seleccion realizada
 	input 				CLK,				// entrada del reloj que controla los modulos
 	input				RESET_L,			// entrada de reset en bajo que controla los modulos
@@ -23,27 +22,27 @@ module nibble(
 	/*AUTOREGS*/
 	/*AUTOWIRE*/
 	// Beginning of automatic wires (for undeclared instantiated-module outputs)
+	wire [15:0]	NIBBLES;		// From logica_seleccion of selector4.v
 	wire [3:0]	NIBBLE_MAYOR;		// From nibble_mayor of nibble_mayor_4in.v
-	wire [15:0]	NIBBLES;			// From logica_seleccion of selector4.v
 	// End of automatics
 
 	// Instanciacion de modulos
 	selector4 logica_seleccion(/*AUTOINST*/
 				   // Outputs
-				   .NIBBLE_OUT		(NIBBLES[15:0]),
+				   .NIBBLES		(NIBBLES[15:0]),
 				   // Inputs
 				   .DATA_A		(DATA_A[31:0]),
 				   .DATA_B		(DATA_B[31:0]),
-				   .sl_sel_A	(SEL_A[11:0]),
-				   .sl_sel_B	(SEL_B[11:0]),
-				   .sl_SEL		(SEL_AB[3:0]),
+				   .SEL_A		(SEL_A[11:0]),
+				   .SEL_B		(SEL_B[11:0]),
+				   .SEL_AB		(SEL_AB[3:0]),
 				   .RESET_L		(RESET_L),
 				   .CLK			(CLK));
-	nibble_mayor_4in nibble_mayor(/*AUTOINST*/
+	nm2 nibble_mayor(/*AUTOINST*/
 				      // Outputs
 				      .NIBBLE_MAYOR	(NIBBLE_MAYOR[3:0]),
 				      // Inputs
-				      .CLK			(CLK),
+				      .CLK		(CLK),
 				      .RESET_L		(RESET_L),
 				      .NIBBLES		(NIBBLES[15:0]));
 
@@ -55,5 +54,4 @@ module nibble(
 			DATA_OUT <= NIBBLE_MAYOR;
 		end
 	end
-
 endmodule

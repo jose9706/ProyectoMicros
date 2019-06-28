@@ -21,8 +21,7 @@ module selector4(output wire [15:0] NIBBLES,
                      SEL_AB[i],
                      RESET_L,
                      CLK,
-                     NIBBLE_OUT[i*4 +: 4]);
-
+                     NIBBLES[i*4 +: 4]);
         end
     endgenerate
 endmodule

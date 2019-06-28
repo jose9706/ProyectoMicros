@@ -17,6 +17,9 @@ NM2_OUTPUT = $(NM2_MODULE_NAME)_test.out
 bit_mayor: bm_simulation
 nibble_mayor_2in: nm2_simulation
 
+autoinst_verilog: 
+	emacs-tealeg --batch --no-site-file -l verilog-mode.el nibble_mayor_4in.v -f verilog-auto -f save-buffer	
+
 # SIMULATIONS
 bm_simulation: bm_testbench
 	gtkwave $(BM_GTKWAVE_CONFIG_PATH)
