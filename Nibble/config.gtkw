@@ -1,10 +1,10 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Mon Jun 10 05:59:23 2019
+[*] Fri Jun 28 04:35:35 2019
 [*]
 [dumpfile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/nibble.vcd"
-[dumpfile_mtime] "Mon Jun 10 05:59:09 2019"
-[dumpfile_size] 137822
+[dumpfile_mtime] "Fri Jun 28 04:35:17 2019"
+[dumpfile_size] 137542
 [savefile] "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/config.gtkw"
 [timestart] 0
 [size] 1299 713
@@ -32,7 +32,15 @@ tb.test01.SEL_AB[3:0]
 -outputs
 @22
 tb.test01.DATA_OUT_c[3:0]
+@c00022
 tb.test01.DATA_OUT_e[3:0]
+@28
+(0)tb.test01.DATA_OUT_e[3:0]
+(1)tb.test01.DATA_OUT_e[3:0]
+(2)tb.test01.DATA_OUT_e[3:0]
+(3)tb.test01.DATA_OUT_e[3:0]
+@1401200
+-group_end
 @200
 -checker
 @28

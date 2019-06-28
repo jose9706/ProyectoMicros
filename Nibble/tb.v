@@ -23,13 +23,13 @@ module tb(); // Testbench
 	wire		CLK;			// From test01 of tester.v
 	wire [31:0]	DATA_A;			// From test01 of tester.v
 	wire [31:0]	DATA_B;			// From test01 of tester.v
-	wire [3:0]	DATA_OUT_c;		// From nibble_cond of nibble_top.v, ...
-	wire [3:0]	DATA_OUT_e;		// From nibble_cond of nibble_top.v, ...
 	wire		RESET_L;		// From test01 of tester.v
 	wire [11:0]	SEL_A;			// From test01 of tester.v
 	wire [3:0]	SEL_AB;			// From test01 of tester.v
 	wire [11:0]	SEL_B;			// From test01 of tester.v
 	// End of automatics
+	wire [3:0]	DATA_OUT_c;		// From nibble_cond of nibble_top.v, ...
+	wire [3:0]	DATA_OUT_e;		// From nibble_cond of nibble_top.v, ...
 	
 	// INstanaciacion
 	nibble_top nibble_cond(/*AUTOINST*/
@@ -64,6 +64,6 @@ module tb(); // Testbench
 		      .SEL_B		(SEL_B[11:0]),
 		      .SEL_AB		(SEL_AB[3:0]),
 		      // Inputs
-		      .DATA_OUT_c	(DATA_OUT_c[4:0]),
-		      .DATA_OUT_e	(DATA_OUT_e[4:0]));
+		      .DATA_OUT_c	(DATA_OUT_c[3:0]),
+		      .DATA_OUT_e	(DATA_OUT_e[3:0]));
 endmodule

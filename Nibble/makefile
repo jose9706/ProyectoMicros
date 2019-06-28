@@ -53,12 +53,13 @@ synth:
 rename:
 	@echo 'Renaming module $(NEW_TOP_MODULE)'
 	sed -i 's/$(TOP_MODULE)/$(NEW_TOP_MODULE)/' $(NEW_VLOG_FILE_NAME)
-	sed -i 's/module bit_mayor/module bit_mayor_synth/g' $(NEW_VLOG_FILE_NAME)
-	sed -i 's/nibble_mayor_4in/nibble_mayor_4in_synth/g' $(NEW_VLOG_FILE_NAME)
-	sed -i 's/nibble_mayor_2in/nibble_mayor_2in_synth/g' $(NEW_VLOG_FILE_NAME)
-	sed -i 's/selector4/selector4_synth/g' $(NEW_VLOG_FILE_NAME)
-	sed -i 's/module selector(/module selector_synth(/g' $(NEW_VLOG_FILE_NAME)
-	sed -i 's/selector /selector_synth /g' $(NEW_VLOG_FILE_NAME)	
+	#sed -i 's/module bit_mayor/module bit_mayor_synth/g' $(NEW_VLOG_FILE_NAME)
+	#sed -i 's/nibble_mayor_4in/nibble_mayor_4in_synth/g' $(NEW_VLOG_FILE_NAME)
+	#sed -i 's/nibble_mayor_2in/nibble_mayor_2in_synth/g' $(NEW_VLOG_FILE_NAME)
+	#sed -i 's/nm2/nm2_synth/g' $(NEW_VLOG_FILE_NAME)
+	#sed -i 's/selector4/selector4_synth/g' $(NEW_VLOG_FILE_NAME)
+	#sed -i 's/module selector(/module selector_synth(/g' $(NEW_VLOG_FILE_NAME)
+	#sed -i 's/selector /selector_synth /g' $(NEW_VLOG_FILE_NAME)	
 
 tb: assign_tb compile run sim clean
 	@echo 'Testbench tested'

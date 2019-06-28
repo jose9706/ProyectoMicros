@@ -38,7 +38,7 @@ module nibble_top(
 				   .SEL_AB		(SEL_AB[3:0]),
 				   .RESET_L		(RESET_L),
 				   .CLK			(CLK));
-	nibble_mayor_4in nibble_mayor(/*AUTOINST*/
+	nm2 nibble_mayor(/*AUTOINST*/
 				      // Outputs
 				      .NIBBLE_MAYOR	(NIBBLE_MAYOR[3:0]),
 				      // Inputs
