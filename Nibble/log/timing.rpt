@@ -1,0 +1,6 @@
+18. Executing ABC pass (technology mapping using ABC).
+
+18.1. Extracting gate netlist of module `\nibble_top' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.

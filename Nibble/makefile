@@ -23,15 +23,15 @@ export OUTPUT_SYNTH = nibble_top_synth.v
 
 .PHONY: clean
 
+all: compile synth rename clean
+	$(MAKE) tb
+	@echo 'All Done'
+
 autoinst_verilog: 
 	emacs-tealeg --batch --no-site-file -l verilog-mode.el nibble_top.v tb.v -f verilog-auto -f save-buffer
 
 assign_tb: 
 	$(eval TARGET_TOP = tb.v)
-
-all: compile synth rename clean
-	$(MAKE) tb
-	@echo 'All Done'
 
 compile:
 	@echo 'Compiling Design $(TARGET_TOP)'
@@ -47,19 +47,12 @@ sim:
 
 synth:
 	@echo 'Synthetizing module $(TOP_MODULE) with $(LIB)'
-	$(CC_SYNTH)	-c 	$(SRC)
-	>./log/osu018_stdcells_$(TOP_MODULE).log
+	$(CC_SYNTH)	-c 	$(SRC) > ./log/main.log
+	python cell_ind_area.py
 
 rename:
 	@echo 'Renaming module $(NEW_TOP_MODULE)'
 	sed -i 's/$(TOP_MODULE)/$(NEW_TOP_MODULE)/' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/module bit_mayor/module bit_mayor_synth/g' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/nibble_mayor_4in/nibble_mayor_4in_synth/g' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/nibble_mayor_2in/nibble_mayor_2in_synth/g' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/nm2/nm2_synth/g' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/selector4/selector4_synth/g' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/module selector(/module selector_synth(/g' $(NEW_VLOG_FILE_NAME)
-	#sed -i 's/selector /selector_synth /g' $(NEW_VLOG_FILE_NAME)	
 
 tb: assign_tb compile run sim clean
 	@echo 'Testbench tested'

@@ -20,11 +20,12 @@ yosys opt
 yosys opt_clean -purge
 # mapping flip-flops to mycells.lib
 yosys dfflibmap -liberty $::env(LIB)
-#mapping logic to mycells.lib
-yosys abc -liberty $::env(LIB)
+#mapping logic to osu180s_stdcells.lib
+#yosys abc -liberty $::env(LIB)
 yosys opt
-#statistics
-yosys stat -liberty $::env(LIB)
+#statistics area and timing
+yosys tee -o ./log/area.rpt stat -liberty $::env(LIB)
+yosys tee -o ./log/timing.rpt abc -D 10000 -constr nibble.constr -liberty $::env(LIB)
 #clean up
 yosys clean
 #show gates

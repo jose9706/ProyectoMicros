@@ -1,0 +1,29 @@
+
+17. Printing statistics.
+
+=== nibble_top ===
+
+   Number of wires:                559
+   Number of wire bits:            682
+   Number of public wires:          14
+   Number of public wire bits:     134
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                588
+     AND2X2                         21
+     AOI21X1                       131
+     AOI22X1                         1
+     DFFPOSX1                       40
+     INVX1                          77
+     MUX2X1                          7
+     NAND2X1                        51
+     NAND3X1                        24
+     NOR2X1                         25
+     OAI21X1                       200
+     OAI22X1                         7
+     XNOR2X1                         4
+
+   Chip area for this module: 18104.000000
+   Combinational cells area: 17904.0, Sequential cells area: 200.0
+
