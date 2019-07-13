@@ -48,7 +48,7 @@ sim:
 synth:
 	@echo 'Synthetizing module $(TOP_MODULE) with $(LIB)'
 	$(CC_SYNTH)	-c 	$(SRC) > ./log/main.log
-	python cell_ind_area.py
+	#python cell_ind_area.py
 
 rename:
 	@echo 'Renaming module $(NEW_TOP_MODULE)'

@@ -1719,12 +1719,43 @@ Finding unused cells or wires in module \nibble_top..
 Mapping DFF cells in module `\nibble_top':
   mapped 40 $_DFF_P_ cells to \DFFPOSX1 cells.
 
-15. Executing ABC pass (technology mapping using ABC).
+15. Executing OPT pass (performing simple optimizations).
 
-15.1. Extracting gate netlist of module `\nibble_top' to `<abc-temp-dir>/input.blif'..
+15.1. Executing OPT_EXPR pass (perform const folding).
+
+15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Removed a total of 0 cells.
+
+15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+Performed a total of 0 changes.
+
+15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Removed a total of 0 cells.
+
+15.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+
+15.8. Executing OPT_EXPR pass (perform const folding).
+
+15.9. Finished OPT passes. (There is nothing left to do.)
+
+16. Executing ABC pass (technology mapping using ABC).
+
+16.1. Extracting gate netlist of module `\nibble_top' to `<abc-temp-dir>/input.blif'..
 Extracted 378 gates and 508 wires to a netlist network with 129 inputs and 40 outputs.
 
-15.1.1. Executing ABC.
+16.1.1. Executing ABC.
 Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ABC command line: "source <abc-temp-dir>/abc.script".
 ABC: 
@@ -1740,106 +1771,94 @@ ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
 ABC: Library "osu018_stdcells" from "/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/../libs/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.01 sec
 ABC: Memory =    0.36 MB. Time =     0.01 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
+ABC: + read_constr -v /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/Nibble/nibble.constr 
+ABC: Directive set_driving_cell should be followed by two arguments.
+ABC: Directive set_load should be followed by two arguments.
 ABC: + strash 
 ABC: + dc2 
 ABC: + scorr 
 ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
 ABC: + ifraig 
-ABC: + retime -o 
+ABC: + retime -o -D 10000 
 ABC: + strash 
 ABC: + dch -f 
-ABC: + map 
+ABC: + map -D 10000 
+ABC: + buffer 
+ABC: + upsize -D 10000 
+ABC: Current delay (1408.79 ps) does not exceed the target delay (10000.00 ps). Upsizing is not performed.
+ABC: + dnsize -D 10000 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =    543 ( 15.1 %)   Cap = 32.0 ff (  0.5 %)   Area =    14077.00 ( 98.2 %)   Delay =  1409.21 ps  (  3.3 %)               
+ABC: Path  0 --     103 : 0    3 pi      A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =  61.6 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     675 : 2    1 XOR2X1  A =  56.00  Df =  99.2  -14.3 ps  S =  66.2 ps  Cin = 31.9 ff  Cout =   9.3 ff  Cmax = 484.4 ff  G =   29  
+ABC: Path  2 --     676 : 1    2 INVX1   A =  16.00  Df = 173.8   -9.6 ps  S =  82.2 ps  Cin =  9.3 ff  Cout =  30.9 ff  Cmax = 503.8 ff  G =  328  
+ABC: Path  3 --     685 : 2    1 AND2X2  A =  32.00  Df = 274.7  -26.0 ps  S =  40.7 ps  Cin = 12.6 ff  Cout =  12.9 ff  Cmax = 975.6 ff  G =  102  
+ABC: Path  4 --     686 : 3    1 OAI21X1 A =  23.00  Df = 328.7  -33.5 ps  S =  69.8 ps  Cin = 16.1 ff  Cout =  12.9 ff  Cmax = 494.9 ff  G =   80  
+ABC: Path  5 --     687 : 2    5 NAND2X1 A =  24.00  Df = 485.1  -11.1 ps  S = 236.4 ps  Cin = 12.6 ff  Cout =  91.1 ff  Cmax = 499.8 ff  G =  713  
+ABC: Path  6 --     688 : 3    1 MUX2X1  A =  48.00  Df = 640.6  -14.9 ps  S =  76.3 ps  Cin = 18.3 ff  Cout =  15.1 ff  Cmax = 489.0 ff  G =   82  
+ABC: Path  7 --     689 : 2    3 OR2X2   A =  32.00  Df = 775.3  -18.8 ps  S =  79.5 ps  Cin = 14.6 ff  Cout =  49.8 ff  Cmax = 966.5 ff  G =  338  
+ABC: Path  8 --     711 : 3    1 MUX2X1  A =  48.00  Df =1409.2  -22.6 ps  S =  44.9 ps  Cin = 18.3 ff  Cout =   0.0 ff  Cmax = 489.0 ff  G =    0  
+ABC: Start-point = pi102.  End-point = po38.
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
-15.1.2. Re-integrating ABC results.
+16.1.2. Re-integrating ABC results.
 ABC RESULTS:            AND2X2 cells:       21
-ABC RESULTS:           AOI21X1 cells:      131
-ABC RESULTS:           AOI22X1 cells:        1
-ABC RESULTS:             INVX1 cells:       77
+ABC RESULTS:           AOI21X1 cells:      130
+ABC RESULTS:           AOI22X1 cells:        2
+ABC RESULTS:             BUFX2 cells:       12
+ABC RESULTS:             INVX1 cells:       60
+ABC RESULTS:             INVX2 cells:       10
 ABC RESULTS:            MUX2X1 cells:        7
-ABC RESULTS:           NAND2X1 cells:       51
-ABC RESULTS:           NAND3X1 cells:       24
-ABC RESULTS:            NOR2X1 cells:       25
-ABC RESULTS:           OAI21X1 cells:      200
-ABC RESULTS:           OAI22X1 cells:        7
-ABC RESULTS:           XNOR2X1 cells:        4
+ABC RESULTS:           NAND2X1 cells:       44
+ABC RESULTS:           NAND3X1 cells:       16
+ABC RESULTS:            NOR2X1 cells:       28
+ABC RESULTS:           OAI21X1 cells:      203
+ABC RESULTS:           OAI22X1 cells:        4
+ABC RESULTS:             OR2X2 cells:        2
+ABC RESULTS:           XNOR2X1 cells:        3
+ABC RESULTS:            XOR2X1 cells:        1
 ABC RESULTS:        internal signals:      339
 ABC RESULTS:           input signals:      129
 ABC RESULTS:          output signals:       40
 Removing temp directory.
 
-16. Executing OPT pass (performing simple optimizations).
-
-16.1. Executing OPT_EXPR pass (perform const folding).
-
-16.2. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\nibble_top'.
-Removed a total of 0 cells.
-
-16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
-Running muxtree optimizer on module \nibble_top..
-  Creating internal representation of mux trees.
-  No muxes found in this module.
-Removed 0 multiplexer ports.
-
-16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
-  Optimizing cells in module \nibble_top.
-Performed a total of 0 changes.
-
-16.5. Executing OPT_MERGE pass (detect identical cells).
-Finding identical cells in module `\nibble_top'.
-Removed a total of 0 cells.
-
-16.6. Executing OPT_RMDFF pass (remove dff with constant values).
-
-16.7. Executing OPT_CLEAN pass (remove unused cells and wires).
-Finding unused cells or wires in module \nibble_top..
-  removing unused non-port wire \nibble_mayor.nib_l1.
-  removing unused non-port wire \nibble_mayor.nib_l2.
-  removed 2 unused temporary wires.
-
-16.8. Executing OPT_EXPR pass (perform const folding).
-
-16.9. Finished OPT passes. (There is nothing left to do.)
-
 17. Printing statistics.
 
 === nibble_top ===
 
-   Number of wires:                559
-   Number of wire bits:            682
-   Number of public wires:          14
-   Number of public wire bits:     134
+   Number of wires:                782
+   Number of wire bits:           4047
+   Number of public wires:          16
+   Number of public wire bits:     142
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                588
+   Number of cells:                583
      AND2X2                         21
-     AOI21X1                       131
-     AOI22X1                         1
+     AOI21X1                       130
+     AOI22X1                         2
+     BUFX2                          12
      DFFPOSX1                       40
-     INVX1                          77
+     INVX1                          60
+     INVX2                          10
      MUX2X1                          7
-     NAND2X1                        51
-     NAND3X1                        24
-     NOR2X1                         25
-     OAI21X1                       200
-     OAI22X1                         7
-     XNOR2X1                         4
+     NAND2X1                        44
+     NAND3X1                        16
+     NOR2X1                         28
+     OAI21X1                       203
+     OAI22X1                         4
+     OR2X2                           2
+     XNOR2X1                         3
+     XOR2X1                          1
 
-   Chip area for this module: 18104.000000
+   Chip area for this module: 17917.000000
 
-18. Executing ABC pass (technology mapping using ABC).
+Removed 0 unused cells and 228 unused wires.
 
-18.1. Extracting gate netlist of module `\nibble_top' to `<abc-temp-dir>/input.blif'..
-Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
-Don't call ABC as there is nothing to map.
-Removing temp directory.
-
-19. Executing Verilog backend.
+18. Executing Verilog backend.
 Dumping module `\nibble_top'.
 
-End of script. Logfile hash: bb91ba24b9
-CPU: user 0.62s system 0.01s, MEM: 51.68 MB total, 14.05 MB resident
+End of script. Logfile hash: 15a5474414
+CPU: user 0.64s system 0.02s, MEM: 51.83 MB total, 14.16 MB resident
 Yosys 0.7 (git sha1 61f6811, gcc 5.4.0-6ubuntu1~16.04.4 -O2 -fstack-protector-strong -fPIC -Os)
-Time spent: 17% 17x opt_expr (0 sec), 15% 14x opt_clean (0 sec), ...
+Time spent: 19% 17x opt_expr (0 sec), 16% 16x opt_merge (0 sec), ...

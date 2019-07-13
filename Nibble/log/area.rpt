@@ -3,27 +3,30 @@
 
 === nibble_top ===
 
-   Number of wires:                559
-   Number of wire bits:            682
-   Number of public wires:          14
-   Number of public wire bits:     134
+   Number of wires:                782
+   Number of wire bits:           4047
+   Number of public wires:          16
+   Number of public wire bits:     142
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                588
+   Number of cells:                583
      AND2X2                         21
-     AOI21X1                       131
-     AOI22X1                         1
+     AOI21X1                       130
+     AOI22X1                         2
+     BUFX2                          12
      DFFPOSX1                       40
-     INVX1                          77
+     INVX1                          60
+     INVX2                          10
      MUX2X1                          7
-     NAND2X1                        51
-     NAND3X1                        24
-     NOR2X1                         25
-     OAI21X1                       200
-     OAI22X1                         7
-     XNOR2X1                         4
+     NAND2X1                        44
+     NAND3X1                        16
+     NOR2X1                         28
+     OAI21X1                       203
+     OAI22X1                         4
+     OR2X2                           2
+     XNOR2X1                         3
+     XOR2X1                          1
 
-   Chip area for this module: 18104.000000
-   Combinational cells area: 17904.0, Sequential cells area: 200.0
+   Chip area for this module: 17917.000000
 

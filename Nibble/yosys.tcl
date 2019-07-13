@@ -24,8 +24,9 @@ yosys dfflibmap -liberty $::env(LIB)
 #yosys abc -liberty $::env(LIB)
 yosys opt
 #statistics area and timing
-yosys tee -o ./log/area.rpt stat -liberty $::env(LIB)
 yosys tee -o ./log/timing.rpt abc -D 10000 -constr nibble.constr -liberty $::env(LIB)
+yosys tee -o ./log/area.rpt stat -liberty $::env(LIB)
+#yosys tee -o ./log/timing.rpt abc -D 10000 -constr nibble.constr -liberty $::env(LIB)
 #clean up
 yosys clean
 #show gates
