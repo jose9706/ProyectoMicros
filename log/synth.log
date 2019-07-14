@@ -1,0 +1,1950 @@
+Qflow synthesis logfile created on sáb 13 jul 16:23:19 CST 2019
+Running yosys for verilog parsing and synthesis
+yosys  -s nibble_top.ys
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2016  Clifford Wolf <clifford@clifford.at>           |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.7 (git sha1 61f6811, gcc 5.4.0-6ubuntu1~16.04.4 -O2 -fstack-protector-strong -fPIC -Os)
+
+
+-- Executing script file `nibble_top.ys' --
+
+1. Executing Liberty frontend.
+Imported 32 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend.
+Parsing Verilog input from `/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/source/nibble_top.v' to AST representation.
+Generating RTLIL representation for module `\selector4'.
+Generating RTLIL representation for module `\selector'.
+Generating RTLIL representation for module `\nm2'.
+Generating RTLIL representation for module `\nibble_top'.
+Successfully finished Verilog frontend.
+
+3. Executing SYNTH pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \nibble_top
+Used module:     \nm2
+Used module:     \selector4
+Used module:         \selector
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \nibble_top
+Used module:     \nm2
+Used module:     \selector4
+Used module:         \selector
+Removed 0 unused modules.
+Mapping positional arguments of cell selector4.selectores[3].seli (selector).
+Mapping positional arguments of cell selector4.selectores[2].seli (selector).
+Mapping positional arguments of cell selector4.selectores[1].seli (selector).
+Mapping positional arguments of cell selector4.selectores[0].seli (selector).
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_INIT pass (extract init attributes).
+
+3.2.4. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\nibble_top.$proc$/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/source/nibble_top.v:52$17'.
+     1/1: $0\DATA_OUT[3:0]
+Creating decoders for process `\nm2.$proc$../nm2/nm2.v:39$14'.
+     1/6: $0\nibble_D[3:0]
+     2/6: $0\nibble_C[3:0]
+     3/6: $0\nibble_B[3:0]
+     4/6: $0\nibble_A[3:0]
+     5/6: $0\ID_MAYOR[1:0]
+     6/6: $0\NIBBLE_MAYOR[3:0]
+Creating decoders for process `\nm2.$proc$../nm2/nm2.v:11$10'.
+     1/12: $2\id2[1:0]
+     2/12: $2\nib_l2[3:0]
+     3/12: $2\id1[1:0]
+     4/12: $2\nib_l1[3:0]
+     5/12: $1\id2[1:0]
+     6/12: $1\id1[1:0]
+     7/12: $1\nib_l2[3:0]
+     8/12: $1\nib_l1[3:0]
+     9/12: $0\id2[1:0]
+    10/12: $0\id1[1:0]
+    11/12: $0\nib_l2[3:0]
+    12/12: $0\nib_l1[3:0]
+Creating decoders for process `\selector.$proc$../Selector/selector4.v:41$1'.
+     1/1: $0\nibbleOut[3:0]
+
+3.2.6. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\nm2.\nib_l1' from process `\nm2.$proc$../nm2/nm2.v:11$10'.
+No latch inferred for signal `\nm2.\nib_l2' from process `\nm2.$proc$../nm2/nm2.v:11$10'.
+No latch inferred for signal `\nm2.\id1' from process `\nm2.$proc$../nm2/nm2.v:11$10'.
+No latch inferred for signal `\nm2.\id2' from process `\nm2.$proc$../nm2/nm2.v:11$10'.
+
+3.2.7. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\nibble_top.\DATA_OUT' using process `\nibble_top.$proc$/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/source/nibble_top.v:52$17'.
+  created $dff cell `$procdff$85' with positive edge clock.
+Creating register for signal `\nm2.\NIBBLE_MAYOR' using process `\nm2.$proc$../nm2/nm2.v:39$14'.
+  created $dff cell `$procdff$86' with positive edge clock.
+Creating register for signal `\nm2.\ID_MAYOR' using process `\nm2.$proc$../nm2/nm2.v:39$14'.
+  created $dff cell `$procdff$87' with positive edge clock.
+Creating register for signal `\nm2.\nibble_A' using process `\nm2.$proc$../nm2/nm2.v:39$14'.
+  created $dff cell `$procdff$88' with positive edge clock.
+Creating register for signal `\nm2.\nibble_B' using process `\nm2.$proc$../nm2/nm2.v:39$14'.
+  created $dff cell `$procdff$89' with positive edge clock.
+Creating register for signal `\nm2.\nibble_C' using process `\nm2.$proc$../nm2/nm2.v:39$14'.
+  created $dff cell `$procdff$90' with positive edge clock.
+Creating register for signal `\nm2.\nibble_D' using process `\nm2.$proc$../nm2/nm2.v:39$14'.
+  created $dff cell `$procdff$91' with positive edge clock.
+Creating register for signal `\selector.\nibbleOut' using process `\selector.$proc$../Selector/selector4.v:41$1'.
+  created $dff cell `$procdff$92' with positive edge clock.
+
+3.2.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\nibble_top.$proc$/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/source/nibble_top.v:52$17'.
+Removing empty process `nibble_top.$proc$/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/source/nibble_top.v:52$17'.
+Found and cleaned up 2 empty switches in `\nm2.$proc$../nm2/nm2.v:39$14'.
+Removing empty process `nm2.$proc$../nm2/nm2.v:39$14'.
+Found and cleaned up 3 empty switches in `\nm2.$proc$../nm2/nm2.v:11$10'.
+Removing empty process `nm2.$proc$../nm2/nm2.v:11$10'.
+Found and cleaned up 1 empty switch in `\selector.$proc$../Selector/selector4.v:41$1'.
+Removing empty process `selector.$proc$../Selector/selector4.v:41$1'.
+Cleaned up 7 empty switches.
+
+3.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing away select inverter for $mux cell `$procmux$20' in module `nibble_top'.
+Optimizing away select inverter for $mux cell `$procmux$23' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$56' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$77' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$68' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$80' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$26' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$29' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$32' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$50' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$71' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$62' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$74' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$38' in module `nm2'.
+Optimizing away select inverter for $mux cell `$procmux$44' in module `nm2'.
+Replacing multiply-by-4 cell `$mul$../Selector/selector4.v:45$3' in module `\selector' with shift-by-2.
+Replacing $add cell `$add$../Selector/selector4.v:45$4' in module `\selector' with identity for port A.
+Replacing multiply-by-4 cell `$mul$../Selector/selector4.v:45$6' in module `\selector' with shift-by-2.
+Replacing $add cell `$add$../Selector/selector4.v:45$7' in module `\selector' with identity for port A.
+Optimizing away select inverter for $mux cell `$procmux$83' in module `selector'.
+Replacing $shl cell `$mul$../Selector/selector4.v:45$3' (B=2'10, SHR=-2) in module `selector' with fixed wiring: { 27'000000000000000000000000000 \selB 2'00 }
+Replacing $shl cell `$mul$../Selector/selector4.v:45$6' (B=2'10, SHR=-2) in module `selector' with fixed wiring: { 27'000000000000000000000000000 \selA 2'00 }
+
+3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+  removing unused `$not' cell `$not$/home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/source/nibble_top.v:53$18'.
+Finding unused cells or wires in module \nm2..
+  removing unused `$not' cell `$not$../nm2/nm2.v:16$11'.
+  removing unused `$not' cell `$not$../nm2/nm2.v:40$15'.
+Finding unused cells or wires in module \selector..
+  removing buffer cell `$add$../Selector/selector4.v:45$7': $add$../Selector/selector4.v:45$7_Y = $mul$../Selector/selector4.v:45$6_Y
+  removing buffer cell `$add$../Selector/selector4.v:45$4': $add$../Selector/selector4.v:45$4_Y = $mul$../Selector/selector4.v:45$3_Y
+  removing unused `$not' cell `$not$../Selector/selector4.v:42$2'.
+Finding unused cells or wires in module \selector4..
+
+3.5. Executing CHECK pass (checking for obvious problems).
+checking module nibble_top..
+checking module nm2..
+checking module selector..
+checking module selector4..
+found and reported 0 problems.
+
+3.6. Executing OPT pass (performing simple optimizations).
+
+3.6.1. Executing OPT_EXPR pass (perform const folding).
+
+3.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$20 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nm2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$23 (pure)
+    Root of a mux tree: $procmux$26 (pure)
+    Root of a mux tree: $procmux$29 (pure)
+    Root of a mux tree: $procmux$32 (pure)
+    Root of a mux tree: $procmux$38 (pure)
+    Root of a mux tree: $procmux$44 (pure)
+    Root of a mux tree: $procmux$77 (pure)
+    Root of a mux tree: $procmux$80 (pure)
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$50.
+    dead port 2/2 on $mux $procmux$56.
+    dead port 2/2 on $mux $procmux$62.
+    dead port 2/2 on $mux $procmux$68.
+    dead port 2/2 on $mux $procmux$71.
+    dead port 2/2 on $mux $procmux$74.
+Running muxtree optimizer on module \selector..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$83 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 6 multiplexer ports.
+
+3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+  Optimizing cells in module \nm2.
+  Optimizing cells in module \selector.
+  Optimizing cells in module \selector4.
+Performed a total of 0 changes.
+
+3.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.6.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.6.8. Executing OPT_EXPR pass (perform const folding).
+
+3.6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$20 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nm2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$23 (pure)
+    Root of a mux tree: $procmux$26 (pure)
+    Root of a mux tree: $procmux$29 (pure)
+    Root of a mux tree: $procmux$32 (pure)
+    Root of a mux tree: $procmux$38 (pure)
+    Root of a mux tree: $procmux$44 (pure)
+    Root of a mux tree: $procmux$77 (pure)
+    Root of a mux tree: $procmux$80 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$83 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+  Optimizing cells in module \nm2.
+  Optimizing cells in module \selector.
+  Optimizing cells in module \selector4.
+Performed a total of 0 changes.
+
+3.6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.6.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.6.15. Executing OPT_EXPR pass (perform const folding).
+
+3.6.16. Finished OPT passes. (There is nothing left to do.)
+
+3.7. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 2) from mux cell nm2.$procmux$47 ($mux).
+Removed top 1 bits (of 2) from mux cell nm2.$procmux$59 ($mux).
+Removed top 1 bits (of 2) from wire nm2.id1.
+Removed top 26 bits (of 32) from port B of cell selector.$shiftx$../Selector/selector4.v:45$5 ($shiftx).
+Removed top 26 bits (of 32) from port B of cell selector.$shiftx$../Selector/selector4.v:45$8 ($shiftx).
+
+3.8. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module nibble_top:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module nm2:
+  creating $alu model for $ge$../nm2/nm2.v:22$12 ($ge): new $alu
+  creating $alu model for $ge$../nm2/nm2.v:29$13 ($ge): new $alu
+  creating $alu model for $ge$../nm2/nm2.v:53$16 ($ge): new $alu
+  creating $alu cell for $ge$../nm2/nm2.v:53$16: $auto$alumacc.cc:470:replace_alu$97
+  creating $alu cell for $ge$../nm2/nm2.v:29$13: $auto$alumacc.cc:470:replace_alu$106
+  creating $alu cell for $ge$../nm2/nm2.v:22$12: $auto$alumacc.cc:470:replace_alu$115
+  created 3 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module selector:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module selector4:
+  created 0 $alu and 0 $macc cells.
+
+3.9. Executing SHARE pass (SAT-based resource sharing).
+
+3.10. Executing OPT pass (performing simple optimizations).
+
+3.10.1. Executing OPT_EXPR pass (perform const folding).
+
+3.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$20 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nm2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$23 (pure)
+    Root of a mux tree: $procmux$26 (pure)
+    Root of a mux tree: $procmux$29 (pure)
+    Root of a mux tree: $procmux$32 (pure)
+    Root of a mux tree: $procmux$38 (pure)
+    Root of a mux tree: $procmux$44 (pure)
+    Root of a mux tree: $procmux$77 (pure)
+    Root of a mux tree: $procmux$80 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$83 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+  Optimizing cells in module \nm2.
+    New input vector for $reduce_or cell $auto$alumacc.cc:502:replace_alu$126: { $auto$rtlil.cc:1600:Not$125 $auto$rtlil.cc:1603:ReduceAnd$119 }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$102: { $auto$alumacc.cc:483:replace_alu$98 [0] $auto$alumacc.cc:483:replace_alu$98 [1] $auto$alumacc.cc:483:replace_alu$98 [2] $auto$alumacc.cc:483:replace_alu$98 [3] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$111: { $auto$alumacc.cc:483:replace_alu$107 [0] $auto$alumacc.cc:483:replace_alu$107 [1] $auto$alumacc.cc:483:replace_alu$107 [2] $auto$alumacc.cc:483:replace_alu$107 [3] }
+    New input vector for $reduce_and cell $auto$alumacc.cc:64:get_eq$118: { $auto$alumacc.cc:483:replace_alu$116 [0] $auto$alumacc.cc:483:replace_alu$116 [1] $auto$alumacc.cc:483:replace_alu$116 [2] $auto$alumacc.cc:483:replace_alu$116 [3] }
+  Optimizing cells in module \nm2.
+  Optimizing cells in module \selector.
+  Optimizing cells in module \selector4.
+Performed a total of 4 changes.
+
+3.10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.10.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.10.8. Executing OPT_EXPR pass (perform const folding).
+
+3.10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$20 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nm2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$23 (pure)
+    Root of a mux tree: $procmux$26 (pure)
+    Root of a mux tree: $procmux$29 (pure)
+    Root of a mux tree: $procmux$32 (pure)
+    Root of a mux tree: $procmux$38 (pure)
+    Root of a mux tree: $procmux$44 (pure)
+    Root of a mux tree: $procmux$77 (pure)
+    Root of a mux tree: $procmux$80 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$83 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+  Optimizing cells in module \nm2.
+  Optimizing cells in module \selector.
+  Optimizing cells in module \selector4.
+Performed a total of 0 changes.
+
+3.10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.10.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.10.15. Executing OPT_EXPR pass (perform const folding).
+
+3.10.16. Finished OPT passes. (There is nothing left to do.)
+
+3.11. Executing FSM pass (extract and optimize FSM).
+
+3.11.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking nm2.ID_MAYOR as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+
+3.11.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.11.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.11.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.11.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.11.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.11.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.12.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.12.5. Finished fast OPT passes.
+
+3.13. Executing MEMORY pass.
+
+3.13.1. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+3.13.2. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.13.3. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.13.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.13.5. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.15. Executing OPT pass (performing simple optimizations).
+
+3.15.1. Executing OPT_EXPR pass (perform const folding).
+Replacing $mux cell `$procmux$47' in module `nm2' with inverter.
+Replacing $mux cell `$procmux$59' in module `nm2' with inverter.
+
+3.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.15.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.15.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.15.5. Finished fast OPT passes.
+
+3.16. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+3.17. Executing OPT pass (performing simple optimizations).
+
+3.17.1. Executing OPT_EXPR pass (perform const folding).
+
+3.17.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.17.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$20 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nm2..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$23 (pure)
+    Root of a mux tree: $procmux$26 (pure)
+    Root of a mux tree: $procmux$29 (pure)
+    Root of a mux tree: $procmux$32 (pure)
+    Root of a mux tree: $procmux$38 (pure)
+    Root of a mux tree: $procmux$44 (pure)
+    Root of a mux tree: $procmux$77 (pure)
+    Root of a mux tree: $procmux$80 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$83 (pure)
+  Analyzing evaluation results.
+Running muxtree optimizer on module \selector4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.17.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+  Optimizing cells in module \nm2.
+  Optimizing cells in module \selector.
+  Optimizing cells in module \selector4.
+Performed a total of 0 changes.
+
+3.17.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.17.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.17.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+3.17.8. Executing OPT_EXPR pass (perform const folding).
+
+3.17.9. Finished OPT passes. (There is nothing left to do.)
+
+3.18. Executing TECHMAP pass (map to technology primitives).
+
+3.18.1. Executing Verilog-2005 frontend.
+Parsing Verilog input from `<techmap.v>' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+3.18.2. Executing AST frontend in derive mode using pre-parsed AST for module `\_90_shift_shiftx'.
+Parameter \A_SIGNED = 0
+Parameter \B_SIGNED = 1
+Parameter \A_WIDTH = 32
+Parameter \B_WIDTH = 6
+Parameter \Y_WIDTH = 4
+Parameter \_TECHMAP_CELLTYPE_ = 56'00100100011100110110100001101001011001100111010001111000
+Generating RTLIL representation for module `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx'.
+
+3.18.3. Executing PROC pass (convert processes to netlists).
+
+3.18.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 12 empty switches in `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$178'.
+Cleaned up 12 empty switches.
+
+3.18.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.18.3.3. Executing PROC_INIT pass (extract init attributes).
+
+3.18.3.4. Executing PROC_ARST pass (detect async resets in processes).
+
+3.18.3.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$178'.
+     1/19: $17\buffer[63:0]
+     2/19: $16\buffer[63:0]
+     3/19: $15\buffer[63:0]
+     4/19: $14\buffer[63:0]
+     5/19: $13\buffer[63:0]
+     6/19: $12\buffer[63:0]
+     7/19: $11\buffer[63:0]
+     8/19: $10\buffer[63:0]
+     9/19: $9\buffer[63:0]
+    10/19: $8\buffer[63:0]
+    11/19: $7\buffer[63:0]
+    12/19: $6\buffer[63:0]
+    13/19: $5\buffer[63:0]
+    14/19: $4\buffer[63:0]
+    15/19: $3\buffer[63:0]
+    16/19: $2\buffer[63:0]
+    17/19: $1\buffer[63:0]
+    18/19: $0\buffer[63:0]
+    19/19: $0\overflow[0:0]
+
+3.18.3.6. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.\overflow' from process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$178'.
+No latch inferred for signal `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.\buffer' from process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$178'.
+
+3.18.3.7. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.18.3.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 6 empty switches in `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$178'.
+Removing empty process `$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.$proc$<techmap.v>:145$178'.
+Cleaned up 6 empty switches.
+Removed 0 unused cells and 39 unused wires.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port B: 1'0
+  Constant input on bit 1 of port B: 1'0
+  Constant input on bit 5 of port B: 1'0
+Creating constmapped module `$paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx'.
+
+3.18.4. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+    Root of a mux tree: $procmux$228
+    Root of a mux tree: $procmux$222
+    Root of a mux tree: $procmux$213
+    Root of a mux tree: $procmux$204
+    Root of a mux tree: $procmux$195
+      Removing pure flag from root mux $procmux$228.
+    Root of a mux tree: $procmux$186 (pure)
+      Removing pure flag from root mux $procmux$222.
+    Root of a mux tree: $procmux$222 (rerun as non-pure)
+    Root of a mux tree: $procmux$228 (rerun as non-pure)
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$228.
+    dead port 1/2 on $mux $procmux$225.
+    dead port 2/2 on $mux $procmux$225.
+    dead port 2/2 on $mux $procmux$219.
+    dead port 2/2 on $mux $procmux$216.
+    dead port 2/2 on $mux $procmux$210.
+    dead port 2/2 on $mux $procmux$207.
+    dead port 2/2 on $mux $procmux$201.
+    dead port 2/2 on $mux $procmux$198.
+    dead port 1/2 on $mux $procmux$195.
+    dead port 1/2 on $mux $procmux$192.
+    dead port 2/2 on $mux $procmux$192.
+    dead port 1/2 on $mux $procmux$189.
+    dead port 2/2 on $mux $procmux$189.
+    dead port 1/2 on $mux $procmux$186.
+    dead port 1/2 on $mux $procmux$183.
+    dead port 2/2 on $mux $procmux$183.
+    dead port 1/2 on $mux $procmux$180.
+    dead port 2/2 on $mux $procmux$180.
+Removed 19 multiplexer ports.
+
+3.18.5. Executing OPT_EXPR pass (perform const folding).
+Removed 0 unused cells and 15 unused wires.
+
+3.18.6. Continuing TECHMAP pass.
+Mapping selector.$shiftx$../Selector/selector4.v:45$5 using $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.
+Mapping selector.$shiftx$../Selector/selector4.v:45$8 using $paramod$constmap:5bb736f28100a66674c02e4dcb544fb4c600c498$paramod$c5af97a1c330bc1971d96203edbab805db45245f\_90_shift_shiftx.
+Mapping selector.$ternary$../Selector/selector4.v:45$9 ($mux) with simplemap.
+Mapping selector.$procmux$83 ($mux) with simplemap.
+Mapping selector.$procdff$92 ($dff) with simplemap.
+Mapping selector.$techmap$shiftx$../Selector/selector4.v:45$8.$procmux$222 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$../Selector/selector4.v:45$8.$procmux$204 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$../Selector/selector4.v:45$8.$procmux$213 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$../Selector/selector4.v:45$5.$procmux$222 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$../Selector/selector4.v:45$5.$procmux$204 ($mux) with simplemap.
+Mapping selector.$techmap$shiftx$../Selector/selector4.v:45$5.$procmux$213 ($mux) with simplemap.
+Mapping nm2.$procmux$23 ($mux) with simplemap.
+Mapping nm2.$auto$alumacc.cc:502:replace_alu$113 ($reduce_or) with simplemap.
+Mapping nm2.$auto$alumacc.cc:64:get_eq$111 ($reduce_and) with simplemap.
+
+3.18.7. Executing AST frontend in derive mode using pre-parsed AST for module `\_90_alu'.
+Parameter \A_SIGNED = 0
+Parameter \B_SIGNED = 0
+Parameter \A_WIDTH = 4
+Parameter \B_WIDTH = 4
+Parameter \Y_WIDTH = 4
+Generating RTLIL representation for module `$paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=4\B_WIDTH=4\Y_WIDTH=4'.
+
+3.18.8. Continuing TECHMAP pass.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$115 using $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=4\B_WIDTH=4\Y_WIDTH=4.
+Mapping nm2.$auto$alumacc.cc:78:get_cf$109 ($not) with simplemap.
+Mapping nm2.$procmux$26 ($mux) with simplemap.
+Mapping nm2.$procmux$29 ($mux) with simplemap.
+Mapping nm2.$procmux$32 ($mux) with simplemap.
+Mapping nm2.$procmux$35 ($mux) with simplemap.
+Mapping nm2.$procmux$38 ($mux) with simplemap.
+Mapping nm2.$procmux$41 ($mux) with simplemap.
+Mapping nm2.$procmux$44 ($mux) with simplemap.
+Mapping nm2.$procmux$47 ($not) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$97 using $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=4\B_WIDTH=4\Y_WIDTH=4.
+Mapping nm2.$procmux$53 ($mux) with simplemap.
+Mapping nm2.$auto$alumacc.cc:502:replace_alu$104 ($reduce_or) with simplemap.
+Mapping nm2.$procmux$59 ($not) with simplemap.
+Mapping nm2.$procmux$65 ($mux) with simplemap.
+Mapping nm2.$auto$alumacc.cc:502:replace_alu$126 ($reduce_or) with simplemap.
+Mapping nm2.$auto$alumacc.cc:64:get_eq$102 ($reduce_and) with simplemap.
+Mapping nm2.$auto$alumacc.cc:58:get_gt$124 ($not) with simplemap.
+Mapping nm2.$auto$alumacc.cc:58:get_gt$122 ($or) with simplemap.
+Mapping nm2.$auto$alumacc.cc:78:get_cf$100 ($not) with simplemap.
+Mapping nm2.$auto$alumacc.cc:78:get_cf$120 ($not) with simplemap.
+Mapping nm2.$procmux$77 ($mux) with simplemap.
+Mapping nm2.$auto$alumacc.cc:64:get_eq$118 ($reduce_and) with simplemap.
+Mapping nm2.$procmux$80 ($mux) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$106 using $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=4\B_WIDTH=4\Y_WIDTH=4.
+Mapping nm2.$procdff$86 ($dff) with simplemap.
+Mapping nm2.$procdff$87 ($dff) with simplemap.
+Mapping nm2.$procdff$88 ($dff) with simplemap.
+Mapping nm2.$procdff$89 ($dff) with simplemap.
+Mapping nm2.$procdff$90 ($dff) with simplemap.
+Mapping nm2.$procdff$91 ($dff) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.$xor$<techmap.v>:263$643 ($xor) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.$xor$<techmap.v>:262$642 ($xor) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.$and$<techmap.v>:260$641 ($and) with simplemap.
+
+3.18.9. Executing AST frontend in derive mode using pre-parsed AST for module `\_90_lcu'.
+Parameter \WIDTH = 4
+Generating RTLIL representation for module `$paramod\_90_lcu\WIDTH=4'.
+
+3.18.10. Executing PROC pass (convert processes to netlists).
+
+3.18.10.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.18.10.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.18.10.3. Executing PROC_INIT pass (extract init attributes).
+
+3.18.10.4. Executing PROC_ARST pass (detect async resets in processes).
+
+3.18.10.5. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\_90_lcu\WIDTH=4.$proc$<techmap.v>:207$748'.
+     1/8: $0\p[3:0] [2]
+     2/8: $0\g[3:0] [2]
+     3/8: $0\p[3:0] [3]
+     4/8: $0\g[3:0] [3]
+     5/8: $0\p[3:0] [1]
+     6/8: $0\g[3:0] [1]
+     7/8: $0\g[3:0] [0]
+     8/8: $0\p[3:0] [0]
+
+3.18.10.6. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\_90_lcu\WIDTH=4.\g' from process `$paramod\_90_lcu\WIDTH=4.$proc$<techmap.v>:207$748'.
+No latch inferred for signal `$paramod\_90_lcu\WIDTH=4.\p' from process `$paramod\_90_lcu\WIDTH=4.$proc$<techmap.v>:207$748'.
+
+3.18.10.7. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.18.10.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod\_90_lcu\WIDTH=4.$proc$<techmap.v>:207$748'.
+Cleaned up 0 empty switches.
+
+3.18.11. Executing OPT pass (performing simple optimizations).
+
+3.18.11.1. Executing OPT_EXPR pass (perform const folding).
+
+3.18.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\_90_lcu\WIDTH=4'.
+Removed a total of 0 cells.
+
+3.18.11.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.18.11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\_90_lcu\WIDTH=4..
+  removing unused `$and' cell `$and$<techmap.v>:222$753'.
+  removing unused `$and' cell `$and$<techmap.v>:222$759'.
+  removing unused `$and' cell `$and$<techmap.v>:230$762'.
+  removing unused non-port wire \j.
+  removing unused non-port wire \i.
+  removed 2 unused temporary wires.
+
+3.18.11.5. Finished fast OPT passes.
+
+3.18.12. Continuing TECHMAP pass.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$115.lcu using $paramod\_90_lcu\WIDTH=4.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.$ternary$<techmap.v>:258$640 ($mux) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.$not$<techmap.v>:258$639 ($not) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$115.B_conv ($pos) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$115.A_conv ($pos) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.$xor$<techmap.v>:263$643 ($xor) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.$xor$<techmap.v>:262$642 ($xor) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.$and$<techmap.v>:260$641 ($and) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$97.lcu using $paramod\_90_lcu\WIDTH=4.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.$ternary$<techmap.v>:258$640 ($mux) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.$not$<techmap.v>:258$639 ($not) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$97.B_conv ($pos) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$97.A_conv ($pos) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.$xor$<techmap.v>:263$643 ($xor) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.$xor$<techmap.v>:262$642 ($xor) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.$and$<techmap.v>:260$641 ($and) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$106.lcu using $paramod\_90_lcu\WIDTH=4.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.$ternary$<techmap.v>:258$640 ($mux) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.$not$<techmap.v>:258$639 ($not) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$106.B_conv ($pos) with simplemap.
+Mapping nm2.$auto$alumacc.cc:470:replace_alu$106.A_conv ($pos) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$or$<techmap.v>:229$761 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$or$<techmap.v>:221$758 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$or$<techmap.v>:221$755 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$or$<techmap.v>:221$752 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$or$<techmap.v>:212$750 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:229$760 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:222$756 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:221$757 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:221$754 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:221$751 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:212$749 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:212$749 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:221$751 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:221$754 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:221$757 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:222$756 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:229$760 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$or$<techmap.v>:212$750 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$or$<techmap.v>:221$752 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$or$<techmap.v>:221$755 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$or$<techmap.v>:221$758 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$or$<techmap.v>:229$761 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:212$749 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:221$751 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:221$754 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:221$757 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:222$756 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:229$760 ($and) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$or$<techmap.v>:212$750 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$or$<techmap.v>:221$752 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$or$<techmap.v>:221$755 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$or$<techmap.v>:221$758 ($or) with simplemap.
+Mapping nm2.$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$or$<techmap.v>:229$761 ($or) with simplemap.
+Mapping nibble_top.$procmux$20 ($mux) with simplemap.
+Mapping nibble_top.$procdff$85 ($dff) with simplemap.
+No more expansions possible.
+
+3.19. Executing OPT pass (performing simple optimizations).
+
+3.19.1. Executing OPT_EXPR pass (perform const folding).
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$766' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$115.$ternary$<techmap.v>:258$640_Y [3] = $techmap$auto$alumacc.cc:470:replace_alu$115.$not$<techmap.v>:258$639_Y [3]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$765' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$115.$ternary$<techmap.v>:258$640_Y [2] = $techmap$auto$alumacc.cc:470:replace_alu$115.$not$<techmap.v>:258$639_Y [2]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$764' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$115.$ternary$<techmap.v>:258$640_Y [1] = $techmap$auto$alumacc.cc:470:replace_alu$115.$not$<techmap.v>:258$639_Y [1]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$763' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$115.$ternary$<techmap.v>:258$640_Y [0] = $techmap$auto$alumacc.cc:470:replace_alu$115.$not$<techmap.v>:258$639_Y [0]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:85:simplemap_bitop$823' (?1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:212$749_Y = $techmap$auto$alumacc.cc:470:replace_alu$115.$xor$<techmap.v>:262$642_Y [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$784' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$97.$ternary$<techmap.v>:258$640_Y [0] = $techmap$auto$alumacc.cc:470:replace_alu$97.$not$<techmap.v>:258$639_Y [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$787' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$97.$ternary$<techmap.v>:258$640_Y [3] = $techmap$auto$alumacc.cc:470:replace_alu$97.$not$<techmap.v>:258$639_Y [3]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$807' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$106.$ternary$<techmap.v>:258$640_Y [2] = $techmap$auto$alumacc.cc:470:replace_alu$106.$not$<techmap.v>:258$639_Y [2]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$808' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$106.$ternary$<techmap.v>:258$640_Y [3] = $techmap$auto$alumacc.cc:470:replace_alu$106.$not$<techmap.v>:258$639_Y [3]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$805' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$106.$ternary$<techmap.v>:258$640_Y [0] = $techmap$auto$alumacc.cc:470:replace_alu$106.$not$<techmap.v>:258$639_Y [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$806' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$106.$ternary$<techmap.v>:258$640_Y [1] = $techmap$auto$alumacc.cc:470:replace_alu$106.$not$<techmap.v>:258$639_Y [1]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:85:simplemap_bitop$835' (?1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:212$749_Y = $techmap$auto$alumacc.cc:470:replace_alu$106.$xor$<techmap.v>:262$642_Y [0]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$786' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$97.$ternary$<techmap.v>:258$640_Y [2] = $techmap$auto$alumacc.cc:470:replace_alu$97.$not$<techmap.v>:258$639_Y [2]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$785' (??1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$97.$ternary$<techmap.v>:258$640_Y [1] = $techmap$auto$alumacc.cc:470:replace_alu$97.$not$<techmap.v>:258$639_Y [1]'.
+Replacing $_AND_ cell `$auto$simplemap.cc:85:simplemap_bitop$824' (?1) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:212$749_Y = $techmap$auto$alumacc.cc:470:replace_alu$97.$xor$<techmap.v>:262$642_Y [0]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:85:simplemap_bitop$775' (0?) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$97.$xor$<techmap.v>:263$643_Y [4] = $auto$alumacc.cc:484:replace_alu$99 [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:85:simplemap_bitop$731' (0?) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$115.$xor$<techmap.v>:263$643_Y [4] = $auto$alumacc.cc:484:replace_alu$117 [3]'.
+Replacing $_XOR_ cell `$auto$simplemap.cc:85:simplemap_bitop$796' (0?) in module `\nm2' with constant driver `$techmap$auto$alumacc.cc:470:replace_alu$106.$xor$<techmap.v>:263$643_Y [4] = $auto$alumacc.cc:484:replace_alu$108 [3]'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$276' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$277' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$278' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$279' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$280' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$281' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$282' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$283' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$284' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$285' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$286' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$287' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$288' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$289' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$290' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$291' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$292' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$293' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$294' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$295' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$296' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$297' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$298' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$299' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$300' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$301' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$302' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$303' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$304' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$305' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$306' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$307' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$3\buffer[63:0] [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$404' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [28] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$405' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [29] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$406' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [30] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$407' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [31] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$408' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$340' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$409' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$341' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$410' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$342' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$411' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$343' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$412' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$344' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$413' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$345' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$414' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$346' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$415' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$347' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$416' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$348' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$417' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$349' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$418' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$350' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$419' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$351' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$420' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$352' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$421' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$353' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$422' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$354' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$423' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$355' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$424' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$356' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$425' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$357' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$426' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$358' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$427' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$359' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$428' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$360' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$429' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$361' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$430' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$362' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$431' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$363' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$432' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$364' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$433' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$365' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$434' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$366' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$435' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$8.$10\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$367' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$368' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$369' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$370' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$371' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$8.buffer [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$468' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$469' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$470' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$471' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$472' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$473' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$474' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$475' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$476' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$477' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$478' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$479' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$480' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$481' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$482' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$483' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$484' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$485' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$486' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$487' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$488' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$489' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$490' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$491' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$492' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$493' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$494' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$495' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$496' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$497' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$498' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$499' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$3\buffer[63:0] [63] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$596' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [28] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$597' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [29] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$598' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [30] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$599' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [31] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$600' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$532' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [32] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$601' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$533' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [33] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$602' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$534' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [34] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$603' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$535' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [35] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$604' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$536' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [36] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$605' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$537' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [37] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$606' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$538' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [38] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$607' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$539' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [39] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$608' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$540' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [40] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$609' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$541' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [41] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$610' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$542' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [42] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$611' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$543' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [43] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$612' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$544' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [44] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$613' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$545' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [45] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$614' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$546' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [46] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$615' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$547' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [47] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$616' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$548' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [48] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$617' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$549' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [49] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$618' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$550' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [50] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$619' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$551' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [51] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$620' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$552' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [52] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$621' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$553' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [53] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$622' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$554' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [54] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$623' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$555' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [55] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$624' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$556' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [56] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$625' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$557' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [57] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$626' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$558' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [58] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$627' (xx?) in module `\selector' with constant driver `$techmap$shiftx$../Selector/selector4.v:45$5.$10\buffer[63:0] [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$559' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [59] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$560' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [60] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$561' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [61] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$562' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [62] = 1'x'.
+Replacing $_MUX_ cell `$auto$simplemap.cc:277:simplemap_mux$563' (xx?) in module `\selector' with constant driver `$shiftx$../Selector/selector4.v:45$5.buffer [63] = 1'x'.
+
+3.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+  Cell `$auto$simplemap.cc:136:simplemap_reduce$697' is identical to cell `$auto$simplemap.cc:85:simplemap_bitop$819'.
+    Redirecting output \Y: $auto$simplemap.cc:127:simplemap_reduce$696 [0] = $techmap$auto$alumacc.cc:470:replace_alu$115.lcu.$and$<techmap.v>:222$756_Y
+    Removing $_AND_ cell `$auto$simplemap.cc:136:simplemap_reduce$697' from module `\nm2'.
+  Cell `$auto$simplemap.cc:136:simplemap_reduce$684' is identical to cell `$auto$simplemap.cc:85:simplemap_bitop$828'.
+    Redirecting output \Y: $auto$simplemap.cc:127:simplemap_reduce$683 [0] = $techmap$auto$alumacc.cc:470:replace_alu$97.lcu.$and$<techmap.v>:222$756_Y
+    Removing $_AND_ cell `$auto$simplemap.cc:136:simplemap_reduce$684' from module `\nm2'.
+  Cell `$auto$simplemap.cc:136:simplemap_reduce$635' is identical to cell `$auto$simplemap.cc:85:simplemap_bitop$839'.
+    Redirecting output \Y: $auto$simplemap.cc:127:simplemap_reduce$634 [0] = $techmap$auto$alumacc.cc:470:replace_alu$106.lcu.$and$<techmap.v>:222$756_Y
+    Removing $_AND_ cell `$auto$simplemap.cc:136:simplemap_reduce$635' from module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 3 cells.
+
+3.19.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$774'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$773'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$772'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$771'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$727'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$728'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$729'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$730'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$792'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$793'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$794'.
+  removing unused `$_XOR_' cell `$auto$simplemap.cc:85:simplemap_bitop$795'.
+  removing unused `$_OR_' cell `$auto$simplemap.cc:85:simplemap_bitop$813'.
+  removing unused `$_AND_' cell `$auto$simplemap.cc:85:simplemap_bitop$818'.
+  removing unused `$_AND_' cell `$auto$simplemap.cc:85:simplemap_bitop$829'.
+  removing unused `$_OR_' cell `$auto$simplemap.cc:85:simplemap_bitop$834'.
+  removing unused `$_AND_' cell `$auto$simplemap.cc:85:simplemap_bitop$840'.
+  removing unused `$_OR_' cell `$auto$simplemap.cc:85:simplemap_bitop$845'.
+Finding unused cells or wires in module \selector..
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$260'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$261'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$262'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$263'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$264'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$265'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$266'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$267'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$268'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$269'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$270'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$271'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$272'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$273'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$274'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$275'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$312'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$313'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$314'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$315'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$316'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$317'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$318'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$319'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$320'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$321'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$322'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$323'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$324'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$325'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$326'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$327'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$328'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$329'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$330'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$331'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$332'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$333'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$334'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$335'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$336'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$337'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$338'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$339'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$380'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$381'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$382'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$383'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$384'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$385'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$386'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$387'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$388'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$389'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$390'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$391'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$392'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$393'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$394'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$395'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$396'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$397'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$398'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$399'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$400'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$401'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$402'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$403'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$452'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$453'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$454'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$455'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$456'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$457'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$458'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$459'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$460'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$461'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$462'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$463'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$464'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$465'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$466'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$467'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$504'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$505'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$506'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$507'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$508'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$509'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$510'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$511'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$512'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$513'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$514'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$515'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$516'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$517'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$518'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$519'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$520'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$521'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$522'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$523'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$524'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$525'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$526'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$527'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$528'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$529'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$530'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$531'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$572'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$573'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$574'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$575'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$576'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$577'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$578'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$579'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$580'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$581'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$582'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$583'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$584'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$585'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$586'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$587'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$588'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$589'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$590'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$591'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$592'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$593'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$594'.
+  removing unused `$_MUX_' cell `$auto$simplemap.cc:277:simplemap_mux$595'.
+Finding unused cells or wires in module \selector4..
+
+3.19.5. Finished fast OPT passes.
+
+3.20. Executing ABC pass (technology mapping using ABC).
+
+3.20.1. Extracting gate netlist of module `\nibble_top' to `<abc-temp-dir>/input.blif'..
+Extracted 4 gates and 10 wires to a netlist network with 5 inputs and 4 outputs.
+
+3.20.1.1. Executing ABC.
+Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 15 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + retime -o 
+ABC: + map 
+ABC: Warning: The network was strashed and balanced before mapping.
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+3.20.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        4
+ABC RESULTS:        internal signals:        1
+ABC RESULTS:           input signals:        5
+ABC RESULTS:          output signals:        4
+Removing temp directory.
+
+3.20.2. Extracting gate netlist of module `\nm2' to `<abc-temp-dir>/input.blif'..
+Extracted 120 gates and 154 wires to a netlist network with 33 inputs and 22 outputs.
+
+3.20.2.1. Executing ABC.
+Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 15 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + retime -o 
+ABC: + map 
+ABC: Warning: The network was strashed and balanced before mapping.
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+3.20.2.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       39
+ABC RESULTS:              AOI3 cells:        3
+ABC RESULTS:              AOI4 cells:        2
+ABC RESULTS:               MUX cells:       13
+ABC RESULTS:              NAND cells:        6
+ABC RESULTS:               NOR cells:        2
+ABC RESULTS:               NOT cells:       12
+ABC RESULTS:              OAI3 cells:        5
+ABC RESULTS:                OR cells:        3
+ABC RESULTS:              XNOR cells:        6
+ABC RESULTS:               XOR cells:        6
+ABC RESULTS:        internal signals:       99
+ABC RESULTS:           input signals:       33
+ABC RESULTS:          output signals:       22
+Removing temp directory.
+
+3.20.3. Extracting gate netlist of module `\selector' to `<abc-temp-dir>/input.blif'..
+Extracted 64 gates and 137 wires to a netlist network with 72 inputs and 4 outputs.
+
+3.20.3.1. Executing ABC.
+Running ABC command: berkeley-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 15 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + retime -o 
+ABC: + map 
+ABC: Warning: The network was strashed and balanced before mapping.
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+3.20.3.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        4
+ABC RESULTS:               MUX cells:       60
+ABC RESULTS:               NOT cells:        5
+ABC RESULTS:        internal signals:       61
+ABC RESULTS:           input signals:       72
+ABC RESULTS:          output signals:        4
+Removing temp directory.
+
+3.20.4. Extracting gate netlist of module `\selector4' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+3.21. Executing OPT pass (performing simple optimizations).
+
+3.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$975' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$972' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$981' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$966' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$963' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$967' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$991' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$988' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$992' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$984' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$985' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$993' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$997' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1000' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1001' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1004' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1007' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1008' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1009' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1013' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1016' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1017' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1020' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1023' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1024' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$1025' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$976' in module `selector'.
+Optimizing away select inverter for $_MUX_ cell `$abc$957$auto$blifparse.cc:286:parse_blif$977' in module `selector'.
+
+3.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+3.21.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.21.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+  removing unused non-port wire \id1.
+  removing unused non-port wire \id2.
+  removing unused non-port wire \nib_l1.
+  removing unused non-port wire \nib_l2.
+  removed 4 unused temporary wires.
+Finding unused cells or wires in module \selector..
+  removing unused `$_NOT_' cell `$abc$957$auto$blifparse.cc:286:parse_blif$968'.
+  removing unused `$_NOT_' cell `$abc$957$auto$blifparse.cc:286:parse_blif$969'.
+  removing unused `$_NOT_' cell `$abc$957$auto$blifparse.cc:286:parse_blif$959'.
+  removing unused `$_NOT_' cell `$abc$957$auto$blifparse.cc:286:parse_blif$958'.
+  removing unused `$_NOT_' cell `$abc$957$auto$blifparse.cc:286:parse_blif$960'.
+Finding unused cells or wires in module \selector4..
+
+3.21.5. Finished fast OPT passes.
+
+3.22. Executing HIERARCHY pass (managing design hierarchy).
+
+3.22.1. Analyzing design hierarchy..
+Top module:  \nibble_top
+Used module:     \selector4
+Used module:         \selector
+Used module:     \nm2
+
+3.22.2. Analyzing design hierarchy..
+Top module:  \nibble_top
+Used module:     \selector4
+Used module:         \selector
+Used module:     \nm2
+Removed 0 unused modules.
+
+3.23. Printing statistics.
+
+=== nibble_top ===
+
+   Number of wires:                 11
+   Number of wire bits:            122
+   Number of public wires:          10
+   Number of public wire bits:     118
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $_AND_                          4
+     $_DFF_P_                        4
+     nm2                             1
+     selector4                       1
+
+=== nm2 ===
+
+   Number of wires:                 90
+   Number of wire bits:            137
+   Number of public wires:           9
+   Number of public wire bits:      40
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                119
+     $_AND_                         39
+     $_AOI3_                         3
+     $_AOI4_                         2
+     $_DFF_P_                       22
+     $_MUX_                         13
+     $_NAND_                         6
+     $_NOR_                          2
+     $_NOT_                         12
+     $_OAI3_                         5
+     $_OR_                           3
+     $_XNOR_                         6
+     $_XOR_                          6
+
+=== selector ===
+
+   Number of wires:                 69
+   Number of wire bits:            141
+   Number of public wires:           8
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     $_AND_                          4
+     $_DFF_P_                        4
+     $_MUX_                         60
+
+=== selector4 ===
+
+   Number of wires:                  8
+   Number of wire bits:            110
+   Number of public wires:           8
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     selector                        4
+
+=== design hierarchy ===
+
+   nibble_top                        1
+     nm2                             1
+     selector4                       1
+       selector                      4
+
+   Number of wires:                385
+   Number of wire bits:            933
+   Number of public wires:          59
+   Number of public wire bits:     576
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                399
+     $_AND_                         59
+     $_AOI3_                         3
+     $_AOI4_                         2
+     $_DFF_P_                       42
+     $_MUX_                        253
+     $_NAND_                         6
+     $_NOR_                          2
+     $_NOT_                         12
+     $_OAI3_                         5
+     $_OR_                           3
+     $_XNOR_                         6
+     $_XOR_                          6
+
+3.24. Executing CHECK pass (checking for obvious problems).
+checking module nibble_top..
+checking module nm2..
+checking module selector..
+checking module selector4..
+found and reported 0 problems.
+
+4. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell DFFNEGX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_N_.
+  cell DFFPOSX1 (noninv, pins=3, area=96.00) is a direct match for cell type $_DFF_P_.
+  cell DFFSR (noninv, pins=5, area=176.00) is a direct match for cell type $_DFFSR_PNN_.
+  create mapping for $_DFFSR_PPN_ from mapping for $_DFFSR_PNN_.
+  create mapping for $_DFFSR_PNP_ from mapping for $_DFFSR_PNN_.
+  create mapping for $_DFFSR_PPP_ from mapping for $_DFFSR_PNP_.
+  create mapping for $_DFFSR_NNN_ from mapping for $_DFFSR_PNN_.
+  create mapping for $_DFFSR_NPN_ from mapping for $_DFFSR_NNN_.
+  create mapping for $_DFFSR_NNP_ from mapping for $_DFFSR_NNN_.
+  create mapping for $_DFFSR_NPP_ from mapping for $_DFFSR_NNP_.
+  create mapping for $_DFF_NN0_ from mapping for $_DFFSR_NNN_.
+  create mapping for $_DFF_NN1_ from mapping for $_DFFSR_NNN_.
+  create mapping for $_DFF_NP0_ from mapping for $_DFFSR_NPP_.
+  create mapping for $_DFF_NP1_ from mapping for $_DFFSR_NPP_.
+  create mapping for $_DFF_PN0_ from mapping for $_DFFSR_PNN_.
+  create mapping for $_DFF_PN1_ from mapping for $_DFFSR_PNN_.
+  create mapping for $_DFF_PP0_ from mapping for $_DFFSR_PPP_.
+  create mapping for $_DFF_PP1_ from mapping for $_DFFSR_PPP_.
+  final dff cell mappings:
+    DFFNEGX1 _DFF_N_ (.CLK( C), .D( D), .Q( Q));
+    DFFPOSX1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    DFFSR _DFF_NN0_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S( 1));
+    DFFSR _DFF_NN1_ (.CLK(~C), .D( D), .Q( Q), .R( 1), .S( R));
+    DFFSR _DFF_NP0_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S( 1));
+    DFFSR _DFF_NP1_ (.CLK(~C), .D( D), .Q( Q), .R( 1), .S(~R));
+    DFFSR _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( 1));
+    DFFSR _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .R( 1), .S( R));
+    DFFSR _DFF_PP0_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( 1));
+    DFFSR _DFF_PP1_ (.CLK( C), .D( D), .Q( Q), .R( 1), .S(~R));
+    DFFSR _DFFSR_NNN_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S( S));
+    DFFSR _DFFSR_NNP_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S( S));
+    DFFSR _DFFSR_NPN_ (.CLK(~C), .D( D), .Q( Q), .R( R), .S(~S));
+    DFFSR _DFFSR_NPP_ (.CLK(~C), .D( D), .Q( Q), .R(~R), .S(~S));
+    DFFSR _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( S));
+    DFFSR _DFFSR_PNP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S( S));
+    DFFSR _DFFSR_PPN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S(~S));
+    DFFSR _DFFSR_PPP_ (.CLK( C), .D( D), .Q( Q), .R(~R), .S(~S));
+Mapping DFF cells in module `\nibble_top':
+  mapped 4 $_DFF_P_ cells to \DFFPOSX1 cells.
+Mapping DFF cells in module `\nm2':
+  mapped 22 $_DFF_P_ cells to \DFFPOSX1 cells.
+Mapping DFF cells in module `\selector':
+  mapped 4 $_DFF_P_ cells to \DFFPOSX1 cells.
+Mapping DFF cells in module `\selector4':
+
+5. Executing OPT pass (performing simple optimizations).
+
+5.1. Executing OPT_EXPR pass (perform const folding).
+
+5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \nm2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \selector..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \selector4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+  Optimizing cells in module \nm2.
+  Optimizing cells in module \selector.
+  Optimizing cells in module \selector4.
+Performed a total of 0 changes.
+
+5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Finding identical cells in module `\nm2'.
+Finding identical cells in module `\selector'.
+Finding identical cells in module `\selector4'.
+Removed a total of 0 cells.
+
+5.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+Finding unused cells or wires in module \nm2..
+Finding unused cells or wires in module \selector..
+Finding unused cells or wires in module \selector4..
+
+5.8. Executing OPT_EXPR pass (perform const folding).
+
+5.9. Finished OPT passes. (There is nothing left to do.)
+
+6. Executing ABC pass (technology mapping using ABC).
+
+6.1. Extracting gate netlist of module `\nibble_top' to `<abc-temp-dir>/input.blif'..
+Extracted 4 gates and 9 wires to a netlist network with 5 inputs and 4 outputs.
+
+6.1.1. Executing ABC.
+Running ABC command: /usr/local/share/qflow/bin/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
+ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.01 sec
+ABC: Memory =    0.36 MB. Time =     0.01 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
+ABC: + strash 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + ifraig 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + map -M 1 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.1.2. Re-integrating ABC results.
+ABC RESULTS:            AND2X2 cells:        4
+ABC RESULTS:        internal signals:        0
+ABC RESULTS:           input signals:        5
+ABC RESULTS:          output signals:        4
+Removing temp directory.
+
+6.2. Extracting gate netlist of module `\nm2' to `<abc-temp-dir>/input.blif'..
+Extracted 97 gates and 130 wires to a netlist network with 33 inputs and 22 outputs.
+
+6.2.1. Executing ABC.
+Running ABC command: /usr/local/share/qflow/bin/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
+ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.01 sec
+ABC: Memory =    0.36 MB. Time =     0.01 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
+ABC: + strash 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + ifraig 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + map -M 1 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.2.2. Re-integrating ABC results.
+ABC RESULTS:            AND2X2 cells:       20
+ABC RESULTS:           AOI21X1 cells:       13
+ABC RESULTS:           AOI22X1 cells:        7
+ABC RESULTS:             INVX1 cells:       21
+ABC RESULTS:           NAND2X1 cells:       29
+ABC RESULTS:           NAND3X1 cells:       17
+ABC RESULTS:            NOR2X1 cells:       16
+ABC RESULTS:            NOR3X1 cells:        2
+ABC RESULTS:           OAI21X1 cells:       24
+ABC RESULTS:           OAI22X1 cells:        5
+ABC RESULTS:        internal signals:       75
+ABC RESULTS:           input signals:       33
+ABC RESULTS:          output signals:       22
+Removing temp directory.
+
+6.3. Extracting gate netlist of module `\selector' to `<abc-temp-dir>/input.blif'..
+Extracted 64 gates and 136 wires to a netlist network with 72 inputs and 4 outputs.
+
+6.3.1. Executing ABC.
+Running ABC command: /usr/local/share/qflow/bin/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "TBUFX2".
+ABC: Library "osu018_stdcells" from "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" has 26 cells (6 skipped: 4 seq; 2 tri-state; 0 no func).  Time =     0.01 sec
+ABC: Memory =    0.36 MB. Time =     0.01 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "FAX1").
+ABC: + strash 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + ifraig 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + map -M 1 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.3.2. Re-integrating ABC results.
+ABC RESULTS:           AOI21X1 cells:        4
+ABC RESULTS:             INVX1 cells:       38
+ABC RESULTS:           NAND2X1 cells:       40
+ABC RESULTS:           NAND3X1 cells:       48
+ABC RESULTS:           OAI21X1 cells:        8
+ABC RESULTS:             OR2X2 cells:       24
+ABC RESULTS:        internal signals:       60
+ABC RESULTS:           input signals:       72
+ABC RESULTS:          output signals:        4
+Removing temp directory.
+
+6.4. Extracting gate netlist of module `\selector4' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+7. Executing FLATTEN pass (flatten design).
+Mapping nibble_top.logica_seleccion using selector4.
+Mapping nibble_top.nibble_mayor using nm2.
+Mapping nibble_top.logica_seleccion.selectores[3].seli using selector.
+Mapping nibble_top.logica_seleccion.selectores[2].seli using selector.
+Mapping nibble_top.logica_seleccion.selectores[1].seli using selector.
+Mapping nibble_top.logica_seleccion.selectores[0].seli using selector.
+No more expansions possible.
+Deleting now unused module nm2.
+Deleting now unused module selector.
+Deleting now unused module selector4.
+Removed 5 unused cells and 730 unused wires.
+
+8. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
+Don't map input port nibble_top.CLK: Missing option -inpad.
+Don't map input port nibble_top.DATA_A: Missing option -inpad.
+Don't map input port nibble_top.DATA_B: Missing option -inpad.
+Mapping port nibble_top.DATA_OUT using BUFX2.
+Don't map input port nibble_top.RESET_L: Missing option -inpad.
+Don't map input port nibble_top.SEL_A: Missing option -inpad.
+Don't map input port nibble_top.SEL_AB: Missing option -inpad.
+Don't map input port nibble_top.SEL_B: Missing option -inpad.
+
+9. Executing OPT pass (performing simple optimizations).
+
+9.1. Executing OPT_EXPR pass (perform const folding).
+
+9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Removed a total of 0 cells.
+
+9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nibble_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nibble_top.
+Performed a total of 0 changes.
+
+9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nibble_top'.
+Removed a total of 0 cells.
+
+9.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nibble_top..
+
+9.8. Executing OPT_EXPR pass (perform const folding).
+
+9.9. Finished OPT passes. (There is nothing left to do.)
+
+10. Executing Verilog backend.
+Dumping module `\nibble_top'.
+
+11. Printing statistics.
+
+=== nibble_top ===
+
+   Number of wires:                788
+   Number of wire bits:            942
+   Number of public wires:         788
+   Number of public wire bits:     942
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                847
+     AND2X2                         24
+     AOI21X1                        28
+     AOI22X1                         7
+     BUFX2                           4
+     DFFPOSX1                       40
+     INVX1                         173
+     NAND2X1                       189
+     NAND3X1                       207
+     NOR2X1                         16
+     NOR3X1                          2
+     OAI21X1                        56
+     OAI22X1                         5
+     OR2X2                          96
+
+End of script. Logfile hash: 5af8ccdc75
+CPU: user 0.66s system 0.03s, MEM: 38.68 MB total, 11.62 MB resident
+Yosys 0.7 (git sha1 61f6811, gcc 5.4.0-6ubuntu1~16.04.4 -O2 -fstack-protector-strong -fPIC -Os)
+Time spent: 15% 19x opt_expr (0 sec), 13% 17x opt_clean (0 sec), ...
+Running getpowerground to determine power and ground net names.
+getpowerground.tcl  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
+Running vlogFanout
+vlogFanout -l 100 -c 20 -I nibble_top_nofanout -s nullstring -p /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y nibble_top_mapped.v nibble_top_sized.v
+
+vlogFanout for qflow 1.4.35
+Parsing library "osu018_stdcells"
+End of library at line 6141
+Lib Read:  Processed 6142 lines.
+Top internal fanout is 8 (load 197.079) from node _459_,
+driven by INVX1 with strength 58.615 (fF driven at latency 100)
+Top fanout load-to-strength ratio is 2.45862 (latency = 245.862 ps)
+Top input node fanout is 40 (load 1116.94) from node CLK.
+0 gates exceed specified minimum load.
+51 buffers were added.
+Warning 1: load of 127.439 is 1.14652 times greater than strongest gate OR2X2
+This warning will only be repeated for larger overload ratios.  Warning count reflects
+the total number of overloaded nets.
+Warning 66: load of 84.4418 is 1.28382 times greater than strongest gate AOI22X1
+Warning 69: load of 143.515 is 2.18196 times greater than strongest gate AOI22X1
+Warning 75: load of 129.637 is 2.2229 times greater than strongest gate OAI21X1
+Warning 77: load of 137.034 is 2.34974 times greater than strongest gate OAI21X1
+32 gates were changed.
+
+Gate counts by drive strength:
+
+	"1" gates	In: 729    	Out: 697    	-32
+	"2" gates	In: 169    	Out: 192    	+23
+
+139 gates exceed specified minimum load.
+0 buffers were added.
+0 gates were changed.
+
+Gate counts by drive strength:
+
+	"1" gates	In: 729    	Out: 697    	-32
+	"2" gates	In: 169    	Out: 192    	+23
+
+Number of gates changed: 0
+Running vlog2Verilog for antenna cell mapping.
+vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
+   -o nibble_top.v nibble_top_sized.v
+
+Generating RTL verilog and SPICE netlist file in directory
+	 /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis
+Files:
+   Verilog: /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.rtl.v
+   Verilog: /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.rtlnopwr.v
+   Verilog: /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.rtlbb.v
+   Spice:   /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.spc
+
+Running vlog2Verilog.
+vlog2Verilog -c -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
+	-o nibble_top.rtl.v
+   nibble_top.v
+vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef 
+	-o nibble_top.rtlnopwr.v
+   nibble_top.v
+/usr/local/share/qflow/bin/vlog2Verilog -c -p -b -n -v vdd -g gnd  -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
+   -o nibble_top.rtlbb.v
+Running vlog2Spice.
+vlog2Spice -i -l  /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp -o nibble_top.spc nibble_top.rtl.v
+Running spi2xspice.py
+spi2xspice.py "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" -io_time=1n -time=100p -idelay=10p -odelay=100p -cload=500f nibble_top.spc nibble_top.xspice
+
+Synthesis script ended on sáb 13 jul 16:23:22 CST 2019

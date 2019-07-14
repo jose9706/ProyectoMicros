@@ -6,7 +6,9 @@
  *@brief  Descripcion conductual del modulo nibble que une las logicas de seleccion de nibble y de nibble mayor
 */
 
-`include "includes.vh"
+//`include "includes.vh"
+`include "../Selector/selector4.v"
+`include "../nm2/nm2.v"
 
 module nibble_top(
 	output reg [3:0]	DATA_OUT,			// salida general del bloque que contiene el nibble mayor de la seleccion realizada
