@@ -1,0 +1,109 @@
+Qflow static timing analysis logfile created on sáb 13 jul 20:36:00 CST 2019
+Converting qrouter output to vesta delay format
+Running rc2dly -r nibble_top.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -V /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.rtl.v
+-d nibble_top.dly
+Converting qrouter output to SPEF delay format
+Running rc2dly -D : -r nibble_top.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -V /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.rtl.v
+-d nibble_top.spef
+Converting qrouter output to SDF delay format
+Running rc2dly -r nibble_top.rc -l /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib -V /home/gianca/Documents/UCR/IE-0411/P1/RTL/ProyectoMicros/synthesis/nibble_top.rtl.v
+-d nibble_top.sdf
+Running vesta static timing analysis with back-annotated extracted wire delays
+vesta -c -d nibble_top.dly --long nibble_top.rtlnopwr.v /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
+----------------------------------------------
+Vesta static timing analysis tool
+for qflow 1.4.35
+(c) 2013-2018 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "osu018_stdcells"
+End of library at line 6141
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Cell "FILL" was not in the liberty database!
+Lib read /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib:  Processed 6142 lines.
+Parsing module "nibble_top"
+ERROR: Net \nibble_mayor_nibble_C\_3_ not found in hash table
+Verilog netlist read:  Processed 6591 lines.

@@ -1,4 +1,4 @@
-Qflow static timing analysis logfile created on sáb 13 jul 18:29:24 CST 2019
+Qflow static timing analysis logfile created on sáb 13 jul 19:51:07 CST 2019
 Running vesta static timing analysis
 vesta --long nibble_top.rtlnopwr.v /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
 ----------------------------------------------

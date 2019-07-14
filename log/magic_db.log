@@ -1,0 +1,100 @@
+Qflow migration logfile created on sáb 13 jul 23:04:02 CST 2019
+magic -dnull -noconsole  migrate_nibble_top.tcl
+
+Magic 8.2 revision 112 - Compiled on jue 23 may 19:21:31 CST 2019.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.10(p): scaleFactor=10, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Loading "migrate_nibble_top.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:    0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+lambda:        0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+This action cannot be undone.
+LEF Read, Line 16: Unknown keyword "OBS" in LEF file; ignoring.
+LEF Read, Line 17: Unknown keyword "PIN" in LEF file; ignoring.
+LEF file:  Defines site core (ignored)
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "CLK" from metal1 to m2contact in cell DFFNEGX1.
+Moving label "A" from metal1 to m2contact in cell XNOR2X1.
+LEF read: Processed 2941 lines.
+LEF Read: encountered 2 errors total.
+Reading DEF data from file nibble_top.def.
+This action cannot be undone.
+  Processed 5 vias total.
+  Processed 983 subcell instances total.
+  Processed 100 pins total.
+  Processed 992 nets total.
+  Processed 150 special nets total.
+DEF read: Processed 12380 lines.
+Generating LEF output nibble_top.lef for cell nibble_top:
+Diagnostic:  Write LEF header for cell nibble_top
+Diagnostic:  Writing LEF output for cell nibble_top
+Diagnostic:  Scale value is 0.100000
+Extracting CLKBUF1 into CLKBUF1.ext:
+Completed 100%
+Extracting AND2X2 into AND2X2.ext:
+Completed 100%
+Extracting INVX4 into INVX4.ext:
+Completed 100%
+Extracting OR2X2 into OR2X2.ext:
+Completed 100%
+Extracting NAND3X1 into NAND3X1.ext:
+Completed 100%
+Extracting NOR3X1 into NOR3X1.ext:
+Completed 100%
+Extracting AOI22X1 into AOI22X1.ext:
+Completed 100%
+Extracting AOI21X1 into AOI21X1.ext:
+Completed 100%
+Extracting OAI22X1 into OAI22X1.ext:
+Completed 100%
+Extracting INVX2 into INVX2.ext:
+Completed 100%
+Extracting DFFPOSX1 into DFFPOSX1.ext:
+Completed 100%
+Extracting NOR2X1 into NOR2X1.ext:
+Completed 100%
+Extracting FILL into FILL.ext:
+Completed 100%
+Extracting BUFX2 into BUFX2.ext:
+Completed 100%
+Extracting OAI21X1 into OAI21X1.ext:
+Completed 100%
+Extracting NAND2X1 into NAND2X1.ext:
+Completed 100%
+Extracting INVX1 into INVX1.ext:
+Completed 100%
+Extracting nibble_top into nibble_top.ext:
+Completed 5%
+Completed 10%
+Completed 16%
+Completed 21%
+Completed 26%
+Completed 31%
+Completed 37%
+Completed 42%
+Completed 47%
+Completed 52%
+Completed 58%
+Completed 63%
+Completed 68%
+Completed 73%
+Completed 78%
+Completed 84%
+Completed 89%
+Completed 94%
+Completed 99%
+Completed 100%
+exttospice finished.
+Migration script ended on sáb 13 jul 23:04:05 CST 2019

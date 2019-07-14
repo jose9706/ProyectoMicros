@@ -1,4 +1,4 @@
-Qflow synthesis logfile created on sáb 13 jul 16:23:19 CST 2019
+Qflow synthesis logfile created on sáb 13 jul 19:42:30 CST 2019
 Running yosys for verilog parsing and synthesis
 yosys  -s nibble_top.ys
 
@@ -1879,9 +1879,9 @@ Dumping module `\nibble_top'.
      OR2X2                          96
 
 End of script. Logfile hash: 5af8ccdc75
-CPU: user 0.66s system 0.03s, MEM: 38.68 MB total, 11.62 MB resident
+CPU: user 0.69s system 0.02s, MEM: 38.68 MB total, 11.65 MB resident
 Yosys 0.7 (git sha1 61f6811, gcc 5.4.0-6ubuntu1~16.04.4 -O2 -fstack-protector-strong -fPIC -Os)
-Time spent: 15% 19x opt_expr (0 sec), 13% 17x opt_clean (0 sec), ...
+Time spent: 15% 19x opt_expr (0 sec), 14% 17x opt_clean (0 sec), ...
 Running getpowerground to determine power and ground net names.
 getpowerground.tcl  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
 Running vlogFanout
@@ -1947,4 +1947,4 @@ vlog2Spice -i -l  /usr/local/share/qflow/tech/osu018/osu018_stdcells.sp -o nibbl
 Running spi2xspice.py
 spi2xspice.py "/usr/local/share/qflow/tech/osu018/osu018_stdcells.lib" -io_time=1n -time=100p -idelay=10p -odelay=100p -cload=500f nibble_top.spc nibble_top.xspice
 
-Synthesis script ended on sáb 13 jul 16:23:22 CST 2019
+Synthesis script ended on sáb 13 jul 19:42:33 CST 2019

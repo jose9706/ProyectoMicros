@@ -18,9 +18,9 @@ addpath digital
 openwrapper
 box 0 0 0 0
 drc off
-lef read /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef
-load nibble_top
-def read nibble_top
+gds read /usr/local/share/qflow/tech/osu018/osu018_stdcells.gds2
+load gds_top
+gds read nibble_top
 select top cell
 expand
 view

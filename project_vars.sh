@@ -34,7 +34,7 @@ set display_tool = magic_view
 
 # Placement command options:
 # -------------------------------------------
-# set initial_density =
+# set initial_density = 
 # set graywolf_options =
 set addspacers_options = "-stripe 2.0 50.0 PG"
 
